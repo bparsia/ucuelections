@@ -60,6 +60,10 @@ EXCLUDE_PATTERNS = [
     r"election-hustings",
 ]
 
+# Only match these URL schemes / path prefixes
+ALLOWED_PATH_PREFIXES = ("/article/", "/elections", "/ucuscotland", "/ucus-elections",
+                         "/ucuselections", "/GS-election", "/NECcasualvacancy")
+
 RESULT_RE = re.compile("|".join(RESULT_PATTERNS), re.IGNORECASE)
 EXCLUDE_RE = re.compile("|".join(EXCLUDE_PATTERNS), re.IGNORECASE)
 
@@ -74,10 +78,16 @@ def extract_links(soup: BeautifulSoup) -> list[dict]:
     found = []
     for a in soup.find_all("a", href=True):
         href = a["href"].strip()
-        full = urljoin(BASE_URL, href) if href.startswith("/") else href
-        if "ucu.org.uk" not in urlparse(full).netloc:
+        # Skip fragments and non-page assets
+        if "#" in href or href.endswith((".pdf", ".doc", ".docx")):
             continue
-        path = urlparse(full).path
+        full = urljoin(BASE_URL, href) if href.startswith("/") else href
+        parsed = urlparse(full)
+        if "ucu.org.uk" not in parsed.netloc:
+            continue
+        path = parsed.path
+        if not path.startswith(ALLOWED_PATH_PREFIXES):
+            continue
         if RESULT_RE.search(path) and not EXCLUDE_RE.search(path):
             found.append({"url": full.split("?")[0], "anchor": a.get_text(strip=True)})
     return found
