@@ -72,46 +72,19 @@ def get_body(soup: BeautifulSoup) -> BeautifulSoup | None:
 
 def find_scrutineer_pdfs(soup: BeautifulSoup, page_url: str) -> list[dict]:
     """
-    Return PDF links that are scrutineer/results reports.
-
-    Strategy:
-    1. If there is a paragraph containing "scrutineer" or "reports are available",
-       collect all /media/*.pdf links in the immediately following siblings.
-    2. Fall back to collecting all /media/*.pdf links whose anchor text matches
-       SCRUTINEER_PATTERNS and doesn't match EXCLUDE_ANCHOR_PATTERNS.
+    Return all result/scrutineer PDF links from the page.
+    Scans every /media/*.pdf link on the whole page, keeping those whose
+    anchor text matches SCRUTINEER_PATTERNS and not EXCLUDE_ANCHOR_PATTERNS.
     """
-    body = get_body(soup) or soup
-
-    # Strategy 1: anchor on "scrutineer's reports are available" paragraph
-    anchor_para = None
-    for p in body.find_all("p"):
-        text = p.get_text(strip=True).lower()
-        if "scrutineer" in text and ("report" in text or "available" in text):
-            anchor_para = p
-            break
-
     candidates: list[dict] = []
 
-    if anchor_para:
-        # Collect PDF links from siblings until we hit a <ul> (documents section) or <h2>/<h3>
-        for sibling in anchor_para.find_next_siblings():
-            tag = sibling.name
-            if tag in ("h2", "h3", "ul"):
-                break
-            for a in sibling.find_all("a", href=True):
-                href = a["href"]
-                if href.endswith(".pdf") or "/pdf/" in href:
-                    candidates.append({"anchor": a.get_text(strip=True), "href": href})
-
-    # Strategy 2: fallback — search whole page for media PDFs with scrutineer-like anchor text
-    if not candidates:
-        for a in soup.find_all("a", href=True):
-            href = a["href"]
-            if not (href.endswith(".pdf") or "/pdf/" in href):
-                continue
-            anchor = a.get_text(strip=True)
-            if SCRUTINEER_PATTERNS.search(anchor) and not EXCLUDE_ANCHOR_PATTERNS.search(anchor):
-                candidates.append({"anchor": anchor, "href": href})
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if not (href.endswith(".pdf") or "/pdf/" in href):
+            continue
+        anchor = a.get_text(strip=True)
+        if SCRUTINEER_PATTERNS.search(anchor) and not EXCLUDE_ANCHOR_PATTERNS.search(anchor):
+            candidates.append({"anchor": anchor, "href": href})
 
     # Resolve to full URLs and deduplicate
     seen: set[str] = set()
