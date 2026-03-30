@@ -1,0 +1,2251 @@
+[
+  {
+    "contest_name": "London and East FE",
+    "source_pdf": "data/raw/2012/pdfs/Count_FE_London_and_East.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "seats": "2",
+    "valid_votes": "860",
+    "invalid_votes": "61",
+    "quota": "= 286.67 Annie Holder ELECTED",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Annie Holder",
+        "name": "Annie Holder",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 276.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 301.92,
+            "transfer": 25.92,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Sean Vernell",
+        "name": "Sean Vernell",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 380.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 286.67,
+            "transfer": -93.33,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mandy Brown",
+        "name": "Mandy Brown",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 204.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 269.88,
+            "transfer": 65.88,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "London and East FE",
+        "name": "London and East FE",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 40.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Papers transferred at",
+        "name": "Papers transferred at",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 0.27,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 301.92,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Sean Vernell ELECTED over quota",
+        "name": "Sean Vernell ELECTED over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 286.67,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 380.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 286.67,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Vote required for election now:",
+        "name": "Vote required for election now:",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 286.67,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "North East FE",
+    "source_pdf": "data/raw/2012/pdfs/Count_FE_North_East.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "seats": "2",
+    "valid_votes": "681",
+    "invalid_votes": "55",
+    "quota": "= 227.00 Vote required for election now: 226.33",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "\u00dcmit Yildiz",
+        "name": "\u00dcmit Yildiz",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 128.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 134.15,
+            "transfer": 6.15,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 191.15,
+            "transfer": 57.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Graham Mustin",
+        "name": "Graham Mustin",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 125.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 129.95,
+            "transfer": 4.95,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 4.95,
+            "transfer": -125.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Rob Goodfellow",
+        "name": "Rob Goodfellow",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 168.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 188.55,
+            "transfer": 20.55,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 235.55,
+            "transfer": 47.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Cath Hepburn",
+        "name": "Cath Hepburn",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 260.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 227.0,
+            "transfer": -33.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 227.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "North East FE Total Present Value:",
+        "name": "North East FE Total Present Value:",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 211.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Cath Hepburn ELECTED Stage",
+        "name": "Cath Hepburn ELECTED Stage",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 260.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 227.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 129.95,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Vote required for election now:",
+        "name": "Vote required for election now:",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 227.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "North West - Casual Vacancy",
+    "source_pdf": "data/raw/2012/pdfs/Count_FE_North_West.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "valid_votes": "465",
+    "invalid_votes": "59",
+    "quota": "= 232.50",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Andy Sellers",
+        "name": "Andy Sellers",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 252.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Darren Bradshaw",
+        "name": "Darren Bradshaw",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 213.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 252.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 232.5,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "NEC",
+    "source_pdf": "data/raw/2012/pdfs/Count_FE_UK_elected.pdf",
+    "source_format": "text",
+    "date": "2",
+    "valid_votes": "3525",
+    "invalid_votes": "391",
+    "quota": "503.58",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "John Holden",
+        "name": "John Holden",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 559.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": -55.42,
+            "transfer": 559.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 503.58,
+            "transfer": 503.58,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 503.58,
+            "transfer": 503.58,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 503.58,
+            "transfer": 503.58,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Richard McEwan",
+        "name": "Richard McEwan",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 480.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 484.8,
+            "transfer": 4.8,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 493.6,
+            "transfer": 8.8,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 515.6,
+            "transfer": 22.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 515.6,
+            "transfer": 515.6,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 503.58,
+            "transfer": -12.02,
+            "eliminated": false
+          },
+          "7": {
+            "votes": null,
+            "transfer": 503.58,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "prison",
+        "name": "prison",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 440.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 457.25,
+            "transfer": 17.25,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 483.35,
+            "transfer": 26.1,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 525.35,
+            "transfer": 42.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 503.58,
+            "transfer": -21.77,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 503.58,
+            "transfer": 503.58,
+            "eliminated": false
+          },
+          "7": {
+            "votes": null,
+            "transfer": 503.58,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "woman",
+        "name": "woman",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 588.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 503.58,
+            "transfer": -84.42,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 503.58,
+            "transfer": 503.58,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 503.58,
+            "transfer": 503.58,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 503.58,
+            "transfer": 503.58,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "woman",
+        "name": "woman",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 491.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 519.8,
+            "transfer": 28.8,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 519.8,
+            "transfer": 519.8,
+            "eliminated": false
+          },
+          "4": {
+            "votes": -16.22,
+            "transfer": 519.8,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 503.58,
+            "transfer": 503.58,
+            "eliminated": false
+          },
+          "6": {
+            "votes": null,
+            "transfer": 503.58,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "woman",
+        "name": "woman",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 345.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 358.65,
+            "transfer": 13.65,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 362.95,
+            "transfer": 4.3,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 388.35,
+            "transfer": 25.4,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 402.03,
+            "transfer": 13.68,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 410.03,
+            "transfer": 8.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 414.93,
+            "transfer": 4.9,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 541.93,
+            "transfer": 127.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Steve Boyce-prison",
+        "name": "Steve Boyce-prison",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 215.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 223.25,
+            "transfer": 8.25,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 228.55,
+            "transfer": 5.3,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 260.9,
+            "transfer": 32.35,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 265.22,
+            "transfer": 4.32,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 271.32,
+            "transfer": 6.1,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 274.82,
+            "transfer": 3.5,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 29.82,
+            "transfer": -245.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Paul Pritchard",
+        "name": "Paul Pritchard",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 161.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 165.5,
+            "transfer": 4.5,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 169.7,
+            "transfer": 4.2,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "\u00dcmit Yildiz",
+        "name": "\u00dcmit Yildiz",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 246.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 250.35,
+            "transfer": 4.35,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 253.15,
+            "transfer": 2.8,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 277.05,
+            "transfer": 23.9,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 280.65,
+            "transfer": 3.6,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 281.95,
+            "transfer": 1.3,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 285.45,
+            "transfer": 3.5,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 342.45,
+            "transfer": 57.0,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "Representatives of Women in FE",
+    "source_pdf": "data/raw/2012/pdfs/Count_FE_womens_reps.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "seats": "2",
+    "valid_votes": "11086",
+    "invalid_votes": "3959",
+    "quota": "= 3695.34 1179 papers non-transferable.",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Jenny Sutton",
+        "name": "Jenny Sutton",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Monica Goligher",
+        "name": "Monica Goligher",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 4573.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3695.34,
+            "transfer": -877.66,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Vicky Knight",
+        "name": "Vicky Knight",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3587.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 4170.5,
+            "transfer": 583.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Alison Lord",
+        "name": "Alison Lord",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2926.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3191.0,
+            "transfer": 265.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Papers transferred at",
+        "name": "Papers transferred at",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 0.25,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 4573.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3695.34,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 4170.5,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3695.34,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Vote required for election now:",
+        "name": "Vote required for election now:",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3695.33,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "London and East HE",
+    "source_pdf": "data/raw/2012/pdfs/Count_HE_London_and_East.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "valid_votes": "1872",
+    "invalid_votes": "192",
+    "quota": "374.4",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "Steve Sangwine",
+        "name": "Steve Sangwine",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 385.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 385.0,
+            "transfer": 385.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 385.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jim Wolfreys",
+        "name": "Jim Wolfreys",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 236.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "David Goode",
+        "name": "David Goode",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 297.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 327.0,
+            "transfer": 30.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 344.0,
+            "transfer": 17.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 345.68,
+            "transfer": 1.68,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mark Campbell",
+        "name": "Mark Campbell",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 301.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 392.0,
+            "transfer": 91.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": -17.6,
+            "transfer": 392.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": 374.4,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "woman",
+        "name": "woman",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 282.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 342.0,
+            "transfer": 60.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 355.0,
+            "transfer": 13.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 370.54,
+            "transfer": 15.54,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Susan Michie",
+        "name": "Susan Michie",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "woman",
+        "name": "woman",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 371.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 415.0,
+            "transfer": 44.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 374.4,
+            "transfer": -40.6,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": 374.4,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "Northern Ireland HE",
+    "source_pdf": "data/raw/2012/pdfs/Count_HE_NI.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "valid_votes": "275",
+    "invalid_votes": "5",
+    "quota": "= 137.50",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Brian Kelly",
+        "name": "Brian Kelly",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 92.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Renee",
+        "name": "Renee",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 183.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 183.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 137.5,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "North East HE",
+    "source_pdf": "data/raw/2012/pdfs/Count_HE_North_East.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "valid_votes": "1386",
+    "invalid_votes": "112",
+    "quota": "346.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Elizabeth Lawrence",
+        "name": "Elizabeth Lawrence",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 303.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 315.96,
+            "transfer": 12.96,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 370.96,
+            "transfer": 55.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Joanna de Groot",
+        "name": "Joanna de Groot",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 442.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 346.5,
+            "transfer": -95.5,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 346.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Martin Levy",
+        "name": "Martin Levy",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 208.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 253.36,
+            "transfer": 45.36,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 332.24,
+            "transfer": 78.88,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Veronica Killen",
+        "name": "Veronica Killen",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 111.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 118.92,
+            "transfer": 7.92,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Jeff Fowler",
+        "name": "Jeff Fowler",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 91.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 100.84,
+            "transfer": 9.84,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Gavin Reid",
+        "name": "Gavin Reid",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 231.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 247.8,
+            "transfer": 16.8,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 298.88,
+            "transfer": 51.08,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "HE UK-Elected NEC",
+    "source_pdf": "data/raw/2012/pdfs/Count_HE_UK_elected.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "seats": "8",
+    "valid_votes": "8439",
+    "invalid_votes": "1201",
+    "quota": "937.67",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "Jelena Timotijevic-post-92",
+        "name": "Jelena Timotijevic-post-92",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1128.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1128.0,
+            "transfer": 1128.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 1128.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Lesley McGorrigan-AR",
+        "name": "Lesley McGorrigan-AR",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 898.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1004.72,
+            "transfer": 106.72,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1004.72,
+            "transfer": 1004.72,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Steve Clark-post-92",
+        "name": "Steve Clark-post-92",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1156.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1156.0,
+            "transfer": 1156.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 937.67,
+            "transfer": -218.33,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "David Goode-AR",
+        "name": "David Goode-AR",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1213.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": -275.33,
+            "transfer": 1213.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 937.67,
+            "transfer": 937.67,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jane Hardy post-92",
+        "name": "Jane Hardy post-92",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Dominique Lauterburg-post-92",
+        "name": "Dominique Lauterburg-post-92",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 741.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 874.4,
+            "transfer": 133.4,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 991.58,
+            "transfer": 117.18,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": 991.58,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Harriet Bradley",
+        "name": "Harriet Bradley",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1567.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 937.67,
+            "transfer": -629.33,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 937.67,
+            "transfer": 937.67,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Roger Brooks-AR",
+        "name": "Roger Brooks-AR",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 629.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 810.24,
+            "transfer": 181.24,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 921.48,
+            "transfer": 111.24,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1059.96,
+            "transfer": 138.48,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Angi Lamb-AR",
+        "name": "Angi Lamb-AR",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 787.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 942.02,
+            "transfer": 155.02,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 942.02,
+            "transfer": 942.02,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Alan J Ryan-post-92",
+        "name": "Alan J Ryan-post-92",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 320.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 367.38,
+            "transfer": 47.38,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 405.18,
+            "transfer": 37.8,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 476.46,
+            "transfer": 71.28,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "Wales VP",
+    "source_pdf": "data/raw/2012/pdfs/Count_HE_Wales.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "seats": "1",
+    "valid_votes": "509",
+    "invalid_votes": "26",
+    "quota": "= 254.50",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Liza van Zyl",
+        "name": "Liza van Zyl",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 202.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Christopher Whyley",
+        "name": "Christopher Whyley",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 307.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 307.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 254.5,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "Representatives of Women in HE",
+    "source_pdf": "data/raw/2012/pdfs/Count_HE_womens_reps.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "seats": "3",
+    "valid_votes": "12116",
+    "invalid_votes": "2929",
+    "quota": "= 3029.00",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Ann Blair",
+        "name": "Ann Blair",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3623.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3029.0,
+            "transfer": -594.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 3029.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Pauline Collins",
+        "name": "Pauline Collins",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3610.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": -581.0,
+            "transfer": 3610.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 3029.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Marion Hersh",
+        "name": "Marion Hersh",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2539.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2754.08,
+            "transfer": 215.08,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2987.97,
+            "transfer": 233.89,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Suzanne Trill",
+        "name": "Suzanne Trill",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2344.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2705.57,
+            "transfer": 361.57,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 3047.0,
+            "transfer": 341.43,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3623.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3029.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3610.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3029.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "Trustees",
+    "source_pdf": "data/raw/2012/pdfs/Count_Trustees.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "seats": "3",
+    "valid_votes": "13058",
+    "invalid_votes": "1987",
+    "quota": "= 3264.50 Surplus of Neil Macfarlane",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Alastair Hunter",
+        "name": "Alastair Hunter",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3205.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3643.9,
+            "transfer": 438.9,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Philip Burgess",
+        "name": "Philip Burgess",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3369.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": 3369.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Neil Macfarlane",
+        "name": "Neil Macfarlane",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3913.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3264.5,
+            "transfer": -648.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Alan Whitaker",
+        "name": "Alan Whitaker",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2571.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2766.89,
+            "transfer": 195.89,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Trustees Stage",
+        "name": "Trustees Stage",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Neil Macfarlane ELECTED Total Present Value:",
+        "name": "Neil Macfarlane ELECTED Total Present Value:",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3341.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3913.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": 572.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3264.5,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 0.19,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3369.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3643.9,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3264.5,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Vote required for election now:",
+        "name": "Vote required for election now:",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3264.5,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "Vice",
+    "source_pdf": "data/raw/2012/pdfs/Count_VP.pdf",
+    "source_format": "text",
+    "date": "01/03/2012",
+    "valid_votes": "12605",
+    "invalid_votes": "2440",
+    "quota": "= 6302.50",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Angie McConnell",
+        "name": "Angie McConnell",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 6142.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "John McCormack",
+        "name": "John McCormack",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 6463.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "with",
+        "name": "with",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 6463.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "over quota",
+        "name": "over quota",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 6302.5,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "page",
+        "name": "page",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  }
+]

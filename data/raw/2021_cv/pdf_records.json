@@ -1,0 +1,14 @@
+[
+  {
+    "contest_name": "UK-Elected NEC Member Further Education Sector (Casual Vacancy)",
+    "seats": 1,
+    "valid_votes": 1918,
+    "invalid_votes": 9,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2021_cv/pdfs/Scrutineer_report_CV_FE_UKelected2021.pdf",
+    "source_format": "rov",
+    "candidates": []
+  }
+]

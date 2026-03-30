@@ -1,0 +1,2551 @@
+[
+  {
+    "contest_name": "UK-Elected NEC Members, Further Education",
+    "date": "01/03/2022",
+    "seats": "2",
+    "valid_votes": "1454",
+    "invalid_votes": "80",
+    "quota": "484.67",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "DORAN, Nina",
+        "name": "DORAN, Nina",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 564.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CHUHAN, Dharminder Singh",
+        "name": "CHUHAN, Dharminder Singh",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 531.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "NOREY, Sharon",
+        "name": "NOREY, Sharon",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 359.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2021-22/pdfs/FE_UK_result_sheet.pdf"
+  },
+  {
+    "contest_name": "UK-Elected NEC Members, Higher Education",
+    "date": "01/03/2022",
+    "seats": "5",
+    "valid_votes": "6849",
+    "invalid_votes": "317",
+    "quota": "1102.17",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "MURRAY, Esther",
+        "name": "MURRAY, Esther",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "HEARN, Julie [woman]",
+        "name": "HEARN, Julie",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 692.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 697.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 706.0,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 716.0,
+            "transfer": 10.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 737.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 758.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 779.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 814.0,
+            "transfer": 35.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 835.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": 851.0,
+            "transfer": 16.0,
+            "eliminated": false
+          },
+          "11": {
+            "votes": 889.0,
+            "transfer": 38.0,
+            "eliminated": false
+          },
+          "12": {
+            "votes": 892.2,
+            "transfer": 3.2,
+            "eliminated": false
+          },
+          "13": {
+            "votes": 3.2,
+            "transfer": -889.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "KENNEDY, Emma",
+        "name": "KENNEDY, Emma",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "GOW, Ann [woman]",
+        "name": "GOW, Ann",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 760.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 767.0,
+            "transfer": 7.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 774.0,
+            "transfer": 7.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 782.0,
+            "transfer": 8.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 792.0,
+            "transfer": 10.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 809.0,
+            "transfer": 17.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 833.0,
+            "transfer": 24.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 861.0,
+            "transfer": 28.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 904.0,
+            "transfer": 43.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": 976.0,
+            "transfer": 72.0,
+            "eliminated": false
+          },
+          "11": {
+            "votes": 1252.0,
+            "transfer": 276.0,
+            "eliminated": false
+          },
+          "12": {
+            "votes": 1102.17,
+            "transfer": null,
+            "eliminated": false
+          },
+          "13": {
+            "votes": 1102.17,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "KEYSE, Rhian Elinor [woman]",
+        "name": "KEYSE, Rhian Elinor",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 685.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 686.0,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 692.0,
+            "transfer": 6.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 704.0,
+            "transfer": 12.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 714.0,
+            "transfer": 10.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 732.0,
+            "transfer": 18.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 773.0,
+            "transfer": 41.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 811.0,
+            "transfer": 38.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 834.0,
+            "transfer": 23.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": 859.0,
+            "transfer": 25.0,
+            "eliminated": false
+          },
+          "11": {
+            "votes": 886.0,
+            "transfer": 27.0,
+            "eliminated": false
+          },
+          "12": {
+            "votes": 898.8,
+            "transfer": 12.8,
+            "eliminated": false
+          },
+          "13": {
+            "votes": 1126.8,
+            "transfer": 228.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CARLEY, Michael",
+        "name": "CARLEY, Michael",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 318.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 319.0,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 323.0,
+            "transfer": 4.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 325.0,
+            "transfer": 2.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 330.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 333.0,
+            "transfer": 3.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 341.0,
+            "transfer": 8.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 360.0,
+            "transfer": 19.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "10": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "WILD, Richard [post-92]",
+        "name": "WILD, Richard",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 181.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 182.0,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 185.0,
+            "transfer": 3.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 186.0,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "10": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "CHONDROGIANNI, Maria",
+        "name": "CHONDROGIANNI, Maria",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "HARVIE, David",
+        "name": "HARVIE, David",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 620.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 626.0,
+            "transfer": 6.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 630.0,
+            "transfer": 4.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 671.0,
+            "transfer": 41.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 692.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 702.0,
+            "transfer": 10.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 713.0,
+            "transfer": 11.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 724.0,
+            "transfer": 11.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 785.0,
+            "transfer": 61.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": 826.0,
+            "transfer": 41.0,
+            "eliminated": false
+          },
+          "11": {
+            "votes": 869.0,
+            "transfer": 43.0,
+            "eliminated": false
+          },
+          "12": {
+            "votes": 938.12,
+            "transfer": 69.12,
+            "eliminated": false
+          },
+          "13": {
+            "votes": 1047.12,
+            "transfer": 109.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "FRASER, Carl [post-92]",
+        "name": "FRASER, Carl",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 168.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 170.0,
+            "transfer": 2.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 171.0,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "10": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "DESMOND, Stephen Albert [post-92]",
+        "name": "DESMOND, Stephen Albert",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 198.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 199.0,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 204.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 214.0,
+            "transfer": 10.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 228.0,
+            "transfer": 14.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "10": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "BUTTARS, Grant [academic related]",
+        "name": "BUTTARS, Grant",
+        "demographic_flags": [
+          "academic related"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 310.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 313.0,
+            "transfer": 3.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 319.0,
+            "transfer": 6.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 328.0,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 346.0,
+            "transfer": 18.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 360.0,
+            "transfer": 14.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 381.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 414.0,
+            "transfer": 33.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 435.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": 455.0,
+            "transfer": 20.0,
+            "eliminated": false
+          },
+          "11": {
+            "votes": 473.0,
+            "transfer": 18.0,
+            "eliminated": false
+          },
+          "12": {
+            "votes": 475.56,
+            "transfer": 2.56,
+            "eliminated": false
+          },
+          "13": {
+            "votes": 576.56,
+            "transfer": 101.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "FEENEY, Andrew [post-92]",
+        "name": "FEENEY, Andrew",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 203.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 208.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 213.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 223.0,
+            "transfer": 10.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 232.0,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 256.0,
+            "transfer": 24.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 274.0,
+            "transfer": 18.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 282.0,
+            "transfer": 8.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 313.0,
+            "transfer": 31.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": 337.0,
+            "transfer": 24.0,
+            "eliminated": false
+          },
+          "11": {
+            "votes": 375.0,
+            "transfer": 38.0,
+            "eliminated": false
+          },
+          "12": {
+            "votes": 387.16,
+            "transfer": 12.16,
+            "eliminated": false
+          },
+          "13": {
+            "votes": 443.16,
+            "transfer": 56.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "OZANNE, Adam",
+        "name": "OZANNE, Adam",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 497.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 504.0,
+            "transfer": 7.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 506.0,
+            "transfer": 2.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 511.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 522.0,
+            "transfer": 11.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 536.0,
+            "transfer": 14.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 541.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 553.0,
+            "transfer": 12.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 587.0,
+            "transfer": 34.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": 648.0,
+            "transfer": 61.0,
+            "eliminated": false
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "PRIAULX, Nicky [woman]",
+        "name": "PRIAULX, Nicky",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 563.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 577.0,
+            "transfer": 14.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 583.0,
+            "transfer": 6.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 613.0,
+            "transfer": 30.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 622.0,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 645.0,
+            "transfer": 23.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 671.0,
+            "transfer": 26.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 699.0,
+            "transfer": 28.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 725.0,
+            "transfer": 26.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": 826.0,
+            "transfer": 101.0,
+            "eliminated": false
+          },
+          "11": {
+            "votes": 922.0,
+            "transfer": 96.0,
+            "eliminated": false
+          },
+          "12": {
+            "votes": 970.64,
+            "transfer": 48.64,
+            "eliminated": false
+          },
+          "13": {
+            "votes": 1066.64,
+            "transfer": 96.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "SLORACH, Roddy [academic related]",
+        "name": "SLORACH, Roddy",
+        "demographic_flags": [
+          "academic related"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 227.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 233.0,
+            "transfer": 6.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 244.0,
+            "transfer": 11.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 255.0,
+            "transfer": 11.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 275.0,
+            "transfer": 20.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 296.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 317.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "10": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "BARKER, Alan",
+        "name": "BARKER, Alan",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 107.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 108.0,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "10": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "PROUT, Ryan",
+        "name": "PROUT, Ryan",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 90.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "10": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "WOOD, Peter",
+        "name": "WOOD, Peter",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 229.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 231.0,
+            "transfer": 2.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 240.0,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 249.0,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 259.0,
+            "transfer": 10.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 271.0,
+            "transfer": 12.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "9": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "10": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "JONES, Dyfrig",
+        "name": "JONES, Dyfrig",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 303.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 326.0,
+            "transfer": 23.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 328.0,
+            "transfer": 2.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 330.0,
+            "transfer": 2.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 335.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 349.0,
+            "transfer": 14.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 378.0,
+            "transfer": 29.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 388.0,
+            "transfer": 10.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 420.0,
+            "transfer": 32.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "11": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "12": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "13": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "BULMER, Peta [woman]",
+        "name": "BULMER, Peta",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 698.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 703.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 727.0,
+            "transfer": 24.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 737.0,
+            "transfer": 10.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 748.0,
+            "transfer": 11.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 770.0,
+            "transfer": 22.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 789.0,
+            "transfer": 19.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 844.0,
+            "transfer": 55.0,
+            "eliminated": false
+          },
+          "9": {
+            "votes": 865.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "10": {
+            "votes": 894.0,
+            "transfer": 29.0,
+            "eliminated": false
+          },
+          "11": {
+            "votes": 947.0,
+            "transfer": 53.0,
+            "eliminated": false
+          },
+          "12": {
+            "votes": 948.28,
+            "transfer": 1.28,
+            "eliminated": false
+          },
+          "13": {
+            "votes": 1103.28,
+            "transfer": 155.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2021-22/pdfs/HE_UK_result_sheet.pdf"
+  },
+  {
+    "contest_name": "NEC Members, London and the East, higher education",
+    "date": "01/03/2022",
+    "seats": "5",
+    "valid_votes": "1720",
+    "invalid_votes": "75",
+    "quota": "286.67",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "JOUGHIN, Kyran [woman]",
+        "name": "JOUGHIN, Kyran",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 313.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 313.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 286.67,
+            "transfer": -26.33,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 286.67,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 286.67,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 286.67,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ANDERSON, Paul",
+        "name": "ANDERSON, Paul",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 137.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 146.0,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 149.06,
+            "transfer": 3.06,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 150.29,
+            "transfer": 1.23,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 171.04,
+            "transfer": 20.75,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 5.04,
+            "transfer": -166.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ASHBY, Dave",
+        "name": "ASHBY, Dave",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 127.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 135.0,
+            "transfer": 8.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 139.14,
+            "transfer": 4.14,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 139.89,
+            "transfer": 0.75,
+            "eliminated": false
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "CHONDROGIANNI, Maria [woman]",
+        "name": "CHONDROGIANNI, Maria",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 176.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 195.0,
+            "transfer": 19.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 200.94,
+            "transfer": 5.94,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 205.11,
+            "transfer": 4.17,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 217.22,
+            "transfer": 12.11,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 282.22,
+            "transfer": 65.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "MURRAY, Esther [woman]",
+        "name": "MURRAY, Esther",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 184.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 195.0,
+            "transfer": 11.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 199.32,
+            "transfer": 4.32,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 200.25,
+            "transfer": 0.93,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 241.96,
+            "transfer": 41.71,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 296.96,
+            "transfer": 55.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "WALLIS, Sean",
+        "name": "WALLIS, Sean",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 297.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 297.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 297.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 286.67,
+            "transfer": -10.33,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 286.67,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 286.67,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "SLORACH, Roddy",
+        "name": "SLORACH, Roddy",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 70.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "KENNEDY, Emma [woman]",
+        "name": "KENNEDY, Emma",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 211.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 226.0,
+            "transfer": 15.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 230.32,
+            "transfer": 4.32,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 231.22,
+            "transfer": 0.9,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 286.22,
+            "transfer": 55.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 286.22,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BROWN, Sarah [woman]",
+        "name": "BROWN, Sarah",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 205.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 209.0,
+            "transfer": 4.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 212.51,
+            "transfer": 3.51,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 212.93,
+            "transfer": 0.42,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 218.71,
+            "transfer": 5.78,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 244.71,
+            "transfer": 26.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2021-22/pdfs/LondonEast_result_sheet.pdf"
+  },
+  {
+    "contest_name": "Representative of migrant members (casual vacancy)",
+    "date": "01/03/2022",
+    "seats": "1",
+    "valid_votes": "8560",
+    "invalid_votes": "1007",
+    "quota": "3808",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "DESMOND, Stephen Albert",
+        "name": "DESMOND, Stephen Albert",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2705.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3345.0,
+            "transfer": 640.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "SAEED, Khizer",
+        "name": "SAEED, Khizer",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3351.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 4271.0,
+            "transfer": 920.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CHAMI, Dima",
+        "name": "CHAMI, Dima",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2504.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2021-22/pdfs/Migrant_members_result_sheet.pdf"
+  },
+  {
+    "contest_name": "NEC Members, North East, higher education",
+    "date": "01/03/2022",
+    "seats": "3",
+    "valid_votes": "1047",
+    "invalid_votes": "44",
+    "quota": "258.75",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "CAMPBELL, Laura Chuhan",
+        "name": "CAMPBELL, Laura Chuhan",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 246.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 261.0,
+            "transfer": 15.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 288.0,
+            "transfer": 27.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 288.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 258.75,
+            "transfer": -29.25,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "LARGE, Mary-ellen",
+        "name": "LARGE, Mary-ellen",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 112.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 125.0,
+            "transfer": 13.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "FEENEY, Andrew",
+        "name": "FEENEY, Andrew",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 123.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 128.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 146.0,
+            "transfer": 18.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "PERRY, Matt",
+        "name": "PERRY, Matt",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 181.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 196.0,
+            "transfer": 15.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 218.0,
+            "transfer": 22.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 267.0,
+            "transfer": 49.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 267.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "EMMEL, Nick",
+        "name": "EMMEL, Nick",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 93.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "HARVIE, David",
+        "name": "HARVIE, David",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 139.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 169.0,
+            "transfer": 30.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 191.0,
+            "transfer": 22.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 213.0,
+            "transfer": 22.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 220.0,
+            "transfer": 7.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "GROOT, Joanna de",
+        "name": "GROOT, Joanna de",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 153.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 167.0,
+            "transfer": 14.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 192.0,
+            "transfer": 25.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 240.0,
+            "transfer": 48.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 249.0,
+            "transfer": 9.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2021-22/pdfs/NorthEastresult_sheet.pdf"
+  },
+  {
+    "contest_name": "Trustees",
+    "date": "01/03/2022",
+    "seats": "2",
+    "valid_votes": "9005",
+    "invalid_votes": "562",
+    "quota": "2990.67",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "ROOS, Anna Marie",
+        "name": "ROOS, Anna Marie",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2964.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3319.0,
+            "transfer": 355.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2990.67,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 2990.67,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 2990.67,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 2990.67,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BARTON, Mike",
+        "name": "BARTON, Mike",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1209.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1263.0,
+            "transfer": 54.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1306.0,
+            "transfer": 43.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1400.0,
+            "transfer": 94.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 2154.0,
+            "transfer": 754.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 2426.0,
+            "transfer": 272.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "DESMOND, Stephen Albert",
+        "name": "DESMOND, Stephen Albert",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 973.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1050.0,
+            "transfer": 77.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1111.0,
+            "transfer": 61.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1234.0,
+            "transfer": 123.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1339.0,
+            "transfer": 105.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "JONES, Chris",
+        "name": "JONES, Chris",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1050.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1091.0,
+            "transfer": 41.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1111.0,
+            "transfer": 20.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1192.0,
+            "transfer": 81.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "MACFARLANE, Neil",
+        "name": "MACFARLANE, Neil",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1214.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1364.0,
+            "transfer": 150.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1421.0,
+            "transfer": 57.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1817.0,
+            "transfer": 396.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1912.0,
+            "transfer": 95.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 2453.0,
+            "transfer": 541.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "LIMB, David",
+        "name": "LIMB, David",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 844.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 885.0,
+            "transfer": 41.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 909.0,
+            "transfer": 24.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "BROWN, Steve",
+        "name": "BROWN, Steve",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 751.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2021-22/pdfs/Trustees_result_sheet.pdf"
+  },
+  {
+    "contest_name": "Vice President (becoming President in 2024-2025)",
+    "date": "01/03/2022",
+    "seats": "1",
+    "valid_votes": "9077",
+    "invalid_votes": "490",
+    "quota": "4267.5",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "OJINNAKA, Juliana",
+        "name": "OJINNAKA, Juliana",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3466.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3884.0,
+            "transfer": 418.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "LOOBY, Maxine",
+        "name": "LOOBY, Maxine",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3958.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 4651.0,
+            "transfer": 693.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ROCHE, Patricia",
+        "name": "ROCHE, Patricia",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1653.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2021-22/pdfs/Vice_president_result_sheet.pdf"
+  },
+  {
+    "contest_name": "Representatives of women members, higher education",
+    "date": "01/03/2022",
+    "seats": "3",
+    "valid_votes": "7665",
+    "invalid_votes": "1902",
+    "quota": "1916.25",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "EDGE, Jo",
+        "name": "EDGE, Jo",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3204.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CAMPBELL, Laura Chuhan",
+        "name": "CAMPBELL, Laura Chuhan",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "KEYSE, Rhian Elinor",
+        "name": "KEYSE, Rhian Elinor",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "REES, Emma",
+        "name": "REES, Emma",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1934.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "GOW, Ann",
+        "name": "GOW, Ann",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "GROOT, Joanna de",
+        "name": "GROOT, Joanna de",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "HEARN, Julie",
+        "name": "HEARN, Julie",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2527.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CHONDROGIANNI, Maria",
+        "name": "CHONDROGIANNI, Maria",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      }
+    ],
+    "source_pdf": "data/raw/2021-22/pdfs/Women_HE_result_sheet.pdf"
+  }
+]

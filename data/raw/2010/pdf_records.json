@@ -1,0 +1,750 @@
+[
+  {
+    "contest_name": "UK-elected FE",
+    "date": "05/03/2010",
+    "seats": "4",
+    "valid_votes": "3755",
+    "invalid_votes": "20",
+    "quota": "751",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "Mike Barton",
+        "name": "Mike Barton",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 566.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 633.2,
+            "transfer": 67.2,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jim Thakoordin",
+        "name": "Jim Thakoordin",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 681.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 780.05,
+            "transfer": 99.05,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Richard McEwan",
+        "name": "Richard McEwan",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 720.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 776.0,
+            "transfer": 56.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Craig Lewis",
+        "name": "Craig Lewis",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 714.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 810.25,
+            "transfer": 96.25,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "John McCormack",
+        "name": "John McCormack",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1074.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 751.0,
+            "transfer": -323.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2010/pdfs/elect10_countFEUK.pdf"
+  },
+  {
+    "contest_name": "North East FE",
+    "date": "05/03/2010",
+    "seats": "2",
+    "valid_votes": "736",
+    "invalid_votes": "4",
+    "quota": "245.34",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "David O'Toole",
+        "name": "David O'Toole",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 283.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Vanessa Maughan",
+        "name": "Vanessa Maughan",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 194.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dave Gibson",
+        "name": "Dave Gibson",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 259.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2010/pdfs/elect10_countFEnortheast.pdf"
+  },
+  {
+    "contest_name": "UK-elected HE",
+    "date": "17/03/2010",
+    "seats": "6",
+    "valid_votes": "6936",
+    "invalid_votes": "89",
+    "quota": "990.86",
+    "candidates": [
+      {
+        "name_raw": "Dominique Lauterburg",
+        "name": "Dominique Lauterburg",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1203.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 990.86,
+            "transfer": -212.14,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 990.86,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 990.86,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 990.86,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Gordon Watson",
+        "name": "Gordon Watson",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 557.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 578.78,
+            "transfer": 21.78,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 586.26,
+            "transfer": 7.48,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 633.22,
+            "transfer": 46.96,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 682.22,
+            "transfer": 49.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mark Campbell",
+        "name": "Mark Campbell",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Angi Lamb",
+        "name": "Angi Lamb",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 829.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 874.36,
+            "transfer": 45.36,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 880.92,
+            "transfer": 6.56,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 936.38,
+            "transfer": 55.46,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1075.38,
+            "transfer": 139.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Roger Brooks",
+        "name": "Roger Brooks",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1037.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1037.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 990.86,
+            "transfer": -46.14,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 990.86,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 990.86,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Steve Clark",
+        "name": "Steve Clark",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 775.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 809.92,
+            "transfer": 34.92,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 820.8,
+            "transfer": 10.88,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 941.24,
+            "transfer": 120.44,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1039.24,
+            "transfer": 98.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Sue Blackwell",
+        "name": "Sue Blackwell",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 986.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1017.5,
+            "transfer": 31.5,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1017.5,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1017.5,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1017.5,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Bethan Norfor",
+        "name": "Bethan Norfor",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 433.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 447.22,
+            "transfer": 14.22,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 450.78,
+            "transfer": 3.56,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 497.4,
+            "transfer": 46.62,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 20.4,
+            "transfer": -477.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Christine Vi\u00e8",
+        "name": "Christine Vi\u00e8",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 740.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 776.18,
+            "transfer": 36.18,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 779.86,
+            "transfer": 3.68,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 858.08,
+            "transfer": 78.22,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 953.08,
+            "transfer": 95.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Bob Langridge",
+        "name": "Bob Langridge",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 376.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 398.14,
+            "transfer": 22.14,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 403.1,
+            "transfer": 4.96,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2010/pdfs/elect10_countHEUK.pdf"
+  },
+  {
+    "contest_name": "UCU-London and East HE",
+    "date": "17/03/2010",
+    "seats": "3",
+    "valid_votes": "1928",
+    "invalid_votes": "57",
+    "quota": "482",
+    "candidates": [
+      {
+        "name_raw": "Mark Campbell",
+        "name": "Mark Campbell",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 555.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 482.0,
+            "transfer": -73.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jane Hardy",
+        "name": "Jane Hardy",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Jim Wolfreys",
+        "name": "Jim Wolfreys",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 445.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 497.32,
+            "transfer": 52.32,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Steve Sangwine",
+        "name": "Steve Sangwine",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 553.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 553.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Simon Renton",
+        "name": "Simon Renton",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 375.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 395.32,
+            "transfer": 20.32,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2010/pdfs/elect10_countHElondoneast.pdf"
+  },
+  {
+    "contest_name": "North East HE",
+    "date": "05/03/2010",
+    "seats": "3",
+    "valid_votes": "1092",
+    "invalid_votes": "9",
+    "quota": "273",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Gavin Reid",
+        "name": "Gavin Reid",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 297.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 297.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Joanna de Groot",
+        "name": "Joanna de Groot",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 379.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 273.0,
+            "transfer": -106.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Elizabeth Lawrence",
+        "name": "Elizabeth Lawrence",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 260.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 327.32,
+            "transfer": 67.32,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jeff Fowler",
+        "name": "Jeff Fowler",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 156.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 192.36,
+            "transfer": 36.36,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2010/pdfs/elect10_countHEnortheast.pdf"
+  },
+  {
+    "contest_name": "Women Members HE",
+    "date": "05/03/2010",
+    "seats": "3",
+    "valid_votes": "10554",
+    "invalid_votes": "894",
+    "quota": "2638.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Marion Hersh",
+        "name": "Marion Hersh",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2675.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2675.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ann Blair",
+        "name": "Ann Blair",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2945.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2945.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Veronica Killen",
+        "name": "Veronica Killen",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1859.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2187.0,
+            "transfer": 328.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jennifer Dods",
+        "name": "Jennifer Dods",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 892.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Pauline Collins",
+        "name": "Pauline Collins",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2183.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2602.0,
+            "transfer": 419.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2010/pdfs/elect10_countwomenHE.pdf"
+  }
+]

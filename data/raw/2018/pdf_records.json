@@ -1,0 +1,1271 @@
+[
+  {
+    "contest_name": "FE - London and the East",
+    "date": "02/03/2018",
+    "seats": "2",
+    "valid_votes": "494",
+    "invalid_votes": "30",
+    "quota": "164.67",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "ROBERTS, Julia",
+        "name": "ROBERTS, Julia",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 186.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "VERNELL, Sean",
+        "name": "VERNELL, Sean",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 192.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "MONAGHAN, Peter",
+        "name": "MONAGHAN, Peter",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 116.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_FE_London_and_the_East.pdf"
+  },
+  {
+    "contest_name": "FE - North East",
+    "date": "02/03/2018",
+    "seats": "1",
+    "valid_votes": "395",
+    "invalid_votes": "14",
+    "quota": "197.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "GOODFELLOW, Rob",
+        "name": "GOODFELLOW, Rob",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 259.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "RASHID, Saleem",
+        "name": "RASHID, Saleem",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 136.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_FE_North_East.pdf"
+  },
+  {
+    "contest_name": "FE - North West",
+    "date": "02/03/2018",
+    "seats": "1",
+    "valid_votes": "385",
+    "invalid_votes": "16",
+    "quota": "192.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "CODY, Carol",
+        "name": "CODY, Carol",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 142.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "FARRAR, Janet",
+        "name": "FARRAR, Janet",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 243.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_FE_North_West.pdf"
+  },
+  {
+    "contest_name": "UK-elected members FE",
+    "date": "02/03/2018",
+    "seats": "3",
+    "valid_votes": "2068",
+    "invalid_votes": "147",
+    "quota": "517",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "MONAGHAN, Peter",
+        "name": "MONAGHAN, Peter",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 316.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 341.0,
+            "transfer": 25.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "CLUNAS, Robert",
+        "name": "CLUNAS, Robert",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 522.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 522.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 522.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "HILL, Margot",
+        "name": "HILL, Margot",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 442.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 516.0,
+            "transfer": 74.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 516.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "MCEWAN, Richard",
+        "name": "MCEWAN, Richard",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 212.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "STOUPH, Mel [ACE]",
+        "name": "STOUPH, Mel",
+        "demographic_flags": [
+          "ACE"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 358.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 391.0,
+            "transfer": 33.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 567.0,
+            "transfer": 176.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "KENT, Naina [ACE]",
+        "name": "KENT, Naina",
+        "demographic_flags": [
+          "ACE"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 218.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 284.0,
+            "transfer": 66.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 363.0,
+            "transfer": 79.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_FE_UK-elected.pdf"
+  },
+  {
+    "contest_name": "HE - London and the East",
+    "date": "02/03/2018",
+    "seats": "4",
+    "valid_votes": "1490",
+    "invalid_votes": "45",
+    "quota": "298",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "WILLIAMS, Amanda",
+        "name": "WILLIAMS, Amanda",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 276.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 278.58,
+            "transfer": 2.58,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 318.58,
+            "transfer": 40.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ANDERSON, Paul",
+        "name": "ANDERSON, Paul",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 241.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 244.96,
+            "transfer": 3.96,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 288.96,
+            "transfer": 44.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "IOANNOU, Ioanna",
+        "name": "IOANNOU, Ioanna",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 319.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 298.0,
+            "transfer": -21.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 298.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BROWN, Sarah",
+        "name": "BROWN, Sarah",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 198.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 201.18,
+            "transfer": 3.18,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 241.18,
+            "transfer": 40.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "WALLIS, Sean",
+        "name": "WALLIS, Sean",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 273.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 278.34,
+            "transfer": 5.34,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 319.34,
+            "transfer": 41.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "COHEN, Rachel",
+        "name": "COHEN, Rachel",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 183.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 186.78,
+            "transfer": 3.78,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 3.78,
+            "transfer": -183.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_HE_London_and_the_East.pdf"
+  },
+  {
+    "contest_name": "HE - North East",
+    "date": "02/03/2018",
+    "seats": "3",
+    "valid_votes": "1119",
+    "invalid_votes": "51",
+    "quota": "279.75",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "HARVEY, Joan",
+        "name": "HARVEY, Joan",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 411.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 279.75,
+            "transfer": -131.25,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 279.75,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ERRINGTON, Paul",
+        "name": "ERRINGTON, Paul",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 181.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 241.86,
+            "transfer": 60.86,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 287.86,
+            "transfer": 46.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "LAMMIMAN, Mike",
+        "name": "LAMMIMAN, Mike",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 155.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 178.46,
+            "transfer": 23.46,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 23.46,
+            "transfer": -155.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "LUI (DR SUN CHONG LUI), Steve",
+        "name": "LUI (DR SUN CHONG LUI), Steve",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 194.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 221.88,
+            "transfer": 27.88,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 279.88,
+            "transfer": 58.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "FOWLER, Jeff",
+        "name": "FOWLER, Jeff",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 178.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 196.7,
+            "transfer": 18.7,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 228.7,
+            "transfer": 32.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_HE_North_East.pdf"
+  },
+  {
+    "contest_name": "HE - Northern Ireland",
+    "date": "02/03/2018",
+    "seats": "1",
+    "valid_votes": "163",
+    "invalid_votes": "0",
+    "quota": "81.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "COLLINS, Peter",
+        "name": "COLLINS, Peter",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 55.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "PRENDERGAST, Renee",
+        "name": "PRENDERGAST, Renee",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 108.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_HE_Northern_Ireland.pdf"
+  },
+  {
+    "contest_name": "UK-Elected member HE (casual vacancy)",
+    "date": "02/03/2018",
+    "seats": "1",
+    "valid_votes": "6035",
+    "invalid_votes": "988",
+    "quota": "3017.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "HERSH, Marion",
+        "name": "HERSH, Marion",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 4562.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "COLLINS, Jacky",
+        "name": "COLLINS, Jacky",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1473.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_HE_UK-_elected_casual_vacancy.pdf"
+  },
+  {
+    "contest_name": "UK-elected members HE",
+    "date": "02/03/2018",
+    "seats": "5",
+    "valid_votes": "6767",
+    "invalid_votes": "256",
+    "quota": "1127.84",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "DE GROOT, Joanna [woman]",
+        "name": "DE GROOT, Joanna",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1880.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1127.84,
+            "transfer": -752.16,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1127.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1127.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1127.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1127.84,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "McNEILL, Jo [woman, AR]",
+        "name": "McNEILL, Jo",
+        "demographic_flags": [
+          "woman, AR"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1184.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1184.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1184.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1184.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1127.84,
+            "transfer": -56.16,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1127.84,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ANDERSON, Dave [AR]",
+        "name": "ANDERSON, Dave",
+        "demographic_flags": [
+          "AR"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 546.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 749.36,
+            "transfer": 203.36,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 771.23,
+            "transfer": 21.87,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 835.84,
+            "transfer": 64.61,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 842.6,
+            "transfer": 6.76,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1002.6,
+            "transfer": 160.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ABEL, Mark [post-92]",
+        "name": "ABEL, Mark",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 562.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 625.55,
+            "transfer": 63.55,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 650.7,
+            "transfer": 25.15,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 767.9,
+            "transfer": 117.2,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 781.9,
+            "transfer": 14.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 864.9,
+            "transfer": 83.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "DI MUCCIO, Elio [AR]",
+        "name": "DI MUCCIO, Elio",
+        "demographic_flags": [
+          "AR"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 415.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 473.63,
+            "transfer": 58.63,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 523.5,
+            "transfer": 49.87,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "McKRELL, Michael [post-92]",
+        "name": "McKRELL, Michael",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 471.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 603.02,
+            "transfer": 132.02,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 622.94,
+            "transfer": 19.92,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 712.83,
+            "transfer": 89.89,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 718.59,
+            "transfer": 5.76,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 154.59,
+            "transfer": -564.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "HEARN, Julie [woman]",
+        "name": "HEARN, Julie",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 684.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 802.9,
+            "transfer": 118.9,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 887.69,
+            "transfer": 84.79,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1026.19,
+            "transfer": 138.5,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1040.11,
+            "transfer": 13.92,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1154.11,
+            "transfer": 114.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BANGA, Sunil",
+        "name": "BANGA, Sunil",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 223.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 256.62,
+            "transfer": 33.62,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "CARLEY, Michael",
+        "name": "CARLEY, Michael",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 802.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 937.71,
+            "transfer": 135.71,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 977.86,
+            "transfer": 40.15,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1056.65,
+            "transfer": 78.79,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1061.21,
+            "transfer": 4.56,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1213.21,
+            "transfer": 152.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_HE_UK-elected.pdf"
+  },
+  {
+    "contest_name": "Reps of Women Members from the FE sector",
+    "date": "02/03/2018",
+    "seats": "2",
+    "valid_votes": "8966",
+    "invalid_votes": "1266",
+    "quota": "2988.67",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "HARRIS, Martha",
+        "name": "HARRIS, Martha",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2235.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CAMPBELL, Carolyn",
+        "name": "CAMPBELL, Carolyn",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3471.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "WHITE, Elaine",
+        "name": "WHITE, Elaine",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3260.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_Reps_of_women_members_FE.pdf"
+  },
+  {
+    "contest_name": "Rep of Members in Landbased Education",
+    "date": "06/02/2018",
+    "seats": "1",
+    "valid_votes": "9160",
+    "invalid_votes": "1072",
+    "quota": "4580",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "MICHALOPOULOU, Eleni",
+        "name": "MICHALOPOULOU, Eleni",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 5255.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BURLEY, Helen",
+        "name": "BURLEY, Helen",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3905.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheet_rep_of_members_in_landbased_education.pdf"
+  },
+  {
+    "contest_name": "Reps of Women Members from the HE sector",
+    "date": "02/03/2018",
+    "seats": "3",
+    "valid_votes": "9365",
+    "invalid_votes": "867",
+    "quota": "2341.25",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "ARIZA, Pura",
+        "name": "ARIZA, Pura",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2210.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2538.0,
+            "transfer": 328.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2538.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "SHOWUNMI, Victoria",
+        "name": "SHOWUNMI, Victoria",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1586.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1812.0,
+            "transfer": 226.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1997.85,
+            "transfer": 185.85,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BOGAIN, Ariane",
+        "name": "BOGAIN, Ariane",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1844.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2185.0,
+            "transfer": 341.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2399.83,
+            "transfer": 214.83,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ABBOTT, Sue",
+        "name": "ABBOTT, Sue",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2758.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2758.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2341.25,
+            "transfer": -416.75,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "MAYER, Marian",
+        "name": "MAYER, Marian",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 967.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/Count_sheets_Reps_of_women_members_HE.pdf"
+  },
+  {
+    "contest_name": "Vice President from the FE",
+    "date": "02/03/2018",
+    "seats": "1",
+    "valid_votes": "9379",
+    "invalid_votes": "853",
+    "quota": "4689.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "SANGHERA, Nita",
+        "name": "SANGHERA, Nita",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 5206.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "HAMILTON, Brian",
+        "name": "HAMILTON, Brian",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 4173.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2018/pdfs/count_sheet_Vice_President_FE.pdf"
+  }
+]

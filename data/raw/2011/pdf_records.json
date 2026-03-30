@@ -1,0 +1,464 @@
+[
+  {
+    "contest_name": "Members",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_hesouth_report.pdf",
+    "source_format": "text",
+    "date": "04/03/2010",
+    "seats": "3",
+    "valid_votes": "1957",
+    "invalid_votes": "82",
+    "quota": "= 489.25",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Tom HICKEY",
+        "name": "Tom HICKEY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 475.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 590.26,
+            "transfer": 115.26,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Lesley KANE",
+        "name": "Lesley KANE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 840.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 489.25,
+            "transfer": -350.75,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jim GUILD",
+        "name": "Jim GUILD",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 236.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 310.97,
+            "transfer": 74.97,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Bob LANGRIDGE",
+        "name": "Bob LANGRIDGE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 406.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 560.53,
+            "transfer": 154.53,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "With",
+        "name": "With",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 840.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UK Higher Education NEC Members",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_heuk_report.pdf",
+    "source_format": "text",
+    "date": "04/03/2010",
+    "valid_votes": "9052",
+    "invalid_votes": "473",
+    "quota": "1131.5",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Jimmy DONAGHEY",
+        "name": "Jimmy DONAGHEY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1437.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1437.0,
+            "transfer": 1437.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1131.5,
+            "transfer": -305.5,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1131.5,
+            "transfer": 1131.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "92)",
+        "name": "92)",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 248.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 263.6,
+            "transfer": 15.6,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 282.5,
+            "transfer": 18.9,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 311.54,
+            "transfer": 29.04,
+            "eliminated": false
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Joe GLUZA",
+        "name": "Joe GLUZA",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1745.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1131.5,
+            "transfer": -613.5,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1131.5,
+            "transfer": 1131.5,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1131.5,
+            "transfer": 1131.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "(post-92)",
+        "name": "(post-92)",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1247.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1247.0,
+            "transfer": 1247.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1247.0,
+            "transfer": 1247.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1131.5,
+            "transfer": -115.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "(post-92)",
+        "name": "(post-92)",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 901.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1126.6,
+            "transfer": 225.6,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1223.2,
+            "transfer": 96.6,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1223.2,
+            "transfer": 1223.2,
+            "eliminated": false
+          },
+          "5": {
+            "votes": null,
+            "transfer": 1223.2,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "WHYLEY",
+        "name": "WHYLEY",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 405.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 613.0,
+            "transfer": 208.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 664.45,
+            "transfer": 51.45,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 801.25,
+            "transfer": 136.8,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 936.62,
+            "transfer": 135.37,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 964.1,
+            "transfer": 27.48,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Malcolm POVEY",
+        "name": "Malcolm POVEY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1630.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": -498.5,
+            "transfer": 1630.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1131.5,
+            "transfer": 1131.5,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1131.5,
+            "transfer": 1131.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BHATTACHARYYA",
+        "name": "BHATTACHARYYA",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 616.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 689.2,
+            "transfer": 73.2,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 841.1,
+            "transfer": 151.9,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 910.94,
+            "transfer": 69.84,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 989.39,
+            "transfer": 78.45,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1069.19,
+            "transfer": 79.8,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "(post-92)",
+        "name": "(post-92)",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 823.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 907.0,
+            "transfer": 84.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1081.3,
+            "transfer": 174.3,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1144.66,
+            "transfer": 63.36,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1144.66,
+            "transfer": 1144.66,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "President",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_hevp_report.pdf",
+    "source_format": "text",
+    "date": "04/03/2010",
+    "seats": "1",
+    "valid_votes": "13942",
+    "invalid_votes": "649",
+    "quota": "= 6971.00",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Jim WOLFREYS",
+        "name": "Jim WOLFREYS",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 5409.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Simon RENTON",
+        "name": "Simon RENTON",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 8533.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "With",
+        "name": "With",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 8533.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  }
+]

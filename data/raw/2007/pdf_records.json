@@ -1,0 +1,4147 @@
+[
+  {
+    "contest_name": "UCU - (Further Education) London and East",
+    "source_pdf": "data/raw/2007/pdfs/felondonandeast_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "2",
+    "valid_votes": "1106",
+    "invalid_votes": "13",
+    "quota": "368.67",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Mr Sean Vernell",
+        "name": "Mr Sean Vernell",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 387.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 368.67,
+            "transfer": -18.33,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 368.67,
+            "transfer": 368.67,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Jim Thakoordin",
+        "name": "Mr Jim Thakoordin",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 136.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 139.1,
+            "transfer": 3.1,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Peter Friend",
+        "name": "Mr Peter Friend",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 154.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 159.6,
+            "transfer": 5.6,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 203.5,
+            "transfer": 43.9,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 6.5,
+            "transfer": -197.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr David Armstrong",
+        "name": "Mr David Armstrong",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 216.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 222.65,
+            "transfer": 6.65,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 251.0,
+            "transfer": 28.35,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 329.0,
+            "transfer": 78.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mrs Sheila Deare",
+        "name": "Mrs Sheila Deare",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 213.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 215.1,
+            "transfer": 2.1,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 266.95,
+            "transfer": 51.85,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 345.95,
+            "transfer": 79.0,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU - Midlands",
+    "source_pdf": "data/raw/2007/pdfs/femidlands_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "2",
+    "valid_votes": "840",
+    "invalid_votes": "11",
+    "quota": "280",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Mr Mario Michalski",
+        "name": "Mr Mario Michalski",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 143.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 150.52,
+            "transfer": 7.52,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr James Eaden",
+        "name": "Mr James Eaden",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 272.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 279.2,
+            "transfer": 7.2,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Caroline Gray",
+        "name": "Ms Caroline Gray",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 304.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 280.0,
+            "transfer": -24.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Helen Bowler",
+        "name": "Ms Helen Bowler",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 121.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 127.96,
+            "transfer": 6.96,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU-FE-North East",
+    "source_pdf": "data/raw/2007/pdfs/fenortheast_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "2",
+    "valid_votes": "930",
+    "invalid_votes": "4",
+    "quota": "310",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Ms Julie Kelley",
+        "name": "Ms Julie Kelley",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 275.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 306.11,
+            "transfer": 31.11,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Howard Miles",
+        "name": "Mr Howard Miles",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 293.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 312.55,
+            "transfer": 19.55,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Jon Bryan",
+        "name": "Mr Jon Bryan",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 362.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 310.0,
+            "transfer": -52.0,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU-FE-South",
+    "source_pdf": "data/raw/2007/pdfs/fesouth_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "2",
+    "valid_votes": "864",
+    "invalid_votes": "7",
+    "quota": "288",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Ms Lynne Chamberlain",
+        "name": "Ms Lynne Chamberlain",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 214.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Stephen Reid",
+        "name": "Mr Stephen Reid",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 349.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Margaret George",
+        "name": "Ms Margaret George",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 301.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU - (Higher Education) London and East",
+    "source_pdf": "data/raw/2007/pdfs/helondonandeast_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "3",
+    "valid_votes": "1928",
+    "invalid_votes": "56",
+    "quota": "469.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Ms Jill Jones",
+        "name": "Ms Jill Jones",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 457.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 469.0,
+            "transfer": 12.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 558.0,
+            "transfer": 89.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 469.5,
+            "transfer": -88.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Dorothy Wright",
+        "name": "Ms Dorothy Wright",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 86.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Simon Renton",
+        "name": "Mr Simon Renton",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 430.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 450.0,
+            "transfer": 20.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 532.0,
+            "transfer": 82.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": 532.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Jane Hardy",
+        "name": "Ms Jane Hardy",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 348.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 368.0,
+            "transfer": 20.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 420.0,
+            "transfer": 52.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 452.0,
+            "transfer": 32.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Jean Harrison",
+        "name": "Ms Jean Harrison",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 161.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 173.0,
+            "transfer": 12.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Ryan Kemp",
+        "name": "Mr Ryan Kemp",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 134.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 139.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Jim Wolfreys",
+        "name": "Mr Jim Wolfreys",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 312.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 317.0,
+            "transfer": 5.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 368.0,
+            "transfer": 51.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 385.0,
+            "transfer": 17.0,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU-HE-Midlands",
+    "source_pdf": "data/raw/2007/pdfs/hemidlands_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "2",
+    "valid_votes": "1411",
+    "invalid_votes": "16",
+    "quota": "470.34",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Mr Nick James",
+        "name": "Mr Nick James",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 302.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 317.21,
+            "transfer": 15.21,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 413.21,
+            "transfer": 96.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Anne-marie Greene",
+        "name": "Dr Anne-marie Greene",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 508.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 470.34,
+            "transfer": -37.66,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 470.34,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Neil Williamson",
+        "name": "Mr Neil Williamson",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 329.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 338.63,
+            "transfer": 9.63,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 448.63,
+            "transfer": 110.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Colin Bryson",
+        "name": "Mr Colin Bryson",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 272.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 281.45,
+            "transfer": 9.45,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 9.45,
+            "transfer": -272.0,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU - North East",
+    "source_pdf": "data/raw/2007/pdfs/henortheast_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "3",
+    "valid_votes": "1710",
+    "invalid_votes": "22",
+    "quota": "427.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Dr Elizabeth Lawrence",
+        "name": "Dr Elizabeth Lawrence",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 543.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": -115.5,
+            "transfer": 543.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 427.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Jeff Fowler",
+        "name": "Mr Jeff Fowler",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 218.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 369.8,
+            "transfer": 151.8,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 437.08,
+            "transfer": 67.28,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Andrew Feeney",
+        "name": "Mr Andrew Feeney",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 206.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 365.39,
+            "transfer": 159.39,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 413.24,
+            "transfer": 47.85,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Gavin Reid",
+        "name": "Dr Gavin Reid",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 743.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 427.5,
+            "transfer": -315.5,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 427.5,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU - North West",
+    "source_pdf": "data/raw/2007/pdfs/henorthwest_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "2",
+    "valid_votes": "1120",
+    "invalid_votes": "18",
+    "quota": "340.67",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Dr Karen Evans",
+        "name": "Dr Karen Evans",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 298.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 352.0,
+            "transfer": 54.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 403.0,
+            "transfer": 51.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Bill Gulam",
+        "name": "Dr Bill Gulam",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 204.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 224.0,
+            "transfer": 20.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 259.0,
+            "transfer": 35.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Neil Douglas",
+        "name": "Mr Neil Douglas",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 182.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 216.0,
+            "transfer": 34.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Roger Brooks",
+        "name": "Dr Roger Brooks",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 274.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 301.0,
+            "transfer": 27.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 360.0,
+            "transfer": 59.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Marianne Quick",
+        "name": "Ms Marianne Quick",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 162.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU - South",
+    "source_pdf": "data/raw/2007/pdfs/hesouth_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "3",
+    "valid_votes": "2008",
+    "invalid_votes": "38",
+    "quota": "492",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Dr Michael Jardine",
+        "name": "Dr Michael Jardine",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 277.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Tom Hickey",
+        "name": "Mr Tom Hickey",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 447.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 512.0,
+            "transfer": 65.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 512.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Jim Guild",
+        "name": "Mr Jim Guild",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 491.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 539.0,
+            "transfer": 48.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 492.0,
+            "transfer": -47.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Bevis Miller",
+        "name": "Dr Bevis Miller",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 387.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 471.0,
+            "transfer": 84.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 491.0,
+            "transfer": 20.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Terry Hoad",
+        "name": "Mr Terry Hoad",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 406.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 446.0,
+            "transfer": 40.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 465.0,
+            "transfer": 19.0,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU-President-elect FE",
+    "source_pdf": "data/raw/2007/pdfs/pres-electfe_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "1",
+    "valid_votes": "12152",
+    "invalid_votes": "4563",
+    "quota": "6076",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Mrs Sasha Callaghan",
+        "name": "Mrs Sasha Callaghan",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 6250.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Mick Barr",
+        "name": "Mr Mick Barr",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 5902.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU-President-elect HE",
+    "source_pdf": "data/raw/2007/pdfs/pres-electhe_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "1",
+    "valid_votes": "13090",
+    "invalid_votes": "3625",
+    "quota": "6024.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Mr Neil Williamson",
+        "name": "Mr Neil Williamson",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3489.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Maeve Landman",
+        "name": "Ms Maeve Landman",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 4574.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 5880.0,
+            "transfer": 1306.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Alastair Hunter",
+        "name": "Dr Alastair Hunter",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 5027.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 6169.0,
+            "transfer": 1142.0,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU-Trustees",
+    "source_pdf": "data/raw/2007/pdfs/trustees_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "4",
+    "valid_votes": "13109",
+    "invalid_votes": "3606",
+    "quota": "2560.4",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Mr Fawzi Ibrahim",
+        "name": "Mr Fawzi Ibrahim",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2126.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2261.0,
+            "transfer": 135.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2369.0,
+            "transfer": 108.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 2455.0,
+            "transfer": 86.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 2615.0,
+            "transfer": 160.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Dennis Wright",
+        "name": "Dr Dennis Wright",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1610.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1634.0,
+            "transfer": 24.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1708.0,
+            "transfer": 74.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1814.0,
+            "transfer": 106.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1876.0,
+            "transfer": 62.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Nigel Gates",
+        "name": "Mr Nigel Gates",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 767.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 793.0,
+            "transfer": 26.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 840.0,
+            "transfer": 47.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Dave Guppy",
+        "name": "Mr Dave Guppy",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1330.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1359.0,
+            "transfer": 29.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1431.0,
+            "transfer": 72.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1584.0,
+            "transfer": 153.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1657.0,
+            "transfer": 73.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Kenneth Childerhouse",
+        "name": "Mr Kenneth Childerhouse",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 767.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 800.0,
+            "transfer": 33.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 862.0,
+            "transfer": 62.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 961.0,
+            "transfer": 99.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1033.0,
+            "transfer": 72.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Mike Farmer",
+        "name": "Mr Mike Farmer",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 650.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 708.0,
+            "transfer": 58.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Sam Allen",
+        "name": "Mr Sam Allen",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 738.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 791.0,
+            "transfer": 53.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 867.0,
+            "transfer": 76.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 935.0,
+            "transfer": 68.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr John Wilkin",
+        "name": "Mr John Wilkin",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 538.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Professor Neil Macfarlane",
+        "name": "Professor Neil Macfarlane",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2182.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2240.0,
+            "transfer": 58.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2349.0,
+            "transfer": 109.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 2506.0,
+            "transfer": 157.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 2718.0,
+            "transfer": 212.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Paul Hudson",
+        "name": "Dr Paul Hudson",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1069.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1097.0,
+            "transfer": 28.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1147.0,
+            "transfer": 50.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1196.0,
+            "transfer": 49.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1283.0,
+            "transfer": 87.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Paul Russell",
+        "name": "Mr Paul Russell",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1332.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1379.0,
+            "transfer": 47.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1443.0,
+            "transfer": 64.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1490.0,
+            "transfer": 47.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1620.0,
+            "transfer": 130.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Fawzi Ibrahim",
+        "name": "Mr Fawzi Ibrahim",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2615.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2615.0,
+            "transfer": 2615.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 2615.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Dennis Wright",
+        "name": "Dr Dennis Wright",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1876.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1993.0,
+            "transfer": 117.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2426.0,
+            "transfer": 433.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": 2426.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Nigel Gates",
+        "name": "Mr Nigel Gates",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Dave Guppy",
+        "name": "Mr Dave Guppy",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1657.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1792.0,
+            "transfer": 135.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2085.0,
+            "transfer": 293.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 2114.0,
+            "transfer": 29.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Kenneth Childerhouse",
+        "name": "Mr Kenneth Childerhouse",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1033.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Mike Farmer",
+        "name": "Mr Mike Farmer",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Sam Allen",
+        "name": "Mr Sam Allen",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr John Wilkin",
+        "name": "Mr John Wilkin",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Professor Neil Macfarlane",
+        "name": "Professor Neil Macfarlane",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2718.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2718.0,
+            "transfer": 2718.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2560.4,
+            "transfer": -157.6,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Paul Hudson",
+        "name": "Dr Paul Hudson",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1283.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1426.0,
+            "transfer": 143.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Paul Russell",
+        "name": "Mr Paul Russell",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1620.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1987.0,
+            "transfer": 367.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2214.0,
+            "transfer": 227.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 2282.0,
+            "transfer": 68.0,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU - NEC-Further Education",
+    "source_pdf": "data/raw/2007/pdfs/ukfe_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "10",
+    "valid_votes": "4245",
+    "invalid_votes": "175",
+    "quota": "385.91",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Mr Howard Miles",
+        "name": "Mr Howard Miles",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ms Bernice Waugh",
+        "name": "Ms Bernice Waugh",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 468.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 468.0,
+            "transfer": 468.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": -82.09,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr John Muirhead",
+        "name": "Mr John Muirhead",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 441.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 441.0,
+            "transfer": 441.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": -55.09,
+            "transfer": 441.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Helen Bowler",
+        "name": "Ms Helen Bowler",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 435.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 435.0,
+            "transfer": 435.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 435.0,
+            "transfer": 435.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 385.91,
+            "transfer": -49.09,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Keith Mallinson",
+        "name": "Mr Keith Mallinson",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 247.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 258.88,
+            "transfer": 11.88,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 277.24,
+            "transfer": 18.36,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 299.29,
+            "transfer": 22.05,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 308.47,
+            "transfer": 9.18,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 314.07,
+            "transfer": 5.6,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Brian Ingham",
+        "name": "Mr Brian Ingham",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 521.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 385.91,
+            "transfer": -135.09,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Kathy Taylor",
+        "name": "Ms Kathy Taylor",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 517.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": -131.09,
+            "transfer": 517.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Margaret George",
+        "name": "Ms Margaret George",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Mr Sean Vernell",
+        "name": "Mr Sean Vernell",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ms Penny Charles",
+        "name": "Ms Penny Charles",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 133.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 146.2,
+            "transfer": 13.2,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 158.78,
+            "transfer": 12.58,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 167.18,
+            "transfer": 8.4,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 169.9,
+            "transfer": 2.72,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 173.26,
+            "transfer": 3.36,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Sam Allen",
+        "name": "Mr Sam Allen",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 279.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 306.39,
+            "transfer": 27.39,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 339.03,
+            "transfer": 32.64,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 350.58,
+            "transfer": 11.55,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 366.73,
+            "transfer": 16.15,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 375.83,
+            "transfer": 9.1,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Loraine Monk",
+        "name": "Ms Loraine Monk",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 113.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 124.88,
+            "transfer": 11.88,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 140.86,
+            "transfer": 15.98,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 145.9,
+            "transfer": 5.04,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 148.62,
+            "transfer": 2.72,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 153.8,
+            "transfer": 5.18,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Alliya Stennett",
+        "name": "Ms Alliya Stennett",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 324.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 344.46,
+            "transfer": 20.46,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 361.12,
+            "transfer": 16.66,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 374.77,
+            "transfer": 13.65,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 379.7,
+            "transfer": 4.93,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 391.04,
+            "transfer": 11.34,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Lynne Chamberlain",
+        "name": "Ms Lynne Chamberlain",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 323.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 342.47,
+            "transfer": 19.47,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 353.69,
+            "transfer": 11.22,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 361.25,
+            "transfer": 7.56,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 367.54,
+            "transfer": 6.29,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 374.54,
+            "transfer": 7.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mrs Sheila Deare",
+        "name": "Mrs Sheila Deare",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Mr Umit Yildiz",
+        "name": "Mr Umit Yildiz",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 144.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 152.91,
+            "transfer": 8.91,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 158.01,
+            "transfer": 5.1,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 161.79,
+            "transfer": 3.78,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 168.42,
+            "transfer": 6.63,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 172.2,
+            "transfer": 3.78,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Jim Thakoordin",
+        "name": "Mr Jim Thakoordin",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 300.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 319.8,
+            "transfer": 19.8,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 335.44,
+            "transfer": 15.64,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 341.95,
+            "transfer": 6.51,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 348.24,
+            "transfer": 6.29,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 351.6,
+            "transfer": 3.36,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr James Eaden",
+        "name": "Mr James Eaden",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ms Bernice Waugh",
+        "name": "Ms Bernice Waugh",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 385.91,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr John Muirhead",
+        "name": "Mr John Muirhead",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 385.91,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Helen Bowler",
+        "name": "Ms Helen Bowler",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 385.91,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Keith Mallinson",
+        "name": "Mr Keith Mallinson",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 314.07,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 336.78,
+            "transfer": 22.71,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 342.94,
+            "transfer": 6.16,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 343.64,
+            "transfer": 0.7,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 400.64,
+            "transfer": 57.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Brian Ingham",
+        "name": "Mr Brian Ingham",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 385.91,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Kathy Taylor",
+        "name": "Ms Kathy Taylor",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 385.91,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Penny Charles",
+        "name": "Ms Penny Charles",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 173.26,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 186.44,
+            "transfer": 13.18,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 187.21,
+            "transfer": 0.77,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 187.61,
+            "transfer": 0.4,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 45.61,
+            "transfer": -142.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Sam Allen",
+        "name": "Mr Sam Allen",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 375.83,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 390.83,
+            "transfer": 15.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 390.83,
+            "transfer": 390.83,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": 390.83,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Loraine Monk",
+        "name": "Ms Loraine Monk",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 153.8,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Alliya Stennett",
+        "name": "Ms Alliya Stennett",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 391.04,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 391.04,
+            "transfer": 391.04,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": -5.13,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Lynne Chamberlain",
+        "name": "Ms Lynne Chamberlain",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 374.54,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 400.54,
+            "transfer": 26.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 385.91,
+            "transfer": -14.63,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 385.91,
+            "transfer": 385.91,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Umit Yildiz",
+        "name": "Mr Umit Yildiz",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 172.2,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 187.81,
+            "transfer": 15.61,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 192.43,
+            "transfer": 4.62,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 196.43,
+            "transfer": 4.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 224.43,
+            "transfer": 28.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Jim Thakoordin",
+        "name": "Mr Jim Thakoordin",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 351.6,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 367.17,
+            "transfer": 15.57,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 370.25,
+            "transfer": 3.08,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 370.25,
+            "transfer": 370.25,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU - NEC-Higher Education",
+    "source_pdf": "data/raw/2007/pdfs/ukhe_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "14",
+    "valid_votes": "8745",
+    "invalid_votes": "743",
+    "quota": "583",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Dr Anne-marie Greene",
+        "name": "Dr Anne-marie Greene",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ms Sue Blackwell",
+        "name": "Ms Sue Blackwell",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 646.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 646.0,
+            "transfer": 646.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 583.0,
+            "transfer": -63.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 583.0,
+            "transfer": 583.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Jeff Fowler",
+        "name": "Mr Jeff Fowler",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Mr Jim Guild",
+        "name": "Mr Jim Guild",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Mr Nick James",
+        "name": "Mr Nick James",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 520.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 528.14,
+            "transfer": 8.14,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 533.6,
+            "transfer": 5.46,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 542.4,
+            "transfer": 8.8,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 543.59,
+            "transfer": 1.19,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 544.85,
+            "transfer": 1.26,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 545.11,
+            "transfer": 0.26,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Marion Hersh",
+        "name": "Dr Marion Hersh",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 627.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 627.0,
+            "transfer": 627.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": -44.0,
+            "transfer": 627.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 583.0,
+            "transfer": 583.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Angela Shann",
+        "name": "Ms Angela Shann",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 186.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 198.21,
+            "transfer": 12.21,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 204.97,
+            "transfer": 6.76,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 213.97,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 217.75,
+            "transfer": 3.78,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 218.75,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 219.85,
+            "transfer": 1.1,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Paul Brown",
+        "name": "Mr Paul Brown",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 163.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 171.88,
+            "transfer": 8.88,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 176.3,
+            "transfer": 4.42,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 179.7,
+            "transfer": 3.4,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 184.04,
+            "transfer": 4.34,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 3.07,
+            "transfer": 184.04,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Tom Hickey",
+        "name": "Mr Tom Hickey",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Mr Neil Douglas",
+        "name": "Mr Neil Douglas",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 291.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 295.44,
+            "transfer": 4.44,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 297.78,
+            "transfer": 2.34,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 299.78,
+            "transfer": 2.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 301.6,
+            "transfer": 1.82,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 305.6,
+            "transfer": 4.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 306.6,
+            "transfer": 1.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Charlie Owen",
+        "name": "Mr Charlie Owen",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 209.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 214.55,
+            "transfer": 5.55,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 218.45,
+            "transfer": 3.9,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 220.95,
+            "transfer": 2.5,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 221.72,
+            "transfer": 0.77,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 222.72,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 223.72,
+            "transfer": 1.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Gargi Bhattacharyya",
+        "name": "Dr Gargi Bhattacharyya",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 872.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 583.0,
+            "transfer": -289.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 583.0,
+            "transfer": 583.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 583.0,
+            "transfer": 583.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Jill Jones",
+        "name": "Ms Jill Jones",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ms Jean Harrison",
+        "name": "Ms Jean Harrison",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 185.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 192.4,
+            "transfer": 7.4,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 194.48,
+            "transfer": 2.08,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 196.48,
+            "transfer": 2.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 198.02,
+            "transfer": 1.54,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1.0,
+            "transfer": 198.02,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Elizabeth Lawrence",
+        "name": "Dr Elizabeth Lawrence",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Mr Joe Gluza",
+        "name": "Mr Joe Gluza",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 205.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 212.4,
+            "transfer": 7.4,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 217.08,
+            "transfer": 4.68,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 218.18,
+            "transfer": 1.1,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 219.72,
+            "transfer": 1.54,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 219.72,
+            "transfer": 219.72,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Simon Renton",
+        "name": "Mr Simon Renton",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ms Marion Sp\u00f6ring",
+        "name": "Ms Marion Sp\u00f6ring",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 60.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 63.33,
+            "transfer": 3.33,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 64.63,
+            "transfer": 1.3,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 65.33,
+            "transfer": 0.7,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 66.03,
+            "transfer": 0.7,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 66.03,
+            "transfer": 66.03,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Dorothy Wright",
+        "name": "Ms Dorothy Wright",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 75.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 76.11,
+            "transfer": 1.11,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 78.45,
+            "transfer": 2.34,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 78.95,
+            "transfer": 0.5,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 79.16,
+            "transfer": 0.21,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 0.07,
+            "transfer": 79.16,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Peter Hick",
+        "name": "Mr Peter Hick",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 146.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 160.43,
+            "transfer": 14.43,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 165.89,
+            "transfer": 5.46,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 170.99,
+            "transfer": 5.1,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 172.39,
+            "transfer": 1.4,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1.0,
+            "transfer": 172.39,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Roger Brooks",
+        "name": "Dr Roger Brooks",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Professor Malcolm Povey",
+        "name": "Professor Malcolm Povey",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 733.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": -150.0,
+            "transfer": 733.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 583.0,
+            "transfer": 583.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 583.0,
+            "transfer": 583.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Maeve Landman",
+        "name": "Ms Maeve Landman",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 318.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 345.01,
+            "transfer": 27.01,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 350.73,
+            "transfer": 5.72,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 353.93,
+            "transfer": 3.2,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 357.22,
+            "transfer": 3.29,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 358.11,
+            "transfer": 0.89,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 359.48,
+            "transfer": 1.37,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Neil Williamson",
+        "name": "Mr Neil Williamson",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Mr Andrew Feeney",
+        "name": "Mr Andrew Feeney",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 222.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 226.44,
+            "transfer": 4.44,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 231.12,
+            "transfer": 4.68,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 231.82,
+            "transfer": 0.7,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 232.17,
+            "transfer": 0.35,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 0.1,
+            "transfer": 232.17,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Christine Vie",
+        "name": "Ms Christine Vie",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 195.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 202.77,
+            "transfer": 7.77,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 209.27,
+            "transfer": 6.5,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 210.87,
+            "transfer": 1.6,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 212.13,
+            "transfer": 1.26,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 2.47,
+            "transfer": 212.13,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Lesley Kane",
+        "name": "Ms Lesley Kane",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 263.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 266.33,
+            "transfer": 3.33,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 269.71,
+            "transfer": 3.38,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 271.51,
+            "transfer": 1.8,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 272.77,
+            "transfer": 1.26,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 284.77,
+            "transfer": 12.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 285.77,
+            "transfer": 1.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Lesley Catchpowle",
+        "name": "Ms Lesley Catchpowle",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 119.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 128.25,
+            "transfer": 9.25,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 130.85,
+            "transfer": 2.6,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 132.25,
+            "transfer": 1.4,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 132.95,
+            "transfer": 0.7,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 135.32,
+            "transfer": 2.37,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 138.43,
+            "transfer": 3.11,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Jane Hardy",
+        "name": "Ms Jane Hardy",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Dr Martyn Gardiner",
+        "name": "Dr Martyn Gardiner",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 187.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 192.18,
+            "transfer": 5.18,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 203.62,
+            "transfer": 11.44,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 204.72,
+            "transfer": 1.1,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 206.82,
+            "transfer": 2.1,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 208.82,
+            "transfer": 2.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 211.89,
+            "transfer": 3.07,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr David McIntyre",
+        "name": "Mr David McIntyre",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 33.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 34.48,
+            "transfer": 1.48,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 36.04,
+            "transfer": 1.56,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 36.14,
+            "transfer": 0.1,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 36.28,
+            "transfer": 0.14,
+            "eliminated": false
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Amanda Sackur",
+        "name": "Ms Amanda Sackur",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 177.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 187.36,
+            "transfer": 10.36,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 189.96,
+            "transfer": 2.6,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 190.56,
+            "transfer": 0.6,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 191.68,
+            "transfer": 1.12,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 191.94,
+            "transfer": 0.26,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 196.3,
+            "transfer": 4.36,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Carlo Morelli",
+        "name": "Mr Carlo Morelli",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 176.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 184.51,
+            "transfer": 8.51,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 197.25,
+            "transfer": 12.74,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 199.15,
+            "transfer": 1.9,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 201.32,
+            "transfer": 2.17,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 202.39,
+            "transfer": 1.07,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 207.91,
+            "transfer": 5.52,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Rob Clifton",
+        "name": "Mr Rob Clifton",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 246.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 250.07,
+            "transfer": 4.07,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 252.93,
+            "transfer": 2.86,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 253.73,
+            "transfer": 0.8,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 254.29,
+            "transfer": 0.56,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 255.39,
+            "transfer": 1.1,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 256.39,
+            "transfer": 1.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Alexis Wearmouth",
+        "name": "Mr Alexis Wearmouth",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 55.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 57.22,
+            "transfer": 2.22,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 59.82,
+            "transfer": 2.6,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 60.42,
+            "transfer": 0.6,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 60.77,
+            "transfer": 0.35,
+            "eliminated": false
+          },
+          "6": {
+            "votes": -60.77,
+            "transfer": 60.77,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Lesley McIntosh",
+        "name": "Dr Lesley McIntosh",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 195.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 201.66,
+            "transfer": 6.66,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 209.98,
+            "transfer": 8.32,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 210.58,
+            "transfer": 0.6,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 212.61,
+            "transfer": 2.03,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 213.61,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 216.94,
+            "transfer": 3.33,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Professor Neil Macfarlane",
+        "name": "Professor Neil Macfarlane",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Mr Philip Burgess",
+        "name": "Mr Philip Burgess",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 517.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 522.18,
+            "transfer": 5.18,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 529.2,
+            "transfer": 7.02,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 530.5,
+            "transfer": 1.3,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 532.18,
+            "transfer": 1.68,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 533.18,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 536.44,
+            "transfer": 3.26,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Ryan Kemp",
+        "name": "Mr Ryan Kemp",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 122.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 125.33,
+            "transfer": 3.33,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 126.63,
+            "transfer": 1.3,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 127.33,
+            "transfer": 0.7,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 127.61,
+            "transfer": 0.28,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 0.26,
+            "transfer": 127.61,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Bill Gulam",
+        "name": "Dr Bill Gulam",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 162.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 196.41,
+            "transfer": 34.41,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 205.51,
+            "transfer": 9.1,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 206.61,
+            "transfer": 1.1,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 207.66,
+            "transfer": 1.05,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 0.26,
+            "transfer": 207.66,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Jean Crocker",
+        "name": "Ms Jean Crocker",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 171.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 175.44,
+            "transfer": 4.44,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 181.68,
+            "transfer": 6.24,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 183.08,
+            "transfer": 1.4,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 184.62,
+            "transfer": 1.54,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 185.99,
+            "transfer": 1.37,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 190.09,
+            "transfer": 4.1,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Michael Jardine",
+        "name": "Dr Michael Jardine",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 162.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 218.98,
+            "transfer": 56.98,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 226.26,
+            "transfer": 7.28,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 227.26,
+            "transfer": 1.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 227.75,
+            "transfer": 0.49,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 228.82,
+            "transfer": 1.07,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 233.82,
+            "transfer": 5.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Terry Hoad",
+        "name": "Mr Terry Hoad",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 343.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 349.66,
+            "transfer": 6.66,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 359.8,
+            "transfer": 10.14,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 361.9,
+            "transfer": 2.1,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 362.88,
+            "transfer": 0.98,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 363.88,
+            "transfer": 1.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mr Bahadur Najakham",
+        "name": "Mr Bahadur Najakham",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 164.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 175.84,
+            "transfer": 11.84,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 179.22,
+            "transfer": 3.38,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 180.02,
+            "transfer": 0.8,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 180.72,
+            "transfer": 0.7,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 5.26,
+            "transfer": 180.72,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU-Women-FE",
+    "source_pdf": "data/raw/2007/pdfs/womenfe_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "2",
+    "valid_votes": "9159",
+    "invalid_votes": "7556",
+    "quota": "3053",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Ms Maire Daley",
+        "name": "Ms Maire Daley",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3468.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Pauline Atienza",
+        "name": "Ms Pauline Atienza",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2444.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Mrs Pat Roche",
+        "name": "Mrs Pat Roche",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3247.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU-Women-HE",
+    "source_pdf": "data/raw/2007/pdfs/womenhe_ucuelctns07_1.pdf",
+    "source_format": "text",
+    "date": "7/3/07",
+    "seats": "3",
+    "valid_votes": "9393",
+    "invalid_votes": "7322",
+    "quota": "2348.25",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Ms Jean Harrison",
+        "name": "Ms Jean Harrison",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1660.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1947.92,
+            "transfer": 287.92,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2160.37,
+            "transfer": 212.45,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Anne-marie Greene",
+        "name": "Dr Anne-marie Greene",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Professor Mary Davis",
+        "name": "Professor Mary Davis",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3452.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2348.25,
+            "transfer": -1103.75,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": 2348.25,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Elizabeth Lawrence",
+        "name": "Dr Elizabeth Lawrence",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Dr Lesley McIntosh",
+        "name": "Dr Lesley McIntosh",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ms Lesley Catchpowle",
+        "name": "Ms Lesley Catchpowle",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1538.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1818.25,
+            "transfer": 280.25,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1969.39,
+            "transfer": 151.14,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Marianne Quick",
+        "name": "Ms Marianne Quick",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1260.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1522.55,
+            "transfer": 262.55,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Ms Angela Shann",
+        "name": "Ms Angela Shann",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ms Maeve Landman",
+        "name": "Ms Maeve Landman",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ms Susan Birch",
+        "name": "Ms Susan Birch",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1483.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1751.45,
+            "transfer": 268.45,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2128.81,
+            "transfer": 377.36,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Dr Marion Hersh",
+        "name": "Dr Marion Hersh",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      }
+    ]
+  }
+]

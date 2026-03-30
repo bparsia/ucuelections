@@ -31,8 +31,15 @@ DATA_DIR = Path(__file__).parent / "data" / "raw"
 # Candidate name flags like [woman], [post-92], [academic related]
 DEMOGRAPHIC_RE = re.compile(r"\[([^\]]+)\]")
 
-# Rows to skip in STV tables
-SKIP_ROW_NAMES = {"non-transferable", "totals", "total", "candidates", ""}
+# Rows to skip in STV tables (checked against lowercased, whitespace-normalised name)
+SKIP_ROW_NAMES = {"non-transferable", "non- transferable", "totals", "total", "candidates", ""}
+
+# Name prefixes that indicate a metadata/header row rather than a candidate
+SKIP_NAME_PREFIXES = (
+    "election for", "date", "quota", "number to be elected",
+    "valid votes", "invalid votes", "election rules", "estv",
+    "non-transferable", "non- transferable",
+)
 
 # Metadata field labels in the first rows of count sheets
 METADATA_LABELS = {
@@ -56,8 +63,10 @@ def is_image_pdf(pdf: pdfplumber.PDF) -> bool:
 
 
 def cell(val) -> str:
-    """Normalise a table cell to a stripped string."""
-    return str(val).strip() if val is not None else ""
+    """Normalise a table cell: collapse all whitespace (including newlines) to single spaces."""
+    if val is None:
+        return ""
+    return " ".join(str(val).split())
 
 
 def looks_like_count_sheet(table: list[list]) -> bool:
@@ -90,6 +99,8 @@ def parse_metadata(table: list[list]) -> dict:
         val = cell(row[1]) if len(row) > 1 else ""
         field = METADATA_LABELS.get(key)
         if field and val:
+            if field == "contest_name":
+                val = re.sub(r"\s+APPENDIX\s+\w+$", "", val).strip()
             meta[field] = val
     return meta
 
@@ -195,7 +206,10 @@ def parse_single_round(table: list[list]) -> list[dict]:
         if not row or not row[0]:
             continue
         name_raw = cell(row[0])
-        if name_raw.lower() in SKIP_ROW_NAMES:
+        name_lower = name_raw.lower()
+        if name_lower in SKIP_ROW_NAMES:
+            continue
+        if any(name_lower.startswith(p) for p in SKIP_NAME_PREFIXES):
             continue
 
         name, flags = parse_name(name_raw)
@@ -251,10 +265,13 @@ def parse_candidate_rows(
         if not row or not row[0]:
             continue
         name_raw = cell(row[0])
-        if name_raw.lower() in SKIP_ROW_NAMES:
+        name_lower = name_raw.lower()
+        if name_lower in SKIP_ROW_NAMES:
+            continue
+        if any(name_lower.startswith(p) for p in SKIP_NAME_PREFIXES):
             continue
         # Skip rows that look like sub-headers (Stage / Exclusion of …)
-        if name_raw in ("", "Stage") or name_raw.lower().startswith("exclusion") or name_raw.lower().startswith("surplus"):
+        if name_raw in ("", "Stage") or name_lower.startswith("exclusion") or name_lower.startswith("surplus"):
             continue
 
         name, flags = parse_name(name_raw)
@@ -398,7 +415,7 @@ def parse_rov_pdf(path: Path, verbose: bool = False) -> list[dict]:
                     "date": None,
                     "quota": None,
                     "election_rules": "STV",
-                    "source_pdf": str(path),
+                    "source_pdf": str(path.relative_to(Path(__file__).parent)),
                     "source_format": "rov",
                     "candidates": candidates,
                 })
@@ -502,7 +519,7 @@ def parse_count_sheet_pdf(path: Path, verbose: bool = False) -> list[dict]:
                     # Try to extract text for 2007-style fixed-width PDFs
                     if page_num == 0:
                         text = page.extract_text() or ""
-                        text_result = parse_text_page(text, str(path))
+                        text_result = parse_text_page(text, str(path.relative_to(Path(__file__).parent)))
                         if text_result:
                             contests.append(text_result)
                     continue
@@ -517,7 +534,7 @@ def parse_count_sheet_pdf(path: Path, verbose: bool = False) -> list[dict]:
                         if current_meta and page_candidates:
                             all_candidates = merge_candidate_pages(page_candidates)
                             if all_candidates:
-                                contests.append({**current_meta, "candidates": all_candidates, "source_pdf": str(path)})
+                                contests.append({**current_meta, "candidates": all_candidates, "source_pdf": str(path.relative_to(Path(__file__).parent))})
                         current_meta = parse_metadata(table)
                         page_candidates = []
 
@@ -540,7 +557,7 @@ def parse_count_sheet_pdf(path: Path, verbose: bool = False) -> list[dict]:
             if current_meta and page_candidates:
                 all_candidates = merge_candidate_pages(page_candidates)
                 if all_candidates:
-                    contests.append({**current_meta, "candidates": all_candidates, "source_pdf": str(path)})
+                    contests.append({**current_meta, "candidates": all_candidates, "source_pdf": str(path.relative_to(Path(__file__).parent))})
 
     except Exception as e:
         if verbose:
@@ -579,7 +596,9 @@ def parse_text_page(text: str, source: str) -> dict | None:
         for label, field in METADATA_LABELS.items():
             if line.lower().startswith(label):
                 val = line[len(label):].strip()
-                meta[field] = val
+                # contest_name already set (with APPENDIX stripped); don't overwrite
+                if field != "contest_name":
+                    meta[field] = val
                 break
 
     # Find 'Candidates' line and parse the data rows
@@ -600,7 +619,7 @@ def parse_text_page(text: str, source: str) -> dict | None:
             continue
 
         # Skip header rows and totals within the data section
-        if re.match(r"^(First|Surplus|Exclusion|Stage|Candidates|Non-transferable|Totals?)\b", line, re.IGNORECASE):
+        if re.match(r"^(First|Surplus|Exclusion|Stage|Candidates|Non-transferable|Totals?|Quota)\b", line, re.IGNORECASE):
             continue
 
         # Try to parse candidate row: NAME followed by numbers

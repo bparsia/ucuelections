@@ -1,0 +1,1049 @@
+[
+  {
+    "contest_name": "UK-Elected NEC Members of the Further Education",
+    "date": "04/03/2019",
+    "seats": "2",
+    "valid_votes": "1966",
+    "invalid_votes": "97",
+    "quota": "628",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "John JAMES",
+        "name": "John JAMES",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 361.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 406.0,
+            "transfer": 45.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Saleem RASHID",
+        "name": "Saleem RASHID",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 299.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Anya COOK",
+        "name": "Anya COOK",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 497.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 623.0,
+            "transfer": 126.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 774.0,
+            "transfer": 151.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 628.0,
+            "transfer": -146.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jacqueline D'ARCY",
+        "name": "Jacqueline D'ARCY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 428.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 490.0,
+            "transfer": 62.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 579.0,
+            "transfer": 89.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 658.0,
+            "transfer": 79.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Richard MCEWAN",
+        "name": "Richard MCEWAN",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 381.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 425.0,
+            "transfer": 44.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 531.0,
+            "transfer": 106.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 577.0,
+            "transfer": 46.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/FE_UK-elected_19.pdf"
+  },
+  {
+    "contest_name": "UK-Elected NEC Members of the Higher Education",
+    "date": "04/03/2019",
+    "seats": "3",
+    "valid_votes": "10286",
+    "invalid_votes": "849",
+    "quota": "2571.5",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "Maria CHONDROGIANNI (post-92)",
+        "name": "Maria CHONDROGIANNI (post-92)",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1436.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1748.28,
+            "transfer": 312.28,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2006.28,
+            "transfer": 258.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Marion HERSH",
+        "name": "Marion HERSH",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2134.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2497.34,
+            "transfer": 363.34,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2649.34,
+            "transfer": 152.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jo GRADY",
+        "name": "Jo GRADY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3843.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2571.5,
+            "transfer": -1271.5,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2571.5,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Justine MERCER",
+        "name": "Justine MERCER",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Carlo MORELLI",
+        "name": "Carlo MORELLI",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Ann GOW",
+        "name": "Ann GOW",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1808.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2173.19,
+            "transfer": 365.19,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2641.19,
+            "transfer": 468.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Patricia HORNBY ATKINSON (post-92)",
+        "name": "Patricia HORNBY ATKINSON (post-92)",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1065.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1262.58,
+            "transfer": 197.58,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 197.58,
+            "transfer": -1065.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/HE_UK-elected_19.pdf"
+  },
+  {
+    "contest_name": "Honorary Treasurer",
+    "date": "04/03/2019",
+    "seats": "1",
+    "valid_votes": "13329",
+    "invalid_votes": "874",
+    "quota": "6664.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Steve SANGWINE",
+        "name": "Steve SANGWINE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 7526.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Paul ANDERSON",
+        "name": "Paul ANDERSON",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 5803.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/Hon_Treasurer.pdf"
+  },
+  {
+    "contest_name": "NEC Member Further Education-Midlands",
+    "date": "04/03/2019",
+    "seats": "1",
+    "valid_votes": "397",
+    "invalid_votes": "3",
+    "quota": "198.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Allister MACTAGGART",
+        "name": "Allister MACTAGGART",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 148.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "John Paul SULLIVAN",
+        "name": "John Paul SULLIVAN",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 249.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/Midlands_FE_19.pdf"
+  },
+  {
+    "contest_name": "NEC Member Higher Education-North East",
+    "date": "04/03/2019",
+    "seats": "1",
+    "valid_votes": "1817",
+    "invalid_votes": "103",
+    "quota": "908.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Emma-Jane PHILLIPS",
+        "name": "Emma-Jane PHILLIPS",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 888.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Bruce BAKER",
+        "name": "Bruce BAKER",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 929.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/North_East_HE_19.pdf"
+  },
+  {
+    "contest_name": "NEC Member Further Education-North West",
+    "date": "04/03/2019",
+    "seats": "1",
+    "valid_votes": "306",
+    "invalid_votes": "4",
+    "quota": "153",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Carol CODY",
+        "name": "Carol CODY",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 106.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Janet FARRAR",
+        "name": "Janet FARRAR",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 200.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/North_West_FE_19.pdf"
+  },
+  {
+    "contest_name": "NEC Members Higher Education-North West",
+    "date": "04/03/2019",
+    "seats": "2",
+    "valid_votes": "1299",
+    "invalid_votes": "64",
+    "quota": "433",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Philippa BROWNING",
+        "name": "Philippa BROWNING",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 574.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 433.0,
+            "transfer": -141.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 433.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Saira WEINER",
+        "name": "Saira WEINER",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 268.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 310.39,
+            "transfer": 42.39,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 459.39,
+            "transfer": 149.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Anthony O'HANLON",
+        "name": "Anthony O'HANLON",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 232.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 262.24,
+            "transfer": 30.24,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 30.24,
+            "transfer": -232.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Michael MCKRELL",
+        "name": "Michael MCKRELL",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 225.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 292.5,
+            "transfer": 67.5,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 325.5,
+            "transfer": 33.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/North_West_HE_19.pdf"
+  },
+  {
+    "contest_name": "Representative of Disabled Members",
+    "date": "04/03/2019",
+    "seats": "1",
+    "valid_votes": "12710",
+    "invalid_votes": "1493",
+    "quota": "6355",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Ciara DOYLE",
+        "name": "Ciara DOYLE",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1623.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Paul LUNN",
+        "name": "Paul LUNN",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3334.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Lucy BURKE",
+        "name": "Lucy BURKE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 7753.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/Rep_of_disabled_members.pdf"
+  },
+  {
+    "contest_name": "Representatives of Black Members",
+    "date": "04/03/2019",
+    "seats": "2",
+    "valid_votes": "12377",
+    "invalid_votes": "1826",
+    "quota": "4125.67",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Maxine LOOBY",
+        "name": "Maxine LOOBY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3411.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 4084.0,
+            "transfer": 673.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Victoria SHOWUNMI",
+        "name": "Victoria SHOWUNMI",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 4212.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 4212.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Naina KENT",
+        "name": "Naina KENT",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2695.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3785.0,
+            "transfer": 1090.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "MURITU",
+        "name": "MURITU",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2059.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/Reps_of_black_members.pdf"
+  },
+  {
+    "contest_name": "UCU Scotland Honorary Secretary Higher Education",
+    "date": "04/03/2019",
+    "seats": "1",
+    "valid_votes": "1064",
+    "invalid_votes": "42",
+    "quota": "532",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Janice AITKEN",
+        "name": "Janice AITKEN",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 555.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Marion HERSH",
+        "name": "Marion HERSH",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 509.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/Scotland_Hon_Sec_19.pdf"
+  },
+  {
+    "contest_name": "UCU Scotland President Higher Education",
+    "date": "04/03/2019",
+    "seats": "1",
+    "valid_votes": "1065",
+    "invalid_votes": "41",
+    "quota": "532.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Eurig SCANDRETT",
+        "name": "Eurig SCANDRETT",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 497.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Carlo MORELLI",
+        "name": "Carlo MORELLI",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 568.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/Scotland_President_19.pdf"
+  },
+  {
+    "contest_name": "NEC Members Higher Education-South",
+    "date": "04/03/2019",
+    "seats": "4",
+    "valid_votes": "2256",
+    "invalid_votes": "105",
+    "quota": "451.2",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "Denis A NICOLE",
+        "name": "Denis A NICOLE",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 290.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 293.84,
+            "transfer": 3.84,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 328.68,
+            "transfer": 34.84,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 370.64,
+            "transfer": 41.96,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Deepa GOVINDARAJAN DRIVER",
+        "name": "Deepa GOVINDARAJAN DRIVER",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 512.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 451.2,
+            "transfer": -60.8,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 451.2,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 451.2,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Sally PELLOW",
+        "name": "Sally PELLOW",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 341.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 350.0,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 392.8,
+            "transfer": 42.8,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 483.8,
+            "transfer": 91.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jaya John JOHN",
+        "name": "Jaya John JOHN",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 191.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 210.68,
+            "transfer": 19.68,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Marian MAYER",
+        "name": "Marian MAYER",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 240.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 252.0,
+            "transfer": 12.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 295.36,
+            "transfer": 43.36,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "Catherine POPE",
+        "name": "Catherine POPE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 282.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 286.32,
+            "transfer": 4.32,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 323.12,
+            "transfer": 36.8,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 411.44,
+            "transfer": 88.32,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Lesley KANE",
+        "name": "Lesley KANE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 400.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 410.44,
+            "transfer": 10.44,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 449.44,
+            "transfer": 39.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 449.44,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/South_HE_19.pdf"
+  },
+  {
+    "contest_name": "Vice President from the Higher Education Sector",
+    "date": "04/03/2019",
+    "seats": "1",
+    "valid_votes": "13809",
+    "invalid_votes": "394",
+    "quota": "6422",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Adam OZANNE",
+        "name": "Adam OZANNE",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 4924.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 5809.0,
+            "transfer": 885.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Vicky BLAKE",
+        "name": "Vicky BLAKE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 4743.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 7035.0,
+            "transfer": 2292.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jo MCNEILL",
+        "name": "Jo MCNEILL",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 4142.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019/pdfs/Vice_President.pdf"
+  }
+]

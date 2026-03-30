@@ -1,0 +1,2252 @@
+[
+  {
+    "contest_name": "representatives of black members",
+    "date": "01/03/2023",
+    "seats": "2",
+    "valid_votes": "11189",
+    "invalid_votes": "1641",
+    "quota": "3680.67",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "OJINNAKA, Juliana [woman]",
+        "name": "OJINNAKA, Juliana",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3378.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3713.0,
+            "transfer": 335.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "AKWEI, Cynthia [woman]",
+        "name": "AKWEI, Cynthia",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2475.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2932.0,
+            "transfer": 457.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "SHOWUNMI, Victoria [woman]",
+        "name": "SHOWUNMI, Victoria",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2095.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "PEAKE, Jak",
+        "name": "PEAKE, Jak",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3241.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 4397.0,
+            "transfer": 1156.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/BMreps.pdf"
+  },
+  {
+    "contest_name": "representative of casually-employed members",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "11219",
+    "invalid_votes": "1611",
+    "quota": "5208.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "FITZMAURICE, Matilda",
+        "name": "FITZMAURICE, Matilda",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 5259.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 6322.0,
+            "transfer": 1063.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "MORECROFT, Sam",
+        "name": "MORECROFT, Sam",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2949.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "BHATNAGAR, Ansh",
+        "name": "BHATNAGAR, Ansh",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "LAHM, Sarah",
+        "name": "LAHM, Sarah",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3011.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 4095.0,
+            "transfer": 1084.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/CMsrep.pdf"
+  },
+  {
+    "contest_name": "representative of disabled members",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "10824",
+    "invalid_votes": "2006",
+    "quota": "5412",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "ROCHE, Patricia [FE, woman]",
+        "name": "ROCHE, Patricia",
+        "demographic_flags": [
+          "FE, woman"
+        ],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "PARSIA, Bijan [HE]",
+        "name": "PARSIA, Bijan",
+        "demographic_flags": [
+          "HE"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 5840.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CAMPBELL, Em [FE, woman]",
+        "name": "CAMPBELL, Em",
+        "demographic_flags": [
+          "FE, woman"
+        ],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "MAYER, Marian [HE, woman]",
+        "name": "MAYER, Marian",
+        "demographic_flags": [
+          "HE, woman"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 4984.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/DMs_rep.pdf"
+  },
+  {
+    "contest_name": "NEC members, North West, further education",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "236",
+    "invalid_votes": "6",
+    "quota": "118",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "KELSALL, Helen",
+        "name": "KELSALL, Helen",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 135.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CODY, Carol",
+        "name": "CODY, Carol",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 101.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/FE_NW.pdf"
+  },
+  {
+    "contest_name": "NEC members, South, further education",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "282",
+    "invalid_votes": "13",
+    "quota": "141",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "ELLIOTT, Graeme",
+        "name": "ELLIOTT, Graeme",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 140.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "FONES, John",
+        "name": "FONES, John",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 142.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/FE_South.pdf"
+  },
+  {
+    "contest_name": "UK-elected NEC members, further education",
+    "date": "01/03/2023",
+    "seats": "2",
+    "valid_votes": "1478",
+    "invalid_votes": "94",
+    "quota": "492.67",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "RASHID, Saleem",
+        "name": "RASHID, Saleem",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 461.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 483.4,
+            "transfer": 22.4,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "VERNELL, Sean",
+        "name": "VERNELL, Sean",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 538.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 492.67,
+            "transfer": -45.33,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "D'ARCY, Jackie",
+        "name": "D'ARCY, Jackie",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 479.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 497.08,
+            "transfer": 18.08,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/FE_UK-elected.pdf"
+  },
+  {
+    "contest_name": "NEC members, Midlands, higher education",
+    "date": "01/03/2023",
+    "seats": "3",
+    "valid_votes": "1333",
+    "invalid_votes": "50",
+    "quota": "333.25",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "PROCTOR, Caroline",
+        "name": "PROCTOR, Caroline",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 219.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 235.2,
+            "transfer": 16.2,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 258.22,
+            "transfer": 23.02,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 314.89,
+            "transfer": 56.67,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BARKER, Alan",
+        "name": "BARKER, Alan",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 118.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 156.61,
+            "transfer": 38.61,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "FLUES, Agnes",
+        "name": "FLUES, Agnes",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 438.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 333.25,
+            "transfer": -104.75,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 333.25,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 333.25,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CLARKE, Francis",
+        "name": "CLARKE, Francis",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 148.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 160.42,
+            "transfer": 12.42,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 197.09,
+            "transfer": 36.67,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "LOCKLEY, Rhiannon",
+        "name": "LOCKLEY, Rhiannon",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 222.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 235.5,
+            "transfer": 13.5,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 286.22,
+            "transfer": 50.72,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 331.22,
+            "transfer": 45.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BATTELL LOWMAN, Emma",
+        "name": "BATTELL LOWMAN, Emma",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 188.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 211.22,
+            "transfer": 23.22,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 244.86,
+            "transfer": 33.64,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 308.8,
+            "transfer": 63.94,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/HE_Midlands.pdf"
+  },
+  {
+    "contest_name": "NEC members, North West, higher education",
+    "date": "01/03/2023",
+    "seats": "2",
+    "valid_votes": "1087",
+    "invalid_votes": "30",
+    "quota": "362.34",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "BROWNING, Philippa",
+        "name": "BROWNING, Philippa",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 387.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 387.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 362.34,
+            "transfer": -24.66,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 362.34,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "McKRELL, Michael",
+        "name": "McKRELL, Michael",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 196.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 204.0,
+            "transfer": 8.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 213.45,
+            "transfer": 9.45,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 9.45,
+            "transfer": -204.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "WEINER, Saira",
+        "name": "WEINER, Saira",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 213.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 248.0,
+            "transfer": 35.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 251.57,
+            "transfer": 3.57,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 300.57,
+            "transfer": 49.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "SWANSON, David",
+        "name": "SWANSON, David",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 106.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "BURKE, Lucy",
+        "name": "BURKE, Lucy",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 185.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 225.0,
+            "transfer": 40.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 235.29,
+            "transfer": 10.29,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 320.29,
+            "transfer": 85.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/HE_NW.pdf"
+  },
+  {
+    "contest_name": "NEC members, South, higher education",
+    "date": "01/03/2023",
+    "seats": "4",
+    "valid_votes": "2155",
+    "invalid_votes": "63",
+    "quota": "431",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "HARRISON, Rebecca [woman]",
+        "name": "HARRISON, Rebecca",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 852.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 431.0,
+            "transfer": -421.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 431.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ABEL, Mark",
+        "name": "ABEL, Mark",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 309.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 411.92,
+            "transfer": 102.92,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 506.42,
+            "transfer": 94.5,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "GOVINDARAJAN DRIVER, Deepa [woman]",
+        "name": "GOVINDARAJAN DRIVER, Deepa",
+        "demographic_flags": [
+          "woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 385.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 589.18,
+            "transfer": 204.18,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 431.0,
+            "transfer": -158.18,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "KATZOURAKIS, Aris",
+        "name": "KATZOURAKIS, Aris",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 530.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 530.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 530.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BURNS, Ryan",
+        "name": "BURNS, Ryan",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 79.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 191.88,
+            "transfer": 112.88,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 254.13,
+            "transfer": 62.25,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/HE_South.pdf"
+  },
+  {
+    "contest_name": "UK-elected NEC members, higher education",
+    "date": "01/03/2023",
+    "seats": "4",
+    "valid_votes": "9850",
+    "invalid_votes": "615",
+    "quota": "1951.4",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "WILD, Richard [post-92]",
+        "name": "WILD, Richard",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 641.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 714.0,
+            "transfer": 73.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 823.0,
+            "transfer": 109.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 885.0,
+            "transfer": 62.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "BROWN, Donna",
+        "name": "BROWN, Donna",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 604.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 653.0,
+            "transfer": 49.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "BLAKE, Vicky [academic-related]",
+        "name": "BLAKE, Vicky",
+        "demographic_flags": [
+          "academic-related"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1753.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1800.0,
+            "transfer": 47.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1952.0,
+            "transfer": 152.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 2044.0,
+            "transfer": 92.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 2044.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CLARKE, Francis [academic-related]",
+        "name": "CLARKE, Francis",
+        "demographic_flags": [
+          "academic-related"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 900.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 921.0,
+            "transfer": 21.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 993.0,
+            "transfer": 72.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1134.0,
+            "transfer": 141.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1274.0,
+            "transfer": 140.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1293.0,
+            "transfer": 19.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 1312.0,
+            "transfer": 19.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 1591.0,
+            "transfer": 279.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "PROCTOR, Caroline [academic-related]",
+        "name": "PROCTOR, Caroline",
+        "demographic_flags": [
+          "academic-related"
+        ],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "PEAKE, Jak",
+        "name": "PEAKE, Jak",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 904.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 924.0,
+            "transfer": 20.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 996.0,
+            "transfer": 72.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1083.0,
+            "transfer": 87.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1198.0,
+            "transfer": 115.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1218.0,
+            "transfer": 20.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 1234.0,
+            "transfer": 16.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "HARRISON, Rebecca",
+        "name": "HARRISON, Rebecca",
+        "demographic_flags": [],
+        "outcome": "Withdrawn",
+        "rounds": {}
+      },
+      {
+        "name_raw": "HANSEN, Adam [post-92]",
+        "name": "HANSEN, Adam",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 934.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 962.0,
+            "transfer": 28.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1011.0,
+            "transfer": 49.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1094.0,
+            "transfer": 83.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1239.0,
+            "transfer": 145.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1280.0,
+            "transfer": 41.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 1289.0,
+            "transfer": 9.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 1557.0,
+            "transfer": 268.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "O'DONNELL, Christopher [post-92]",
+        "name": "O'DONNELL, Christopher",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 719.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 748.0,
+            "transfer": 29.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 796.0,
+            "transfer": 48.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "HERSH, Marion",
+        "name": "HERSH, Marion",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1491.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1611.0,
+            "transfer": 120.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1706.0,
+            "transfer": 95.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1869.0,
+            "transfer": 163.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 2129.0,
+            "transfer": 260.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1951.4,
+            "transfer": -177.6,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 1951.4,
+            "transfer": null,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 1951.4,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "SLORACH, Roddy [academic-related]",
+        "name": "SLORACH, Roddy",
+        "demographic_flags": [
+          "academic-related"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 441.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "JONES, Dyfrig",
+        "name": "JONES, Dyfrig",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1463.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1494.0,
+            "transfer": 31.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1527.0,
+            "transfer": 33.0,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1648.0,
+            "transfer": 121.0,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1718.0,
+            "transfer": 70.0,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1743.0,
+            "transfer": 25.0,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 1756.0,
+            "transfer": 13.0,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 2138.0,
+            "transfer": 382.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Blake, Vicky [academic-related]",
+        "name": "Blake, Vicky",
+        "demographic_flags": [
+          "academic-related"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "6": {
+            "votes": 2044.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "7": {
+            "votes": 1951.4,
+            "transfer": -92.6,
+            "eliminated": false
+          },
+          "8": {
+            "votes": 1951.4,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "O\u2019DONNELL, Chris [post-92]",
+        "name": "O\u2019DONNELL, Chris",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "7": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "8": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/HE_UK-elected.pdf"
+  },
+  {
+    "contest_name": "Honorary Treasurer",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "12307",
+    "invalid_votes": "523",
+    "quota": "5898",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "HARVIE, David",
+        "name": "HARVIE, David",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 5771.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 6689.0,
+            "transfer": 918.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "GOVINDARAJAN DRIVER, Deepa",
+        "name": "GOVINDARAJAN DRIVER, Deepa",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 3945.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 5107.0,
+            "transfer": 1162.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BRACKLEY, James",
+        "name": "BRACKLEY, James",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2591.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/Hon_Treasurer.pdf"
+  },
+  {
+    "contest_name": "representative of LGBT+ members",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "11418",
+    "invalid_votes": "1412",
+    "quota": "5709",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "HUGHES, Bee",
+        "name": "HUGHES, Bee",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 5203.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "PENDLETON, Mark",
+        "name": "PENDLETON, Mark",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 6215.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/LGBT__reps.pdf"
+  },
+  {
+    "contest_name": "representatives of migrant members",
+    "date": "01/03/2023",
+    "seats": "2",
+    "valid_votes": "11328",
+    "invalid_votes": "1502",
+    "quota": "3776",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "SAEED, Khizer [non-EU]",
+        "name": "SAEED, Khizer",
+        "demographic_flags": [
+          "non-EU"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2220.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2835.0,
+            "transfer": 615.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "THUPPIL, Vivek [non-EU]",
+        "name": "THUPPIL, Vivek",
+        "demographic_flags": [
+          "non-EU"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3786.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3786.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "FERABOLI, Omar",
+        "name": "FERABOLI, Omar",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1643.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "LOYOLA-HERNANDEZ, Laura [non-EU]",
+        "name": "LOYOLA-HERNANDEZ, Laura",
+        "demographic_flags": [
+          "non-EU"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3679.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 4496.0,
+            "transfer": 817.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/Migrant_Members_reps.pdf"
+  },
+  {
+    "contest_name": "Midlands",
+    "seats": null,
+    "valid_votes": null,
+    "invalid_votes": null,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_FE_seats.pdf",
+    "source_format": "rov",
+    "candidates": []
+  },
+  {
+    "contest_name": "North West",
+    "seats": null,
+    "valid_votes": 236,
+    "invalid_votes": 6,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_FE_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Helen KELSALL",
+        "name": "Helen KELSALL",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "South",
+    "seats": null,
+    "valid_votes": 282,
+    "invalid_votes": 13,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_FE_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "John FONES",
+        "name": "John FONES",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Wales (and Vice-President UCU Wales)",
+    "seats": null,
+    "valid_votes": null,
+    "invalid_votes": null,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_FE_seats.pdf",
+    "source_format": "rov",
+    "candidates": []
+  },
+  {
+    "contest_name": "UK Elected Members",
+    "seats": 2,
+    "valid_votes": 1478,
+    "invalid_votes": 94,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_FE_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Sean VERNELL",
+        "name": "Sean VERNELL",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Jackie D\u2019ARCY",
+        "name": "Jackie D\u2019ARCY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Midlands",
+    "seats": null,
+    "valid_votes": 1333,
+    "invalid_votes": 50,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_HE_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Agnes FLUES",
+        "name": "Agnes FLUES",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Rhiannon LOCKLEY",
+        "name": "Rhiannon LOCKLEY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Caroline PROCTOR",
+        "name": "Caroline PROCTOR",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "North West",
+    "seats": null,
+    "valid_votes": 1087,
+    "invalid_votes": 30,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_HE_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Philippa BROWNING",
+        "name": "Philippa BROWNING",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Lucy BURKE",
+        "name": "Lucy BURKE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "South",
+    "seats": 4,
+    "valid_votes": 2155,
+    "invalid_votes": 63,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_HE_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Rebecca HARRISON [Woman]",
+        "name": "Rebecca HARRISON [Woman]",
+        "demographic_flags": [
+          "Woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Aris KATZOURAKIS",
+        "name": "Aris KATZOURAKIS",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Deepa GOVINDARAJAN DRIVER [Woman]",
+        "name": "Deepa GOVINDARAJAN DRIVER [Woman]",
+        "demographic_flags": [
+          "Woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Mark ABEL",
+        "name": "Mark ABEL",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "President UCU Scotland",
+    "seats": null,
+    "valid_votes": 1145,
+    "invalid_votes": 44,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_HE_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Jeanette FINDLAY",
+        "name": "Jeanette FINDLAY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Honorary Secretary UCU Scotland",
+    "seats": null,
+    "valid_votes": 1097,
+    "invalid_votes": 92,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_HE_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Carlo MORELLI",
+        "name": "Carlo MORELLI",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "CONFIDENTIAL",
+        "name": "CONFIDENTIAL",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "4",
+        "name": "4",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "fo",
+        "name": "fo",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "3",
+        "name": "3",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "egaP",
+        "name": "egaP",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "UK Elected Members",
+    "seats": 4,
+    "valid_votes": 9850,
+    "invalid_votes": 615,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_HE_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Vicky BLAKE [academic-related]",
+        "name": "Vicky BLAKE [academic-related]",
+        "demographic_flags": [
+          "academic-related"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Marion HERSH",
+        "name": "Marion HERSH",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Dyfrig JONES",
+        "name": "Dyfrig JONES",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Adam HANSEN [post-92]",
+        "name": "Adam HANSEN [post-92]",
+        "demographic_flags": [
+          "post-92"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Vice-President",
+    "seats": null,
+    "valid_votes": 12308,
+    "invalid_votes": 522,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_national_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Maria CHONDROGIANNI",
+        "name": "Maria CHONDROGIANNI",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Honorary Treasurer",
+    "seats": null,
+    "valid_votes": 12307,
+    "invalid_votes": 523,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_national_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "David HARVIE",
+        "name": "David HARVIE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Representatives of Disabled Members",
+    "seats": 2,
+    "valid_votes": 10824,
+    "invalid_votes": 2006,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_national_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Bijan PARSIA [HE]",
+        "name": "Bijan PARSIA [HE]",
+        "demographic_flags": [
+          "HE"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Representatives of LGBT+ Members",
+    "seats": 2,
+    "valid_votes": 11418,
+    "invalid_votes": 1412,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_national_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Mark PENDLETON [HE]",
+        "name": "Mark PENDLETON [HE]",
+        "demographic_flags": [
+          "HE"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Representatives of Black Members",
+    "seats": 2,
+    "valid_votes": 11189,
+    "invalid_votes": 1641,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_national_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Jak PEAKE",
+        "name": "Jak PEAKE",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Juliana OJINNAKA [Woman]",
+        "name": "Juliana OJINNAKA [Woman]",
+        "demographic_flags": [
+          "Woman"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Representatives of Migrant Members",
+    "seats": 2,
+    "valid_votes": 11328,
+    "invalid_votes": 1502,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_national_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Vivek THUPPIL [non-EU]",
+        "name": "Vivek THUPPIL [non-EU]",
+        "demographic_flags": [
+          "non-EU"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "Laura LOYOLA-HERNANDEZ [non-EU]",
+        "name": "Laura LOYOLA-HERNANDEZ [non-EU]",
+        "demographic_flags": [
+          "non-EU"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Representatives of Casually Employed Members",
+    "seats": 2,
+    "valid_votes": 11623,
+    "invalid_votes": 1207,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_national_seats.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Matilda FIZTMAURICE [HE]",
+        "name": "Matilda FIZTMAURICE [HE]",
+        "demographic_flags": [
+          "HE"
+        ],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "CONFIDENTIAL",
+        "name": "CONFIDENTIAL",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "4",
+        "name": "4",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "fo",
+        "name": "fo",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "4",
+        "name": "4",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      },
+      {
+        "name_raw": "egaP",
+        "name": "egaP",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  },
+  {
+    "contest_name": "Representative of Members in Prison Education",
+    "seats": null,
+    "valid_votes": null,
+    "invalid_votes": null,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2023/pdfs/SR_national_seats.pdf",
+    "source_format": "rov",
+    "candidates": []
+  },
+  {
+    "contest_name": "UCU Scotland Honorary Secretary",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "1097",
+    "invalid_votes": "92",
+    "quota": "548.5",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "MORELLI, Carlo",
+        "name": "MORELLI, Carlo",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 583.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "O'DONNELL, Christopher",
+        "name": "O'DONNELL, Christopher",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 514.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/UCU_Scotland_Honorary_Secretary.pdf"
+  },
+  {
+    "contest_name": "UCU Scotland President",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "1145",
+    "invalid_votes": "44",
+    "quota": "547",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "JOSS, Sarah",
+        "name": "JOSS, Sarah",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 350.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 454.0,
+            "transfer": 104.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "O'DONNELL, Christopher",
+        "name": "O'DONNELL, Christopher",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 296.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "FINDLAY, Jeanette",
+        "name": "FINDLAY, Jeanette",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 499.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 640.0,
+            "transfer": 141.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/UCU_Scotland_President.pdf"
+  },
+  {
+    "contest_name": "Vice President",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "12308",
+    "invalid_votes": "522",
+    "quota": "6154",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "CHONDROGIANNI, Maria",
+        "name": "CHONDROGIANNI, Maria",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 6224.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BATTELL LOWMAN, Emma",
+        "name": "BATTELL LOWMAN, Emma",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 6084.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023/pdfs/Vice_President.pdf"
+  }
+]

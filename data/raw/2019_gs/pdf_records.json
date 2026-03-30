@@ -1,0 +1,89 @@
+[
+  {
+    "contest_name": "Election of General Secretary 2019",
+    "date": "23/05/2019",
+    "seats": "1",
+    "valid_votes": "23638",
+    "invalid_votes": "43",
+    "quota": "11467.5",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "WADDUP, Matt",
+        "name": "WADDUP, Matt",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 6104.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 7721.0,
+            "transfer": 1617.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "GRADY, Jo",
+        "name": "GRADY, Jo",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 11515.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 15214.0,
+            "transfer": 3699.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "MCNEIL, Jo",
+        "name": "MCNEIL, Jo",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 6019.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2019_gs/pdfs/ucu-gselection-2019_final-count-sheet.pdf"
+  },
+  {
+    "contest_name": "General Secretary",
+    "seats": null,
+    "valid_votes": null,
+    "invalid_votes": null,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2019_gs/pdfs/ucu-gselection-2019_scrutineers-report1.pdf",
+    "source_format": "rov",
+    "candidates": [
+      {
+        "name_raw": "Jo GRADY",
+        "name": "Jo GRADY",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {}
+      }
+    ]
+  }
+]

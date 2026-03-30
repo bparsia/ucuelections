@@ -1,0 +1,108 @@
+[
+  {
+    "contest_name": "UCU Scotland executive committee members",
+    "date": "01/03/2023",
+    "seats": "2",
+    "valid_votes": "1125",
+    "invalid_votes": "64",
+    "quota": "375",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "SCANDRETT, Eurig",
+        "name": "SCANDRETT, Eurig",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 263.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 364.05,
+            "transfer": 101.05,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "WINTERS, Marion",
+        "name": "WINTERS, Marion",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 287.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 385.9,
+            "transfer": 98.9,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "GOW, Ann",
+        "name": "GOW, Ann",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 575.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 375.0,
+            "transfer": -200.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023_scotland/pdfs/UCU_Scotland_Executive_Committee_Members.pdf"
+  },
+  {
+    "contest_name": "UCU Scotland Honorary Treasurer",
+    "date": "01/03/2023",
+    "seats": "1",
+    "valid_votes": "1123",
+    "invalid_votes": "66",
+    "quota": "561.5",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "JONES, Tom",
+        "name": "JONES, Tom",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 631.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "HERSH, Marion",
+        "name": "HERSH, Marion",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 492.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2023_scotland/pdfs/UCU_Scotland_Honorary_Treasurer.pdf"
+  }
+]

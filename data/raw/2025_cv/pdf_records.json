@@ -1,0 +1,26 @@
+[
+  {
+    "contest_name": "Higher Education (North East)",
+    "seats": 1,
+    "valid_votes": 1501,
+    "invalid_votes": null,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2025_cv/pdfs/Result_sheet_-_2025_casual_vacancies.pdf",
+    "source_format": "rov",
+    "candidates": []
+  },
+  {
+    "contest_name": "UK-Elected Higher Education",
+    "seats": 1,
+    "valid_votes": 9391,
+    "invalid_votes": null,
+    "date": null,
+    "quota": null,
+    "election_rules": "STV",
+    "source_pdf": "data/raw/2025_cv/pdfs/Result_sheet_-_2025_casual_vacancies.pdf",
+    "source_format": "rov",
+    "candidates": []
+  }
+]

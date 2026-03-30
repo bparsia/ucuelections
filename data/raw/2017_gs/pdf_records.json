@@ -1,0 +1,29 @@
+[
+  {
+    "contest_name": "Election of General Secretary",
+    "source_pdf": "data/raw/2017_gs/pdfs/GS_count_sheet_2017.pdf",
+    "source_format": "text",
+    "date": "01/03/2017",
+    "seats": "1",
+    "valid_votes": "13724",
+    "invalid_votes": "156",
+    "quota": "6862",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "MCNEILL, Jo",
+        "name": "MCNEILL, Jo",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 5586.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  }
+]
