@@ -80,9 +80,7 @@ def find_scrutineer_pdfs(soup: BeautifulSoup, page_url: str) -> list[dict]:
     2. Fall back to collecting all /media/*.pdf links whose anchor text matches
        SCRUTINEER_PATTERNS and doesn't match EXCLUDE_ANCHOR_PATTERNS.
     """
-    body = get_body(soup)
-    if not body:
-        body = soup
+    body = get_body(soup) or soup
 
     # Strategy 1: anchor on "scrutineer's reports are available" paragraph
     anchor_para = None
@@ -105,9 +103,9 @@ def find_scrutineer_pdfs(soup: BeautifulSoup, page_url: str) -> list[dict]:
                 if href.endswith(".pdf") or "/pdf/" in href:
                     candidates.append({"anchor": a.get_text(strip=True), "href": href})
 
-    # Strategy 2: fallback — all media PDFs with scrutineer-like anchor text
+    # Strategy 2: fallback — search whole page for media PDFs with scrutineer-like anchor text
     if not candidates:
-        for a in body.find_all("a", href=True):
+        for a in soup.find_all("a", href=True):
             href = a["href"]
             if not (href.endswith(".pdf") or "/pdf/" in href):
                 continue
