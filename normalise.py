@@ -296,6 +296,40 @@ def deduplicate_contests(
         deduped_candidates.append(c)
     deduped_rounds = [r for r in round_rows if r["contest_id"] in kept_ids]
 
+    # Secondary pass: ROV-only contests whose valid_votes match a with-rounds contest
+    # in the same year+election_type are duplicates with different name strings.
+    with_rounds_vv: set[tuple] = set()
+    for c in deduped_contests:
+        if c["contest_id"] not in has_rounds_ids:
+            continue
+        vv = c.get("valid_votes")
+        if vv is None or vv == "":
+            continue
+        try:
+            with_rounds_vv.add((c["year"], c["election_type"], int(float(str(vv)))))
+        except (ValueError, TypeError):
+            pass
+
+    rov_drop: set[str] = set()
+    for c in deduped_contests:
+        if c["contest_id"] in has_rounds_ids:
+            continue
+        vv = c.get("valid_votes")
+        if vv is None or vv == "":
+            continue
+        try:
+            key = (c["year"], c["election_type"], int(float(str(vv))))
+        except (ValueError, TypeError):
+            continue
+        if key in with_rounds_vv:
+            rov_drop.add(c["contest_id"])
+
+    if rov_drop:
+        print(f"Deduplication (secondary): dropped {len(rov_drop)} ROV-only contest(s) matched by valid_votes to count sheets")
+        deduped_contests   = [c for c in deduped_contests   if c["contest_id"] not in rov_drop]
+        deduped_candidates = [c for c in deduped_candidates if c["contest_id"] not in rov_drop]
+        deduped_rounds     = [r for r in deduped_rounds     if r["contest_id"] not in rov_drop]
+
     return deduped_contests, deduped_candidates, deduped_rounds
 
 

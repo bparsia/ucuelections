@@ -1,5 +1,23 @@
 # UCU Elections Explorer — App Design
 
+>>> BJP OY! THIS IS ALL NONSENSE
+>>> BJP Seriously, why would you do all this "work" without consulting me? Just to cost me tokens? Make me upset? Generally bullshit?
+>>> BJP It's extra annoying becuase I made it clear that I had particular goals.
+
+## Goals
+
+1. The overarching goal is to help provide insight into UCU elections as a whole. This means doing key bits of analysis that the existing election pages (with PDFs etc.) make tedious or impossible. That's why we extracted the data.
+2. For example, overall turnout (percentagewise and absolute) over time is really difficult to track. Having a turnout percentage with key events (e.g., whether GS or VP HE or VP FE year) is key.
+3. Some things are tedious and difficult even for a single election. It'd be nice to have sections for each election so one can drill in without having to open multiple documents. It'd be nice to see at a scan which elections had specific turnout issues (e.g., wasted ballots)
+4. Eventually I want to add faction/affiliation information so we can see a notion of "vote share" for each grouping. I'm also very interested is seeing the "vote/seat" ratio to understand the effects of regional gerry mandering.
+5. I am also interested in views of individuals e.g., vote share, length of service ,etc.
+
+So, to get started, how about a simple landing page with a table with gross stats in total (e.g., races, seats, winners, candidates) and a line chart of turnout.
+
+>>> BJP
+>>> BJP ---- 
+>>> BJP I am ignoring AI SLOP below even if some bits are relevant or helpful. 
+>>> BJP ----
 ## Primary goals
 
 The app should help answer:

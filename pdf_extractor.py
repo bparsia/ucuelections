@@ -705,20 +705,31 @@ def extract_ballot_stats(path: Path) -> dict | None:
     except Exception:
         return None
 
-    eligible_m = re.search(r"Number of eligible voters[\s:]+([0-9,]+)", text)
-    cast_m     = re.search(r"Total number of votes cast[\s:]+([0-9,]+)", text)
-    turnout_m  = re.search(r"Turnout[\s:]+([0-9.]+)\s*%", text)
-
-    if not (eligible_m or (cast_m and turnout_m)):
-        return None
-
-    eligible = int(eligible_m.group(1).replace(",", "")) if eligible_m else None
-    cast     = int(cast_m.group(1).replace(",", "")) if cast_m else None
-    turnout  = float(turnout_m.group(1)) if turnout_m else None
-
-    # Infer missing eligible from cast + turnout
-    if eligible is None and cast and turnout:
+    # PDFs with multiple contests each repeat these fields; take the block
+    # with the highest eligible_voters (= the full-sector UK Elected Members
+    # contest) rather than the first match (which may be a regional contest).
+    eligible_matches = [
+        (int(m.group(1).replace(",", "")), m.start())
+        for m in re.finditer(r"Number of eligible voters[\s:]+([0-9,]+)", text)
+    ]
+    if not eligible_matches:
+        # Fall back to cast+turnout only
+        cast_m    = re.search(r"Total number of votes cast[\s:]+([0-9,]+)", text)
+        turnout_m = re.search(r"Turnout[\s:]+([0-9.]+)\s*%", text)
+        if not (cast_m and turnout_m):
+            return None
+        cast    = int(cast_m.group(1).replace(",", ""))
+        turnout = float(turnout_m.group(1))
         eligible = round(cast / (turnout / 100))
+    else:
+        eligible, best_pos = max(eligible_matches, key=lambda t: t[0])
+        # Find the votes_cast and turnout values that appear *after* this
+        # eligible line (i.e. in the same contest block)
+        tail = text[best_pos:]
+        cast_m    = re.search(r"Total number of votes cast[\s:]+([0-9,]+)", tail)
+        turnout_m = re.search(r"Turnout[\s:]+([0-9.]+)\s*%", tail)
+        cast    = int(cast_m.group(1).replace(",", "")) if cast_m else None
+        turnout = float(turnout_m.group(1)) if turnout_m else None
 
     ballot_type = _infer_ballot_type(text, path.name, eligible)
 
