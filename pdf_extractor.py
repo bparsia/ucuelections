@@ -41,6 +41,22 @@ SKIP_NAME_PREFIXES = (
     "non-transferable", "non- transferable",
 )
 
+
+def _is_junk_name(name: str) -> bool:
+    """Return True for PDF artefacts mistaken for candidate names.
+
+    Rotated page labels ('CONFIDENTIAL', '4', 'fo', 'egaP' = 'Page' mirrored)
+    appear in some PDFs when pdfplumber extracts sidebar text.
+    """
+    s = name.strip()
+    if len(s) <= 2:           # single chars and two-char fragments like "fo"
+        return True
+    if s.isdigit():            # bare page numbers
+        return True
+    if s.lower() in {"confidential", "egap", "page"}:
+        return True
+    return False
+
 # Metadata field labels in the first rows of count sheets
 METADATA_LABELS = {
     "election for": "contest_name",
@@ -211,6 +227,8 @@ def parse_single_round(table: list[list]) -> list[dict]:
             continue
         if any(name_lower.startswith(p) for p in SKIP_NAME_PREFIXES):
             continue
+        if _is_junk_name(name_raw):
+            continue
 
         name, flags = parse_name(name_raw)
         fp_raw = cell(row[1]) if len(row) > 1 else ""
@@ -269,6 +287,8 @@ def parse_candidate_rows(
         if name_lower in SKIP_ROW_NAMES:
             continue
         if any(name_lower.startswith(p) for p in SKIP_NAME_PREFIXES):
+            continue
+        if _is_junk_name(name_raw):
             continue
         # Skip rows that look like sub-headers (Stage / Exclusion of …)
         if name_raw in ("", "Stage") or name_lower.startswith("exclusion") or name_lower.startswith("surplus"):
@@ -472,7 +492,7 @@ def _split_rov_text_blocks(text: str) -> list[dict]:
                 # Stop collecting when we hit stats or keywords
                 if re.match(r"(Number of|Votes cast|Total number|Turnout|The following|The election)", line):
                     in_elected = False
-                else:
+                elif not _is_junk_name(line):
                     elected_names.append(line)
 
         blocks.append({
