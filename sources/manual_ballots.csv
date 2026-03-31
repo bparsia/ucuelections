@@ -1,0 +1,8 @@
+year,election_type,ballot_type,eligible_voters,votes_cast,turnout_pct,source_note
+2010,UK national,FE,40438,3775,9.3,FE scrutineer report (manual)
+2011,UK national,national,120080,14591,12.2,VP result sheet (manual)
+2011,UK national,HE,68312,9525,13.9,HE scrutineer report (manual)
+2019,UK national,national,115008,14204,12.4,VP result sheet (manual)
+2021-22,UK national,national,121644,9567,7.9,VP result sheet (manual)
+2021-22,UK national,HE,84631,7166,8.5,HE scrutineer report (manual)
+2021-22,UK national,FE,29070,1534,5.3,FE scrutineer report (manual)

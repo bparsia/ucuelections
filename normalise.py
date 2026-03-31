@@ -25,6 +25,7 @@ from pathlib import Path
 RAW_DIR = Path(__file__).parent / "data" / "raw"
 OUT_DIR = Path(__file__).parent / "data" / "processed"
 POSITION_MAP_PATH = Path(__file__).parent / "sources" / "position_map.csv"
+MANUAL_BALLOTS_PATH = Path(__file__).parent / "sources" / "manual_ballots.csv"
 
 
 # ---------------------------------------------------------------------------
@@ -421,7 +422,7 @@ def main():
         pdf_records = json.loads(pdf_path.read_text()) if pdf_path.exists() else []
         html_records = json.loads(html_path.read_text()) if html_path.exists() else []
 
-        # Ballot stats
+        # Ballot stats (extracted from PDFs)
         if stats_path.exists():
             year = year_from_dir(d.name)
             etype = election_type_from_dir(d.name)
@@ -446,6 +447,21 @@ def main():
         all_contests.extend(c_rows + hc_rows)
         all_candidates.extend(ca_rows + hca_rows)
         all_rounds.extend(r_rows)
+
+    # Manual ballot stats (hand-entered for image PDFs / missing years)
+    if MANUAL_BALLOTS_PATH.exists():
+        with MANUAL_BALLOTS_PATH.open() as f:
+            for row in csv.DictReader(f):
+                all_ballots.append({
+                    "year":             row["year"],
+                    "election_type":    row["election_type"],
+                    "ballot_type":      row["ballot_type"],
+                    "eligible_voters":  int(row["eligible_voters"]),
+                    "votes_cast":       int(row["votes_cast"]),
+                    "turnout_pct":      float(row["turnout_pct"]),
+                    "source_pdf":       row["source_note"],
+                })
+        print(f"Loaded {sum(1 for _ in csv.DictReader(MANUAL_BALLOTS_PATH.open()))} manual ballot rows")
 
     # Deduplicate ROV vs count-sheet overlaps
     before = len(all_contests)
