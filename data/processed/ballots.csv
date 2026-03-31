@@ -26,6 +26,12 @@ year,election_type,ballot_type,eligible_voters,votes_cast,turnout_pct,suspect,su
 2017,UK national,HE,67038,10304,15.4,False,,data/raw/2017/pdfs/Scrutineers_report_HE.pdf
 2017,UK national,national,101497,13880,13.7,False,,data/raw/2017/pdfs/Scrutineers_report_national_seats.pdf
 2017,general secretary,national,101497,13880,13.7,True,"election_type is 'general secretary', not a main annual ballot",data/raw/2017_gs/pdfs/GS_result_scrutineer_report_17.pdf
+2018,UK national,FE,27981,2215,7.9,False,,data/raw/2018/pdfs/FE_Report.pdf
+2018,UK national,HE,72497,7023,9.7,False,,data/raw/2018/pdfs/HE_report.pdf
+2018,UK national,national,107196,10232,9.6,False,,data/raw/2018/pdfs/National_seats_report.pdf
+2019,UK national,FE,28500,2064,7.2,False,,data/raw/2019/pdfs/Scrutineer_report_FE_seats.pdf
+2019,UK national,HE,79810,11135,14.0,False,,data/raw/2019/pdfs/Scrutineer_report_HE_seats.pdf
+2019,general secretary,national,115311,23681,20.5,True,"election_type is 'general secretary', not a main annual ballot",data/raw/2019_gs/pdfs/ucu-gselection-2019_scrutineers-report1.pdf
 2019-20,UK national,FE,29564,2155,7.3,False,,data/raw/2019-20/pdfs/Scrutineer_report_FE.pdf
 2019-20,UK national,HE,84922,10934,12.9,False,,data/raw/2019-20/pdfs/scrutineer_report_HE.pdf
 2019-20,UK national,national,121648,14135,11.6,False,,data/raw/2019-20/pdfs/Scrutineer_report_national_seats.pdf

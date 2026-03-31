@@ -705,16 +705,26 @@ def extract_ballot_stats(path: Path) -> dict | None:
     except Exception:
         return None
 
+    # Two known field-name variants across years:
+    #   Modern (2020+):  "Number of eligible voters" / "Total number of votes cast"
+    #   Older (2018-19): "Number of ballot papers distributed" / "Number of ballot papers returned"
+    ELIGIBLE_PAT = re.compile(
+        r"(?:Number of (?:eligible voters|ballot papers distributed))[\s:]+([0-9,]+)"
+    )
+    CAST_PAT = re.compile(
+        r"(?:Total number of votes cast|Number of ballot papers returned)[\s:]+([0-9,]+)"
+    )
+
     # PDFs with multiple contests each repeat these fields; take the block
     # with the highest eligible_voters (= the full-sector UK Elected Members
     # contest) rather than the first match (which may be a regional contest).
     eligible_matches = [
         (int(m.group(1).replace(",", "")), m.start())
-        for m in re.finditer(r"Number of eligible voters[\s:]+([0-9,]+)", text)
+        for m in ELIGIBLE_PAT.finditer(text)
     ]
     if not eligible_matches:
         # Fall back to cast+turnout only
-        cast_m    = re.search(r"Total number of votes cast[\s:]+([0-9,]+)", text)
+        cast_m    = CAST_PAT.search(text)
         turnout_m = re.search(r"Turnout[\s:]+([0-9.]+)\s*%", text)
         if not (cast_m and turnout_m):
             return None
@@ -726,7 +736,7 @@ def extract_ballot_stats(path: Path) -> dict | None:
         # Find the votes_cast and turnout values that appear *after* this
         # eligible line (i.e. in the same contest block)
         tail = text[best_pos:]
-        cast_m    = re.search(r"Total number of votes cast[\s:]+([0-9,]+)", tail)
+        cast_m    = CAST_PAT.search(tail)
         turnout_m = re.search(r"Turnout[\s:]+([0-9.]+)\s*%", tail)
         cast    = int(cast_m.group(1).replace(",", "")) if cast_m else None
         turnout = float(turnout_m.group(1)) if turnout_m else None
