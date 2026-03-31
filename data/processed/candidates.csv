@@ -162,12 +162,6 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2009|UK national|UCU-Further Education UK,2009,UK national,UCU-Further Education UK,UCU-Further Education UK,Alison Gander,Alison Gander,,False,False,False,Not Elected,571.0,pdf
 2009|UK national|UCU-Further Education UK,2009,UK national,UCU-Further Education UK,UCU-Further Education UK,Kathy Taylor,Kathy Taylor,,False,False,False,Not Elected,490.0,pdf
 2009|UK national|UCU-Further Education UK,2009,UK national,UCU-Further Education UK,UCU-Further Education UK,Dave Gibson,Dave Gibson,,False,False,False,Not Elected,379.0,pdf
-2009|UK national|UCU-Further Education UK,2009,UK national,UCU-Further Education UK,UCU-Further Education UK,with,with,,False,False,False,Not Elected,680.0,pdf
-2009|UK national|UCU-Further Education UK,2009,UK national,UCU-Further Education UK,UCU-Further Education UK,over quota,over quota,,False,False,False,Not Elected,583.84,pdf
-2009|UK national|UCU-Further Education UK,2009,UK national,UCU-Further Education UK,UCU-Further Education UK,Vote required for election now:,Vote required for election now:,,False,False,False,Not Elected,583.84,pdf
-2009|UK national|UCU-Further Education UK,2009,UK national,UCU-Further Education UK,UCU-Further Education UK,Papers transferred at,Papers transferred at,,False,False,False,Not Elected,0.14,pdf
-2009|UK national|UCU-Further Education UK,2009,UK national,UCU-Further Education UK,UCU-Further Education UK,with,with,,False,False,False,Not Elected,599.84,pdf
-2009|UK national|UCU-Further Education UK,2009,UK national,UCU-Further Education UK,UCU-Further Education UK,over quota,over quota,,False,False,False,Not Elected,583.84,pdf
 2009|UK national|UCU-Higher Education-North West,2009,UK national,UCU-Higher Education-North West,UCU-Higher Education-North West,Karen Evans,Karen Evans,,False,False,False,Elected,290.0,pdf
 2009|UK national|UCU-Higher Education-North West,2009,UK national,UCU-Higher Education-North West,UCU-Higher Education-North West,John Dobson,John Dobson,,False,False,False,Elected,278.0,pdf
 2009|UK national|UCU-Higher Education-North West,2009,UK national,UCU-Higher Education-North West,UCU-Higher Education-North West,Roger Brooks,Roger Brooks,,False,False,False,Not Elected,212.0,pdf
@@ -232,7 +226,6 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2011|UK national|Members,2011,UK national,Members,Members,Lesley KANE,Lesley KANE,,False,False,False,Elected,840.0,pdf
 2011|UK national|Members,2011,UK national,Members,Members,Jim GUILD,Jim GUILD,,False,False,False,Not Elected,236.0,pdf
 2011|UK national|Members,2011,UK national,Members,Members,Bob LANGRIDGE,Bob LANGRIDGE,,False,False,False,Elected,406.0,pdf
-2011|UK national|Members,2011,UK national,Members,Members,With,With,,False,False,False,Not Elected,840.0,pdf
 2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Jimmy DONAGHEY,Jimmy DONAGHEY,,False,False,False,Elected,1437.0,pdf
 2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,92),92),,False,False,False,Not Elected,248.0,pdf
 2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Joe GLUZA,Joe GLUZA,,False,False,False,Elected,1745.0,pdf
@@ -244,33 +237,15 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,(post-92),(post-92),,False,False,False,Elected,823.0,pdf
 2011|UK national|President,2011,UK national,President,President,Jim WOLFREYS,Jim WOLFREYS,,False,False,False,Not Elected,5409.0,pdf
 2011|UK national|President,2011,UK national,President,President,Simon RENTON,Simon RENTON,,False,False,False,Elected,8533.0,pdf
-2011|UK national|President,2011,UK national,President,President,With,With,,False,False,False,Not Elected,8533.0,pdf
 2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Annie Holder,Annie Holder,,False,False,False,Elected,276.0,pdf
 2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Sean Vernell,Sean Vernell,,False,False,False,Elected,380.0,pdf
 2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Mandy Brown,Mandy Brown,,False,False,False,Not Elected,204.0,pdf
-2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,London and East FE,London and East FE,,False,False,False,Not Elected,40.0,pdf
-2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Papers transferred at,Papers transferred at,,False,False,False,Not Elected,0.27,pdf
-2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,with,with,,False,False,False,Not Elected,301.92,pdf
-2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Sean Vernell ELECTED over quota,Sean Vernell ELECTED over quota,,False,False,False,Not Elected,286.67,pdf
-2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,with,with,,False,False,False,Not Elected,380.0,pdf
-2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,over quota,over quota,,False,False,False,Not Elected,286.67,pdf
-2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Vote required for election now:,Vote required for election now:,,False,False,False,Not Elected,286.67,pdf
-2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|North East FE,2012,UK national,North East FE,North East FE,Ümit Yildiz,Ümit Yildiz,,False,False,False,Not Elected,128.0,pdf
 2012|UK national|North East FE,2012,UK national,North East FE,North East FE,Graham Mustin,Graham Mustin,,False,False,False,Not Elected,125.0,pdf
 2012|UK national|North East FE,2012,UK national,North East FE,North East FE,Rob Goodfellow,Rob Goodfellow,,False,False,False,Elected,168.0,pdf
 2012|UK national|North East FE,2012,UK national,North East FE,North East FE,Cath Hepburn,Cath Hepburn,,False,False,False,Elected,260.0,pdf
-2012|UK national|North East FE,2012,UK national,North East FE,North East FE,North East FE Total Present Value:,North East FE Total Present Value:,,False,False,False,Not Elected,211.0,pdf
-2012|UK national|North East FE,2012,UK national,North East FE,North East FE,Cath Hepburn ELECTED Stage,Cath Hepburn ELECTED Stage,,False,False,False,Not Elected,3.0,pdf
-2012|UK national|North East FE,2012,UK national,North East FE,North East FE,with,with,,False,False,False,Not Elected,260.0,pdf
-2012|UK national|North East FE,2012,UK national,North East FE,North East FE,over quota,over quota,,False,False,False,Not Elected,227.0,pdf
-2012|UK national|North East FE,2012,UK national,North East FE,North East FE,Vote required for election now:,Vote required for election now:,,False,False,False,Not Elected,227.0,pdf
-2012|UK national|North East FE,2012,UK national,North East FE,North East FE,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|North West - Casual Vacancy,2012,UK national,North West - Casual Vacancy,North West - Casual Vacancy,Andy Sellers,Andy Sellers,,False,False,False,Elected,252.0,pdf
 2012|UK national|North West - Casual Vacancy,2012,UK national,North West - Casual Vacancy,North West - Casual Vacancy,Darren Bradshaw,Darren Bradshaw,,False,False,False,Not Elected,213.0,pdf
-2012|UK national|North West - Casual Vacancy,2012,UK national,North West - Casual Vacancy,North West - Casual Vacancy,with,with,,False,False,False,Not Elected,252.0,pdf
-2012|UK national|North West - Casual Vacancy,2012,UK national,North West - Casual Vacancy,North West - Casual Vacancy,over quota,over quota,,False,False,False,Not Elected,232.5,pdf
-2012|UK national|North West - Casual Vacancy,2012,UK national,North West - Casual Vacancy,North West - Casual Vacancy,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|NEC,2012,UK national,NEC,NEC,John Holden,John Holden,,False,False,False,Elected,559.0,pdf
 2012|UK national|NEC,2012,UK national,NEC,NEC,Richard McEwan,Richard McEwan,,False,False,False,Elected,480.0,pdf
 2012|UK national|NEC,2012,UK national,NEC,NEC,prison,prison,,False,False,False,Elected,440.0,pdf
@@ -284,12 +259,6 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2012|UK national|Representatives of Women in FE,2012,UK national,Representatives of Women in FE,Representatives of Women in FE,Monica Goligher,Monica Goligher,,False,False,False,Elected,4573.0,pdf
 2012|UK national|Representatives of Women in FE,2012,UK national,Representatives of Women in FE,Representatives of Women in FE,Vicky Knight,Vicky Knight,,False,False,False,Elected,3587.0,pdf
 2012|UK national|Representatives of Women in FE,2012,UK national,Representatives of Women in FE,Representatives of Women in FE,Alison Lord,Alison Lord,,False,False,False,Not Elected,2926.0,pdf
-2012|UK national|Representatives of Women in FE,2012,UK national,Representatives of Women in FE,Representatives of Women in FE,Papers transferred at,Papers transferred at,,False,False,False,Not Elected,0.25,pdf
-2012|UK national|Representatives of Women in FE,2012,UK national,Representatives of Women in FE,Representatives of Women in FE,with,with,,False,False,False,Not Elected,4573.0,pdf
-2012|UK national|Representatives of Women in FE,2012,UK national,Representatives of Women in FE,Representatives of Women in FE,over quota,over quota,,False,False,False,Not Elected,3695.34,pdf
-2012|UK national|Representatives of Women in FE,2012,UK national,Representatives of Women in FE,Representatives of Women in FE,over quota,over quota,,False,False,False,Not Elected,3695.34,pdf
-2012|UK national|Representatives of Women in FE,2012,UK national,Representatives of Women in FE,Representatives of Women in FE,Vote required for election now:,Vote required for election now:,,False,False,False,Not Elected,3695.33,pdf
-2012|UK national|Representatives of Women in FE,2012,UK national,Representatives of Women in FE,Representatives of Women in FE,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,Steve Sangwine,Steve Sangwine,,False,False,False,Elected,385.0,pdf
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,Jim Wolfreys,Jim Wolfreys,,False,False,False,Not Elected,236.0,pdf
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,David Goode,David Goode,,False,False,False,Not Elected,297.0,pdf
@@ -297,19 +266,14 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,woman,woman,,False,False,False,Elected,282.0,pdf
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,Susan Michie,Susan Michie,,False,False,False,Not Elected,,pdf
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,woman,woman,,False,False,False,Elected,371.0,pdf
-2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|Northern Ireland HE,2012,UK national,Northern Ireland HE,Northern Ireland HE,Brian Kelly,Brian Kelly,,False,False,False,Not Elected,92.0,pdf
 2012|UK national|Northern Ireland HE,2012,UK national,Northern Ireland HE,Northern Ireland HE,Renee,Renee,,False,False,False,Elected,183.0,pdf
-2012|UK national|Northern Ireland HE,2012,UK national,Northern Ireland HE,Northern Ireland HE,with,with,,False,False,False,Not Elected,183.0,pdf
-2012|UK national|Northern Ireland HE,2012,UK national,Northern Ireland HE,Northern Ireland HE,over quota,over quota,,False,False,False,Not Elected,137.5,pdf
-2012|UK national|Northern Ireland HE,2012,UK national,Northern Ireland HE,Northern Ireland HE,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|North East HE,2012,UK national,North East HE,North East HE,Elizabeth Lawrence,Elizabeth Lawrence,,False,False,False,Elected,303.0,pdf
 2012|UK national|North East HE,2012,UK national,North East HE,North East HE,Joanna de Groot,Joanna de Groot,,False,False,False,Elected,442.0,pdf
 2012|UK national|North East HE,2012,UK national,North East HE,North East HE,Martin Levy,Martin Levy,,False,False,False,Elected,208.0,pdf
 2012|UK national|North East HE,2012,UK national,North East HE,North East HE,Veronica Killen,Veronica Killen,,False,False,False,Not Elected,111.0,pdf
 2012|UK national|North East HE,2012,UK national,North East HE,North East HE,Jeff Fowler,Jeff Fowler,,False,False,False,Not Elected,91.0,pdf
 2012|UK national|North East HE,2012,UK national,North East HE,North East HE,Gavin Reid,Gavin Reid,,False,False,False,Not Elected,231.0,pdf
-2012|UK national|North East HE,2012,UK national,North East HE,North East HE,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|HE UK-Elected NEC,2012,UK national,HE UK-Elected NEC,HE UK-Elected NEC,Jelena Timotijevic-post-92,Jelena Timotijevic-post-92,,False,False,False,Elected,1128.0,pdf
 2012|UK national|HE UK-Elected NEC,2012,UK national,HE UK-Elected NEC,HE UK-Elected NEC,Lesley McGorrigan-AR,Lesley McGorrigan-AR,,False,False,False,Elected,898.0,pdf
 2012|UK national|HE UK-Elected NEC,2012,UK national,HE UK-Elected NEC,HE UK-Elected NEC,Steve Clark-post-92,Steve Clark-post-92,,False,False,False,Elected,1156.0,pdf
@@ -320,38 +284,18 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2012|UK national|HE UK-Elected NEC,2012,UK national,HE UK-Elected NEC,HE UK-Elected NEC,Roger Brooks-AR,Roger Brooks-AR,,False,False,False,Not Elected,629.0,pdf
 2012|UK national|HE UK-Elected NEC,2012,UK national,HE UK-Elected NEC,HE UK-Elected NEC,Angi Lamb-AR,Angi Lamb-AR,,False,False,False,Elected,787.0,pdf
 2012|UK national|HE UK-Elected NEC,2012,UK national,HE UK-Elected NEC,HE UK-Elected NEC,Alan J Ryan-post-92,Alan J Ryan-post-92,,False,False,False,Not Elected,320.0,pdf
-2012|UK national|HE UK-Elected NEC,2012,UK national,HE UK-Elected NEC,HE UK-Elected NEC,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|Wales VP,2012,UK national,Wales VP,Wales VP,Liza van Zyl,Liza van Zyl,,False,False,False,Not Elected,202.0,pdf
 2012|UK national|Wales VP,2012,UK national,Wales VP,Wales VP,Christopher Whyley,Christopher Whyley,,False,False,False,Elected,307.0,pdf
-2012|UK national|Wales VP,2012,UK national,Wales VP,Wales VP,with,with,,False,False,False,Not Elected,307.0,pdf
-2012|UK national|Wales VP,2012,UK national,Wales VP,Wales VP,over quota,over quota,,False,False,False,Not Elected,254.5,pdf
-2012|UK national|Wales VP,2012,UK national,Wales VP,Wales VP,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|Representatives of Women in HE,2012,UK national,Representatives of Women in HE,Representatives of Women in HE,Ann Blair,Ann Blair,,False,False,False,Elected,3623.0,pdf
 2012|UK national|Representatives of Women in HE,2012,UK national,Representatives of Women in HE,Representatives of Women in HE,Pauline Collins,Pauline Collins,,False,False,False,Elected,3610.0,pdf
 2012|UK national|Representatives of Women in HE,2012,UK national,Representatives of Women in HE,Representatives of Women in HE,Marion Hersh,Marion Hersh,,False,False,False,Not Elected,2539.0,pdf
 2012|UK national|Representatives of Women in HE,2012,UK national,Representatives of Women in HE,Representatives of Women in HE,Suzanne Trill,Suzanne Trill,,False,False,False,Elected,2344.0,pdf
-2012|UK national|Representatives of Women in HE,2012,UK national,Representatives of Women in HE,Representatives of Women in HE,with,with,,False,False,False,Not Elected,3623.0,pdf
-2012|UK national|Representatives of Women in HE,2012,UK national,Representatives of Women in HE,Representatives of Women in HE,over quota,over quota,,False,False,False,Not Elected,3029.0,pdf
-2012|UK national|Representatives of Women in HE,2012,UK national,Representatives of Women in HE,Representatives of Women in HE,with,with,,False,False,False,Not Elected,3610.0,pdf
-2012|UK national|Representatives of Women in HE,2012,UK national,Representatives of Women in HE,Representatives of Women in HE,over quota,over quota,,False,False,False,Not Elected,3029.0,pdf
-2012|UK national|Representatives of Women in HE,2012,UK national,Representatives of Women in HE,Representatives of Women in HE,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|Trustees,2012,UK national,Trustees,Trustees,Alastair Hunter,Alastair Hunter,,False,False,False,Elected,3205.0,pdf
 2012|UK national|Trustees,2012,UK national,Trustees,Trustees,Philip Burgess,Philip Burgess,,False,False,False,Elected,3369.0,pdf
 2012|UK national|Trustees,2012,UK national,Trustees,Trustees,Neil Macfarlane,Neil Macfarlane,,False,False,False,Elected,3913.0,pdf
 2012|UK national|Trustees,2012,UK national,Trustees,Trustees,Alan Whitaker,Alan Whitaker,,False,False,False,Not Elected,2571.0,pdf
-2012|UK national|Trustees,2012,UK national,Trustees,Trustees,Trustees Stage,Trustees Stage,,False,False,False,Not Elected,2.0,pdf
-2012|UK national|Trustees,2012,UK national,Trustees,Trustees,Neil Macfarlane ELECTED Total Present Value:,Neil Macfarlane ELECTED Total Present Value:,,False,False,False,Not Elected,3341.0,pdf
-2012|UK national|Trustees,2012,UK national,Trustees,Trustees,with,with,,False,False,False,Not Elected,3913.0,pdf
-2012|UK national|Trustees,2012,UK national,Trustees,Trustees,over quota,over quota,,False,False,False,Not Elected,3264.5,pdf
-2012|UK national|Trustees,2012,UK national,Trustees,Trustees,with,with,,False,False,False,Not Elected,3369.0,pdf
-2012|UK national|Trustees,2012,UK national,Trustees,Trustees,over quota,over quota,,False,False,False,Not Elected,3264.5,pdf
-2012|UK national|Trustees,2012,UK national,Trustees,Trustees,Vote required for election now:,Vote required for election now:,,False,False,False,Not Elected,3264.5,pdf
-2012|UK national|Trustees,2012,UK national,Trustees,Trustees,page,page,,False,False,False,Not Elected,1.0,pdf
 2012|UK national|Vice,2012,UK national,Vice,Vice,Angie McConnell,Angie McConnell,,False,False,False,Not Elected,6142.0,pdf
 2012|UK national|Vice,2012,UK national,Vice,Vice,John McCormack,John McCormack,,False,False,False,Elected,6463.0,pdf
-2012|UK national|Vice,2012,UK national,Vice,Vice,with,with,,False,False,False,Not Elected,6463.0,pdf
-2012|UK national|Vice,2012,UK national,Vice,Vice,over quota,over quota,,False,False,False,Not Elected,6302.5,pdf
-2012|UK national|Vice,2012,UK national,Vice,Vice,page,page,,False,False,False,Not Elected,1.0,pdf
 2013|UK national|Further education members – Midlands,2013,UK national,Further education members – Midlands,Further education members – Midlands,Alan BARKER,Alan BARKER,,False,False,False,Not Elected,148.0,pdf
 2013|UK national|Further education members – Midlands,2013,UK national,Further education members – Midlands,Further education members – Midlands,Brian O'SULLIVAN,Brian O'SULLIVAN,,False,False,False,Elected,220.0,pdf
 2013|UK national|Further education members – Midlands,2013,UK national,Further education members – Midlands,Further education members – Midlands,Jacqueline D'ARCY,Jacqueline D'ARCY,,False,False,False,Elected,231.0,pdf

@@ -39,6 +39,10 @@ SKIP_NAME_PREFIXES = (
     "election for", "date", "quota", "number to be elected",
     "valid votes", "invalid votes", "election rules", "estv",
     "non-transferable", "non- transferable",
+    "papers transferred", "vote required", "over quota",
+    "votes required", "transfer value",
+    "stage ", "surplus of", "with ", "total present",
+    "no candidates", "transfer the", "candidate",
 )
 
 
@@ -49,11 +53,16 @@ def _is_junk_name(name: str) -> bool:
     appear in some PDFs when pdfplumber extracts sidebar text.
     """
     s = name.strip()
+    sl = s.lower()
     if len(s) <= 2:           # single chars and two-char fragments like "fo"
         return True
     if s.isdigit():            # bare page numbers
         return True
-    if s.lower() in {"confidential", "egap", "page"}:
+    if sl in {"confidential", "egap", "page", "with"}:
+        return True
+    if "non-transferable" in sl:   # contest-name + "N papers non-transferable"
+        return True
+    if " elected " in sl or sl.endswith(" elected"):  # stage-detail lines
         return True
     return False
 
@@ -638,8 +647,13 @@ def parse_text_page(text: str, source: str) -> dict | None:
                 header_stages = [int(n) for n in nums]
             continue
 
-        # Skip header rows and totals within the data section
-        if re.match(r"^(First|Surplus|Exclusion|Stage|Candidates|Non-transferable|Totals?|Quota)\b", line, re.IGNORECASE):
+        # Stop data section at the Totals row (everything after is stage detail)
+        if re.match(r"^Totals?\b", line, re.IGNORECASE):
+            in_data = False
+            continue
+
+        # Skip header rows within the data section
+        if re.match(r"^(First|Surplus|Exclusion|Stage|Candidates|Non-transferable|Quota)\b", line, re.IGNORECASE):
             continue
 
         # Try to parse candidate row: NAME followed by numbers
@@ -658,6 +672,9 @@ def parse_text_page(text: str, source: str) -> dict | None:
             continue
 
         name_raw = " ".join(parts[:num_start])
+        name_lower = name_raw.lower()
+        if _is_junk_name(name_raw) or any(name_lower.startswith(p) for p in SKIP_NAME_PREFIXES):
+            continue
         name, flags = parse_name(name_raw)
         values = parts[num_start:]
 
