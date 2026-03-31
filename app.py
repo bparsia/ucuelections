@@ -122,7 +122,14 @@ BALLOT_COLOURS = {
 # ---------------------------------------------------------------------------
 
 st.title("UCU Elections — Overview")
+st.markdown("""
+This is an early version of a UCU election data explorer vibe/spec coded by Bijan Parsia using Claude CLI (AI tool). The repository isn't really in a [great state](https://github.com/bparsia/ucuelections) but it's probably usable. 
 
+The scripts scrape the results from various UCU pages as a mix of HTML and (usually but not always) text PDFs. The format is...not entirely regular, so weirdnesses happen.
+
+At the moment, I just share the overall turn out results, which I think are interesting. There may still be errors. Drill downs into each election coming soon.
+
+One personal takeaway is that turnout is low and not obviously correlated with various supposed turn out lowering events I've seen hypothesized (including by me). And we need GTVO in FE even more than in HE.  """)
 # --- Turnout chart -----------------------------------------------------------
 st.subheader("Turnout by ballot, 2009–2026")
 st.caption(
