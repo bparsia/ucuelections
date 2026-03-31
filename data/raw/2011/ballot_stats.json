@@ -1,0 +1,16 @@
+[
+  {
+    "eligible_voters": 68312,
+    "votes_cast": 9525,
+    "turnout_pct": 13.9,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_heuk_hereg_ucuspres_ucushonsec.pdf"
+  },
+  {
+    "eligible_voters": 120080,
+    "votes_cast": 14591,
+    "turnout_pct": 12.2,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_hevp_hontreas_eq.pdf"
+  }
+]

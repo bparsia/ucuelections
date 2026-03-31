@@ -1,0 +1,30 @@
+[
+  {
+    "eligible_voters": 117918,
+    "votes_cast": 15045,
+    "turnout_pct": 12.8,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2012/pdfs/GS_scrutineers_report.pdf"
+  },
+  {
+    "eligible_voters": 39793,
+    "votes_cast": 3916,
+    "turnout_pct": 9.8,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2012/pdfs/Scrutineers_report_FE.pdf"
+  },
+  {
+    "eligible_voters": 67720,
+    "votes_cast": 9640,
+    "turnout_pct": 14.2,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2012/pdfs/Scrutineers_report_HE.pdf"
+  },
+  {
+    "eligible_voters": 117918,
+    "votes_cast": 15045,
+    "turnout_pct": 12.8,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2012/pdfs/Scrutineers_report_national.pdf"
+  }
+]

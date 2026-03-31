@@ -1,0 +1,23 @@
+[
+  {
+    "eligible_voters": 5017,
+    "votes_cast": 386,
+    "turnout_pct": 7.7,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2020-21/pdfs/Scrutineer_report_FE.pdf"
+  },
+  {
+    "eligible_voters": 11410,
+    "votes_cast": 1141,
+    "turnout_pct": 10.0,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2020-21/pdfs/Scrutineer_report_HE1.pdf"
+  },
+  {
+    "eligible_voters": 122830,
+    "votes_cast": 11485,
+    "turnout_pct": 9.4,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2020-21/pdfs/Scrutineer_report_national.pdf"
+  }
+]

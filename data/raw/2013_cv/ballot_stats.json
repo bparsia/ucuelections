@@ -1,0 +1,9 @@
+[
+  {
+    "eligible_voters": 10173,
+    "votes_cast": 1792,
+    "turnout_pct": 17.6,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2013_cv/pdfs/scrutineers_report_HE_NE_2013.pdf"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "eligible_voters": 101497,
+    "votes_cast": 13880,
+    "turnout_pct": 13.7,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2017_gs/pdfs/GS_result_scrutineer_report_17.pdf"
+  }
+]

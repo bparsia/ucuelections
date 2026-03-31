@@ -325,6 +325,41 @@ ROUND_FIELDS = [
     "contest_id", "year", "name", "round", "votes", "transfer", "eliminated",
 ]
 
+BALLOT_FIELDS = [
+    "year", "election_type", "ballot_type",
+    "eligible_voters", "votes_cast", "turnout_pct",
+    "suspect", "suspect_reason", "source_pdf",
+]
+
+# Thresholds below which HE/FE rows are considered partial (regional) rather than
+# full-sector ballots, based on known data structure (see DATA_ISSUES.md)
+_HE_MIN_ELIGIBLE = 5_000
+_FE_MIN_ELIGIBLE = 3_000
+
+# (year, ballot_type) pairs known to be mislabelled or from non-annual ballots
+_KNOWN_SUSPECT: dict[tuple, str] = {
+    ("2011", "HE"): "report covers national contests (VP/Treasurer), not HE-only",
+    ("2021", "FE"): "casual vacancy ballot (2021_cv), not annual FE election",
+}
+
+
+def flag_suspect(row: dict) -> dict:
+    """Add suspect + suspect_reason fields to a ballot row."""
+    reason = ""
+    if row.get("election_type") != "UK national":
+        reason = f"election_type is '{row['election_type']}', not a main annual ballot"
+    elif (row["year"], row["ballot_type"]) in _KNOWN_SUSPECT:
+        reason = _KNOWN_SUSPECT[(row["year"], row["ballot_type"])]
+    elif row["ballot_type"] == "HE":
+        e = row.get("eligible_voters") or 0
+        if e < _HE_MIN_ELIGIBLE:
+            reason = f"eligible_voters={e} too small for full HE ballot (regional count sheet?)"
+    elif row["ballot_type"] == "FE":
+        e = row.get("eligible_voters") or 0
+        if e < _FE_MIN_ELIGIBLE:
+            reason = f"eligible_voters={e} too small for full FE ballot (regional count sheet?)"
+    return {**row, "suspect": bool(reason), "suspect_reason": reason}
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -338,17 +373,30 @@ def main():
     all_contests: list[dict] = []
     all_candidates: list[dict] = []
     all_rounds: list[dict] = []
+    all_ballots: list[dict] = []
 
     dirs = sorted(RAW_DIR.iterdir())
     for d in dirs:
         pdf_path = d / "pdf_records.json"
         html_path = d / "html_records.json"
+        stats_path = d / "ballot_stats.json"
 
         if not pdf_path.exists() and not html_path.exists():
             continue
 
         pdf_records = json.loads(pdf_path.read_text()) if pdf_path.exists() else []
         html_records = json.loads(html_path.read_text()) if html_path.exists() else []
+
+        # Ballot stats
+        if stats_path.exists():
+            year = year_from_dir(d.name)
+            etype = election_type_from_dir(d.name)
+            for stat in json.loads(stats_path.read_text()):
+                all_ballots.append({
+                    "year": year,
+                    "election_type": etype,
+                    **stat,
+                })
 
         c_rows, ca_rows, r_rows = process_pdf_records(d.name, pdf_records, pos_map)
 
@@ -382,14 +430,29 @@ def main():
             writer.writeheader()
             writer.writerows(rows)
 
+    # Deduplicate ballots: same year+election_type+ballot_type, keep highest eligible_voters
+    # (avoids duplicates when multiple PDFs cover the same ballot)
+    ballot_key: dict[tuple, dict] = {}
+    for b in all_ballots:
+        key = (b["year"], b["election_type"], b["ballot_type"])
+        existing = ballot_key.get(key)
+        if existing is None or (b.get("eligible_voters") or 0) > (existing.get("eligible_voters") or 0):
+            ballot_key[key] = b
+    deduped_ballots = sorted(
+        [flag_suspect(b) for b in ballot_key.values()],
+        key=lambda r: (r["year"], r["ballot_type"]),
+    )
+
     write_csv(OUT_DIR / "contests.csv", all_contests, CONTEST_FIELDS)
     write_csv(OUT_DIR / "candidates.csv", all_candidates, CANDIDATE_FIELDS)
     write_csv(OUT_DIR / "stv_rounds.csv", all_rounds, ROUND_FIELDS)
+    write_csv(OUT_DIR / "ballots.csv", deduped_ballots, BALLOT_FIELDS)
 
     print(f"\nWrote to {OUT_DIR}/")
     print(f"  contests.csv:   {len(all_contests)} rows")
     print(f"  candidates.csv: {len(all_candidates)} rows")
     print(f"  stv_rounds.csv: {len(all_rounds)} rows")
+    print(f"  ballots.csv:    {len(deduped_ballots)} rows")
 
     # Summary stats
     with_rounds = sum(1 for c in all_contests if c["has_stv_rounds"])

@@ -1,0 +1,9 @@
+[
+  {
+    "eligible_voters": 38114,
+    "votes_cast": 4498,
+    "turnout_pct": 11.8,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2012_cv/pdfs/Scrutineer_report.pdf"
+  }
+]

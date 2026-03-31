@@ -1,0 +1,23 @@
+[
+  {
+    "eligible_voters": 4862,
+    "votes_cast": 415,
+    "turnout_pct": 8.5,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2017/pdfs/Scrutineers_report_FE1.pdf"
+  },
+  {
+    "eligible_voters": 8966,
+    "votes_cast": 1310,
+    "turnout_pct": 14.6,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2017/pdfs/Scrutineers_report_HE.pdf"
+  },
+  {
+    "eligible_voters": 101497,
+    "votes_cast": 13880,
+    "turnout_pct": 13.7,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2017/pdfs/Scrutineers_report_national_seats.pdf"
+  }
+]

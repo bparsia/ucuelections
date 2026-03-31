@@ -1,0 +1,23 @@
+[
+  {
+    "eligible_voters": 4071,
+    "votes_cast": 242,
+    "turnout_pct": 5.9,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2023/pdfs/SR_FE_seats.pdf"
+  },
+  {
+    "eligible_voters": 10620,
+    "votes_cast": 1383,
+    "turnout_pct": 13.0,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2023/pdfs/SR_HE_seats.pdf"
+  },
+  {
+    "eligible_voters": 119819,
+    "votes_cast": 12830,
+    "turnout_pct": 10.7,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2023/pdfs/SR_national_seats.pdf"
+  }
+]

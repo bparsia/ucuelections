@@ -1,0 +1,37 @@
+[
+  {
+    "eligible_voters": 40438,
+    "votes_cast": 3775,
+    "turnout_pct": 9.3,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2010/pdfs/elect10_reportFE.pdf"
+  },
+  {
+    "eligible_voters": 10666,
+    "votes_cast": 1101,
+    "turnout_pct": 10.3,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2010/pdfs/elect10_reportHE.pdf"
+  },
+  {
+    "eligible_voters": 6786,
+    "votes_cast": 705,
+    "turnout_pct": 10.4,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2010/pdfs/elect10_reportWales.pdf"
+  },
+  {
+    "eligible_voters": 67620,
+    "votes_cast": 7025,
+    "turnout_pct": 10.4,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2010/pdfs/elect10_report_HEUK_HELondoneast.pdf"
+  },
+  {
+    "eligible_voters": 116268,
+    "votes_cast": 11448,
+    "turnout_pct": 9.8,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2010/pdfs/elect10_reportofficersequality.pdf"
+  }
+]

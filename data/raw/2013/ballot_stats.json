@@ -1,0 +1,23 @@
+[
+  {
+    "eligible_voters": 5175,
+    "votes_cast": 436,
+    "turnout_pct": 8.4,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2013/pdfs/Scrutineers_report_FE_seats.pdf"
+  },
+  {
+    "eligible_voters": 7259,
+    "votes_cast": 857,
+    "turnout_pct": 11.8,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2013/pdfs/Scrutineers_report_HE_seats.pdf"
+  },
+  {
+    "eligible_voters": 114635,
+    "votes_cast": 12557,
+    "turnout_pct": 11.0,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2013/pdfs/Scrutineers_report_national_seats.pdf"
+  }
+]

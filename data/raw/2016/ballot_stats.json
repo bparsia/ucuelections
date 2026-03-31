@@ -1,0 +1,23 @@
+[
+  {
+    "eligible_voters": 4755,
+    "votes_cast": 363,
+    "turnout_pct": 7.6,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2016/pdfs/S_report_FE_seats.pdf"
+  },
+  {
+    "eligible_voters": 1601,
+    "votes_cast": 191,
+    "turnout_pct": 11.9,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2016/pdfs/S_report_HE_seats.pdf"
+  },
+  {
+    "eligible_voters": 103663,
+    "votes_cast": 9004,
+    "turnout_pct": 8.7,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2016/pdfs/S_report_national_seats.pdf"
+  }
+]

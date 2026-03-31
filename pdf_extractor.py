@@ -686,14 +686,118 @@ def parse_text_page(text: str, source: str) -> dict | None:
 
 
 # ---------------------------------------------------------------------------
+# Ballot-level stats extraction (eligible voters, votes cast, turnout)
+# ---------------------------------------------------------------------------
+
+def extract_ballot_stats(path: Path) -> dict | None:
+    """
+    Extract ballot-level stats from a scrutineer / ROV PDF:
+      eligible_voters, votes_cast, turnout_pct, ballot_type.
+
+    ballot_type is inferred from text: 'national', 'HE', 'FE', or 'unknown'.
+    Returns None if no stats found.
+    """
+    try:
+        with pdfplumber.open(path) as pdf:
+            if is_image_pdf(pdf):
+                return None
+            text = "\n".join(p.extract_text() or "" for p in pdf.pages[:4])
+    except Exception:
+        return None
+
+    eligible_m = re.search(r"Number of eligible voters[\s:]+([0-9,]+)", text)
+    cast_m     = re.search(r"Total number of votes cast[\s:]+([0-9,]+)", text)
+    turnout_m  = re.search(r"Turnout[\s:]+([0-9.]+)\s*%", text)
+
+    if not (eligible_m or (cast_m and turnout_m)):
+        return None
+
+    eligible = int(eligible_m.group(1).replace(",", "")) if eligible_m else None
+    cast     = int(cast_m.group(1).replace(",", "")) if cast_m else None
+    turnout  = float(turnout_m.group(1)) if turnout_m else None
+
+    # Infer missing eligible from cast + turnout
+    if eligible is None and cast and turnout:
+        eligible = round(cast / (turnout / 100))
+
+    ballot_type = _infer_ballot_type(text, path.name, eligible)
+
+    return {
+        "eligible_voters": eligible,
+        "votes_cast": cast,
+        "turnout_pct": turnout,
+        "ballot_type": ballot_type,
+        "source_pdf": str(path.relative_to(Path(__file__).parent)),
+    }
+
+
+def _infer_ballot_type(text: str, filename: str, eligible: int | None) -> str:
+    """
+    Classify a ballot PDF as 'national', 'HE', 'FE', or 'unknown'.
+
+    Priority:
+    1. Filename keywords
+    2. Contest names in the text (VP / Trustee → national; HE NEC → HE; FE NEC → FE)
+    3. Electorate size (>80k → national)
+    """
+    fname = filename.lower()
+    text_lower = text.lower()
+
+    # Filename signals
+    if any(k in fname for k in ("national", "_nat", "nat_", "officer", "trustee",
+                                 "vice_pres", "vice-pres", "vp_", "_vp", "rov_1",
+                                 "women_he", "women_fe", "black", "disabled",
+                                 "lgbt", "migrant", "casual_emp")):
+        # Could be national or a specific equality seat — check further
+        pass
+    if re.search(r"(^|[_\-])fe([_\-]|$)", fname):
+        return "FE"
+    if re.search(r"(^|[_\-])he([_\-]|$)", fname):
+        return "HE"
+    if "fe_" in fname or "_fe" in fname or "further_ed" in fname:
+        return "FE"
+    if "he_" in fname or "_he" in fname or "higher_ed" in fname:
+        return "HE"
+
+    # Text: VP / Trustee → national; regional HE/FE NEC → HE or FE
+    national_signals = ("vice-president", "vice president", "trustee", "honorary treasurer",
+                        "general secretary", "president of ucu", "officers and national",
+                        "national executive committee elections")
+    if any(s in text_lower for s in national_signals):
+        return "national"
+
+    he_signals = ("higher education sector", "he nec", "he uk", "he seats",
+                   "he members", "higher education seats")
+    fe_signals = ("further education sector", "fe nec", "fe uk", "fe seats",
+                   "fe members", "further education seats")
+    he_count = sum(text_lower.count(s) for s in he_signals)
+    fe_count = sum(text_lower.count(s) for s in fe_signals)
+    if he_count > fe_count:
+        return "HE"
+    if fe_count > he_count:
+        return "FE"
+
+    # Electorate size fallback
+    if eligible and eligible > 80_000:
+        return "national"
+    if eligible and eligible < 20_000:
+        return "FE"  # FE is typically smaller than HE
+
+    return "unknown"
+
+
+# ---------------------------------------------------------------------------
 # Per-directory orchestration
 # ---------------------------------------------------------------------------
 
-def process_dir(raw_dir: Path, verbose: bool = False) -> list[dict]:
-    """Process all PDFs in raw_dir/pdfs/ and return list of contest records."""
+def process_dir(raw_dir: Path, verbose: bool = False) -> tuple[list[dict], list[dict]]:
+    """
+    Process all PDFs in raw_dir/pdfs/.
+    Returns (contest_records, ballot_stats_records).
+    """
     pdf_dir = raw_dir / "pdfs"
     if not pdf_dir.exists():
-        return []
+        return [], []
 
     manifest_path = pdf_dir / "manifest.json"
     manifest = {}
@@ -702,6 +806,7 @@ def process_dir(raw_dir: Path, verbose: bool = False) -> list[dict]:
             manifest[entry["filename"]] = entry
 
     all_contests: list[dict] = []
+    all_ballot_stats: list[dict] = []
 
     for pdf_path in sorted(pdf_dir.glob("*.pdf")):
         anchor = manifest.get(pdf_path.name, {}).get("anchor", "")
@@ -718,7 +823,12 @@ def process_dir(raw_dir: Path, verbose: bool = False) -> list[dict]:
 
         all_contests.extend(contests)
 
-    return all_contests
+        # Ballot stats (only from scrutineer/ROV summary PDFs, not individual count sheets)
+        stats = extract_ballot_stats(pdf_path)
+        if stats:
+            all_ballot_stats.append(stats)
+
+    return all_contests, all_ballot_stats
 
 
 # ---------------------------------------------------------------------------
@@ -769,11 +879,17 @@ def main():
             continue
 
         print(f"[{dname}]")
-        contests = process_dir(raw_dir, verbose=args.verbose)
+        contests, ballot_stats = process_dir(raw_dir, verbose=args.verbose)
 
         out_path = raw_dir / "pdf_records.json"
         out_path.write_text(json.dumps(contests, indent=2), encoding="utf-8")
         print(f"  → {len(contests)} contest(s) written to {out_path.relative_to(Path(__file__).parent)}")
+
+        stats_path = raw_dir / "ballot_stats.json"
+        stats_path.write_text(json.dumps(ballot_stats, indent=2), encoding="utf-8")
+        if ballot_stats:
+            print(f"  → {len(ballot_stats)} ballot stat(s) written to {stats_path.relative_to(Path(__file__).parent)}")
+
         total_contests += len(contests)
 
     print(f"\nTotal: {total_contests} contests across {len(dirs_to_process)} directories.")

@@ -1,0 +1,23 @@
+[
+  {
+    "eligible_voters": 41561,
+    "votes_cast": 3529,
+    "turnout_pct": 8.5,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2009/pdfs/elect09_fescrutineersreport.pdf"
+  },
+  {
+    "eligible_voters": 67954,
+    "votes_cast": 6634,
+    "turnout_pct": 9.8,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2009/pdfs/elect09_hescrutineersreport.pdf"
+  },
+  {
+    "eligible_voters": 117638,
+    "votes_cast": 10871,
+    "turnout_pct": 9.3,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2009/pdfs/elect09_natscrutineersreport.pdf"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "eligible_voters": 112279,
+    "votes_cast": 9553,
+    "turnout_pct": 8.5,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_1.pdf"
+  },
+  {
+    "eligible_voters": 7845,
+    "votes_cast": 728,
+    "turnout_pct": 9.3,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_2_-_HE.pdf"
+  },
+  {
+    "eligible_voters": 3824,
+    "votes_cast": 197,
+    "turnout_pct": 5.2,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_3_-_FE.pdf"
+  }
+]

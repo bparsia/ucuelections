@@ -1,0 +1,9 @@
+[
+  {
+    "eligible_voters": 29390,
+    "votes_cast": 1927,
+    "turnout_pct": 6.6,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2021_cv/pdfs/Scrutineer_report_CV_FE_UKelected2021.pdf"
+  }
+]
