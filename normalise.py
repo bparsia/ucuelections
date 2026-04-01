@@ -238,11 +238,30 @@ def process_pdf_records(
     candidate_rows: list[dict] = []
     round_rows: list[dict] = []
 
+    # Pre-scan: find contest names that appear with multiple distinct seat counts.
+    # These are genuinely different contests (e.g. "UK Elected Members" in FE vs HE
+    # PDFs) and need disambiguating suffixes in their contest_id.
+    _name_seat_sets: dict[str, set] = {}
+    for _c in records:
+        _cn = " ".join(_c["contest_name"].split())
+        _name_seat_sets.setdefault(_cn, set()).add(_c.get("seats"))
+    _ambiguous_names: set[str] = {
+        n for n, ss in _name_seat_sets.items()
+        if len({s for s in ss if s is not None}) > 1
+    }
+
     for contest in records:
         contest_name_raw = contest["contest_name"]
         # Normalise whitespace in contest name (multi-line names from PDFs)
         contest_name_clean = " ".join(contest_name_raw.split())
         position = canonical_position(contest_name_clean, pos_map)
+
+        # When the same contest name is used for contests with different seat counts
+        # (e.g. FE vs HE "UK Elected Members"), disambiguate by appending seat count.
+        seats_raw = contest.get("seats")
+        if contest_name_clean in _ambiguous_names and seats_raw is not None:
+            contest_name_clean = f"{contest_name_clean} ({seats_raw} seats)"
+            position = canonical_position(contest_name_clean, pos_map)
 
         eid        = election_id_for(year, election_type, contest_name_clean)
         contest_id = f"{eid}|{election_type}|{contest_name_clean}"
