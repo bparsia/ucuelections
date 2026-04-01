@@ -90,11 +90,24 @@ stats = (
     .join(
         uk_candidates.groupby("year").agg(
             candidates=("name", "count"),
-            elected=("outcome", lambda x: (x == "Elected").sum()),
+            elected=("outcome", lambda x: x.isin({"Elected", "Uncontested"}).sum()),
+            uncontested=("outcome", lambda x: (x == "Uncontested").sum()),
         )
     )
     .reset_index()
 )
+
+# Seats in no-nomination contests: join candidates → contests to get seat counts
+_no_nom_cids = (
+    uk_candidates[uk_candidates["outcome"] == "No Nomination"]["contest_id"].unique()
+)
+_no_nom_seats = (
+    uk_contests[uk_contests["contest_id"].isin(_no_nom_cids)]
+    .groupby("year")["seats"]
+    .sum()
+    .rename("no_nom_seats")
+)
+stats = stats.join(_no_nom_seats, on="year")
 
 # Attach ballot stats for each type
 clean_uk = ballots[
@@ -286,7 +299,9 @@ def _fmt_sector(nat, fe, he, fmt) -> str:
     return f"{main} ({parts})" if parts else main
 
 display = stats.rename(columns={"year": "Year", "seats": "Seats",
-                                "candidates": "Candidates", "elected": "Elected"}).copy()
+                                "candidates": "Candidates", "elected": "Elected",
+                                "uncontested": "Uncontested",
+                                "no_nom_seats": "NoNomSeats"}).copy()
 
 _gs_table_years = GS_CONCURRENT | {y + "_gs" for y in GS_STANDALONE}
 display["GS election"] = display["Year"].isin(_gs_table_years).map({True: "★", False: ""})
@@ -296,9 +311,22 @@ def _year_cell(raw_year: str) -> str:
     return f"[{label}]({url})" if url else label
 
 display["Year"] = display["Year"].map(_year_cell)
-display["Seats"]       = display["Seats"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
 display["Candidates"]  = display["Candidates"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
-display["Elected"]     = display["Elected"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
+
+def _fmt_seats(seats, no_nom):
+    s = str(int(seats)) if pd.notna(seats) else "—"
+    if pd.notna(no_nom) and int(no_nom) > 0:
+        return f"{s} ({int(no_nom)} w/o noms)"
+    return s
+
+def _fmt_elected(elected, uncontested):
+    e = str(int(elected)) if pd.notna(elected) else "—"
+    if pd.notna(uncontested) and int(uncontested) > 0:
+        return f"{e} ({int(uncontested)} uncontested)"
+    return e
+
+display["Seats"]   = stats.apply(lambda r: _fmt_seats(r.seats, r.no_nom_seats), axis=1)
+display["Elected"] = stats.apply(lambda r: _fmt_elected(r.elected, r.uncontested), axis=1)
 
 display["Eligible voters (FE/HE)"] = stats.apply(
     lambda r: _fmt_sector(r.eligible_national, r.eligible_FE, r.eligible_HE, _fmt_int), axis=1)
