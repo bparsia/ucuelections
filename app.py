@@ -103,6 +103,39 @@ for btype in ("national", "HE", "FE"):
     )
     stats = stats.merge(sub, on="year", how="left")
 
+# Append rows for standalone GS elections (synthetic year key e.g. "2019_gs")
+gs_contests   = contests[contests["election_type"] == "general secretary"]
+gs_candidates = candidates[candidates["election_type"] == "general secretary"]
+for yr in GS_STANDALONE:
+    gs_yr_key = yr + "_gs"
+    _seats     = gs_contests[gs_contests["year"] == yr]["seats"].sum()
+    # Use the contest with the most candidates (count sheet) to avoid ROV duplicates
+    _gs_cands_yr = gs_candidates[gs_candidates["year"] == yr]
+    _contest_counts = _gs_cands_yr.groupby("contest_id").size()
+    if not _contest_counts.empty:
+        _main_id  = _contest_counts.idxmax()
+        _gs_cands_yr = _gs_cands_yr[_gs_cands_yr["contest_id"] == _main_id]
+    _cands   = _gs_cands_yr
+    _elected = (_gs_cands_yr["outcome"] == "Elected").sum()
+    _ballot = ballots[
+        (ballots["election_type"] == "general secretary")
+        & (ballots["ballot_type"] == "national")
+        & (ballots["year"] == yr)
+    ]
+    _elig  = _ballot["eligible_voters"].max() if not _ballot.empty else pd.NA
+    _cast  = _ballot["votes_cast"].max()      if not _ballot.empty else pd.NA
+    _tpct  = _ballot["turnout_pct"].max()     if not _ballot.empty else pd.NA
+    gs_row = pd.DataFrame([{
+        "year": gs_yr_key,
+        "seats": pd.array([int(_seats)], dtype="Int64")[0],
+        "candidates": len(_cands),
+        "elected": _elected,
+        "eligible_national": _elig,
+        "cast_national": _cast,
+        "turnout_national": _tpct,
+    }])
+    stats = pd.concat([stats, gs_row], ignore_index=True)
+
 stats = stats.sort_values("year", key=lambda s: s.map(year_sort_key), ascending=False)
 stats["seats"] = stats["seats"].astype("Int64")
 
@@ -240,7 +273,8 @@ def _fmt_sector(nat, fe, he, fmt) -> str:
 display = stats.rename(columns={"year": "Year", "seats": "Seats",
                                 "candidates": "Candidates", "elected": "Elected"}).copy()
 
-display["GS election"] = display["Year"].isin(GS_CONCURRENT | GS_STANDALONE).map({True: "★", False: ""})
+_gs_table_years = GS_CONCURRENT | GS_STANDALONE | {y + "_gs" for y in GS_STANDALONE}
+display["GS election"] = display["Year"].isin(_gs_table_years).map({True: "★", False: ""})
 display["Year"] = display["Year"].map(display_year)
 display["Seats"]       = display["Seats"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
 display["Candidates"]  = display["Candidates"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
