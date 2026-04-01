@@ -10,12 +10,6 @@ import streamlit as st
 
 from utils import _csv_mtime, display_year, load_data, year_sort_key
 
-st.set_page_config(
-    page_title="UCU Elections — Candidates",
-    page_icon="🗳️",
-    layout="wide",
-)
-
 contests, candidates, ballots = load_data(mtime=_csv_mtime())
 
 st.title("Candidates")
