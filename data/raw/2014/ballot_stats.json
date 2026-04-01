@@ -1,15 +1,15 @@
 [
   {
-    "eligible_voters": 5605,
-    "votes_cast": 605,
-    "turnout_pct": 10.8,
+    "eligible_voters": 35479,
+    "votes_cast": 3049,
+    "turnout_pct": 8.6,
     "ballot_type": "FE",
     "source_pdf": "data/raw/2014/pdfs/Scrutineers_report_FE_seats.pdf"
   },
   {
-    "eligible_voters": 9971,
-    "votes_cast": 1314,
-    "turnout_pct": 13.2,
+    "eligible_voters": 65377,
+    "votes_cast": 7674,
+    "turnout_pct": 11.7,
     "ballot_type": "HE",
     "source_pdf": "data/raw/2014/pdfs/Scrutineers_report_HE_seats.pdf"
   },

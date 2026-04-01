@@ -1,9 +1,9 @@
 [
   {
-    "eligible_voters": 11474,
-    "votes_cast": 1521,
-    "turnout_pct": 13.3,
-    "ballot_type": "FE",
+    "eligible_voters": 81215,
+    "votes_cast": 9449,
+    "turnout_pct": 11.6,
+    "ballot_type": "national",
     "source_pdf": "data/raw/2025_cv/pdfs/Result_sheet_-_2025_casual_vacancies.pdf"
   }
 ]

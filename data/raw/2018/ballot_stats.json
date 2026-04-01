@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "eligible_voters": 27981,
+    "votes_cast": 2215,
+    "turnout_pct": 7.9,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2018/pdfs/FE_Report.pdf"
+  },
+  {
+    "eligible_voters": 72497,
+    "votes_cast": 7023,
+    "turnout_pct": 9.7,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2018/pdfs/HE_report.pdf"
+  },
+  {
+    "eligible_voters": 107196,
+    "votes_cast": 10232,
+    "turnout_pct": 9.6,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2018/pdfs/National_seats_report.pdf"
+  }
+]

@@ -1,15 +1,15 @@
 [
   {
-    "eligible_voters": 5017,
-    "votes_cast": 386,
-    "turnout_pct": 7.7,
+    "eligible_voters": 30316,
+    "votes_cast": 2109,
+    "turnout_pct": 7.0,
     "ballot_type": "FE",
     "source_pdf": "data/raw/2020-21/pdfs/Scrutineer_report_FE.pdf"
   },
   {
-    "eligible_voters": 11410,
-    "votes_cast": 1141,
-    "turnout_pct": 10.0,
+    "eligible_voters": 85686,
+    "votes_cast": 8482,
+    "turnout_pct": 9.9,
     "ballot_type": "HE",
     "source_pdf": "data/raw/2020-21/pdfs/Scrutineer_report_HE1.pdf"
   },

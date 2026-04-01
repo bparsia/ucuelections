@@ -2218,41 +2218,6 @@
         "demographic_flags": [],
         "outcome": "Elected",
         "rounds": {}
-      },
-      {
-        "name_raw": "CONFIDENTIAL",
-        "name": "CONFIDENTIAL",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
-      },
-      {
-        "name_raw": "2",
-        "name": "2",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
-      },
-      {
-        "name_raw": "fo",
-        "name": "fo",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
-      },
-      {
-        "name_raw": "2",
-        "name": "2",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
-      },
-      {
-        "name_raw": "egaP",
-        "name": "egaP",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
       }
     ]
   },
@@ -2641,41 +2606,6 @@
       {
         "name_raw": "Ann SWINNEY",
         "name": "Ann SWINNEY",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
-      },
-      {
-        "name_raw": "CONFIDENTIAL",
-        "name": "CONFIDENTIAL",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
-      },
-      {
-        "name_raw": "4",
-        "name": "4",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
-      },
-      {
-        "name_raw": "fo",
-        "name": "fo",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
-      },
-      {
-        "name_raw": "3",
-        "name": "3",
-        "demographic_flags": [],
-        "outcome": "Elected",
-        "rounds": {}
-      },
-      {
-        "name_raw": "egaP",
-        "name": "egaP",
         "demographic_flags": [],
         "outcome": "Elected",
         "rounds": {}

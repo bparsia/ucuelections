@@ -1,10 +1,13 @@
 """UCU Elections Explorer — uv run streamlit run app.py"""
 
-from pathlib import Path
-
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
+
+from utils import (
+    GS_CONCURRENT, GS_STANDALONE, YEAR_URLS,
+    _csv_mtime, display_year, load_data, year_sort_key,
+)
 
 st.set_page_config(
     page_title="UCU Elections",
@@ -12,69 +15,9 @@ st.set_page_config(
     layout="wide",
 )
 
-DATA_DIR    = Path(__file__).parent / "data" / "processed"
-SOURCES_DIR = Path(__file__).parent / "sources"
-
-# ---------------------------------------------------------------------------
-# Data
-# ---------------------------------------------------------------------------
-
-def _csv_mtime() -> float:
-    return max(p.stat().st_mtime for p in DATA_DIR.glob("*.csv"))
-
-
-@st.cache_data
-def load_data(mtime: float):  # mtime in signature forces cache-bust when CSVs change
-    contests   = pd.read_csv(DATA_DIR / "contests.csv")
-    candidates = pd.read_csv(DATA_DIR / "candidates.csv")
-    ballots    = pd.read_csv(DATA_DIR / "ballots.csv")
-    contests["seats"]       = pd.to_numeric(contests["seats"],       errors="coerce")
-    contests["valid_votes"] = pd.to_numeric(contests["valid_votes"], errors="coerce")
-    ballots["eligible_voters"] = pd.to_numeric(ballots["eligible_voters"], errors="coerce")
-    ballots["votes_cast"]      = pd.to_numeric(ballots["votes_cast"],      errors="coerce")
-    ballots["turnout_pct"]     = pd.to_numeric(ballots["turnout_pct"],     errors="coerce")
-    return contests, candidates, ballots
-
-
-def year_sort_key(y: str) -> float:
-    """Sort '2019-20' after '2019', academic years as mid-year floats.
-    Synthetic '_gs' suffix (standalone GS elections) sorts just after the base year."""
-    if y.endswith("_gs"):
-        return year_sort_key(y[:-3]) + 0.25
-    digits = y[:4]
-    try:
-        base = float(digits)
-    except ValueError:
-        return 9999.0
-    return base + 0.5 if "-" in y or "/" in y else base
-
-
-def display_year(y: str) -> str:
-    """'2019-20' → '2020', '2025-26' → '2026'; '2019_gs' → '2019<br>GS'; single years unchanged."""
-    if y.endswith("_gs"):
-        return display_year(y[:-3]) + "-GS"
-    if len(y) > 4 and ("-" in y[4:] or "/" in y[4:]):
-        return y[:2] + y[5:]   # "2019-20" → "20" + "20" = "2020"
-    return y
-
-
 contests, candidates, ballots = load_data(mtime=_csv_mtime())
 
 all_years = sorted(contests["year"].unique(), key=year_sort_key)
-
-# Build year → URL lookup from election_pages.csv
-_pages = pd.read_csv(SOURCES_DIR / "election_pages.csv")
-# UK national pages keyed by year; GS standalone keyed as year+"_gs"
-_uk_pages = _pages[(_pages["election_type"] == "UK national") & (_pages["include"] == "yes")]
-YEAR_URLS: dict[str, str] = dict(zip(_uk_pages["year"].astype(str), _uk_pages["url"]))
-_gs_pages = _pages[(_pages["election_type"] == "general secretary") & (_pages["include"] == "yes")]
-for _, row in _gs_pages.iterrows():
-    YEAR_URLS[str(row["year"]) + "_gs"] = row["url"]
-
-# GS elections concurrent with national ballot (same electorate, same ballot)
-GS_CONCURRENT = {"2012", "2017", "2023-24"}
-# GS elections run as standalone ballots (separate from annual national election)
-GS_STANDALONE = {"2019"}
 
 # ---------------------------------------------------------------------------
 # Gross stats table (UK national elections only)
@@ -97,7 +40,7 @@ stats = (
     .reset_index()
 )
 
-# Seats in no-nomination contests: join candidates → contests to get seat counts
+# Seats in no-nomination contests
 _no_nom_cids = (
     uk_candidates[uk_candidates["outcome"] == "No Nomination"]["contest_id"].unique()
 )
@@ -126,32 +69,30 @@ for btype in ("national", "HE", "FE"):
     )
     stats = stats.merge(sub, on="year", how="left")
 
-# Append rows for standalone GS elections (synthetic year key e.g. "2019_gs")
+# Append rows for standalone GS elections
 gs_contests   = contests[contests["election_type"] == "general secretary"]
 gs_candidates = candidates[candidates["election_type"] == "general secretary"]
 for yr in GS_STANDALONE:
     gs_yr_key = yr + "_gs"
     _seats     = gs_contests[gs_contests["year"] == yr]["seats"].sum()
-    # Use the contest with the most candidates (count sheet) to avoid ROV duplicates
     _gs_cands_yr = gs_candidates[gs_candidates["year"] == yr]
     _contest_counts = _gs_cands_yr.groupby("contest_id").size()
     if not _contest_counts.empty:
-        _main_id  = _contest_counts.idxmax()
+        _main_id     = _contest_counts.idxmax()
         _gs_cands_yr = _gs_cands_yr[_gs_cands_yr["contest_id"] == _main_id]
-    _cands   = _gs_cands_yr
     _elected = (_gs_cands_yr["outcome"] == "Elected").sum()
-    _ballot = ballots[
+    _ballot  = ballots[
         (ballots["election_type"] == "general secretary")
         & (ballots["ballot_type"] == "national")
         & (ballots["year"] == yr)
     ]
-    _elig  = _ballot["eligible_voters"].max() if not _ballot.empty else pd.NA
-    _cast  = _ballot["votes_cast"].max()      if not _ballot.empty else pd.NA
-    _tpct  = _ballot["turnout_pct"].max()     if not _ballot.empty else pd.NA
+    _elig = _ballot["eligible_voters"].max() if not _ballot.empty else pd.NA
+    _cast = _ballot["votes_cast"].max()      if not _ballot.empty else pd.NA
+    _tpct = _ballot["turnout_pct"].max()     if not _ballot.empty else pd.NA
     gs_row = pd.DataFrame([{
         "year": gs_yr_key,
         "seats": pd.array([int(_seats)], dtype="Int64")[0],
-        "candidates": len(_cands),
+        "candidates": len(_gs_cands_yr),
         "elected": _elected,
         "eligible_national": _elig,
         "cast_national": _cast,
@@ -171,8 +112,6 @@ clean_ballots = ballots[
     & (ballots["election_type"] == "UK national")
 ]
 
-# Standalone GS elections: inject as synthetic year keys (e.g. "2019_gs")
-# so they appear as their own x-axis tick on the national line
 _standalone_gs = (
     ballots[
         (ballots["election_type"] == "general secretary")
@@ -184,7 +123,6 @@ _standalone_gs = (
 _standalone_gs["year"] = _standalone_gs["year"] + "_gs"
 clean_ballots = pd.concat([clean_ballots, _standalone_gs], ignore_index=True)
 
-# Build a complete sorted year list so gaps appear in the chart
 chart_years = sorted(clean_ballots["year"].unique(), key=year_sort_key)
 
 BALLOT_COLOURS = {
@@ -197,16 +135,20 @@ BALLOT_COLOURS = {
 # Plenary dataset stats (all election types)
 # ---------------------------------------------------------------------------
 
-_all_contests   = contests[contests["seats"].notna()]
 _total_elections = len(contests)
 _total_seats     = int(contests["seats"].sum())
 _total_cands     = len(candidates)
-_distinct_cands  = candidates["name_canonical"].str.strip().str.lower().nunique() if "name_canonical" in candidates.columns else candidates["name"].str.strip().str.lower().nunique()
-_total_winners   = candidates["outcome"].isin({"Elected", "Uncontested"}).sum()
-_year_min        = min(all_years, key=year_sort_key)
-_year_max        = max(all_years, key=year_sort_key)
+_distinct_cands  = (
+    candidates["name_canonical"].str.strip().str.lower().nunique()
+    if "name_canonical" in candidates.columns
+    else candidates["name"].str.strip().str.lower().nunique()
+)
+_total_winners = candidates["outcome"].isin({"Elected", "Uncontested"}).sum()
+_year_min      = min(all_years, key=year_sort_key)
+_year_max      = max(all_years, key=year_sort_key)
 _PLENARY = (
-    f"The dataset covers {_total_elections:,} contests across {display_year(_year_min)}–{display_year(_year_max)}, "
+    f"The dataset covers {_total_elections:,} contests across "
+    f"{display_year(_year_min)}–{display_year(_year_max)}, "
     f"with {_total_seats:,} seats at stake, "
     f"{_total_cands:,} candidate appearances by {_distinct_cands:,} distinct names, "
     f"and {_total_winners:,} winners."
@@ -219,18 +161,19 @@ _PLENARY = (
 st.title("UCU Elections — Overview")
 st.info(_PLENARY)
 st.markdown("""
-This is an early version of a UCU election data explorer vibe/spec coded by Bijan Parsia using Claude CLI (AI tool). The repository isn't really in a [great state](https://github.com/bparsia/ucuelections) but it's probably usable. 
+This is an early version of a UCU election data explorer vibe/spec coded by Bijan Parsia using Claude CLI (AI tool). The repository isn't really in a [great state](https://github.com/bparsia/ucuelections) but it's probably usable.
 
 The scripts scrape the results from various UCU pages as a mix of HTML and (usually but not always) text PDFs. The format is...not entirely regular, so weirdnesses happen.
 
 At the moment, I just share the overall turn out results, which I think are interesting. There may still be errors. Drill downs into each election coming soon.
 
-One personal takeaway is that turnout is low and not obviously correlated with various supposed turn out lowering events I've seen hypothesized (including by me). 
+One personal takeaway is that turnout is low and not obviously correlated with various supposed turn out lowering events I've seen hypothesized (including by me).
 
 The one exception (as I get all the data in) is the stretch from 2018-2020. USS + the end of the Hunt era may have produced a low then
 a bump? (But then what about the low in 2016?! Smells like wish-casting!)
 
 Oh, and, we 100% need GTVO in FE even more than in HE.  """)
+
 # --- Turnout chart -----------------------------------------------------------
 st.subheader("Turnout by ballot, 2009–2026")
 st.caption(
@@ -273,7 +216,7 @@ for btype, colour in BALLOT_COLOURS.items():
         ),
     ))
 
-# GS election annotations — concurrent on their own year, standalone on their _gs year
+# GS election annotations
 nat_sub = clean_ballots[clean_ballots["ballot_type"] == "national"].set_index("year")
 gs_annotation_years = GS_CONCURRENT | {y + "_gs" for y in GS_STANDALONE}
 for yr in gs_annotation_years:
@@ -314,24 +257,28 @@ def _fmt_int(x) -> str:
     return f"{int(x):,}" if pd.notna(x) else "—"
 
 def _fmt_sector(nat, fe, he, fmt) -> str:
-    main = fmt(nat)
+    main  = fmt(nat)
     parts = "/".join(fmt(v) for v in (fe, he) if pd.notna(v))
     return f"{main} ({parts})" if parts else main
 
-display = stats.rename(columns={"year": "Year", "seats": "Seats",
-                                "candidates": "Candidates", "elected": "Elected",
-                                "uncontested": "Uncontested",
-                                "no_nom_seats": "NoNomSeats"}).copy()
+display = stats.rename(columns={
+    "year": "Year", "seats": "Seats",
+    "candidates": "Candidates", "elected": "Elected",
+    "uncontested": "Uncontested", "no_nom_seats": "NoNomSeats",
+}).copy()
 
 _gs_table_years = GS_CONCURRENT | {y + "_gs" for y in GS_STANDALONE}
 display["GS election"] = display["Year"].isin(_gs_table_years).map({True: "★", False: ""})
+
 def _year_cell(raw_year: str) -> str:
     label = display_year(raw_year)
-    url   = YEAR_URLS.get(raw_year)
-    return f"[{label}]({url})" if url else label
+    # Link to our own Election page with year as query param
+    return f"[{label}](/Election?year={raw_year})"
 
 display["Year"] = display["Year"].map(_year_cell)
-display["Candidates"]  = display["Candidates"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
+display["Candidates"] = display["Candidates"].apply(
+    lambda x: str(int(x)) if pd.notna(x) else "—"
+)
 
 def _fmt_seats(seats, no_nom):
     s = str(int(seats)) if pd.notna(seats) else "—"
@@ -358,9 +305,11 @@ display["Turnout % (FE/HE)"] = stats.apply(
 
 col_order = ["Year", "GS election", "Seats", "Candidates", "Elected",
              "Eligible voters (FE/HE)", "Votes cast (FE/HE)", "Turnout % (FE/HE)"]
-tbl = display[col_order]
+tbl    = display[col_order]
 header = "| " + " | ".join(tbl.columns) + " |"
 sep    = "| " + " | ".join("---" for _ in tbl.columns) + " |"
-rows   = "\n".join("| " + " | ".join(str(v) for v in row) + " |"
-                   for row in tbl.itertuples(index=False))
+rows   = "\n".join(
+    "| " + " | ".join(str(v) for v in row) + " |"
+    for row in tbl.itertuples(index=False)
+)
 st.markdown(f"{header}\n{sep}\n{rows}")

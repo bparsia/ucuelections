@@ -7,16 +7,16 @@
     "source_pdf": "data/raw/2023-24/pdfs/U0150_1_010324_ROV_UCU_General_Secretary_2024.pdf"
   },
   {
-    "eligible_voters": 5823,
-    "votes_cast": 646,
-    "turnout_pct": 11.1,
+    "eligible_voters": 27007,
+    "votes_cast": 2280,
+    "turnout_pct": 8.4,
     "ballot_type": "FE",
     "source_pdf": "data/raw/2023-24/pdfs/UCU_2024_FE_elections_report.pdf"
   },
   {
-    "eligible_voters": 20151,
-    "votes_cast": 3372,
-    "turnout_pct": 16.7,
+    "eligible_voters": 80829,
+    "votes_cast": 14015,
+    "turnout_pct": 17.3,
     "ballot_type": "HE",
     "source_pdf": "data/raw/2023-24/pdfs/UCU_2024_HE_elections_report.pdf"
   },

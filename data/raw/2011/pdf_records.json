@@ -1,13 +1,11 @@
 [
   {
     "contest_name": "Black Members Rep",
-    "source_pdf": "data/raw/2011/pdfs/elections2011_bmem_report.pdf",
-    "source_format": "text",
     "date": "04/03/2010",
     "seats": "1",
     "valid_votes": "12123",
     "invalid_votes": "2468",
-    "quota": "= 6061.50",
+    "quota": "6061.5",
     "estv_version": "2.0.16",
     "election_rules": "ERS97",
     "candidates": [
@@ -37,17 +35,16 @@
           }
         }
       }
-    ]
+    ],
+    "source_pdf": "data/raw/2011/pdfs/elections2011_bmem_report_from_doc.pdf"
   },
   {
-    "contest_name": "Rep",
-    "source_pdf": "data/raw/2011/pdfs/elections2011_dismem_report.pdf",
-    "source_format": "text",
+    "contest_name": "Disabled Members Rep",
     "date": "04/03/2010",
     "seats": "1",
     "valid_votes": "12826",
     "invalid_votes": "1765",
-    "quota": "= 6413.00",
+    "quota": "6413",
     "estv_version": "2.0.16",
     "election_rules": "ERS97",
     "candidates": [
@@ -77,17 +74,16 @@
           }
         }
       }
-    ]
+    ],
+    "source_pdf": "data/raw/2011/pdfs/elections2011_dismem_report_from_doc.pdf"
   },
   {
-    "contest_name": "Members",
-    "source_pdf": "data/raw/2011/pdfs/elections2011_hesouth_report.pdf",
-    "source_format": "text",
+    "contest_name": "Higher Education South Members",
     "date": "04/03/2010",
     "seats": "3",
     "valid_votes": "1957",
     "invalid_votes": "82",
-    "quota": "= 489.25",
+    "quota": "489.25",
     "estv_version": "2.0.16",
     "election_rules": "ERS97",
     "candidates": [
@@ -163,13 +159,13 @@
           }
         }
       }
-    ]
+    ],
+    "source_pdf": "data/raw/2011/pdfs/elections2011_hesouth_report_from_doc.pdf"
   },
   {
     "contest_name": "UK Higher Education NEC Members",
-    "source_pdf": "data/raw/2011/pdfs/elections2011_heuk_report.pdf",
-    "source_format": "text",
     "date": "04/03/2010",
+    "seats": "7",
     "valid_votes": "9052",
     "invalid_votes": "473",
     "quota": "1131.5",
@@ -189,24 +185,34 @@
           },
           "2": {
             "votes": 1437.0,
-            "transfer": 1437.0,
+            "transfer": null,
             "eliminated": false
           },
           "3": {
-            "votes": 1131.5,
-            "transfer": -305.5,
+            "votes": 1437.0,
+            "transfer": null,
             "eliminated": false
           },
           "4": {
             "votes": 1131.5,
-            "transfer": 1131.5,
+            "transfer": -305.5,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1131.5,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1131.5,
+            "transfer": null,
             "eliminated": false
           }
         }
       },
       {
-        "name_raw": "92)",
-        "name": "92)",
+        "name_raw": "Jeff FOWLER (post-92)",
+        "name": "Jeff FOWLER (post-92)",
         "demographic_flags": [],
         "outcome": "Not Elected",
         "rounds": {
@@ -234,6 +240,11 @@
             "votes": null,
             "transfer": null,
             "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
           }
         }
       },
@@ -255,19 +266,29 @@
           },
           "3": {
             "votes": 1131.5,
-            "transfer": 1131.5,
+            "transfer": null,
             "eliminated": false
           },
           "4": {
             "votes": 1131.5,
-            "transfer": 1131.5,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1131.5,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1131.5,
+            "transfer": null,
             "eliminated": false
           }
         }
       },
       {
-        "name_raw": "(post-92)",
-        "name": "(post-92)",
+        "name_raw": "Maeve LANDMAN (post-92)",
+        "name": "Maeve LANDMAN (post-92)",
         "demographic_flags": [],
         "outcome": "Elected",
         "rounds": {
@@ -278,15 +299,25 @@
           },
           "2": {
             "votes": 1247.0,
-            "transfer": 1247.0,
+            "transfer": null,
             "eliminated": false
           },
           "3": {
             "votes": 1247.0,
-            "transfer": 1247.0,
+            "transfer": null,
             "eliminated": false
           },
           "4": {
+            "votes": 1247.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1247.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
             "votes": 1131.5,
             "transfer": -115.5,
             "eliminated": false
@@ -294,8 +325,8 @@
         }
       },
       {
-        "name_raw": "(post-92)",
-        "name": "(post-92)",
+        "name_raw": "Lesley C McINTOSH (post-92)",
+        "name": "Lesley C McINTOSH (post-92)",
         "demographic_flags": [],
         "outcome": "Elected",
         "rounds": {
@@ -316,19 +347,24 @@
           },
           "4": {
             "votes": 1223.2,
-            "transfer": 1223.2,
+            "transfer": null,
             "eliminated": false
           },
           "5": {
-            "votes": null,
-            "transfer": 1223.2,
+            "votes": 1223.2,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1223.2,
+            "transfer": null,
             "eliminated": false
           }
         }
       },
       {
-        "name_raw": "WHYLEY",
-        "name": "WHYLEY",
+        "name_raw": "Christopher WHYLEY",
+        "name": "Christopher WHYLEY",
         "demographic_flags": [],
         "outcome": "Not Elected",
         "rounds": {
@@ -376,25 +412,35 @@
             "eliminated": false
           },
           "2": {
-            "votes": -498.5,
-            "transfer": 1630.0,
+            "votes": 1630.0,
+            "transfer": null,
             "eliminated": false
           },
           "3": {
             "votes": 1131.5,
-            "transfer": 1131.5,
+            "transfer": -498.5,
             "eliminated": false
           },
           "4": {
             "votes": 1131.5,
-            "transfer": 1131.5,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1131.5,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1131.5,
+            "transfer": null,
             "eliminated": false
           }
         }
       },
       {
-        "name_raw": "BHATTACHARYYA",
-        "name": "BHATTACHARYYA",
+        "name_raw": "Gargi BHATTACHARYYA",
+        "name": "Gargi BHATTACHARYYA",
         "demographic_flags": [],
         "outcome": "Elected",
         "rounds": {
@@ -431,8 +477,8 @@
         }
       },
       {
-        "name_raw": "(post-92)",
-        "name": "(post-92)",
+        "name_raw": "Veronica KILLEN (post-92)",
+        "name": "Veronica KILLEN (post-92)",
         "demographic_flags": [],
         "outcome": "Elected",
         "rounds": {
@@ -458,22 +504,26 @@
           },
           "5": {
             "votes": 1144.66,
-            "transfer": 1144.66,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1144.66,
+            "transfer": null,
             "eliminated": false
           }
         }
       }
-    ]
+    ],
+    "source_pdf": "data/raw/2011/pdfs/elections2011_heuk_report_from_doc.pdf"
   },
   {
-    "contest_name": "President",
-    "source_pdf": "data/raw/2011/pdfs/elections2011_hevp_report.pdf",
-    "source_format": "text",
+    "contest_name": "Vice President",
     "date": "04/03/2010",
     "seats": "1",
     "valid_votes": "13942",
     "invalid_votes": "649",
-    "quota": "= 6971.00",
+    "quota": "6971",
     "estv_version": "2.0.16",
     "election_rules": "ERS97",
     "candidates": [
@@ -503,17 +553,16 @@
           }
         }
       }
-    ]
+    ],
+    "source_pdf": "data/raw/2011/pdfs/elections2011_hevp_report_from_doc.pdf"
   },
   {
-    "contest_name": "Rep",
-    "source_pdf": "data/raw/2011/pdfs/elections2011_lgbtmem_report.pdf",
-    "source_format": "text",
+    "contest_name": "LGBT Members Rep",
     "date": "04/03/2010",
     "seats": "1",
     "valid_votes": "12666",
     "invalid_votes": "1925",
-    "quota": "= 6333.00",
+    "quota": "6333",
     "estv_version": "2.0.16",
     "election_rules": "ERS97",
     "candidates": [
@@ -543,17 +592,16 @@
           }
         }
       }
-    ]
+    ],
+    "source_pdf": "data/raw/2011/pdfs/elections2011_lgbtmem_report_from_doc.pdf"
   },
   {
-    "contest_name": "Secretary NEC",
-    "source_pdf": "data/raw/2011/pdfs/elections2011_ucushonsec_report.pdf",
-    "source_format": "text",
+    "contest_name": "UCU Scotland Honorary Secretary NEC",
     "date": "04/03/2010",
     "seats": "1",
     "valid_votes": "970",
     "invalid_votes": "55",
-    "quota": "= 485.00",
+    "quota": "485",
     "estv_version": "2.0.16",
     "election_rules": "ERS97",
     "candidates": [
@@ -583,16 +631,16 @@
           }
         }
       }
-    ]
+    ],
+    "source_pdf": "data/raw/2011/pdfs/elections2011_ucushonsec_report_from_doc.pdf"
   },
   {
-    "contest_name": "UCU Scotland",
-    "source_pdf": "data/raw/2011/pdfs/elections2011_ucuspres_report.pdf",
-    "source_format": "text",
+    "contest_name": "UCU Scotland President NEC",
     "date": "04/03/2010",
+    "seats": "1",
     "valid_votes": "945",
     "invalid_votes": "80",
-    "quota": "= 472.50",
+    "quota": "472.5",
     "estv_version": "2.0.16",
     "election_rules": "ERS97",
     "candidates": [
@@ -622,6 +670,7 @@
           }
         }
       }
-    ]
+    ],
+    "source_pdf": "data/raw/2011/pdfs/elections2011_ucuspres_report_from_doc.pdf"
   }
 ]

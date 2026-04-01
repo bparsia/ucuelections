@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "eligible_voters": 115311,
+    "votes_cast": 23681,
+    "turnout_pct": 20.5,
+    "ballot_type": "national",
+    "source_pdf": "data/raw/2019_gs/pdfs/ucu-gselection-2019_scrutineers-report1.pdf"
+  }
+]

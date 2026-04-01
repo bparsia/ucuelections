@@ -1,7 +1,7 @@
 [
   {
-    "eligible_voters": 4595,
-    "votes_cast": 335,
+    "eligible_voters": 29564,
+    "votes_cast": 2155,
     "turnout_pct": 7.3,
     "ballot_type": "FE",
     "source_pdf": "data/raw/2019-20/pdfs/Scrutineer_report_FE.pdf"
@@ -14,9 +14,9 @@
     "source_pdf": "data/raw/2019-20/pdfs/Scrutineer_report_national_seats.pdf"
   },
   {
-    "eligible_voters": 1766,
-    "votes_cast": 248,
-    "turnout_pct": 14.0,
+    "eligible_voters": 84922,
+    "votes_cast": 10934,
+    "turnout_pct": 12.9,
     "ballot_type": "HE",
     "source_pdf": "data/raw/2019-20/pdfs/scrutineer_report_HE.pdf"
   }

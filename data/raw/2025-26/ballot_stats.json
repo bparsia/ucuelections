@@ -1,15 +1,15 @@
 [
   {
-    "eligible_voters": 5899,
-    "votes_cast": 546,
-    "turnout_pct": 9.3,
+    "eligible_voters": 26710,
+    "votes_cast": 1575,
+    "turnout_pct": 5.9,
     "ballot_type": "FE",
     "source_pdf": "data/raw/2025-26/pdfs/Further_education_seats.pdf"
   },
   {
-    "eligible_voters": 11129,
-    "votes_cast": 1137,
-    "turnout_pct": 10.2,
+    "eligible_voters": 79641,
+    "votes_cast": 7325,
+    "turnout_pct": 9.2,
     "ballot_type": "HE",
     "source_pdf": "data/raw/2025-26/pdfs/Higher_education_seats.pdf"
   },

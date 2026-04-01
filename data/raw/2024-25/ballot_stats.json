@@ -7,16 +7,16 @@
     "source_pdf": "data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_1.pdf"
   },
   {
-    "eligible_voters": 7845,
-    "votes_cast": 728,
-    "turnout_pct": 9.3,
+    "eligible_voters": 80079,
+    "votes_cast": 7401,
+    "turnout_pct": 9.2,
     "ballot_type": "HE",
     "source_pdf": "data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_2_-_HE.pdf"
   },
   {
-    "eligible_voters": 3824,
-    "votes_cast": 197,
-    "turnout_pct": 5.2,
+    "eligible_voters": 26085,
+    "votes_cast": 1404,
+    "turnout_pct": 5.4,
     "ballot_type": "FE",
     "source_pdf": "data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_3_-_FE.pdf"
   }

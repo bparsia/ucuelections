@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "eligible_voters": 28500,
+    "votes_cast": 2064,
+    "turnout_pct": 7.2,
+    "ballot_type": "FE",
+    "source_pdf": "data/raw/2019/pdfs/Scrutineer_report_FE_seats.pdf"
+  },
+  {
+    "eligible_voters": 79810,
+    "votes_cast": 11135,
+    "turnout_pct": 14.0,
+    "ballot_type": "HE",
+    "source_pdf": "data/raw/2019/pdfs/Scrutineer_report_HE_seats.pdf"
+  }
+]
