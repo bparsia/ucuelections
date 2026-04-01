@@ -36,7 +36,10 @@ def load_data(mtime: float):  # mtime in signature forces cache-bust when CSVs c
 
 
 def year_sort_key(y: str) -> float:
-    """Sort '2019-20' after '2019', academic years as mid-year floats."""
+    """Sort '2019-20' after '2019', academic years as mid-year floats.
+    Synthetic '_gs' suffix (standalone GS elections) sorts just after the base year."""
+    if y.endswith("_gs"):
+        return year_sort_key(y[:-3]) + 0.25
     digits = y[:4]
     try:
         base = float(digits)
@@ -46,7 +49,9 @@ def year_sort_key(y: str) -> float:
 
 
 def display_year(y: str) -> str:
-    """'2019-20' → '2020', '2025-26' → '2026'; single years unchanged."""
+    """'2019-20' → '2020', '2025-26' → '2026'; '2019_gs' → '2019<br>GS'; single years unchanged."""
+    if y.endswith("_gs"):
+        return display_year(y[:-3]) + "<br>GS"
     if len(y) > 4 and ("-" in y[4:] or "/" in y[4:]):
         return y[:2] + y[5:]   # "2019-20" → "20" + "20" = "2020"
     return y
@@ -56,8 +61,10 @@ contests, candidates, ballots = load_data(mtime=_csv_mtime())
 
 all_years = sorted(contests["year"].unique(), key=year_sort_key)
 
-# Years where a GS election was held (drives higher turnout)
-GS_YEARS = {"2012", "2017", "2019", "2023-24"}
+# GS elections concurrent with national ballot (same electorate, same ballot)
+GS_CONCURRENT = {"2012", "2017", "2023-24"}
+# GS elections run as standalone ballots (separate from annual national election)
+GS_STANDALONE = {"2019"}
 
 # ---------------------------------------------------------------------------
 # Gross stats table (UK national elections only)
@@ -108,6 +115,19 @@ clean_ballots = ballots[
     & (ballots["election_type"] == "UK national")
 ]
 
+# Standalone GS elections: inject as synthetic year keys (e.g. "2019_gs")
+# so they appear as their own x-axis tick on the national line
+_standalone_gs = (
+    ballots[
+        (ballots["election_type"] == "general secretary")
+        & (ballots["ballot_type"] == "national")
+        & (ballots["year"].isin(GS_STANDALONE))
+    ]
+    .copy()
+)
+_standalone_gs["year"] = _standalone_gs["year"] + "_gs"
+clean_ballots = pd.concat([clean_ballots, _standalone_gs], ignore_index=True)
+
 # Build a complete sorted year list so gaps appear in the chart
 chart_years = sorted(clean_ballots["year"].unique(), key=year_sort_key)
 
@@ -135,7 +155,8 @@ st.subheader("Turnout by ballot, 2009–2026")
 st.caption(
     "Suspect or unclassifiable rows excluded (see DATA_ISSUES.md). "
     "Gaps = years with no parseable scrutineer report. "
-    "★ = year with General Secretary election on national ballot."
+    "★ = year with concurrent General Secretary election. "
+    "2019 GS = standalone casual-vacancy GS election (separate ballot)."
 )
 
 chart_labels = [display_year(y) for y in chart_years]
@@ -171,9 +192,10 @@ for btype, colour in BALLOT_COLOURS.items():
         ),
     ))
 
-# GS election annotations
+# GS election annotations — concurrent on their own year, standalone on their _gs year
 nat_sub = clean_ballots[clean_ballots["ballot_type"] == "national"].set_index("year")
-for yr in GS_YEARS:
+gs_annotation_years = GS_CONCURRENT | {y + "_gs" for y in GS_STANDALONE}
+for yr in gs_annotation_years:
     if yr in nat_sub.index and pd.notna(nat_sub.loc[yr, "turnout_pct"]):
         fig.add_annotation(
             x=year_pos[yr],
@@ -218,7 +240,7 @@ def _fmt_sector(nat, fe, he, fmt) -> str:
 display = stats.rename(columns={"year": "Year", "seats": "Seats",
                                 "candidates": "Candidates", "elected": "Elected"}).copy()
 
-display["GS election"] = display["Year"].isin(GS_YEARS).map({True: "★", False: ""})
+display["GS election"] = display["Year"].isin(GS_CONCURRENT | GS_STANDALONE).map({True: "★", False: ""})
 display["Year"] = display["Year"].map(display_year)
 display["Seats"]       = display["Seats"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
 display["Candidates"]  = display["Candidates"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
