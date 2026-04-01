@@ -51,7 +51,7 @@ def year_sort_key(y: str) -> float:
 def display_year(y: str) -> str:
     """'2019-20' → '2020', '2025-26' → '2026'; '2019_gs' → '2019<br>GS'; single years unchanged."""
     if y.endswith("_gs"):
-        return display_year(y[:-3]) + "<br>GS"
+        return display_year(y[:-3]) + "-GS"
     if len(y) > 4 and ("-" in y[4:] or "/" in y[4:]):
         return y[:2] + y[5:]   # "2019-20" → "20" + "20" = "2020"
     return y
