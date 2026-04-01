@@ -32,6 +32,109 @@ MANUAL_BALLOTS_PATH = Path(__file__).parent / "sources" / "manual_ballots.csv"
 # Helpers
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Name normalisation
+# ---------------------------------------------------------------------------
+
+_PAREN_QUALIFIERS = re.compile(
+    r"\(\s*(post-92|post92|AR|HE|FE|academic[\s\-]related|[a-z]+/[a-z]+)\s*\)",
+    re.IGNORECASE,
+)
+_FUSED_SUFFIXES = re.compile(r"-(post-92|post92|AR|HE|FE)\s*$", re.IGNORECASE)
+_BRACKET_ANNOT  = re.compile(r"\[.*?\]")
+
+
+def _cap_word(w: str) -> str:
+    """Title-case a single word, preserving Mc/Mac/O'/hyphenated compounds."""
+    if not w:
+        return w
+    wu = w.upper()
+    if wu.startswith("MC") and len(w) > 2 and w[2:3].isalpha():
+        return "Mc" + _cap_word(w[2:])
+    if wu.startswith("MAC") and len(w) > 3 and w[3:4].isalpha():
+        return "Mac" + _cap_word(w[3:])
+    if "'" in w:
+        idx = w.index("'")
+        return w[:idx].capitalize() + "'" + _cap_word(w[idx + 1:])
+    if "-" in w:
+        return "-".join(_cap_word(p) for p in w.split("-"))
+    return w.capitalize()
+
+
+def _is_allcaps_token(tok: str) -> bool:
+    """True if the token looks like an all-caps surname (e.g. FOWLER, McINTOSH)."""
+    core = tok
+    for pfx in ("MC", "MAC"):
+        if core.upper().startswith(pfx) and len(core) > len(pfx) and core[len(pfx):len(pfx)+1].isalpha():
+            core = core[len(pfx):]
+            break
+    if len(core) >= 2 and core[1:2] == "'" :   # D'ARCY etc — skip prefix char+apostrophe
+        core = core[2:]
+    core_alpha = re.sub(r"[^A-Za-z]", "", core)
+    return len(core_alpha) >= 2 and core_alpha.isupper()
+
+
+def normalise_name(name: str) -> str:
+    """
+    Deterministic name normalisation → 'Firstname Lastname' title case.
+
+    Handles:
+      'SILVERMAN, Eric'          →  'Eric Silverman'
+      'Dave MURITU'              →  'Dave Muritu'
+      'Jeff FOWLER (post-92)'    →  'Jeff Fowler'
+      'Jelena Timotijevic-AR'    →  'Jelena Timotijevic'
+      '[declared elected] Name'  →  'Name'
+    """
+    if not name or not name.strip():
+        return name
+
+    s = name.strip()
+
+    # 1. Strip [bracket] annotations
+    s = _BRACKET_ANNOT.sub("", s).strip()
+
+    # 2. Strip known parenthetical qualifiers (post-92, AR, pronouns, etc.)
+    s = _PAREN_QUALIFIERS.sub("", s).strip()
+
+    # 3. Strip fused qualifiers e.g. -post-92, -AR
+    s = _FUSED_SUFFIXES.sub("", s).strip()
+
+    # 4. Strip remaining parentheticals (institutions, other qualifiers)
+    s = re.sub(r"\([^)]*\)", "", s).strip()
+
+    # 5. Normalise whitespace
+    s = " ".join(s.split())
+
+    if not s:
+        return name.strip()
+
+    # 6. Detect LASTNAME, Firstname  (all-caps before comma)
+    if "," in s:
+        comma_idx = s.index(",")
+        before = s[:comma_idx].strip()
+        after  = s[comma_idx + 1:].strip()
+        before_alpha = re.sub(r"[^A-Za-z]", "", before)
+        if before_alpha and before_alpha.isupper() and after:
+            lastname  = " ".join(_cap_word(w) for w in before.split())
+            firstname = " ".join(_cap_word(w) for w in after.split())
+            return f"{firstname} {lastname}"
+
+    # 7. Per-token: title-case all-caps surname tokens (Firstname LASTNAME)
+    tokens = s.split()
+    result = [_cap_word(t) if _is_allcaps_token(t) else t for t in tokens]
+    s = " ".join(result)
+
+    # 8. If wholly lowercase (HTML-scraped plain names), apply title case
+    if s == s.lower():
+        s = " ".join(_cap_word(w) for w in s.split())
+
+    return s
+
+
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
+
 def year_from_dir(dir_name: str) -> str:
     """Extract the year portion of a directory name (strip _suffix)."""
     return re.split(r"_", dir_name, maxsplit=1)[0]
@@ -351,7 +454,7 @@ CONTEST_FIELDS = [
 
 CANDIDATE_FIELDS = [
     "contest_id", "year", "election_type", "contest_name", "position",
-    "name", "name_raw", "demographic_flags",
+    "name", "name_raw", "name_canonical", "demographic_flags",
     "is_woman", "is_post92", "is_academic_related",
     "outcome", "first_preferences", "source",
 ]
@@ -488,6 +591,14 @@ def main():
                 inferred += 1
     if inferred:
         print(f"Inferred seats for {inferred} contest(s) from elected count")
+
+    # Add name_canonical column
+    for ca in all_candidates:
+        ca["name_canonical"] = normalise_name(ca.get("name") or "")
+
+    distinct_before = len({(ca.get("name") or "").strip().lower() for ca in all_candidates if ca.get("name")})
+    distinct_after  = len({ca["name_canonical"].strip().lower() for ca in all_candidates if ca.get("name_canonical")})
+    print(f"Name normalisation: {distinct_before} raw distinct → {distinct_after} canonical distinct")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 

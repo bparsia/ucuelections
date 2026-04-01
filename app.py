@@ -201,7 +201,7 @@ _all_contests   = contests[contests["seats"].notna()]
 _total_elections = len(contests)
 _total_seats     = int(contests["seats"].sum())
 _total_cands     = len(candidates)
-_distinct_cands  = candidates["name"].str.strip().str.lower().nunique()
+_distinct_cands  = candidates["name_canonical"].str.strip().str.lower().nunique() if "name_canonical" in candidates.columns else candidates["name"].str.strip().str.lower().nunique()
 _total_winners   = candidates["outcome"].isin({"Elected", "Uncontested"}).sum()
 _year_min        = min(all_years, key=year_sort_key)
 _year_max        = max(all_years, key=year_sort_key)
