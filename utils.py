@@ -22,9 +22,9 @@ def _csv_mtime() -> float:
 
 @st.cache_data
 def load_data(mtime: float):  # mtime forces cache-bust when CSVs change
-    contests   = pd.read_csv(DATA_DIR / "contests.csv")
-    candidates = pd.read_csv(DATA_DIR / "candidates.csv")
-    ballots    = pd.read_csv(DATA_DIR / "ballots.csv")
+    contests   = pd.read_csv(DATA_DIR / "contests.csv",   dtype={"year": str, "election_id": str})
+    candidates = pd.read_csv(DATA_DIR / "candidates.csv", dtype={"year": str, "election_id": str})
+    ballots    = pd.read_csv(DATA_DIR / "ballots.csv",    dtype={"year": str, "election_id": str})
     contests["seats"]          = pd.to_numeric(contests["seats"],          errors="coerce")
     contests["valid_votes"]    = pd.to_numeric(contests["valid_votes"],    errors="coerce")
     ballots["eligible_voters"] = pd.to_numeric(ballots["eligible_voters"], errors="coerce")
