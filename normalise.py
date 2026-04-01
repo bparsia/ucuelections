@@ -42,6 +42,10 @@ _PAREN_QUALIFIERS = re.compile(
 )
 _FUSED_SUFFIXES = re.compile(r"-(post-92|post92|AR|HE|FE)\s*$", re.IGNORECASE)
 _BRACKET_ANNOT  = re.compile(r"\[.*?\]")
+_HONORIFICS     = re.compile(
+    r"^(Dr|Prof(?:essor)?|Mr|Mrs|Ms|Miss|Rev(?:d)?|Sir|Lord|Lady|Mx)\.?\s+",
+    re.IGNORECASE,
+)
 
 
 def _cap_word(w: str) -> str:
@@ -102,29 +106,33 @@ def normalise_name(name: str) -> str:
     # 4. Strip remaining parentheticals (institutions, other qualifiers)
     s = re.sub(r"\([^)]*\)", "", s).strip()
 
-    # 5. Normalise whitespace
+    # 5. Strip leading honorifics (Dr, Mr, Ms, Prof, etc.)
+    s = _HONORIFICS.sub("", s).strip()
+
+    # 6. Normalise whitespace
     s = " ".join(s.split())
 
     if not s:
         return name.strip()
 
-    # 6. Detect LASTNAME, Firstname  (all-caps before comma)
+    # 7. Detect LASTNAME, Firstname  (all-caps before comma)
     if "," in s:
         comma_idx = s.index(",")
         before = s[:comma_idx].strip()
         after  = s[comma_idx + 1:].strip()
         before_alpha = re.sub(r"[^A-Za-z]", "", before)
         if before_alpha and before_alpha.isupper() and after:
+            after = _HONORIFICS.sub("", after).strip()
             lastname  = " ".join(_cap_word(w) for w in before.split())
             firstname = " ".join(_cap_word(w) for w in after.split())
             return f"{firstname} {lastname}"
 
-    # 7. Per-token: title-case all-caps surname tokens (Firstname LASTNAME)
+    # 8. Per-token: title-case all-caps surname tokens (Firstname LASTNAME)
     tokens = s.split()
     result = [_cap_word(t) if _is_allcaps_token(t) else t for t in tokens]
     s = " ".join(result)
 
-    # 8. If wholly lowercase (HTML-scraped plain names), apply title case
+    # 9. If wholly lowercase (HTML-scraped plain names), apply title case
     if s == s.lower():
         s = " ".join(_cap_word(w) for w in s.split())
 
