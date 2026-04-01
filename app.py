@@ -234,9 +234,9 @@ display["Turnout % (FE/HE)"] = stats.apply(
 
 col_order = ["Year", "GS election", "Seats", "Candidates", "Elected",
              "Eligible voters (FE/HE)", "Votes cast (FE/HE)", "Turnout % (FE/HE)"]
-st.dataframe(
-    display[col_order],
-    hide_index=True,
-    use_container_width=True,
-    column_config={"GS election": st.column_config.TextColumn(width="small")},
-)
+tbl = display[col_order]
+header = "| " + " | ".join(tbl.columns) + " |"
+sep    = "| " + " | ".join("---" for _ in tbl.columns) + " |"
+rows   = "\n".join("| " + " | ".join(str(v) for v in row) + " |"
+                   for row in tbl.itertuples(index=False))
+st.markdown(f"{header}\n{sep}\n{rows}")
