@@ -192,7 +192,12 @@ The scripts scrape the results from various UCU pages as a mix of HTML and (usua
 
 At the moment, I just share the overall turn out results, which I think are interesting. There may still be errors. Drill downs into each election coming soon.
 
-One personal takeaway is that turnout is low and not obviously correlated with various supposed turn out lowering events I've seen hypothesized (including by me). And we need GTVO in FE even more than in HE.  """)
+One personal takeaway is that turnout is low and not obviously correlated with various supposed turn out lowering events I've seen hypothesized (including by me). 
+
+The one exception (as I get all the data in) is the stretch from 2018-2020. USS + the end of the Hunt era may have produced a low then
+a bump? (But then what about the low in 2016?! Smells like wish-casting!)
+
+Oh, and, we 100% need GTVO in FE even more than in HE.  """)
 # --- Turnout chart -----------------------------------------------------------
 st.subheader("Turnout by ballot, 2009–2026")
 st.caption(
