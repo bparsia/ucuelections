@@ -194,10 +194,30 @@ BALLOT_COLOURS = {
 }
 
 # ---------------------------------------------------------------------------
+# Plenary dataset stats (all election types)
+# ---------------------------------------------------------------------------
+
+_all_contests   = contests[contests["seats"].notna()]
+_total_elections = len(contests)
+_total_seats     = int(contests["seats"].sum())
+_total_cands     = len(candidates)
+_distinct_cands  = candidates["name"].str.strip().str.lower().nunique()
+_total_winners   = candidates["outcome"].isin({"Elected", "Uncontested"}).sum()
+_year_min        = min(all_years, key=year_sort_key)
+_year_max        = max(all_years, key=year_sort_key)
+_PLENARY = (
+    f"The dataset covers {_total_elections:,} contests across {display_year(_year_min)}–{display_year(_year_max)}, "
+    f"with {_total_seats:,} seats at stake, "
+    f"{_total_cands:,} candidate appearances by {_distinct_cands:,} distinct names, "
+    f"and {_total_winners:,} winners."
+)
+
+# ---------------------------------------------------------------------------
 # Layout
 # ---------------------------------------------------------------------------
 
 st.title("UCU Elections — Overview")
+st.info(_PLENARY)
 st.markdown("""
 This is an early version of a UCU election data explorer vibe/spec coded by Bijan Parsia using Claude CLI (AI tool). The repository isn't really in a [great state](https://github.com/bparsia/ucuelections) but it's probably usable. 
 
