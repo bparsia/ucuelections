@@ -1,1 +1,904 @@
-[]
+[
+  {
+    "contest_name": "Casually Employed Members",
+    "date": "02/02/2015",
+    "seats": "2",
+    "valid_votes": "9586",
+    "invalid_votes": "1763",
+    "quota": "3145",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "SILVERMAN, Eric [HE]",
+        "name": "SILVERMAN, Eric",
+        "demographic_flags": [
+          "HE"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 2428.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2961.0,
+            "transfer": 533.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "JOWETT, Amy [FE]",
+        "name": "JOWETT, Amy",
+        "demographic_flags": [
+          "FE"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 2458.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 2737.0,
+            "transfer": 279.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BLAKE, Vicky [HE]",
+        "name": "BLAKE, Vicky",
+        "demographic_flags": [
+          "HE"
+        ],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3150.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3737.0,
+            "transfer": 587.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CLUNAS, Robert [FE]",
+        "name": "CLUNAS, Robert",
+        "demographic_flags": [
+          "FE"
+        ],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1550.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2015/pdfs/Casual_contracts_reps_Count_2015.pdf"
+  },
+  {
+    "contest_name": "Midlands FE",
+    "date": "02/02/2015",
+    "seats": "2",
+    "valid_votes": "446",
+    "invalid_votes": "29",
+    "quota": "146.34",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "MACTAGGART, Allister",
+        "name": "MACTAGGART, Allister",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 100.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 131.0,
+            "transfer": 31.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BRUCE-JONES, Simon",
+        "name": "BRUCE-JONES, Simon",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 143.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 158.0,
+            "transfer": 15.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "LOCKLEY, Rhiannon",
+        "name": "LOCKLEY, Rhiannon",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 72.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "D'ARCY, Jacqueline",
+        "name": "D'ARCY, Jacqueline",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 131.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 150.0,
+            "transfer": 19.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2015/pdfs/FE_Midlands_Count_2015.pdf"
+  },
+  {
+    "contest_name": "North West FE",
+    "date": "02/02/2015",
+    "seats": "1",
+    "valid_votes": "401",
+    "invalid_votes": "19",
+    "quota": "200.5",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "CAMPBELL, Carolyn",
+        "name": "CAMPBELL, Carolyn",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 162.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "DORAN, Nina",
+        "name": "DORAN, Nina",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 239.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2015/pdfs/FE_NW_Count_2015.pdf"
+  },
+  {
+    "contest_name": "UK-Elected FE NEC Members",
+    "date": "02/02/2015",
+    "seats": "1",
+    "valid_votes": "2604",
+    "invalid_votes": "197",
+    "quota": "1302",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "BROWN, Mandy",
+        "name": "BROWN, Mandy",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1311.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "NICHOLSON, Lyndsey",
+        "name": "NICHOLSON, Lyndsey",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1293.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2015/pdfs/FE_UK-elected_Count_2015.pdf"
+  },
+  {
+    "contest_name": "North West HE",
+    "date": "02/02/2015",
+    "seats": "2",
+    "valid_votes": "854",
+    "invalid_votes": "36",
+    "quota": "284.67",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "MCKRELL, Michael",
+        "name": "MCKRELL, Michael",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 256.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 283.0,
+            "transfer": 27.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "SHEEHY, Chris",
+        "name": "SHEEHY, Chris",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 189.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 249.0,
+            "transfer": 60.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "WALDEN, Roger M.",
+        "name": "WALDEN, Roger M.",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 120.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "MCNEIL, Jo",
+        "name": "MCNEIL, Jo",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 289.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 289.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2015/pdfs/HE_NW_Count_2015.pdf"
+  },
+  {
+    "contest_name": "President UCU Scotland",
+    "date": "02/02/2015",
+    "seats": "1",
+    "valid_votes": "834",
+    "invalid_votes": "29",
+    "quota": "417",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "MORELLI, Carlo",
+        "name": "MORELLI, Carlo",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 347.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CHALMERS, Douglas",
+        "name": "CHALMERS, Douglas",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 487.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2015/pdfs/HE_Scotland_Count_2015.pdf"
+  },
+  {
+    "contest_name": "UK-Elected HE NEC Members",
+    "date": "02/02/2015",
+    "seats": "5",
+    "valid_votes": "7223",
+    "invalid_votes": "431",
+    "quota": "1203.84",
+    "estv_version": "1.49g",
+    "election_rules": "Custom",
+    "candidates": [
+      {
+        "name_raw": "BAILEY, Todd",
+        "name": "BAILEY, Todd",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1469.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1203.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1203.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1203.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1203.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1203.84,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "FOWLER, Jeff",
+        "name": "FOWLER, Jeff",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 619.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 642.37,
+            "transfer": 23.37,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 665.47,
+            "transfer": 23.1,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 715.7,
+            "transfer": 50.23,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 752.12,
+            "transfer": 36.42,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 51.12,
+            "transfer": -701.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "MORELLI, Carlo",
+        "name": "MORELLI, Carlo",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 743.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 766.94,
+            "transfer": 23.94,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 842.69,
+            "transfer": 75.75,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 889.54,
+            "transfer": 46.85,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 942.61,
+            "transfer": 53.07,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1227.61,
+            "transfer": 285.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "HERSH, Marion",
+        "name": "HERSH, Marion",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 1414.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1414.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 1203.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1203.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1203.84,
+            "transfer": null,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1203.84,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ANDERSON, Dave",
+        "name": "ANDERSON, Dave",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 538.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 594.24,
+            "transfer": 56.24,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 617.94,
+            "transfer": 23.7,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 649.64,
+            "transfer": 31.7,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 759.27,
+            "transfer": 109.63,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 846.27,
+            "transfer": 87.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "MICHALOPOULOU, Eleni",
+        "name": "MICHALOPOULOU, Eleni",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 338.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 350.73,
+            "transfer": 12.73,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 364.53,
+            "transfer": 13.8,
+            "eliminated": false
+          },
+          "4": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "WATSON, Gordon",
+        "name": "WATSON, Gordon",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 381.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 414.63,
+            "transfer": 33.63,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 427.08,
+            "transfer": 12.45,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 453.88,
+            "transfer": 26.8,
+            "eliminated": false
+          },
+          "5": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "6": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "PRENDERGAST, Renee",
+        "name": "PRENDERGAST, Renee",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 800.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 862.51,
+            "transfer": 62.51,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 893.41,
+            "transfer": 30.9,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 988.17,
+            "transfer": 94.76,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1101.38,
+            "transfer": 113.21,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1187.38,
+            "transfer": 86.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "CHARLTON, Julia",
+        "name": "CHARLTON, Julia",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 921.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 970.21,
+            "transfer": 49.21,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 996.01,
+            "transfer": 25.8,
+            "eliminated": false
+          },
+          "4": {
+            "votes": 1065.69,
+            "transfer": 69.68,
+            "eliminated": false
+          },
+          "5": {
+            "votes": 1171.04,
+            "transfer": 105.35,
+            "eliminated": false
+          },
+          "6": {
+            "votes": 1354.04,
+            "transfer": 183.0,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2015/pdfs/HE_UK-elected_Count_2015.pdf"
+  },
+  {
+    "contest_name": "LGBT Members",
+    "date": "02/02/2015",
+    "seats": "1",
+    "valid_votes": "9703",
+    "invalid_votes": "1646",
+    "quota": "4851.5",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "JENNINGS, Mary",
+        "name": "JENNINGS, Mary",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 5263.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "ARIZA, Pura",
+        "name": "ARIZA, Pura",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 4440.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2015/pdfs/LGBT_rep_HE_Count_2015.pdf"
+  },
+  {
+    "contest_name": "Trustees",
+    "date": "02/02/2015",
+    "seats": "2",
+    "valid_votes": "10659",
+    "invalid_votes": "690",
+    "quota": "3519",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "TAYLOR, Kathy",
+        "name": "TAYLOR, Kathy",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3077.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3375.0,
+            "transfer": 298.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 4113.0,
+            "transfer": 738.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "WHITAKER, Alan",
+        "name": "WHITAKER, Alan",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1769.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1848.0,
+            "transfer": 79.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 2134.0,
+            "transfer": 286.0,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "BANKS, Randy",
+        "name": "BANKS, Randy",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1294.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "MORGAN, Andrew",
+        "name": "MORGAN, Andrew",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 1366.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 1736.0,
+            "transfer": 370.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": null,
+            "transfer": null,
+            "eliminated": true
+          }
+        }
+      },
+      {
+        "name_raw": "MCCONNELL, Angie",
+        "name": "MCCONNELL, Angie",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 3153.0,
+            "transfer": null,
+            "eliminated": false
+          },
+          "2": {
+            "votes": 3598.0,
+            "transfer": 445.0,
+            "eliminated": false
+          },
+          "3": {
+            "votes": 3598.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2015/pdfs/Trustees_Count_2015.pdf"
+  }
+]

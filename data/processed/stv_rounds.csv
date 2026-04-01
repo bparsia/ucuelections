@@ -867,6 +867,10 @@ contest_id,year,name,round,votes,transfer,eliminated
 2010|UK national|Women Members HE,2010,Jennifer Dods,2,,,True
 2010|UK national|Women Members HE,2010,Pauline Collins,1,2183.0,,False
 2010|UK national|Women Members HE,2010,Pauline Collins,2,2602.0,419.0,False
+2011|UK national|Black Members Rep,2011,Dave MURITU,1,5526.0,,False
+2011|UK national|Black Members Rep,2011,Jim THAKOORDIN,1,6597.0,,False
+2011|UK national|Rep,2011,Roger WALTERS,1,6668.0,,False
+2011|UK national|Rep,2011,Liza van ZYL,1,6158.0,,False
 2011|UK national|Members,2011,Tom HICKEY,1,475.0,,False
 2011|UK national|Members,2011,Tom HICKEY,2,590.26,115.26,False
 2011|UK national|Members,2011,Lesley KANE,1,840.0,,False
@@ -920,6 +924,12 @@ contest_id,year,name,round,votes,transfer,eliminated
 2011|UK national|UK Higher Education NEC Members,2011,(post-92),5,1144.66,1144.66,False
 2011|UK national|President,2011,Jim WOLFREYS,1,5409.0,,False
 2011|UK national|President,2011,Simon RENTON,1,8533.0,,False
+2011|UK national|Rep,2011,Mary JENNINGS,1,7477.0,,False
+2011|UK national|Rep,2011,Stephen DESMOND,1,5189.0,,False
+2011|UK national|Secretary NEC,2011,Angela ROGER,1,734.0,,False
+2011|UK national|Secretary NEC,2011,Carlo MORELLI,1,236.0,,False
+2011|UK national|UCU Scotland,2011,Andrew SAMUEL,1,353.0,,False
+2011|UK national|UCU Scotland,2011,Gordon WATSON,1,592.0,,False
 2012|UK national|London and East FE,2012,Annie Holder,1,276.0,,False
 2012|UK national|London and East FE,2012,Annie Holder,2,301.92,25.92,False
 2012|UK national|London and East FE,2012,Sean Vernell,1,380.0,,False
@@ -1530,6 +1540,107 @@ contest_id,year,name,round,votes,transfer,eliminated
 2014|UK national|Women members’ representatives higher education,2014,Sue ABBOTT,1,2526.0,,False
 2014|UK national|Women members’ representatives higher education,2014,Sue ABBOTT,2,2526.0,,False
 2014|UK national|Women members’ representatives higher education,2014,Sue ABBOTT,3,2526.0,,False
+2015|UK national|Casually Employed Members,2015,"SILVERMAN, Eric",1,2428.0,,False
+2015|UK national|Casually Employed Members,2015,"SILVERMAN, Eric",2,2961.0,533.0,False
+2015|UK national|Casually Employed Members,2015,"JOWETT, Amy",1,2458.0,,False
+2015|UK national|Casually Employed Members,2015,"JOWETT, Amy",2,2737.0,279.0,False
+2015|UK national|Casually Employed Members,2015,"BLAKE, Vicky",1,3150.0,,False
+2015|UK national|Casually Employed Members,2015,"BLAKE, Vicky",2,3737.0,587.0,False
+2015|UK national|Casually Employed Members,2015,"CLUNAS, Robert",1,1550.0,,False
+2015|UK national|Casually Employed Members,2015,"CLUNAS, Robert",2,,,True
+2015|UK national|Midlands FE,2015,"MACTAGGART, Allister",1,100.0,,False
+2015|UK national|Midlands FE,2015,"MACTAGGART, Allister",2,131.0,31.0,False
+2015|UK national|Midlands FE,2015,"BRUCE-JONES, Simon",1,143.0,,False
+2015|UK national|Midlands FE,2015,"BRUCE-JONES, Simon",2,158.0,15.0,False
+2015|UK national|Midlands FE,2015,"LOCKLEY, Rhiannon",1,72.0,,False
+2015|UK national|Midlands FE,2015,"LOCKLEY, Rhiannon",2,,,True
+2015|UK national|Midlands FE,2015,"D'ARCY, Jacqueline",1,131.0,,False
+2015|UK national|Midlands FE,2015,"D'ARCY, Jacqueline",2,150.0,19.0,False
+2015|UK national|North West FE,2015,"CAMPBELL, Carolyn",1,162.0,,False
+2015|UK national|North West FE,2015,"DORAN, Nina",1,239.0,,False
+2015|UK national|UK-Elected FE NEC Members,2015,"BROWN, Mandy",1,1311.0,,False
+2015|UK national|UK-Elected FE NEC Members,2015,"NICHOLSON, Lyndsey",1,1293.0,,False
+2015|UK national|North West HE,2015,"MCKRELL, Michael",1,256.0,,False
+2015|UK national|North West HE,2015,"MCKRELL, Michael",2,283.0,27.0,False
+2015|UK national|North West HE,2015,"SHEEHY, Chris",1,189.0,,False
+2015|UK national|North West HE,2015,"SHEEHY, Chris",2,249.0,60.0,False
+2015|UK national|North West HE,2015,"WALDEN, Roger M.",1,120.0,,False
+2015|UK national|North West HE,2015,"WALDEN, Roger M.",2,,,True
+2015|UK national|North West HE,2015,"MCNEIL, Jo",1,289.0,,False
+2015|UK national|North West HE,2015,"MCNEIL, Jo",2,289.0,,False
+2015|UK national|President UCU Scotland,2015,"MORELLI, Carlo",1,347.0,,False
+2015|UK national|President UCU Scotland,2015,"CHALMERS, Douglas",1,487.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"BAILEY, Todd",1,1469.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"BAILEY, Todd",2,1203.84,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"BAILEY, Todd",3,1203.84,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"BAILEY, Todd",4,1203.84,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"BAILEY, Todd",5,1203.84,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"BAILEY, Todd",6,1203.84,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"FOWLER, Jeff",1,619.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"FOWLER, Jeff",2,642.37,23.37,False
+2015|UK national|UK-Elected HE NEC Members,2015,"FOWLER, Jeff",3,665.47,23.1,False
+2015|UK national|UK-Elected HE NEC Members,2015,"FOWLER, Jeff",4,715.7,50.23,False
+2015|UK national|UK-Elected HE NEC Members,2015,"FOWLER, Jeff",5,752.12,36.42,False
+2015|UK national|UK-Elected HE NEC Members,2015,"FOWLER, Jeff",6,51.12,-701.0,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MORELLI, Carlo",1,743.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MORELLI, Carlo",2,766.94,23.94,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MORELLI, Carlo",3,842.69,75.75,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MORELLI, Carlo",4,889.54,46.85,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MORELLI, Carlo",5,942.61,53.07,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MORELLI, Carlo",6,1227.61,285.0,False
+2015|UK national|UK-Elected HE NEC Members,2015,"HERSH, Marion",1,1414.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"HERSH, Marion",2,1414.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"HERSH, Marion",3,1203.84,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"HERSH, Marion",4,1203.84,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"HERSH, Marion",5,1203.84,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"HERSH, Marion",6,1203.84,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"ANDERSON, Dave",1,538.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"ANDERSON, Dave",2,594.24,56.24,False
+2015|UK national|UK-Elected HE NEC Members,2015,"ANDERSON, Dave",3,617.94,23.7,False
+2015|UK national|UK-Elected HE NEC Members,2015,"ANDERSON, Dave",4,649.64,31.7,False
+2015|UK national|UK-Elected HE NEC Members,2015,"ANDERSON, Dave",5,759.27,109.63,False
+2015|UK national|UK-Elected HE NEC Members,2015,"ANDERSON, Dave",6,846.27,87.0,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MICHALOPOULOU, Eleni",1,338.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MICHALOPOULOU, Eleni",2,350.73,12.73,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MICHALOPOULOU, Eleni",3,364.53,13.8,False
+2015|UK national|UK-Elected HE NEC Members,2015,"MICHALOPOULOU, Eleni",4,,,True
+2015|UK national|UK-Elected HE NEC Members,2015,"MICHALOPOULOU, Eleni",5,,,True
+2015|UK national|UK-Elected HE NEC Members,2015,"MICHALOPOULOU, Eleni",6,,,True
+2015|UK national|UK-Elected HE NEC Members,2015,"WATSON, Gordon",1,381.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"WATSON, Gordon",2,414.63,33.63,False
+2015|UK national|UK-Elected HE NEC Members,2015,"WATSON, Gordon",3,427.08,12.45,False
+2015|UK national|UK-Elected HE NEC Members,2015,"WATSON, Gordon",4,453.88,26.8,False
+2015|UK national|UK-Elected HE NEC Members,2015,"WATSON, Gordon",5,,,True
+2015|UK national|UK-Elected HE NEC Members,2015,"WATSON, Gordon",6,,,True
+2015|UK national|UK-Elected HE NEC Members,2015,"PRENDERGAST, Renee",1,800.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"PRENDERGAST, Renee",2,862.51,62.51,False
+2015|UK national|UK-Elected HE NEC Members,2015,"PRENDERGAST, Renee",3,893.41,30.9,False
+2015|UK national|UK-Elected HE NEC Members,2015,"PRENDERGAST, Renee",4,988.17,94.76,False
+2015|UK national|UK-Elected HE NEC Members,2015,"PRENDERGAST, Renee",5,1101.38,113.21,False
+2015|UK national|UK-Elected HE NEC Members,2015,"PRENDERGAST, Renee",6,1187.38,86.0,False
+2015|UK national|UK-Elected HE NEC Members,2015,"CHARLTON, Julia",1,921.0,,False
+2015|UK national|UK-Elected HE NEC Members,2015,"CHARLTON, Julia",2,970.21,49.21,False
+2015|UK national|UK-Elected HE NEC Members,2015,"CHARLTON, Julia",3,996.01,25.8,False
+2015|UK national|UK-Elected HE NEC Members,2015,"CHARLTON, Julia",4,1065.69,69.68,False
+2015|UK national|UK-Elected HE NEC Members,2015,"CHARLTON, Julia",5,1171.04,105.35,False
+2015|UK national|UK-Elected HE NEC Members,2015,"CHARLTON, Julia",6,1354.04,183.0,False
+2015|UK national|LGBT Members,2015,"JENNINGS, Mary",1,5263.0,,False
+2015|UK national|LGBT Members,2015,"ARIZA, Pura",1,4440.0,,False
+2015|UK national|Trustees,2015,"TAYLOR, Kathy",1,3077.0,,False
+2015|UK national|Trustees,2015,"TAYLOR, Kathy",2,3375.0,298.0,False
+2015|UK national|Trustees,2015,"TAYLOR, Kathy",3,4113.0,738.0,False
+2015|UK national|Trustees,2015,"WHITAKER, Alan",1,1769.0,,False
+2015|UK national|Trustees,2015,"WHITAKER, Alan",2,1848.0,79.0,False
+2015|UK national|Trustees,2015,"WHITAKER, Alan",3,2134.0,286.0,False
+2015|UK national|Trustees,2015,"BANKS, Randy",1,1294.0,,False
+2015|UK national|Trustees,2015,"BANKS, Randy",2,,,True
+2015|UK national|Trustees,2015,"BANKS, Randy",3,,,True
+2015|UK national|Trustees,2015,"MORGAN, Andrew",1,1366.0,,False
+2015|UK national|Trustees,2015,"MORGAN, Andrew",2,1736.0,370.0,False
+2015|UK national|Trustees,2015,"MORGAN, Andrew",3,,,True
+2015|UK national|Trustees,2015,"MCCONNELL, Angie",1,3153.0,,False
+2015|UK national|Trustees,2015,"MCCONNELL, Angie",2,3598.0,445.0,False
+2015|UK national|Trustees,2015,"MCCONNELL, Angie",3,3598.0,,False
 2016|UK national|London and the East - FE,2016,"VERNELL, Sean",1,218.0,,False
 2016|UK national|London and the East - FE,2016,"ROBERTS, Julia",1,161.0,,False
 2016|UK national|London and the East - FE,2016,"GUYMER, Sarah",1,103.0,,False
@@ -1619,6 +1730,154 @@ contest_id,year,name,round,votes,transfer,eliminated
 2016|UK national|Representatives of Women - HE,2016,"ABBOTT, Sue",2,2127.0,,False
 2016|UK national|Vice President - FE,2016,"KNIGHT, Vicky",1,4943.0,,False
 2016|UK national|Vice President - FE,2016,"BROWN, Mandy",1,3178.0,,False
+2017|UK national|UK-Elected members FE,2017,"MCEWAN, Richard",1,358.0,,False
+2017|UK national|UK-Elected members FE,2017,"MCEWAN, Richard",2,391.12,33.12,False
+2017|UK national|UK-Elected members FE,2017,"MCEWAN, Richard",3,33.12,-358.0,False
+2017|UK national|UK-Elected members FE,2017,"BROWN, Mandy",1,623.0,,False
+2017|UK national|UK-Elected members FE,2017,"BROWN, Mandy",2,672.68,49.68,False
+2017|UK national|UK-Elected members FE,2017,"BROWN, Mandy",3,900.68,228.0,False
+2017|UK national|UK-Elected members FE,2017,"MONAGHAN, Peter",1,348.0,,False
+2017|UK national|UK-Elected members FE,2017,"MONAGHAN, Peter",2,412.98,64.98,False
+2017|UK national|UK-Elected members FE,2017,"MONAGHAN, Peter",3,497.98,85.0,False
+2017|UK national|UK-Elected members FE,2017,"COOK, Anya",1,894.0,,False
+2017|UK national|UK-Elected members FE,2017,"COOK, Anya",2,741.0,-153.0,False
+2017|UK national|UK-Elected members FE,2017,"COOK, Anya",3,741.0,,False
+2017|UK national|UK NEC Members HE,2017,"CHARLTON, Julia",1,1468.0,,False
+2017|UK national|UK NEC Members HE,2017,"CHARLTON, Julia",2,1551.0,83.0,False
+2017|UK national|UK NEC Members HE,2017,"CHARLTON, Julia",3,1731.0,180.0,False
+2017|UK national|UK NEC Members HE,2017,"CHARLTON, Julia",4,1818.0,87.0,False
+2017|UK national|UK NEC Members HE,2017,"CHARLTON, Julia",5,2082.0,264.0,False
+2017|UK national|UK NEC Members HE,2017,"CHARLTON, Julia",6,1819.6,-262.4,False
+2017|UK national|UK NEC Members HE,2017,"CHARLTON, Julia",7,1819.6,,False
+2017|UK national|UK NEC Members HE,2017,"CHARLTON, Julia",8,1819.6,,False
+2017|UK national|UK NEC Members HE,2017,"MORELLI, Carlo",1,1191.0,,False
+2017|UK national|UK NEC Members HE,2017,"MORELLI, Carlo",2,1272.0,81.0,False
+2017|UK national|UK NEC Members HE,2017,"MORELLI, Carlo",3,1308.0,36.0,False
+2017|UK national|UK NEC Members HE,2017,"MORELLI, Carlo",4,1519.0,211.0,False
+2017|UK national|UK NEC Members HE,2017,"MORELLI, Carlo",5,1699.0,180.0,False
+2017|UK national|UK NEC Members HE,2017,"MORELLI, Carlo",6,1725.0,26.0,False
+2017|UK national|UK NEC Members HE,2017,"MORELLI, Carlo",7,1763.48,38.48,False
+2017|UK national|UK NEC Members HE,2017,"MORELLI, Carlo",8,1785.48,22.0,False
+2017|UK national|UK NEC Members HE,2017,"CARLEY, Michael",1,987.0,,False
+2017|UK national|UK NEC Members HE,2017,"CARLEY, Michael",2,1036.0,49.0,False
+2017|UK national|UK NEC Members HE,2017,"CARLEY, Michael",3,1154.0,118.0,False
+2017|UK national|UK NEC Members HE,2017,"CARLEY, Michael",4,1244.0,90.0,False
+2017|UK national|UK NEC Members HE,2017,"CARLEY, Michael",5,,,True
+2017|UK national|UK NEC Members HE,2017,"CARLEY, Michael",6,,,True
+2017|UK national|UK NEC Members HE,2017,"CARLEY, Michael",7,,,True
+2017|UK national|UK NEC Members HE,2017,"CARLEY, Michael",8,,,True
+2017|UK national|UK NEC Members HE,2017,"MCKRELL, Michael",1,795.0,,False
+2017|UK national|UK NEC Members HE,2017,"MCKRELL, Michael",2,836.0,41.0,False
+2017|UK national|UK NEC Members HE,2017,"MCKRELL, Michael",3,,,True
+2017|UK national|UK NEC Members HE,2017,"MCKRELL, Michael",4,,,True
+2017|UK national|UK NEC Members HE,2017,"MCKRELL, Michael",5,,,True
+2017|UK national|UK NEC Members HE,2017,"MCKRELL, Michael",6,,,True
+2017|UK national|UK NEC Members HE,2017,"MCKRELL, Michael",7,,,True
+2017|UK national|UK NEC Members HE,2017,"MCKRELL, Michael",8,,,True
+2017|UK national|UK NEC Members HE,2017,"LAUTERBERG, Dominique",1,1208.0,,False
+2017|UK national|UK NEC Members HE,2017,"LAUTERBERG, Dominique",2,1276.0,68.0,False
+2017|UK national|UK NEC Members HE,2017,"LAUTERBERG, Dominique",3,1526.0,250.0,False
+2017|UK national|UK NEC Members HE,2017,"LAUTERBERG, Dominique",4,1652.0,126.0,False
+2017|UK national|UK NEC Members HE,2017,"LAUTERBERG, Dominique",5,1943.0,291.0,False
+2017|UK national|UK NEC Members HE,2017,"LAUTERBERG, Dominique",6,1943.0,,False
+2017|UK national|UK NEC Members HE,2017,"LAUTERBERG, Dominique",7,1819.6,-123.4,False
+2017|UK national|UK NEC Members HE,2017,"LAUTERBERG, Dominique",8,1819.6,,False
+2017|UK national|UK NEC Members HE,2017,"BLAKE, Vicky",1,1136.0,,False
+2017|UK national|UK NEC Members HE,2017,"BLAKE, Vicky",2,1217.0,81.0,False
+2017|UK national|UK NEC Members HE,2017,"BLAKE, Vicky",3,1337.0,120.0,False
+2017|UK national|UK NEC Members HE,2017,"BLAKE, Vicky",4,1513.0,176.0,False
+2017|UK national|UK NEC Members HE,2017,"BLAKE, Vicky",5,1767.0,254.0,False
+2017|UK national|UK NEC Members HE,2017,"BLAKE, Vicky",6,1907.0,140.0,False
+2017|UK national|UK NEC Members HE,2017,"BLAKE, Vicky",7,1907.0,,False
+2017|UK national|UK NEC Members HE,2017,"BLAKE, Vicky",8,1819.6,-87.4,False
+2017|UK national|UK NEC Members HE,2017,"HERSH, Marion",1,843.0,,False
+2017|UK national|UK NEC Members HE,2017,"HERSH, Marion",2,944.0,101.0,False
+2017|UK national|UK NEC Members HE,2017,"HERSH, Marion",3,981.0,37.0,False
+2017|UK national|UK NEC Members HE,2017,"HERSH, Marion",4,,,True
+2017|UK national|UK NEC Members HE,2017,"HERSH, Marion",5,,,True
+2017|UK national|UK NEC Members HE,2017,"HERSH, Marion",6,,,True
+2017|UK national|UK NEC Members HE,2017,"HERSH, Marion",7,,,True
+2017|UK national|UK NEC Members HE,2017,"HERSH, Marion",8,,,True
+2017|UK national|UK NEC Members HE,2017,"IOANNOU, Ioanna",1,942.0,,False
+2017|UK national|UK NEC Members HE,2017,"IOANNOU, Ioanna",2,1125.0,183.0,False
+2017|UK national|UK NEC Members HE,2017,"IOANNOU, Ioanna",3,1184.0,59.0,False
+2017|UK national|UK NEC Members HE,2017,"IOANNOU, Ioanna",4,1446.0,262.0,False
+2017|UK national|UK NEC Members HE,2017,"IOANNOU, Ioanna",5,1607.0,161.0,False
+2017|UK national|UK NEC Members HE,2017,"IOANNOU, Ioanna",6,1645.0,38.0,False
+2017|UK national|UK NEC Members HE,2017,"IOANNOU, Ioanna",7,1729.36,84.36,False
+2017|UK national|UK NEC Members HE,2017,"IOANNOU, Ioanna",8,1767.36,38.0,False
+2017|UK national|UK NEC Members HE,2017,"MOORE, Phoebe",1,710.0,,False
+2017|UK national|UK NEC Members HE,2017,"MOORE, Phoebe",2,,,True
+2017|UK national|UK NEC Members HE,2017,"MOORE, Phoebe",3,,,True
+2017|UK national|UK NEC Members HE,2017,"MOORE, Phoebe",4,,,True
+2017|UK national|UK NEC Members HE,2017,"MOORE, Phoebe",5,,,True
+2017|UK national|UK NEC Members HE,2017,"MOORE, Phoebe",6,,,True
+2017|UK national|UK NEC Members HE,2017,"MOORE, Phoebe",7,,,True
+2017|UK national|UK NEC Members HE,2017,"MOORE, Phoebe",8,,,True
+2017|UK national|Honorary Treasurer,2017,"SANGWINE, Steve",1,6474.0,,False
+2017|UK national|Honorary Treasurer,2017,"ANDERSON, Paul",1,6083.0,,False
+2017|UK national|Representative of LGBT members,2017,"PROUT, Ryan",1,6339.0,,False
+2017|UK national|Representative of LGBT members,2017,"ARIZA, Pura",1,5462.0,,False
+2017|UK national|FE Midlands,2017,"SULLIVAN, John Paul",1,140.0,,False
+2017|UK national|FE Midlands,2017,"SULLIVAN, John Paul",2,140.0,,False
+2017|UK national|FE Midlands,2017,"LOCKLEY, Rhiannon",1,94.0,,False
+2017|UK national|FE Midlands,2017,"LOCKLEY, Rhiannon",2,135.0,41.0,False
+2017|UK national|FE Midlands,2017,"FLISSI, Safia",1,75.0,,False
+2017|UK national|FE Midlands,2017,"FLISSI, Safia",2,,,True
+2017|UK national|FE Midlands,2017,"BRUCE-JONES, Simon",1,90.0,,False
+2017|UK national|FE Midlands,2017,"BRUCE-JONES, Simon",2,108.0,18.0,False
+2017|UK national|Midlands - HE,2017,"DI MUCCIO, Elio",1,304.0,,False
+2017|UK national|Midlands - HE,2017,"DI MUCCIO, Elio",2,387.7,83.7,False
+2017|UK national|Midlands - HE,2017,"RIDLEY, David",1,249.0,,False
+2017|UK national|Midlands - HE,2017,"RIDLEY, David",2,414.15,165.15,False
+2017|UK national|Midlands - HE,2017,"MERCER, Justine",1,657.0,,False
+2017|UK national|Midlands - HE,2017,"MERCER, Justine",2,403.34,-253.66,False
+2017|UK national|HE South,2017,"NICOLE, Denis A",1,512.0,,False
+2017|UK national|HE South,2017,"NICOLE, Denis A",2,532.0,20.0,False
+2017|UK national|HE South,2017,"NICOLE, Denis A",3,532.0,,False
+2017|UK national|HE South,2017,"NICOLE, Denis A",4,532.0,,False
+2017|UK national|HE South,2017,"MAYER, Marian",1,275.0,,False
+2017|UK national|HE South,2017,"MAYER, Marian",2,320.0,45.0,False
+2017|UK national|HE South,2017,"MAYER, Marian",3,332.0,12.0,False
+2017|UK national|HE South,2017,"MAYER, Marian",4,429.0,97.0,False
+2017|UK national|HE South,2017,"COLLINS, Pauline",1,522.0,,False
+2017|UK national|HE South,2017,"COLLINS, Pauline",2,559.0,37.0,False
+2017|UK national|HE South,2017,"COLLINS, Pauline",3,523.0,-36.0,False
+2017|UK national|HE South,2017,"COLLINS, Pauline",4,523.0,,False
+2017|UK national|HE South,2017,"ABEL, Mark",1,216.0,,False
+2017|UK national|HE South,2017,"ABEL, Mark",2,,,True
+2017|UK national|HE South,2017,"ABEL, Mark",3,,,True
+2017|UK national|HE South,2017,"ABEL, Mark",4,,,True
+2017|UK national|HE South,2017,"CARLEY, Michael",1,268.0,,False
+2017|UK national|HE South,2017,"CARLEY, Michael",2,295.0,27.0,False
+2017|UK national|HE South,2017,"CARLEY, Michael",3,303.0,8.0,False
+2017|UK national|HE South,2017,"CARLEY, Michael",4,,,True
+2017|UK national|HE South,2017,"KANE, Lesley",1,322.0,,False
+2017|UK national|HE South,2017,"KANE, Lesley",2,386.0,64.0,False
+2017|UK national|HE South,2017,"KANE, Lesley",3,399.0,13.0,False
+2017|UK national|HE South,2017,"KANE, Lesley",4,483.0,84.0,False
+2017|UK national|Trustees,2017,"MILES, Laura",1,3749.0,,False
+2017|UK national|Trustees,2017,"MILES, Laura",2,3070.25,,False
+2017|UK national|Trustees,2017,"MILES, Laura",3,3070.25,,False
+2017|UK national|Trustees,2017,"MILES, Laura",4,3070.25,,False
+2017|UK national|Trustees,2017,"BURGESS, Philip",1,3277.0,,False
+2017|UK national|Trustees,2017,"BURGESS, Philip",2,3277.0,,False
+2017|UK national|Trustees,2017,"BURGESS, Philip",3,3070.25,,False
+2017|UK national|Trustees,2017,"BURGESS, Philip",4,3070.25,,False
+2017|UK national|Trustees,2017,"HUNTER, Alastair",1,1953.0,,False
+2017|UK national|Trustees,2017,"HUNTER, Alastair",2,2125.52,172.52,False
+2017|UK national|Trustees,2017,"HUNTER, Alastair",3,2258.18,132.66,False
+2017|UK national|Trustees,2017,"HUNTER, Alastair",4,3017.18,759.0,False
+2017|UK national|Trustees,2017,"BANKS, Randy",1,1632.0,,False
+2017|UK national|Trustees,2017,"BANKS, Randy",2,1823.9,191.9,False
+2017|UK national|Trustees,2017,"BANKS, Randy",3,1856.54,32.64,False
+2017|UK national|Trustees,2017,"BANKS, Randy",4,224.54,-1632.0,False
+2017|UK national|Trustees,2017,"CUSHION, Steve",1,1670.0,,False
+2017|UK national|Trustees,2017,"CUSHION, Steve",2,1964.5,294.5,False
+2017|UK national|Trustees,2017,"CUSHION, Steve",3,1986.28,21.78,False
+2017|UK national|Trustees,2017,"CUSHION, Steve",4,2616.28,630.0,False
+2017|UK national|Vice President from the HE sector,2017,"CHALMERS, Douglas",1,6946.0,,False
+2017|UK national|Vice President from the HE sector,2017,"MORELLI, Carlo",1,5804.0,,False
 2017|general secretary|Election of General Secretary,2017,"MCNEILL, Jo",1,5586.0,,False
 2018|UK national|FE - London and the East,2018,"ROBERTS, Julia",1,186.0,,False
 2018|UK national|FE - London and the East,2018,"VERNELL, Sean",1,192.0,,False

@@ -848,14 +848,50 @@ def _infer_ballot_type(text: str, filename: str, eligible: int | None) -> str:
 # Per-directory orchestration
 # ---------------------------------------------------------------------------
 
+LIBREOFFICE = Path("/Applications/LibreOffice.app/Contents/MacOS/soffice")
+
+
+def convert_doc_to_pdf(doc_path: Path, verbose: bool = False) -> Path | None:
+    """
+    Convert a .doc file to PDF using LibreOffice headless.
+    Returns the output PDF path, or None if conversion fails.
+    Skips conversion if the PDF already exists.
+    """
+    pdf_path = doc_path.with_suffix(".pdf")
+    if pdf_path.exists():
+        return pdf_path
+    if not LIBREOFFICE.exists():
+        if verbose:
+            print(f"    [skip] LibreOffice not found, cannot convert {doc_path.name}")
+        return None
+    import subprocess
+    result = subprocess.run(
+        [str(LIBREOFFICE), "--headless", "--convert-to", "pdf",
+         "--outdir", str(doc_path.parent), str(doc_path)],
+        capture_output=True, text=True,
+    )
+    if result.returncode != 0 or not pdf_path.exists():
+        if verbose:
+            print(f"    [error] LibreOffice conversion failed for {doc_path.name}: {result.stderr.strip()}")
+        return None
+    if verbose:
+        print(f"    [convert] {doc_path.name} → {pdf_path.name}")
+    return pdf_path
+
+
 def process_dir(raw_dir: Path, verbose: bool = False) -> tuple[list[dict], list[dict]]:
     """
     Process all PDFs in raw_dir/pdfs/.
+    Any .doc files are first converted to PDF via LibreOffice.
     Returns (contest_records, ballot_stats_records).
     """
     pdf_dir = raw_dir / "pdfs"
     if not pdf_dir.exists():
         return [], []
+
+    # Convert any .doc count sheets to PDF before processing
+    for doc_path in sorted(pdf_dir.glob("*.doc")):
+        convert_doc_to_pdf(doc_path, verbose=verbose)
 
     manifest_path = pdf_dir / "manifest.json"
     manifest = {}

@@ -222,6 +222,10 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2010|UK national|Women Members HE,2010,UK national,Women Members HE,Women Members HE,Veronica Killen,Veronica Killen,,False,False,False,Not Elected,1859.0,pdf
 2010|UK national|Women Members HE,2010,UK national,Women Members HE,Women Members HE,Jennifer Dods,Jennifer Dods,,False,False,False,Not Elected,892.0,pdf
 2010|UK national|Women Members HE,2010,UK national,Women Members HE,Women Members HE,Pauline Collins,Pauline Collins,,False,False,False,Elected,2183.0,pdf
+2011|UK national|Black Members Rep,2011,UK national,Black Members Rep,Black Members Rep,Dave MURITU,Dave MURITU,,False,False,False,Not Elected,5526.0,pdf
+2011|UK national|Black Members Rep,2011,UK national,Black Members Rep,Black Members Rep,Jim THAKOORDIN,Jim THAKOORDIN,,False,False,False,Elected,6597.0,pdf
+2011|UK national|Rep,2011,UK national,Rep,Rep,Roger WALTERS,Roger WALTERS,,False,False,False,Elected,6668.0,pdf
+2011|UK national|Rep,2011,UK national,Rep,Rep,Liza van ZYL,Liza van ZYL,,False,False,False,Not Elected,6158.0,pdf
 2011|UK national|Members,2011,UK national,Members,Members,Tom HICKEY,Tom HICKEY,,False,False,False,Elected,475.0,pdf
 2011|UK national|Members,2011,UK national,Members,Members,Lesley KANE,Lesley KANE,,False,False,False,Elected,840.0,pdf
 2011|UK national|Members,2011,UK national,Members,Members,Jim GUILD,Jim GUILD,,False,False,False,Not Elected,236.0,pdf
@@ -237,6 +241,10 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,(post-92),(post-92),,False,False,False,Elected,823.0,pdf
 2011|UK national|President,2011,UK national,President,President,Jim WOLFREYS,Jim WOLFREYS,,False,False,False,Not Elected,5409.0,pdf
 2011|UK national|President,2011,UK national,President,President,Simon RENTON,Simon RENTON,,False,False,False,Elected,8533.0,pdf
+2011|UK national|Secretary NEC,2011,UK national,Secretary NEC,Secretary NEC,Angela ROGER,Angela ROGER,,False,False,False,Elected,734.0,pdf
+2011|UK national|Secretary NEC,2011,UK national,Secretary NEC,Secretary NEC,Carlo MORELLI,Carlo MORELLI,,False,False,False,Not Elected,236.0,pdf
+2011|UK national|UCU Scotland,2011,UK national,UCU Scotland,UCU Scotland,Andrew SAMUEL,Andrew SAMUEL,,False,False,False,Not Elected,353.0,pdf
+2011|UK national|UCU Scotland,2011,UK national,UCU Scotland,UCU Scotland,Gordon WATSON,Gordon WATSON,,False,False,False,Elected,592.0,pdf
 2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Annie Holder,Annie Holder,,False,False,False,Elected,276.0,pdf
 2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Sean Vernell,Sean Vernell,,False,False,False,Elected,380.0,pdf
 2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Mandy Brown,Mandy Brown,,False,False,False,Not Elected,204.0,pdf
@@ -395,6 +403,40 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2014|UK national|Women members’ representatives higher education,2014,UK national,Women members’ representatives higher education,Women members’ representatives higher education,Nadia EDMOND,Nadia EDMOND,,False,False,False,Not Elected,1210.0,pdf
 2014|UK national|Women members’ representatives higher education,2014,UK national,Women members’ representatives higher education,Women members’ representatives higher education,Nika BALOMENOU,Nika BALOMENOU,,False,False,False,Not Elected,1418.0,pdf
 2014|UK national|Women members’ representatives higher education,2014,UK national,Women members’ representatives higher education,Women members’ representatives higher education,Sue ABBOTT,Sue ABBOTT,,False,False,False,Elected,2526.0,pdf
+2015|UK national|Casually Employed Members,2015,UK national,Casually Employed Members,Casually Employed Members,"SILVERMAN, Eric","SILVERMAN, Eric [HE]",HE,False,False,False,Not Elected,2428.0,pdf
+2015|UK national|Casually Employed Members,2015,UK national,Casually Employed Members,Casually Employed Members,"JOWETT, Amy","JOWETT, Amy [FE]",FE,False,False,False,Elected,2458.0,pdf
+2015|UK national|Casually Employed Members,2015,UK national,Casually Employed Members,Casually Employed Members,"BLAKE, Vicky","BLAKE, Vicky [HE]",HE,False,False,False,Elected,3150.0,pdf
+2015|UK national|Casually Employed Members,2015,UK national,Casually Employed Members,Casually Employed Members,"CLUNAS, Robert","CLUNAS, Robert [FE]",FE,False,False,False,Not Elected,1550.0,pdf
+2015|UK national|Midlands FE,2015,UK national,Midlands FE,Midlands FE,"MACTAGGART, Allister","MACTAGGART, Allister",,False,False,False,Not Elected,100.0,pdf
+2015|UK national|Midlands FE,2015,UK national,Midlands FE,Midlands FE,"BRUCE-JONES, Simon","BRUCE-JONES, Simon",,False,False,False,Elected,143.0,pdf
+2015|UK national|Midlands FE,2015,UK national,Midlands FE,Midlands FE,"LOCKLEY, Rhiannon","LOCKLEY, Rhiannon",,False,False,False,Not Elected,72.0,pdf
+2015|UK national|Midlands FE,2015,UK national,Midlands FE,Midlands FE,"D'ARCY, Jacqueline","D'ARCY, Jacqueline",,False,False,False,Elected,131.0,pdf
+2015|UK national|North West FE,2015,UK national,North West FE,North West FE,"CAMPBELL, Carolyn","CAMPBELL, Carolyn",,False,False,False,Not Elected,162.0,pdf
+2015|UK national|North West FE,2015,UK national,North West FE,North West FE,"DORAN, Nina","DORAN, Nina",,False,False,False,Elected,239.0,pdf
+2015|UK national|UK-Elected FE NEC Members,2015,UK national,UK-Elected FE NEC Members,UK-Elected FE NEC Members,"BROWN, Mandy","BROWN, Mandy",,False,False,False,Elected,1311.0,pdf
+2015|UK national|UK-Elected FE NEC Members,2015,UK national,UK-Elected FE NEC Members,UK-Elected FE NEC Members,"NICHOLSON, Lyndsey","NICHOLSON, Lyndsey",,False,False,False,Not Elected,1293.0,pdf
+2015|UK national|North West HE,2015,UK national,North West HE,North West HE,"MCKRELL, Michael","MCKRELL, Michael",,False,False,False,Elected,256.0,pdf
+2015|UK national|North West HE,2015,UK national,North West HE,North West HE,"SHEEHY, Chris","SHEEHY, Chris",,False,False,False,Not Elected,189.0,pdf
+2015|UK national|North West HE,2015,UK national,North West HE,North West HE,"WALDEN, Roger M.","WALDEN, Roger M.",,False,False,False,Not Elected,120.0,pdf
+2015|UK national|North West HE,2015,UK national,North West HE,North West HE,"MCNEIL, Jo","MCNEIL, Jo",,False,False,False,Elected,289.0,pdf
+2015|UK national|President UCU Scotland,2015,UK national,President UCU Scotland,President UCU Scotland,"MORELLI, Carlo","MORELLI, Carlo",,False,False,False,Not Elected,347.0,pdf
+2015|UK national|President UCU Scotland,2015,UK national,President UCU Scotland,President UCU Scotland,"CHALMERS, Douglas","CHALMERS, Douglas",,False,False,False,Elected,487.0,pdf
+2015|UK national|UK-Elected HE NEC Members,2015,UK national,UK-Elected HE NEC Members,UK-Elected HE NEC Members,"BAILEY, Todd","BAILEY, Todd",,False,False,False,Elected,1469.0,pdf
+2015|UK national|UK-Elected HE NEC Members,2015,UK national,UK-Elected HE NEC Members,UK-Elected HE NEC Members,"FOWLER, Jeff","FOWLER, Jeff",,False,False,False,Not Elected,619.0,pdf
+2015|UK national|UK-Elected HE NEC Members,2015,UK national,UK-Elected HE NEC Members,UK-Elected HE NEC Members,"MORELLI, Carlo","MORELLI, Carlo",,False,False,False,Elected,743.0,pdf
+2015|UK national|UK-Elected HE NEC Members,2015,UK national,UK-Elected HE NEC Members,UK-Elected HE NEC Members,"HERSH, Marion","HERSH, Marion",,False,False,False,Elected,1414.0,pdf
+2015|UK national|UK-Elected HE NEC Members,2015,UK national,UK-Elected HE NEC Members,UK-Elected HE NEC Members,"ANDERSON, Dave","ANDERSON, Dave",,False,False,False,Not Elected,538.0,pdf
+2015|UK national|UK-Elected HE NEC Members,2015,UK national,UK-Elected HE NEC Members,UK-Elected HE NEC Members,"MICHALOPOULOU, Eleni","MICHALOPOULOU, Eleni",,False,False,False,Not Elected,338.0,pdf
+2015|UK national|UK-Elected HE NEC Members,2015,UK national,UK-Elected HE NEC Members,UK-Elected HE NEC Members,"WATSON, Gordon","WATSON, Gordon",,False,False,False,Not Elected,381.0,pdf
+2015|UK national|UK-Elected HE NEC Members,2015,UK national,UK-Elected HE NEC Members,UK-Elected HE NEC Members,"PRENDERGAST, Renee","PRENDERGAST, Renee",,False,False,False,Not Elected,800.0,pdf
+2015|UK national|UK-Elected HE NEC Members,2015,UK national,UK-Elected HE NEC Members,UK-Elected HE NEC Members,"CHARLTON, Julia","CHARLTON, Julia",,False,False,False,Elected,921.0,pdf
+2015|UK national|LGBT Members,2015,UK national,LGBT Members,LGBT Members,"JENNINGS, Mary","JENNINGS, Mary",,False,False,False,Elected,5263.0,pdf
+2015|UK national|LGBT Members,2015,UK national,LGBT Members,LGBT Members,"ARIZA, Pura","ARIZA, Pura",,False,False,False,Not Elected,4440.0,pdf
+2015|UK national|Trustees,2015,UK national,Trustees,Trustees,"TAYLOR, Kathy","TAYLOR, Kathy",,False,False,False,Elected,3077.0,pdf
+2015|UK national|Trustees,2015,UK national,Trustees,Trustees,"WHITAKER, Alan","WHITAKER, Alan",,False,False,False,Not Elected,1769.0,pdf
+2015|UK national|Trustees,2015,UK national,Trustees,Trustees,"BANKS, Randy","BANKS, Randy",,False,False,False,Not Elected,1294.0,pdf
+2015|UK national|Trustees,2015,UK national,Trustees,Trustees,"MORGAN, Andrew","MORGAN, Andrew",,False,False,False,Not Elected,1366.0,pdf
+2015|UK national|Trustees,2015,UK national,Trustees,Trustees,"MCCONNELL, Angie","MCCONNELL, Angie",,False,False,False,Elected,3153.0,pdf
 2016|UK national|London and the East - FE,2016,UK national,London and the East - FE,London and the East - FE,"VERNELL, Sean","VERNELL, Sean",,False,False,False,Elected,218.0,pdf
 2016|UK national|London and the East - FE,2016,UK national,London and the East - FE,London and the East - FE,"ROBERTS, Julia","ROBERTS, Julia",,False,False,False,Elected,161.0,pdf
 2016|UK national|London and the East - FE,2016,UK national,London and the East - FE,London and the East - FE,"GUYMER, Sarah","GUYMER, Sarah",,False,False,False,Not Elected,103.0,pdf
@@ -430,6 +472,43 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2016|UK national|Representatives of Women - HE,2016,UK national,Representatives of Women - HE,Representatives of Women - HE,"ABBOTT, Sue","ABBOTT, Sue",,False,False,False,Elected,2127.0,pdf
 2016|UK national|Vice President - FE,2016,UK national,Vice President - FE,Vice President - FE,"KNIGHT, Vicky","KNIGHT, Vicky",,False,False,False,Elected,4943.0,pdf
 2016|UK national|Vice President - FE,2016,UK national,Vice President - FE,Vice President - FE,"BROWN, Mandy","BROWN, Mandy",,False,False,False,Not Elected,3178.0,pdf
+2017|UK national|UK-Elected members FE,2017,UK national,UK-Elected members FE,UK-Elected members FE,"MCEWAN, Richard","MCEWAN, Richard",,False,False,False,Not Elected,358.0,pdf
+2017|UK national|UK-Elected members FE,2017,UK national,UK-Elected members FE,UK-Elected members FE,"BROWN, Mandy","BROWN, Mandy",,False,False,False,Elected,623.0,pdf
+2017|UK national|UK-Elected members FE,2017,UK national,UK-Elected members FE,UK-Elected members FE,"MONAGHAN, Peter","MONAGHAN, Peter",,False,False,False,Not Elected,348.0,pdf
+2017|UK national|UK-Elected members FE,2017,UK national,UK-Elected members FE,UK-Elected members FE,"COOK, Anya","COOK, Anya",,False,False,False,Elected,894.0,pdf
+2017|UK national|UK NEC Members HE,2017,UK national,UK NEC Members HE,UK NEC Members HE,"CHARLTON, Julia","CHARLTON, Julia",,False,False,False,Elected,1468.0,pdf
+2017|UK national|UK NEC Members HE,2017,UK national,UK NEC Members HE,UK NEC Members HE,"MORELLI, Carlo","MORELLI, Carlo",,False,False,False,Elected,1191.0,pdf
+2017|UK national|UK NEC Members HE,2017,UK national,UK NEC Members HE,UK NEC Members HE,"CARLEY, Michael","CARLEY, Michael",,False,False,False,Not Elected,987.0,pdf
+2017|UK national|UK NEC Members HE,2017,UK national,UK NEC Members HE,UK NEC Members HE,"MCKRELL, Michael","MCKRELL, Michael",,False,False,False,Not Elected,795.0,pdf
+2017|UK national|UK NEC Members HE,2017,UK national,UK NEC Members HE,UK NEC Members HE,"LAUTERBERG, Dominique","LAUTERBERG, Dominique",,False,False,False,Elected,1208.0,pdf
+2017|UK national|UK NEC Members HE,2017,UK national,UK NEC Members HE,UK NEC Members HE,"BLAKE, Vicky","BLAKE, Vicky",,False,False,False,Elected,1136.0,pdf
+2017|UK national|UK NEC Members HE,2017,UK national,UK NEC Members HE,UK NEC Members HE,"HERSH, Marion","HERSH, Marion",,False,False,False,Not Elected,843.0,pdf
+2017|UK national|UK NEC Members HE,2017,UK national,UK NEC Members HE,UK NEC Members HE,"IOANNOU, Ioanna","IOANNOU, Ioanna",,False,False,False,Not Elected,942.0,pdf
+2017|UK national|UK NEC Members HE,2017,UK national,UK NEC Members HE,UK NEC Members HE,"MOORE, Phoebe","MOORE, Phoebe",,False,False,False,Not Elected,710.0,pdf
+2017|UK national|Honorary Treasurer,2017,UK national,Honorary Treasurer,Honorary Treasurer,"SANGWINE, Steve","SANGWINE, Steve",,False,False,False,Elected,6474.0,pdf
+2017|UK national|Honorary Treasurer,2017,UK national,Honorary Treasurer,Honorary Treasurer,"ANDERSON, Paul","ANDERSON, Paul",,False,False,False,Not Elected,6083.0,pdf
+2017|UK national|Representative of LGBT members,2017,UK national,Representative of LGBT members,Representative of LGBT members,"PROUT, Ryan","PROUT, Ryan",,False,False,False,Elected,6339.0,pdf
+2017|UK national|Representative of LGBT members,2017,UK national,Representative of LGBT members,Representative of LGBT members,"ARIZA, Pura","ARIZA, Pura",,False,False,False,Not Elected,5462.0,pdf
+2017|UK national|FE Midlands,2017,UK national,FE Midlands,FE Midlands,"SULLIVAN, John Paul","SULLIVAN, John Paul",,False,False,False,Elected,140.0,pdf
+2017|UK national|FE Midlands,2017,UK national,FE Midlands,FE Midlands,"LOCKLEY, Rhiannon","LOCKLEY, Rhiannon",,False,False,False,Elected,94.0,pdf
+2017|UK national|FE Midlands,2017,UK national,FE Midlands,FE Midlands,"FLISSI, Safia","FLISSI, Safia",,False,False,False,Not Elected,75.0,pdf
+2017|UK national|FE Midlands,2017,UK national,FE Midlands,FE Midlands,"BRUCE-JONES, Simon","BRUCE-JONES, Simon",,False,False,False,Not Elected,90.0,pdf
+2017|UK national|Midlands - HE,2017,UK national,Midlands - HE,Midlands - HE,"DI MUCCIO, Elio","DI MUCCIO, Elio",,False,False,False,Not Elected,304.0,pdf
+2017|UK national|Midlands - HE,2017,UK national,Midlands - HE,Midlands - HE,"RIDLEY, David","RIDLEY, David",,False,False,False,Elected,249.0,pdf
+2017|UK national|Midlands - HE,2017,UK national,Midlands - HE,Midlands - HE,"MERCER, Justine","MERCER, Justine",,False,False,False,Elected,657.0,pdf
+2017|UK national|HE South,2017,UK national,HE South,HE South,"NICOLE, Denis A","NICOLE, Denis A",,False,False,False,Elected,512.0,pdf
+2017|UK national|HE South,2017,UK national,HE South,HE South,"MAYER, Marian","MAYER, Marian",,False,False,False,Not Elected,275.0,pdf
+2017|UK national|HE South,2017,UK national,HE South,HE South,"COLLINS, Pauline","COLLINS, Pauline",,False,False,False,Elected,522.0,pdf
+2017|UK national|HE South,2017,UK national,HE South,HE South,"ABEL, Mark","ABEL, Mark",,False,False,False,Not Elected,216.0,pdf
+2017|UK national|HE South,2017,UK national,HE South,HE South,"CARLEY, Michael","CARLEY, Michael",,False,False,False,Not Elected,268.0,pdf
+2017|UK national|HE South,2017,UK national,HE South,HE South,"KANE, Lesley","KANE, Lesley",,False,False,False,Elected,322.0,pdf
+2017|UK national|Trustees,2017,UK national,Trustees,Trustees,"MILES, Laura","MILES, Laura",,False,False,False,Elected,3749.0,pdf
+2017|UK national|Trustees,2017,UK national,Trustees,Trustees,"BURGESS, Philip","BURGESS, Philip",,False,False,False,Elected,3277.0,pdf
+2017|UK national|Trustees,2017,UK national,Trustees,Trustees,"HUNTER, Alastair","HUNTER, Alastair",,False,False,False,Elected,1953.0,pdf
+2017|UK national|Trustees,2017,UK national,Trustees,Trustees,"BANKS, Randy","BANKS, Randy",,False,False,False,Not Elected,1632.0,pdf
+2017|UK national|Trustees,2017,UK national,Trustees,Trustees,"CUSHION, Steve","CUSHION, Steve",,False,False,False,Not Elected,1670.0,pdf
+2017|UK national|Vice President from the HE sector,2017,UK national,Vice President from the HE sector,Vice President from the HE sector,"CHALMERS, Douglas","CHALMERS, Douglas",,False,False,False,Elected,6946.0,pdf
+2017|UK national|Vice President from the HE sector,2017,UK national,Vice President from the HE sector,Vice President from the HE sector,"MORELLI, Carlo","MORELLI, Carlo",,False,False,False,Not Elected,5804.0,pdf
 2017|general secretary|Election of General Secretary,2017,general secretary,Election of General Secretary,Election of General Secretary,"MCNEILL, Jo","MCNEILL, Jo",,False,False,False,Not Elected,5586.0,pdf
 2018|UK national|FE - London and the East,2018,UK national,FE - London and the East,FE - London and the East,"ROBERTS, Julia","ROBERTS, Julia",,False,False,False,Elected,186.0,pdf
 2018|UK national|FE - London and the East,2018,UK national,FE - London and the East,FE - London and the East,"VERNELL, Sean","VERNELL, Sean",,False,False,False,Elected,192.0,pdf

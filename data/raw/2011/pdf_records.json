@@ -1,5 +1,85 @@
 [
   {
+    "contest_name": "Black Members Rep",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_bmem_report.pdf",
+    "source_format": "text",
+    "date": "04/03/2010",
+    "seats": "1",
+    "valid_votes": "12123",
+    "invalid_votes": "2468",
+    "quota": "= 6061.50",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Dave MURITU",
+        "name": "Dave MURITU",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 5526.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Jim THAKOORDIN",
+        "name": "Jim THAKOORDIN",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 6597.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "Rep",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_dismem_report.pdf",
+    "source_format": "text",
+    "date": "04/03/2010",
+    "seats": "1",
+    "valid_votes": "12826",
+    "invalid_votes": "1765",
+    "quota": "= 6413.00",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Roger WALTERS",
+        "name": "Roger WALTERS",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 6668.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Liza van ZYL",
+        "name": "Liza van ZYL",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 6158.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
     "contest_name": "Members",
     "source_pdf": "data/raw/2011/pdfs/elections2011_hesouth_report.pdf",
     "source_format": "text",
@@ -79,24 +159,6 @@
           "2": {
             "votes": 560.53,
             "transfer": 154.53,
-            "eliminated": false
-          }
-        }
-      },
-      {
-        "name_raw": "With",
-        "name": "With",
-        "demographic_flags": [],
-        "outcome": "Not Elected",
-        "rounds": {
-          "1": {
-            "votes": 840.0,
-            "transfer": null,
-            "eliminated": false
-          },
-          "2": {
-            "votes": null,
-            "transfer": null,
             "eliminated": false
           }
         }
@@ -440,20 +502,121 @@
             "eliminated": false
           }
         }
+      }
+    ]
+  },
+  {
+    "contest_name": "Rep",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_lgbtmem_report.pdf",
+    "source_format": "text",
+    "date": "04/03/2010",
+    "seats": "1",
+    "valid_votes": "12666",
+    "invalid_votes": "1925",
+    "quota": "= 6333.00",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Mary JENNINGS",
+        "name": "Mary JENNINGS",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 7477.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
       },
       {
-        "name_raw": "With",
-        "name": "With",
+        "name_raw": "Stephen DESMOND",
+        "name": "Stephen DESMOND",
         "demographic_flags": [],
         "outcome": "Not Elected",
         "rounds": {
           "1": {
-            "votes": 8533.0,
+            "votes": 5189.0,
             "transfer": null,
             "eliminated": false
-          },
-          "2": {
-            "votes": null,
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "Secretary NEC",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_ucushonsec_report.pdf",
+    "source_format": "text",
+    "date": "04/03/2010",
+    "seats": "1",
+    "valid_votes": "970",
+    "invalid_votes": "55",
+    "quota": "= 485.00",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Angela ROGER",
+        "name": "Angela ROGER",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 734.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Carlo MORELLI",
+        "name": "Carlo MORELLI",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 236.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "contest_name": "UCU Scotland",
+    "source_pdf": "data/raw/2011/pdfs/elections2011_ucuspres_report.pdf",
+    "source_format": "text",
+    "date": "04/03/2010",
+    "valid_votes": "945",
+    "invalid_votes": "80",
+    "quota": "= 472.50",
+    "estv_version": "2.0.16",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Andrew SAMUEL",
+        "name": "Andrew SAMUEL",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {
+            "votes": 353.0,
+            "transfer": null,
+            "eliminated": false
+          }
+        }
+      },
+      {
+        "name_raw": "Gordon WATSON",
+        "name": "Gordon WATSON",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {
+            "votes": 592.0,
             "transfer": null,
             "eliminated": false
           }

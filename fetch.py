@@ -1,10 +1,10 @@
 """
-fetch.py — Download HTML and PDFs for each election page in sources/election_pages.csv.
+fetch.py — Download HTML, PDFs, and Word docs for each election page in sources/election_pages.csv.
 
 For each include=yes row:
   - Saves page HTML to data/raw/{year}/page.html
-  - Downloads scrutineer report PDFs to data/raw/{year}/pdfs/
-  - Saves a PDF manifest to data/raw/{year}/pdfs/manifest.json
+  - Downloads scrutineer report PDFs and count-sheet Word docs to data/raw/{year}/pdfs/
+  - Saves a manifest to data/raw/{year}/pdfs/manifest.json (includes filetype field)
   - Extracts uncontested/no-nomination entries to data/raw/{year}/html_records.json
 
 Usage:
@@ -35,10 +35,10 @@ HEADERS = {
     )
 }
 
-# Anchor text patterns that identify scrutineer / results PDFs
+# Anchor text patterns that identify scrutineer reports / count sheets
 SCRUTINEER_PATTERNS = re.compile(
     r"(national|HE|FE|higher education|further education|"
-    r"scrutineer|result|report|seats|officer|trustee)",
+    r"scrutineer|result|report|seats|officer|trustee|count)",
     re.IGNORECASE,
 )
 
@@ -99,6 +99,35 @@ def find_scrutineer_pdfs(soup: BeautifulSoup, page_url: str) -> list[dict]:
                 "anchor": c["anchor"],
                 "filename": filename,
             })
+    return results
+
+
+# ---------------------------------------------------------------------------
+# Word doc link extraction (2011, 2015 count sheets are .doc files)
+# ---------------------------------------------------------------------------
+
+def find_count_docs(soup: BeautifulSoup, page_url: str) -> list[dict]:
+    """
+    Return all count-sheet Word doc links from the page.
+    Mirrors find_scrutineer_pdfs but for .doc / .docx hrefs.
+    """
+    candidates: list[dict] = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if not (href.endswith(".doc") or href.endswith(".docx") or "/doc/" in href):
+            continue
+        anchor = a.get_text(strip=True)
+        if SCRUTINEER_PATTERNS.search(anchor) and not EXCLUDE_ANCHOR_PATTERNS.search(anchor):
+            candidates.append({"anchor": anchor, "href": href})
+
+    seen: set[str] = set()
+    results: list[dict] = []
+    for c in candidates:
+        full_url = urljoin(BASE_URL, c["href"]) if c["href"].startswith("/") else c["href"]
+        if full_url not in seen:
+            seen.add(full_url)
+            filename = Path(urlparse(full_url).path).name
+            results.append({"url": full_url, "anchor": c["anchor"], "filename": filename})
     return results
 
 
@@ -290,24 +319,27 @@ def process_page(row: dict, refresh: bool = False) -> None:
 
     soup = BeautifulSoup(html, "lxml")
 
-    # --- Find and download scrutineer PDFs ---
+    # --- Find and download scrutineer PDFs and count-sheet docs ---
     pdfs = find_scrutineer_pdfs(soup, url)
-    print(f"  [pdfs]  {len(pdfs)} scrutineer report(s) found")
+    docs = find_count_docs(soup, url)
+    print(f"  [pdfs]  {len(pdfs)} PDF(s) found")
+    print(f"  [docs]  {len(docs)} Word doc(s) found")
 
     manifest = []
-    for pdf in pdfs:
-        dest = pdf_dir / pdf["filename"]
+    for item, filetype in [(p, "pdf") for p in pdfs] + [(d, "doc") for d in docs]:
+        dest = pdf_dir / item["filename"]
         if dest.exists() and not refresh:
-            print(f"    [cache] {pdf['filename']}")
+            print(f"    [cache] {item['filename']}")
         else:
-            print(f"    [fetch] {pdf['filename']} ({pdf['anchor']})")
-            resp = fetch_page(pdf["url"])
+            print(f"    [fetch] {item['filename']} ({item['anchor']})")
+            resp = fetch_page(item["url"])
             dest.write_bytes(resp.content)
             time.sleep(1)
         manifest.append({
-            "url": pdf["url"],
-            "anchor": pdf["anchor"],
-            "filename": pdf["filename"],
+            "url": item["url"],
+            "anchor": item["anchor"],
+            "filename": item["filename"],
+            "filetype": filetype,
             "local_path": str(dest.relative_to(Path(__file__).parent)),
         })
 
