@@ -12,7 +12,8 @@ st.set_page_config(
     layout="wide",
 )
 
-DATA_DIR = Path(__file__).parent / "data" / "processed"
+DATA_DIR    = Path(__file__).parent / "data" / "processed"
+SOURCES_DIR = Path(__file__).parent / "sources"
 
 # ---------------------------------------------------------------------------
 # Data
@@ -60,6 +61,15 @@ def display_year(y: str) -> str:
 contests, candidates, ballots = load_data(mtime=_csv_mtime())
 
 all_years = sorted(contests["year"].unique(), key=year_sort_key)
+
+# Build year → URL lookup from election_pages.csv
+_pages = pd.read_csv(SOURCES_DIR / "election_pages.csv")
+# UK national pages keyed by year; GS standalone keyed as year+"_gs"
+_uk_pages = _pages[(_pages["election_type"] == "UK national") & (_pages["include"] == "yes")]
+YEAR_URLS: dict[str, str] = dict(zip(_uk_pages["year"].astype(str), _uk_pages["url"]))
+_gs_pages = _pages[(_pages["election_type"] == "general secretary") & (_pages["include"] == "yes")]
+for _, row in _gs_pages.iterrows():
+    YEAR_URLS[str(row["year"]) + "_gs"] = row["url"]
 
 # GS elections concurrent with national ballot (same electorate, same ballot)
 GS_CONCURRENT = {"2012", "2017", "2023-24"}
@@ -275,7 +285,12 @@ display = stats.rename(columns={"year": "Year", "seats": "Seats",
 
 _gs_table_years = GS_CONCURRENT | {y + "_gs" for y in GS_STANDALONE}
 display["GS election"] = display["Year"].isin(_gs_table_years).map({True: "★", False: ""})
-display["Year"] = display["Year"].map(display_year)
+def _year_cell(raw_year: str) -> str:
+    label = display_year(raw_year)
+    url   = YEAR_URLS.get(raw_year)
+    return f"[{label}]({url})" if url else label
+
+display["Year"] = display["Year"].map(_year_cell)
 display["Seats"]       = display["Seats"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
 display["Candidates"]  = display["Candidates"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
 display["Elected"]     = display["Elected"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
