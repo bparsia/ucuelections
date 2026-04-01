@@ -699,6 +699,17 @@ def main():
         within_dropped += len(group) - 1
         with_votes = [r for r in group if r.get("first_preferences") not in (None, "", "nan")]
         chosen = with_votes[0] if with_votes else group[0]
+        # When STV rounds are split across two entries (different outcome per entry),
+        # the final outcome is what matters: prefer Elected > Uncontested > others.
+        OUTCOME_PRIORITY = {"Elected": 0, "Uncontested": 1}
+        best_outcome = min(
+            (r["outcome"] for r in group if r.get("outcome")),
+            key=lambda o: OUTCOME_PRIORITY.get(o, 99),
+            default=chosen.get("outcome"),
+        )
+        if best_outcome != chosen.get("outcome"):
+            chosen = dict(chosen)   # don't mutate the original
+            chosen["outcome"] = best_outcome
         deduped_within.append(chosen)
     all_candidates = deduped_within
     if within_dropped:
