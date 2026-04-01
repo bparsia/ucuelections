@@ -67,11 +67,11 @@ for btype in ("national", "HE", "FE"):
     )
     stats = stats.merge(sub, on="year", how="left")
 
-# Append rows for standalone GS elections
+# Append rows for standalone GS elections (election_id = "{year}/gs")
 gs_contests   = contests[contests["election_type"] == "general secretary"]
 gs_candidates = candidates[candidates["election_type"] == "general secretary"]
 for yr in GS_STANDALONE:
-    gs_yr_key = yr + "_gs"
+    gs_eid = f"{yr}/gs"
     _seats     = gs_contests[gs_contests["year"] == yr]["seats"].sum()
     _gs_cands_yr = gs_candidates[gs_candidates["year"] == yr]
     _contest_counts = _gs_cands_yr.groupby("contest_id").size()
@@ -88,7 +88,7 @@ for yr in GS_STANDALONE:
     _cast = _ballot["votes_cast"].max()      if not _ballot.empty else pd.NA
     _tpct = _ballot["turnout_pct"].max()     if not _ballot.empty else pd.NA
     gs_row = pd.DataFrame([{
-        "year": gs_yr_key,
+        "year": gs_eid,
         "seats": pd.array([int(_seats)], dtype="Int64")[0],
         "candidates": len(_gs_cands_yr),
         "elected": _elected,
@@ -110,6 +110,7 @@ clean_ballots = ballots[
     & (ballots["election_type"] == "UK national")
 ]
 
+# Standalone GS elections: use election_id (e.g. "2019/gs") as the x-axis key
 _standalone_gs = (
     ballots[
         (ballots["election_type"] == "general secretary")
@@ -118,7 +119,7 @@ _standalone_gs = (
     ]
     .copy()
 )
-_standalone_gs["year"] = _standalone_gs["year"] + "_gs"
+_standalone_gs["year"] = _standalone_gs["election_id"]   # "2019/gs"
 clean_ballots = pd.concat([clean_ballots, _standalone_gs], ignore_index=True)
 
 chart_years = sorted(clean_ballots["year"].unique(), key=year_sort_key)
@@ -216,7 +217,7 @@ for btype, colour in BALLOT_COLOURS.items():
 
 # GS election annotations
 nat_sub = clean_ballots[clean_ballots["ballot_type"] == "national"].set_index("year")
-gs_annotation_years = GS_CONCURRENT | {y + "_gs" for y in GS_STANDALONE}
+gs_annotation_years = GS_CONCURRENT | {f"{y}/gs" for y in GS_STANDALONE}
 for yr in gs_annotation_years:
     if yr in nat_sub.index and pd.notna(nat_sub.loc[yr, "turnout_pct"]):
         fig.add_annotation(
@@ -265,7 +266,7 @@ display = stats.rename(columns={
     "uncontested": "Uncontested", "no_nom_seats": "NoNomSeats",
 }).copy()
 
-_gs_table_years = GS_CONCURRENT | {y + "_gs" for y in GS_STANDALONE}
+_gs_table_years = GS_CONCURRENT | {f"{y}/gs" for y in GS_STANDALONE}
 display["GS election"] = display["Year"].isin(_gs_table_years).map({True: "★", False: ""})
 
 def _year_cell(raw_year: str) -> str:

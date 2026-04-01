@@ -156,8 +156,38 @@ def normalise_name(name: str) -> str:
 # ---------------------------------------------------------------------------
 
 def year_from_dir(dir_name: str) -> str:
-    """Extract the year portion of a directory name (strip _suffix)."""
+    """Extract the raw year portion of a directory name (strip _suffix)."""
     return re.split(r"_", dir_name, maxsplit=1)[0]
+
+
+def _display_year(raw: str) -> str:
+    """Canonical year label: '2019-20' → '2020', single years unchanged."""
+    if len(raw) > 4 and ("-" in raw[4:] or "/" in raw[4:]):
+        return raw[:2] + raw[5:]
+    return raw
+
+
+def canonical_year(dir_name: str) -> str:
+    """Canonical display year for a raw directory name."""
+    return _display_year(year_from_dir(dir_name))
+
+
+def election_id_for(year: str, election_type: str, contest_name: str = "") -> str:
+    """Compute election_id from canonical year, type, and contest name.
+
+    Regular elections:    '2020'
+    Casual vacancies:     '2020/cv'
+    Standalone GS:        '2019/gs'
+    Concurrent GS stays the same as the national election_id.
+    """
+    if election_type == "casual vacancy":
+        return f"{year}/cv"
+    if election_type == "general secretary":
+        return f"{year}/gs"
+    # CV contest embedded in a UK national election (contest name contains 'casual vacancy')
+    if re.search(r"casual.vacanc", contest_name or "", re.IGNORECASE):
+        return f"{year}/cv"
+    return year
 
 
 def election_type_from_dir(dir_name: str) -> str:
@@ -201,7 +231,7 @@ def process_pdf_records(
     Convert a list of pdf_records contest dicts into three flat row lists:
     (contest_rows, candidate_rows, round_rows).
     """
-    year = year_from_dir(dir_name)
+    year = canonical_year(dir_name)
     election_type = election_type_from_dir(dir_name)
 
     contest_rows: list[dict] = []
@@ -214,7 +244,8 @@ def process_pdf_records(
         contest_name_clean = " ".join(contest_name_raw.split())
         position = canonical_position(contest_name_clean, pos_map)
 
-        contest_id = f"{year}|{election_type}|{contest_name_clean}"
+        eid        = election_id_for(year, election_type, contest_name_clean)
+        contest_id = f"{eid}|{election_type}|{contest_name_clean}"
 
         # Determine if we have actual STV rounds
         has_rounds = any(bool(c["rounds"]) for c in contest.get("candidates", []))
@@ -222,6 +253,7 @@ def process_pdf_records(
         contest_rows.append({
             "contest_id": contest_id,
             "year": year,
+            "election_id": eid,
             "election_type": election_type,
             "contest_name_raw": contest_name_raw,
             "contest_name": contest_name_clean,
@@ -245,6 +277,7 @@ def process_pdf_records(
             candidate_rows.append({
                 "contest_id": contest_id,
                 "year": year,
+                "election_id": eid,
                 "election_type": election_type,
                 "contest_name": contest_name_clean,
                 "position": position,
@@ -305,14 +338,15 @@ def process_html_records(
     seen_contests: set[str] = set()
 
     for rec in html_records:
-        year = rec["year"]
+        year = _display_year(rec["year"])   # canonicalize "2019-20" → "2020"
         position_raw = rec["position_raw"]
         # Strip seats count from position heading, e.g. "Midlands HE (3 seats)"
         position_clean = re.sub(r"\s*\(\d+\s+seat[s]?\)\s*", "", position_raw).strip()
         position = canonical_position(position_clean, pos_map)
         election_type = election_type_from_dir(dir_name) if dir_name else "UK national"
 
-        contest_id = f"{year}|{election_type}|{position_clean}"
+        eid        = election_id_for(year, election_type, position_clean)
+        contest_id = f"{eid}|{election_type}|{position_clean}"
 
         # Don't duplicate contests already extracted from PDFs
         if contest_id in existing_contest_ids:
@@ -325,6 +359,7 @@ def process_html_records(
             contest_rows.append({
                 "contest_id": contest_id,
                 "year": year,
+                "election_id": eid,
                 "election_type": election_type,
                 "contest_name_raw": position_raw,
                 "contest_name": position_clean,
@@ -346,6 +381,7 @@ def process_html_records(
         candidate_rows.append({
             "contest_id": contest_id,
             "year": year,
+            "election_id": eid,
             "election_type": election_type,
             "contest_name": position_clean,
             "position": position,
@@ -467,13 +503,14 @@ def _norm(name: str) -> str:
 # ---------------------------------------------------------------------------
 
 CONTEST_FIELDS = [
-    "contest_id", "year", "election_type", "contest_name_raw", "contest_name",
+    "contest_id", "year", "election_id", "election_type",
+    "contest_name_raw", "contest_name",
     "position", "date", "seats", "valid_votes", "invalid_votes", "quota",
     "election_rules", "has_stv_rounds", "source", "source_pdf",
 ]
 
 CANDIDATE_FIELDS = [
-    "contest_id", "year", "election_type", "contest_name", "position",
+    "contest_id", "year", "election_id", "election_type", "contest_name", "position",
     "name", "name_raw", "name_canonical", "demographic_flags",
     "is_woman", "is_post92", "is_academic_related",
     "outcome", "first_preferences", "source",
@@ -484,7 +521,7 @@ ROUND_FIELDS = [
 ]
 
 BALLOT_FIELDS = [
-    "year", "election_type", "ballot_type",
+    "year", "election_id", "election_type", "ballot_type",
     "eligible_voters", "votes_cast", "turnout_pct",
     "suspect", "suspect_reason", "source_pdf",
 ]
@@ -494,10 +531,10 @@ BALLOT_FIELDS = [
 _HE_MIN_ELIGIBLE = 5_000
 _FE_MIN_ELIGIBLE = 3_000
 
-# (year, ballot_type) pairs known to be mislabelled or from non-annual ballots
+# (election_id, ballot_type) pairs known to be mislabelled or from non-annual ballots
 _KNOWN_SUSPECT: dict[tuple, str] = {
     ("2011", "HE"): "report covers national contests (VP/Treasurer), not HE-only",
-    ("2021", "FE"): "casual vacancy ballot (2021_cv), not annual FE election",
+    ("2021/cv", "FE"): "casual vacancy ballot (2021_cv), not annual FE election",
 }
 
 
@@ -506,8 +543,8 @@ def flag_suspect(row: dict) -> dict:
     reason = ""
     if row.get("election_type") != "UK national":
         reason = f"election_type is '{row['election_type']}', not a main annual ballot"
-    elif (row["year"], row["ballot_type"]) in _KNOWN_SUSPECT:
-        reason = _KNOWN_SUSPECT[(row["year"], row["ballot_type"])]
+    elif (row.get("election_id", row["year"]), row["ballot_type"]) in _KNOWN_SUSPECT:
+        reason = _KNOWN_SUSPECT[(row.get("election_id", row["year"]), row["ballot_type"])]
     elif row["ballot_type"] == "HE":
         e = row.get("eligible_voters") or 0
         if e < _HE_MIN_ELIGIBLE:
@@ -547,11 +584,13 @@ def main():
 
         # Ballot stats (extracted from PDFs)
         if stats_path.exists():
-            year = year_from_dir(d.name)
+            year  = canonical_year(d.name)
             etype = election_type_from_dir(d.name)
+            eid   = election_id_for(year, etype)
             for stat in json.loads(stats_path.read_text()):
                 all_ballots.append({
                     "year": year,
+                    "election_id": eid,
                     "election_type": etype,
                     **stat,
                 })
@@ -575,9 +614,12 @@ def main():
     if MANUAL_BALLOTS_PATH.exists():
         with MANUAL_BALLOTS_PATH.open() as f:
             for row in csv.DictReader(f):
+                yr    = _display_year(row["year"])   # canonicalize "2021-22" → "2022"
+                etype = row["election_type"]
                 all_ballots.append({
-                    "year":             row["year"],
-                    "election_type":    row["election_type"],
+                    "year":             yr,
+                    "election_id":      election_id_for(yr, etype),
+                    "election_type":    etype,
                     "ballot_type":      row["ballot_type"],
                     "eligible_voters":  int(row["eligible_voters"]),
                     "votes_cast":       int(row["votes_cast"]),
@@ -655,11 +697,10 @@ def main():
             writer.writeheader()
             writer.writerows(rows)
 
-    # Deduplicate ballots: same year+election_type+ballot_type, keep highest eligible_voters
-    # (avoids duplicates when multiple PDFs cover the same ballot)
+    # Deduplicate ballots: same election_id+ballot_type, keep highest eligible_voters
     ballot_key: dict[tuple, dict] = {}
     for b in all_ballots:
-        key = (b["year"], b["election_type"], b["ballot_type"])
+        key = (b["election_id"], b["ballot_type"])
         existing = ballot_key.get(key)
         if existing is None or (b.get("eligible_voters") or 0) > (existing.get("eligible_voters") or 0):
             ballot_key[key] = b

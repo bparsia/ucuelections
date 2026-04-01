@@ -8,7 +8,7 @@ import streamlit as st
 DATA_DIR    = Path(__file__).parent / "data" / "processed"
 SOURCES_DIR = Path(__file__).parent / "sources"
 
-GS_CONCURRENT = {"2012", "2017", "2023-24"}
+GS_CONCURRENT = {"2012", "2017", "2024"}   # canonical years (2023-24 → 2024)
 GS_STANDALONE  = {"2019"}
 
 
@@ -41,22 +41,42 @@ def load_data(mtime: float):  # mtime forces cache-bust when CSVs change
 # ---------------------------------------------------------------------------
 
 def year_sort_key(y: str) -> float:
-    """Sort '2019-20' after '2019'; synthetic '_gs' suffix sorts just after base year."""
-    if y.endswith("_gs"):
+    """Sort key for canonical year or election_id strings.
+
+    '2020'    → 2020.0
+    '2019/gs' → 2019.25
+    '2020/cv' → 2020.5
+    '2020/cv1'→ 2020.5
+    Legacy '_gs' suffix still handled for safety.
+    """
+    if y.endswith("_gs"):                       # legacy
         return year_sort_key(y[:-3]) + 0.25
-    digits = y[:4]
+    if "/" in y:
+        base, suffix = y.split("/", 1)
+        offsets = {"gs": 0.25, "cv": 0.5, "cv1": 0.5, "cv2": 0.6}
+        return year_sort_key(base) + offsets.get(suffix, 0.1)
     try:
-        base = float(digits)
+        return float(y[:4])
     except ValueError:
         return 9999.0
-    return base + 0.5 if "-" in y or "/" in y else base
 
 
 def display_year(y: str) -> str:
-    """'2019-20' → '2020', '2019_gs' → '2019-GS'; single years unchanged."""
-    if y.endswith("_gs"):
+    """Human-readable label for a canonical year or election_id.
+
+    '2020'    → '2020'
+    '2019/gs' → '2019-GS'
+    '2020/cv' → '2020-CV'
+    Legacy academic-year formats still handled for safety.
+    """
+    if y.endswith("_gs"):                       # legacy
         return display_year(y[:-3]) + "-GS"
-    if len(y) > 4 and ("-" in y[4:] or "/" in y[4:]):
+    if "/" in y:
+        base, suffix = y.split("/", 1)
+        label = {"gs": "GS", "cv": "CV", "cv1": "CV", "cv2": "CV"}.get(suffix, suffix.upper())
+        return f"{base}-{label}"
+    # Legacy academic-year format (should no longer appear in CSVs post-migration)
+    if len(y) > 4 and ("-" in y[4:]):
         return y[:2] + y[5:]
     return y
 
@@ -66,12 +86,16 @@ def display_year(y: str) -> str:
 # ---------------------------------------------------------------------------
 
 def _build_year_urls() -> dict[str, str]:
-    pages    = pd.read_csv(SOURCES_DIR / "election_pages.csv")
-    uk       = pages[(pages["election_type"] == "UK national") & (pages["include"] == "yes")]
-    urls     = dict(zip(uk["year"].astype(str), uk["url"]))
-    gs_pages = pages[(pages["election_type"] == "general secretary") & (pages["include"] == "yes")]
-    for _, row in gs_pages.iterrows():
-        urls[str(row["year"]) + "_gs"] = row["url"]
+    """Build election_id → UCU page URL mapping with canonical year keys."""
+    pages = pd.read_csv(SOURCES_DIR / "election_pages.csv")
+    urls: dict[str, str] = {}
+    uk = pages[(pages["election_type"] == "UK national") & (pages["include"] == "yes")]
+    for _, row in uk.iterrows():
+        urls[display_year(str(row["year"]))] = row["url"]   # "2019-20" → "2020"
+    gs = pages[(pages["election_type"] == "general secretary") & (pages["include"] == "yes")]
+    for _, row in gs.iterrows():
+        canonical = display_year(str(row["year"]))
+        urls[f"{canonical}/gs"] = row["url"]
     return urls
 
 

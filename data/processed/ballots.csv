@@ -1,60 +1,60 @@
-year,election_type,ballot_type,eligible_voters,votes_cast,turnout_pct,suspect,suspect_reason,source_pdf
-2009,UK national,FE,41561,3529,8.5,False,,data/raw/2009/pdfs/elect09_fescrutineersreport.pdf
-2009,UK national,HE,67954,6634,9.8,False,,data/raw/2009/pdfs/elect09_hescrutineersreport.pdf
-2009,UK national,national,117638,10871,9.3,False,,data/raw/2009/pdfs/elect09_natscrutineersreport.pdf
-2010,UK national,FE,40438,3775,9.3,False,,FE scrutineer report (manual)
-2010,UK national,HE,67620,7025,10.4,False,,data/raw/2010/pdfs/elect10_report_HEUK_HELondoneast.pdf
-2010,UK national,national,116268,11448,9.8,False,,data/raw/2010/pdfs/elect10_reportofficersequality.pdf
-2011,UK national,HE,120080,14591,12.2,True,"report covers national contests (VP/Treasurer), not HE-only",data/raw/2011/pdfs/elections2011_hevp_hontreas_eq.pdf
-2011,UK national,national,120080,14591,12.2,False,,VP result sheet (manual)
-2012,UK national,FE,39793,3916,9.8,False,,data/raw/2012/pdfs/Scrutineers_report_FE.pdf
-2012,casual vacancy,FE,38114,4498,11.8,True,"election_type is 'casual vacancy', not a main annual ballot",data/raw/2012_cv/pdfs/Scrutineer_report.pdf
-2012,UK national,HE,67720,9640,14.2,False,,data/raw/2012/pdfs/Scrutineers_report_HE.pdf
-2012,UK national,national,117918,15045,12.8,False,,data/raw/2012/pdfs/GS_scrutineers_report.pdf
-2013,UK national,FE,37860,3252,8.6,False,,data/raw/2013/pdfs/Scrutineers_report_FE_seats.pdf
-2013,UK national,HE,66353,7904,11.9,False,,data/raw/2013/pdfs/Scrutineers_report_HE_seats.pdf
-2013,casual vacancy,HE,10173,1792,17.6,True,"election_type is 'casual vacancy', not a main annual ballot",data/raw/2013_cv/pdfs/scrutineers_report_HE_NE_2013.pdf
-2013,UK national,national,114635,12557,11.0,False,,data/raw/2013/pdfs/Scrutineers_report_national_seats.pdf
-2014,UK national,FE,35479,3049,8.6,False,,data/raw/2014/pdfs/Scrutineers_report_FE_seats.pdf
-2014,UK national,HE,65377,7674,11.7,False,,data/raw/2014/pdfs/Scrutineers_report_HE_seats.pdf
-2014,UK national,national,106827,11599,10.9,False,,data/raw/2014/pdfs/Scrutineers_report_national_seats.pdf
-2015,UK national,FE,33685,2801,8.3,False,,data/raw/2015/pdfs/Scrutineers_report_FE_seats_2015.pdf
-2015,UK national,HE,66285,7654,11.6,False,,data/raw/2015/pdfs/Scrutineers_report_HE_seats_2015.pdf
-2015,UK national,national,106007,11349,10.7,False,,data/raw/2015/pdfs/Scrutineers_report_national_seats_2015.pdf
-2016,UK national,FE,30680,2142,7.0,False,,data/raw/2016/pdfs/S_report_FE_seats.pdf
-2016,UK national,HE,66211,5964,9.0,False,,data/raw/2016/pdfs/S_report_HE_seats.pdf
-2016,UK national,national,103663,9004,8.7,False,,data/raw/2016/pdfs/S_report_national_seats.pdf
-2017,UK national,FE,28046,2365,8.4,False,,data/raw/2017/pdfs/Scrutineers_report_FE1.pdf
-2017,UK national,HE,67038,10304,15.4,False,,data/raw/2017/pdfs/Scrutineers_report_HE.pdf
-2017,UK national,national,101497,13880,13.7,False,,data/raw/2017/pdfs/Scrutineers_report_national_seats.pdf
-2017,general secretary,national,101497,13880,13.7,True,"election_type is 'general secretary', not a main annual ballot",data/raw/2017_gs/pdfs/GS_result_scrutineer_report_17.pdf
-2018,UK national,FE,27981,2215,7.9,False,,data/raw/2018/pdfs/FE_Report.pdf
-2018,UK national,HE,72497,7023,9.7,False,,data/raw/2018/pdfs/HE_report.pdf
-2018,UK national,national,107196,10232,9.6,False,,data/raw/2018/pdfs/National_seats_report.pdf
-2019,UK national,FE,28500,2064,7.2,False,,data/raw/2019/pdfs/Scrutineer_report_FE_seats.pdf
-2019,UK national,HE,79810,11135,14.0,False,,data/raw/2019/pdfs/Scrutineer_report_HE_seats.pdf
-2019,general secretary,national,115311,23681,20.5,True,"election_type is 'general secretary', not a main annual ballot",data/raw/2019_gs/pdfs/ucu-gselection-2019_scrutineers-report1.pdf
-2019,UK national,national,115008,14204,12.4,False,,VP result sheet (manual)
-2019-20,UK national,FE,29564,2155,7.3,False,,data/raw/2019-20/pdfs/Scrutineer_report_FE.pdf
-2019-20,UK national,HE,84922,10934,12.9,False,,data/raw/2019-20/pdfs/scrutineer_report_HE.pdf
-2019-20,UK national,national,121648,14135,11.6,False,,data/raw/2019-20/pdfs/Scrutineer_report_national_seats.pdf
-2020-21,UK national,FE,30316,2109,7.0,False,,data/raw/2020-21/pdfs/Scrutineer_report_FE.pdf
-2020-21,UK national,HE,85686,8482,9.9,False,,data/raw/2020-21/pdfs/Scrutineer_report_HE1.pdf
-2020-21,UK national,national,122830,11485,9.4,False,,data/raw/2020-21/pdfs/Scrutineer_report_national.pdf
-2021,casual vacancy,FE,29390,1927,6.6,True,"election_type is 'casual vacancy', not a main annual ballot",data/raw/2021_cv/pdfs/Scrutineer_report_CV_FE_UKelected2021.pdf
-2021-22,UK national,FE,29070,1534,5.3,False,,FE scrutineer report (manual)
-2021-22,UK national,HE,84631,7166,8.5,False,,HE scrutineer report (manual)
-2021-22,UK national,national,121644,9567,7.9,False,,VP result sheet (manual)
-2023,UK national,FE,27830,1572,5.6,False,,data/raw/2023/pdfs/SR_FE_seats.pdf
-2023,UK national,HE,85021,10465,12.3,False,,data/raw/2023/pdfs/SR_HE_seats.pdf
-2023,UK national,national,119819,12830,10.7,False,,data/raw/2023/pdfs/SR_national_seats.pdf
-2023-24,UK national,FE,27007,2280,8.4,False,,data/raw/2023-24/pdfs/UCU_2024_FE_elections_report.pdf
-2023-24,UK national,HE,80829,14015,17.3,False,,data/raw/2023-24/pdfs/UCU_2024_HE_elections_report.pdf
-2023-24,UK national,national,114310,17279,15.1,False,,data/raw/2023-24/pdfs/U0150_1_010324_ROV_UCU_General_Secretary_2024.pdf
-2024-25,UK national,FE,26085,1404,5.4,False,,data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_3_-_FE.pdf
-2024-25,UK national,HE,80079,7401,9.2,False,,data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_2_-_HE.pdf
-2024-25,UK national,national,112279,9553,8.5,False,,data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_1.pdf
-2025,casual vacancy,national,81215,9449,11.6,True,"election_type is 'casual vacancy', not a main annual ballot",data/raw/2025_cv/pdfs/Result_sheet_-_2025_casual_vacancies.pdf
-2025-26,UK national,FE,26710,1575,5.9,False,,data/raw/2025-26/pdfs/Further_education_seats.pdf
-2025-26,UK national,HE,79641,7325,9.2,False,,data/raw/2025-26/pdfs/Higher_education_seats.pdf
-2025-26,UK national,national,112834,9644,8.5,False,,data/raw/2025-26/pdfs/National_seats.pdf
+year,election_id,election_type,ballot_type,eligible_voters,votes_cast,turnout_pct,suspect,suspect_reason,source_pdf
+2009,2009,UK national,FE,41561,3529,8.5,False,,data/raw/2009/pdfs/elect09_fescrutineersreport.pdf
+2009,2009,UK national,HE,67954,6634,9.8,False,,data/raw/2009/pdfs/elect09_hescrutineersreport.pdf
+2009,2009,UK national,national,117638,10871,9.3,False,,data/raw/2009/pdfs/elect09_natscrutineersreport.pdf
+2010,2010,UK national,FE,40438,3775,9.3,False,,FE scrutineer report (manual)
+2010,2010,UK national,HE,67620,7025,10.4,False,,data/raw/2010/pdfs/elect10_report_HEUK_HELondoneast.pdf
+2010,2010,UK national,national,116268,11448,9.8,False,,data/raw/2010/pdfs/elect10_reportofficersequality.pdf
+2011,2011,UK national,HE,120080,14591,12.2,True,"report covers national contests (VP/Treasurer), not HE-only",data/raw/2011/pdfs/elections2011_hevp_hontreas_eq.pdf
+2011,2011,UK national,national,120080,14591,12.2,False,,VP result sheet (manual)
+2012,2012,UK national,FE,39793,3916,9.8,False,,data/raw/2012/pdfs/Scrutineers_report_FE.pdf
+2012,2012/cv,casual vacancy,FE,38114,4498,11.8,True,"election_type is 'casual vacancy', not a main annual ballot",data/raw/2012_cv/pdfs/Scrutineer_report.pdf
+2012,2012,UK national,HE,67720,9640,14.2,False,,data/raw/2012/pdfs/Scrutineers_report_HE.pdf
+2012,2012,UK national,national,117918,15045,12.8,False,,data/raw/2012/pdfs/GS_scrutineers_report.pdf
+2013,2013,UK national,FE,37860,3252,8.6,False,,data/raw/2013/pdfs/Scrutineers_report_FE_seats.pdf
+2013,2013,UK national,HE,66353,7904,11.9,False,,data/raw/2013/pdfs/Scrutineers_report_HE_seats.pdf
+2013,2013/cv,casual vacancy,HE,10173,1792,17.6,True,"election_type is 'casual vacancy', not a main annual ballot",data/raw/2013_cv/pdfs/scrutineers_report_HE_NE_2013.pdf
+2013,2013,UK national,national,114635,12557,11.0,False,,data/raw/2013/pdfs/Scrutineers_report_national_seats.pdf
+2014,2014,UK national,FE,35479,3049,8.6,False,,data/raw/2014/pdfs/Scrutineers_report_FE_seats.pdf
+2014,2014,UK national,HE,65377,7674,11.7,False,,data/raw/2014/pdfs/Scrutineers_report_HE_seats.pdf
+2014,2014,UK national,national,106827,11599,10.9,False,,data/raw/2014/pdfs/Scrutineers_report_national_seats.pdf
+2015,2015,UK national,FE,33685,2801,8.3,False,,data/raw/2015/pdfs/Scrutineers_report_FE_seats_2015.pdf
+2015,2015,UK national,HE,66285,7654,11.6,False,,data/raw/2015/pdfs/Scrutineers_report_HE_seats_2015.pdf
+2015,2015,UK national,national,106007,11349,10.7,False,,data/raw/2015/pdfs/Scrutineers_report_national_seats_2015.pdf
+2016,2016,UK national,FE,30680,2142,7.0,False,,data/raw/2016/pdfs/S_report_FE_seats.pdf
+2016,2016,UK national,HE,66211,5964,9.0,False,,data/raw/2016/pdfs/S_report_HE_seats.pdf
+2016,2016,UK national,national,103663,9004,8.7,False,,data/raw/2016/pdfs/S_report_national_seats.pdf
+2017,2017,UK national,FE,28046,2365,8.4,False,,data/raw/2017/pdfs/Scrutineers_report_FE1.pdf
+2017,2017,UK national,HE,67038,10304,15.4,False,,data/raw/2017/pdfs/Scrutineers_report_HE.pdf
+2017,2017,UK national,national,101497,13880,13.7,False,,data/raw/2017/pdfs/Scrutineers_report_national_seats.pdf
+2017,2017/gs,general secretary,national,101497,13880,13.7,True,"election_type is 'general secretary', not a main annual ballot",data/raw/2017_gs/pdfs/GS_result_scrutineer_report_17.pdf
+2018,2018,UK national,FE,27981,2215,7.9,False,,data/raw/2018/pdfs/FE_Report.pdf
+2018,2018,UK national,HE,72497,7023,9.7,False,,data/raw/2018/pdfs/HE_report.pdf
+2018,2018,UK national,national,107196,10232,9.6,False,,data/raw/2018/pdfs/National_seats_report.pdf
+2019,2019,UK national,FE,28500,2064,7.2,False,,data/raw/2019/pdfs/Scrutineer_report_FE_seats.pdf
+2019,2019,UK national,HE,79810,11135,14.0,False,,data/raw/2019/pdfs/Scrutineer_report_HE_seats.pdf
+2019,2019/gs,general secretary,national,115311,23681,20.5,True,"election_type is 'general secretary', not a main annual ballot",data/raw/2019_gs/pdfs/ucu-gselection-2019_scrutineers-report1.pdf
+2019,2019,UK national,national,115008,14204,12.4,False,,VP result sheet (manual)
+2020,2020,UK national,FE,29564,2155,7.3,False,,data/raw/2019-20/pdfs/Scrutineer_report_FE.pdf
+2020,2020,UK national,HE,84922,10934,12.9,False,,data/raw/2019-20/pdfs/scrutineer_report_HE.pdf
+2020,2020,UK national,national,121648,14135,11.6,False,,data/raw/2019-20/pdfs/Scrutineer_report_national_seats.pdf
+2021,2021,UK national,FE,30316,2109,7.0,False,,data/raw/2020-21/pdfs/Scrutineer_report_FE.pdf
+2021,2021/cv,casual vacancy,FE,29390,1927,6.6,True,"election_type is 'casual vacancy', not a main annual ballot",data/raw/2021_cv/pdfs/Scrutineer_report_CV_FE_UKelected2021.pdf
+2021,2021,UK national,HE,85686,8482,9.9,False,,data/raw/2020-21/pdfs/Scrutineer_report_HE1.pdf
+2021,2021,UK national,national,122830,11485,9.4,False,,data/raw/2020-21/pdfs/Scrutineer_report_national.pdf
+2022,2022,UK national,FE,29070,1534,5.3,False,,FE scrutineer report (manual)
+2022,2022,UK national,HE,84631,7166,8.5,False,,HE scrutineer report (manual)
+2022,2022,UK national,national,121644,9567,7.9,False,,VP result sheet (manual)
+2023,2023,UK national,FE,27830,1572,5.6,False,,data/raw/2023/pdfs/SR_FE_seats.pdf
+2023,2023,UK national,HE,85021,10465,12.3,False,,data/raw/2023/pdfs/SR_HE_seats.pdf
+2023,2023,UK national,national,119819,12830,10.7,False,,data/raw/2023/pdfs/SR_national_seats.pdf
+2024,2024,UK national,FE,27007,2280,8.4,False,,data/raw/2023-24/pdfs/UCU_2024_FE_elections_report.pdf
+2024,2024,UK national,HE,80829,14015,17.3,False,,data/raw/2023-24/pdfs/UCU_2024_HE_elections_report.pdf
+2024,2024,UK national,national,114310,17279,15.1,False,,data/raw/2023-24/pdfs/U0150_1_010324_ROV_UCU_General_Secretary_2024.pdf
+2025,2025,UK national,FE,26085,1404,5.4,False,,data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_3_-_FE.pdf
+2025,2025,UK national,HE,80079,7401,9.2,False,,data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_2_-_HE.pdf
+2025,2025,UK national,national,112279,9553,8.5,False,,data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_1.pdf
+2025,2025/cv,casual vacancy,national,81215,9449,11.6,True,"election_type is 'casual vacancy', not a main annual ballot",data/raw/2025_cv/pdfs/Result_sheet_-_2025_casual_vacancies.pdf
+2026,2026,UK national,FE,26710,1575,5.9,False,,data/raw/2025-26/pdfs/Further_education_seats.pdf
+2026,2026,UK national,HE,79641,7325,9.2,False,,data/raw/2025-26/pdfs/Higher_education_seats.pdf
+2026,2026,UK national,national,112834,9644,8.5,False,,data/raw/2025-26/pdfs/National_seats.pdf
