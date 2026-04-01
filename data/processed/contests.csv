@@ -217,8 +217,9 @@ contest_id,year,election_type,contest_name_raw,contest_name,position,date,seats,
 2023-24|UK national|Women Members from the Higher Education Sector,2023-24,UK national,Women Members from the Higher Education Sector,Women Members from the Higher Education Sector,Women Members from the Higher Education Sector,01/03/2024,3,12856,4423,3214,ERS97,True,pdf,data/raw/2023-24/pdfs/Women_members_HE_result_sheet.pdf
 2023|Scotland|UCU Scotland executive committee members,2023,Scotland,UCU Scotland executive committee members,UCU Scotland executive committee members,UCU Scotland executive committee members,01/03/2023,2,1125,64,375,ERS97,True,pdf,data/raw/2023_scotland/pdfs/UCU_Scotland_Executive_Committee_Members.pdf
 2023|Scotland|UCU Scotland Honorary Treasurer,2023,Scotland,UCU Scotland Honorary Treasurer,UCU Scotland Honorary Treasurer,UCU Scotland Honorary Treasurer,01/03/2023,1,1123,66,561.5,ERS97,True,pdf,data/raw/2023_scotland/pdfs/UCU_Scotland_Honorary_Treasurer.pdf
-2023|UK national|Equality officer,2023,UK national,Equality officer,Equality officer,Equality officer,,,,,,,False,html,
-2023|UK national|Executive committee member who is a Black* member,2023,UK national,Executive committee member who is a Black* member,Executive committee member who is a Black* member,Executive committee member who is a Black* member,,,,,,,False,html,
+2023|Scotland|Vice-President,2023,Scotland,Vice-President,Vice-President,Vice-President,,1,,,,,False,html,
+2023|Scotland|Equality officer,2023,Scotland,Equality officer,Equality officer,Equality officer,,1,,,,,False,html,
+2023|Scotland|Executive committee member who is a Black* member,2023,Scotland,Executive committee member who is a Black* member,Executive committee member who is a Black* member,Executive committee member who is a Black* member,,1,,,,,False,html,
 2024-25|UK national|Representatives of Black Members,2024-25,UK national,Representatives of Black Members,Representatives of Black Members,Representatives of Black Members,04/03/2025,2,8244,1309,2748,ERS97,True,pdf,data/raw/2024-25/pdfs/2025_Black_mem_results.pdf
 2024-25|UK national|Representatives of Disabled Members,2024-25,UK national,Representatives of Disabled Members,Representatives of Disabled Members,Representatives of Disabled Members,04/03/2025,1,8658,895,4329,ERS97,True,pdf,data/raw/2024-25/pdfs/2025_Disabled_rep_results.pdf
 2024-25|UK national|Honorary Treasurer,2024-25,UK national,Honorary Treasurer,Honorary Treasurer,Honorary Treasurer,04/03/2025,1,9178,375,4589,ERS97,True,pdf,data/raw/2024-25/pdfs/2025_Honorary_Treasurer_results.pdf
@@ -242,10 +243,10 @@ contest_id,year,election_type,contest_name_raw,contest_name,position,date,seats,
 2024-25|UK national|Wales (and Vice-President UCU Wales),2024-25,UK national,Wales (and Vice-President UCU Wales),Wales (and Vice-President UCU Wales),Wales (and Vice-President UCU Wales),,,,,,STV,False,pdf,data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_3_-_FE.pdf
 2024-25|UK national|Midlands HE,2024-25,UK national,Midlands HE (3 seats),Midlands HE,Midlands HE,,3,,,,,False,html,
 2024-25|UK national|Wales FE,2024-25,UK national,Wales FE (1 seat),Wales FE,Wales FE,,1,,,,,False,html,
-2024-25|UK national|UCU Scotland Vice President,2024-25,UK national,UCU Scotland Vice President,UCU Scotland Vice President,UCU Scotland Vice President,,,,,,,False,html,
-2024-25|UK national|Equality Officer,2024-25,UK national,Equality Officer,Equality Officer,Equality Officer,,,,,,,False,html,
-2024-25|UK national|Green Officer,2024-25,UK national,Green Officer,Green Officer,Green Officer,,,,,,,False,html,
-2024-25|UK national|Executive Committee members,2024-25,UK national,Executive Committee members (3 seats),Executive Committee members,Executive Committee members,,3,,,,,False,html,
+2024-25|Scotland|UCU Scotland Vice President,2024-25,Scotland,UCU Scotland Vice President,UCU Scotland Vice President,UCU Scotland Vice President,,1,,,,,False,html,
+2024-25|Scotland|Equality Officer,2024-25,Scotland,Equality Officer,Equality Officer,Equality Officer,,1,,,,,False,html,
+2024-25|Scotland|Green Officer,2024-25,Scotland,Green Officer,Green Officer,Green Officer,,1,,,,,False,html,
+2024-25|Scotland|Executive Committee members,2024-25,Scotland,Executive Committee members (3 seats),Executive Committee members,Executive Committee members,,3,,,,,False,html,
 2025-26|UK national|Northern Ireland,2025-26,UK national,Northern Ireland,Northern Ireland,Northern Ireland,,,,,,STV,False,pdf,data/raw/2025-26/pdfs/Further_education_seats.pdf
 2025-26|UK national|North East,2025-26,UK national,North East,North East,North East,,,,,,STV,False,pdf,data/raw/2025-26/pdfs/Further_education_seats.pdf
 2025-26|UK national|Wales,2025-26,UK national,Wales,Wales,Wales,,,,,,STV,False,pdf,data/raw/2025-26/pdfs/Higher_education_seats.pdf

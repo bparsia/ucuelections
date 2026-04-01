@@ -260,6 +260,14 @@ def parse_candidate(text: str) -> tuple[str | None, str | None]:
     if not text or len(text) < 3:
         return None, None
 
+    # Reject boilerplate / non-candidate lines
+    _tl = text.lower()
+    if any(phrase in _tl for phrase in (
+        "nominations supported", "relevant documents", "at least 10 members",
+        "election address", "election rules", "guidance notes",
+    )):
+        return None, None
+
     # Strip pronouns like (she/her), (he/him), (they/them)
     text = re.sub(r"\([a-z]+/[a-z]+\)", "", text, flags=re.IGNORECASE).strip()
 

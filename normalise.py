@@ -169,6 +169,7 @@ def process_html_records(
     html_records: list[dict],
     existing_contest_ids: set[str],
     pos_map: dict,
+    dir_name: str = "",
 ) -> tuple[list[dict], list[dict]]:
     """
     Convert html_records (uncontested / no-nomination) to contest + candidate rows.
@@ -186,8 +187,7 @@ def process_html_records(
         # Strip seats count from position heading, e.g. "Midlands HE (3 seats)"
         position_clean = re.sub(r"\s*\(\d+\s+seat[s]?\)\s*", "", position_raw).strip()
         position = canonical_position(position_clean, pos_map)
-        # Use "UK national" as default for HTML records (they come from UK national pages)
-        election_type = "UK national"
+        election_type = election_type_from_dir(dir_name) if dir_name else "UK national"
 
         contest_id = f"{year}|{election_type}|{position_clean}"
 
@@ -442,7 +442,7 @@ def main():
 
         # HTML records: don't add contests already in PDF records
         existing_ids = {c["contest_id"] for c in c_rows}
-        hc_rows, hca_rows = process_html_records(html_records, existing_ids, pos_map)
+        hc_rows, hca_rows = process_html_records(html_records, existing_ids, pos_map, d.name)
 
         all_contests.extend(c_rows + hc_rows)
         all_candidates.extend(ca_rows + hca_rows)
@@ -477,7 +477,7 @@ def main():
     # candidates is a reliable lower bound (may undercount if seats went unfilled).
     elected_counts: dict[str, int] = {}
     for ca in all_candidates:
-        if ca.get("outcome") == "Elected":
+        if ca.get("outcome") in ("Elected", "Uncontested"):
             elected_counts[ca["contest_id"]] = elected_counts.get(ca["contest_id"], 0) + 1
     inferred = 0
     for c in all_contests:
