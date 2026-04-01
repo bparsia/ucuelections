@@ -224,27 +224,29 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2010|UK national|Women Members HE,2010,UK national,Women Members HE,Women Members HE,Pauline Collins,Pauline Collins,,False,False,False,Elected,2183.0,pdf
 2011|UK national|Black Members Rep,2011,UK national,Black Members Rep,Black Members Rep,Dave MURITU,Dave MURITU,,False,False,False,Not Elected,5526.0,pdf
 2011|UK national|Black Members Rep,2011,UK national,Black Members Rep,Black Members Rep,Jim THAKOORDIN,Jim THAKOORDIN,,False,False,False,Elected,6597.0,pdf
-2011|UK national|Rep,2011,UK national,Rep,Rep,Roger WALTERS,Roger WALTERS,,False,False,False,Elected,6668.0,pdf
-2011|UK national|Rep,2011,UK national,Rep,Rep,Liza van ZYL,Liza van ZYL,,False,False,False,Not Elected,6158.0,pdf
-2011|UK national|Members,2011,UK national,Members,Members,Tom HICKEY,Tom HICKEY,,False,False,False,Elected,475.0,pdf
-2011|UK national|Members,2011,UK national,Members,Members,Lesley KANE,Lesley KANE,,False,False,False,Elected,840.0,pdf
-2011|UK national|Members,2011,UK national,Members,Members,Jim GUILD,Jim GUILD,,False,False,False,Not Elected,236.0,pdf
-2011|UK national|Members,2011,UK national,Members,Members,Bob LANGRIDGE,Bob LANGRIDGE,,False,False,False,Elected,406.0,pdf
+2011|UK national|Disabled Members Rep,2011,UK national,Disabled Members Rep,Disabled Members Rep,Roger WALTERS,Roger WALTERS,,False,False,False,Elected,6668.0,pdf
+2011|UK national|Disabled Members Rep,2011,UK national,Disabled Members Rep,Disabled Members Rep,Liza van ZYL,Liza van ZYL,,False,False,False,Not Elected,6158.0,pdf
+2011|UK national|Higher Education South Members,2011,UK national,Higher Education South Members,Higher Education South Members,Tom HICKEY,Tom HICKEY,,False,False,False,Elected,475.0,pdf
+2011|UK national|Higher Education South Members,2011,UK national,Higher Education South Members,Higher Education South Members,Lesley KANE,Lesley KANE,,False,False,False,Elected,840.0,pdf
+2011|UK national|Higher Education South Members,2011,UK national,Higher Education South Members,Higher Education South Members,Jim GUILD,Jim GUILD,,False,False,False,Not Elected,236.0,pdf
+2011|UK national|Higher Education South Members,2011,UK national,Higher Education South Members,Higher Education South Members,Bob LANGRIDGE,Bob LANGRIDGE,,False,False,False,Elected,406.0,pdf
 2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Jimmy DONAGHEY,Jimmy DONAGHEY,,False,False,False,Elected,1437.0,pdf
-2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,92),92),,False,False,False,Not Elected,248.0,pdf
+2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Jeff FOWLER (post-92),Jeff FOWLER (post-92),,False,False,False,Not Elected,248.0,pdf
 2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Joe GLUZA,Joe GLUZA,,False,False,False,Elected,1745.0,pdf
-2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,(post-92),(post-92),,False,False,False,Elected,1247.0,pdf
-2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,(post-92),(post-92),,False,False,False,Elected,901.0,pdf
-2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,WHYLEY,WHYLEY,,False,False,False,Not Elected,405.0,pdf
+2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Maeve LANDMAN (post-92),Maeve LANDMAN (post-92),,False,False,False,Elected,1247.0,pdf
+2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Lesley C McINTOSH (post-92),Lesley C McINTOSH (post-92),,False,False,False,Elected,901.0,pdf
+2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Christopher WHYLEY,Christopher WHYLEY,,False,False,False,Not Elected,405.0,pdf
 2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Malcolm POVEY,Malcolm POVEY,,False,False,False,Elected,1630.0,pdf
-2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,BHATTACHARYYA,BHATTACHARYYA,,False,False,False,Elected,616.0,pdf
-2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,(post-92),(post-92),,False,False,False,Elected,823.0,pdf
-2011|UK national|President,2011,UK national,President,President,Jim WOLFREYS,Jim WOLFREYS,,False,False,False,Not Elected,5409.0,pdf
-2011|UK national|President,2011,UK national,President,President,Simon RENTON,Simon RENTON,,False,False,False,Elected,8533.0,pdf
-2011|UK national|Secretary NEC,2011,UK national,Secretary NEC,Secretary NEC,Angela ROGER,Angela ROGER,,False,False,False,Elected,734.0,pdf
-2011|UK national|Secretary NEC,2011,UK national,Secretary NEC,Secretary NEC,Carlo MORELLI,Carlo MORELLI,,False,False,False,Not Elected,236.0,pdf
-2011|UK national|UCU Scotland,2011,UK national,UCU Scotland,UCU Scotland,Andrew SAMUEL,Andrew SAMUEL,,False,False,False,Not Elected,353.0,pdf
-2011|UK national|UCU Scotland,2011,UK national,UCU Scotland,UCU Scotland,Gordon WATSON,Gordon WATSON,,False,False,False,Elected,592.0,pdf
+2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Gargi BHATTACHARYYA,Gargi BHATTACHARYYA,,False,False,False,Elected,616.0,pdf
+2011|UK national|UK Higher Education NEC Members,2011,UK national,UK Higher Education NEC Members,UK Higher Education NEC Members,Veronica KILLEN (post-92),Veronica KILLEN (post-92),,False,False,False,Elected,823.0,pdf
+2011|UK national|Vice President,2011,UK national,Vice President,Vice President,Jim WOLFREYS,Jim WOLFREYS,,False,False,False,Not Elected,5409.0,pdf
+2011|UK national|Vice President,2011,UK national,Vice President,Vice President,Simon RENTON,Simon RENTON,,False,False,False,Elected,8533.0,pdf
+2011|UK national|LGBT Members Rep,2011,UK national,LGBT Members Rep,LGBT Members Rep,Mary JENNINGS,Mary JENNINGS,,False,False,False,Elected,7477.0,pdf
+2011|UK national|LGBT Members Rep,2011,UK national,LGBT Members Rep,LGBT Members Rep,Stephen DESMOND,Stephen DESMOND,,False,False,False,Not Elected,5189.0,pdf
+2011|UK national|UCU Scotland Honorary Secretary NEC,2011,UK national,UCU Scotland Honorary Secretary NEC,UCU Scotland Honorary Secretary NEC,Angela ROGER,Angela ROGER,,False,False,False,Elected,734.0,pdf
+2011|UK national|UCU Scotland Honorary Secretary NEC,2011,UK national,UCU Scotland Honorary Secretary NEC,UCU Scotland Honorary Secretary NEC,Carlo MORELLI,Carlo MORELLI,,False,False,False,Not Elected,236.0,pdf
+2011|UK national|UCU Scotland President NEC,2011,UK national,UCU Scotland President NEC,UCU Scotland President NEC,Andrew SAMUEL,Andrew SAMUEL,,False,False,False,Not Elected,353.0,pdf
+2011|UK national|UCU Scotland President NEC,2011,UK national,UCU Scotland President NEC,UCU Scotland President NEC,Gordon WATSON,Gordon WATSON,,False,False,False,Elected,592.0,pdf
 2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Annie Holder,Annie Holder,,False,False,False,Elected,276.0,pdf
 2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Sean Vernell,Sean Vernell,,False,False,False,Elected,380.0,pdf
 2012|UK national|London and East FE,2012,UK national,London and East FE,London and East FE,Mandy Brown,Mandy Brown,,False,False,False,Not Elected,204.0,pdf
@@ -256,10 +258,6 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2012|UK national|North West - Casual Vacancy,2012,UK national,North West - Casual Vacancy,North West - Casual Vacancy,Darren Bradshaw,Darren Bradshaw,,False,False,False,Not Elected,213.0,pdf
 2012|UK national|NEC,2012,UK national,NEC,NEC,John Holden,John Holden,,False,False,False,Elected,559.0,pdf
 2012|UK national|NEC,2012,UK national,NEC,NEC,Richard McEwan,Richard McEwan,,False,False,False,Elected,480.0,pdf
-2012|UK national|NEC,2012,UK national,NEC,NEC,prison,prison,,False,False,False,Elected,440.0,pdf
-2012|UK national|NEC,2012,UK national,NEC,NEC,woman,woman,,False,False,False,Elected,588.0,pdf
-2012|UK national|NEC,2012,UK national,NEC,NEC,woman,woman,,False,False,False,Elected,491.0,pdf
-2012|UK national|NEC,2012,UK national,NEC,NEC,woman,woman,,False,False,False,Not Elected,345.0,pdf
 2012|UK national|NEC,2012,UK national,NEC,NEC,Steve Boyce-prison,Steve Boyce-prison,,False,False,False,Not Elected,215.0,pdf
 2012|UK national|NEC,2012,UK national,NEC,NEC,Paul Pritchard,Paul Pritchard,,False,False,False,Not Elected,161.0,pdf
 2012|UK national|NEC,2012,UK national,NEC,NEC,Ümit Yildiz,Ümit Yildiz,,False,False,False,Not Elected,246.0,pdf
@@ -271,9 +269,7 @@ contest_id,year,election_type,contest_name,position,name,name_raw,demographic_fl
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,Jim Wolfreys,Jim Wolfreys,,False,False,False,Not Elected,236.0,pdf
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,David Goode,David Goode,,False,False,False,Not Elected,297.0,pdf
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,Mark Campbell,Mark Campbell,,False,False,False,Elected,301.0,pdf
-2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,woman,woman,,False,False,False,Elected,282.0,pdf
 2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,Susan Michie,Susan Michie,,False,False,False,Not Elected,,pdf
-2012|UK national|London and East HE,2012,UK national,London and East HE,London and East HE,woman,woman,,False,False,False,Elected,371.0,pdf
 2012|UK national|Northern Ireland HE,2012,UK national,Northern Ireland HE,Northern Ireland HE,Brian Kelly,Brian Kelly,,False,False,False,Not Elected,92.0,pdf
 2012|UK national|Northern Ireland HE,2012,UK national,Northern Ireland HE,Northern Ireland HE,Renee,Renee,,False,False,False,Elected,183.0,pdf
 2012|UK national|North East HE,2012,UK national,North East HE,North East HE,Elizabeth Lawrence,Elizabeth Lawrence,,False,False,False,Elected,303.0,pdf

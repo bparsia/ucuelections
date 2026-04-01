@@ -472,6 +472,23 @@ def main():
     if dropped:
         print(f"Deduplication: dropped {dropped} ROV-only contest(s) superseded by count sheets")
 
+    # Infer missing seat counts from elected candidate counts.
+    # ROV-format records often omit explicit seat numbers; the number of elected
+    # candidates is a reliable lower bound (may undercount if seats went unfilled).
+    elected_counts: dict[str, int] = {}
+    for ca in all_candidates:
+        if ca.get("outcome") == "Elected":
+            elected_counts[ca["contest_id"]] = elected_counts.get(ca["contest_id"], 0) + 1
+    inferred = 0
+    for c in all_contests:
+        if c.get("seats") in (None, "", "nan"):
+            n_elected = elected_counts.get(c["contest_id"], 0)
+            if n_elected > 0:
+                c["seats"] = n_elected
+                inferred += 1
+    if inferred:
+        print(f"Inferred seats for {inferred} contest(s) from elected count")
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     def write_csv(path: Path, rows: list[dict], fields: list[str]) -> None:

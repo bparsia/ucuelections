@@ -58,7 +58,9 @@ def _is_junk_name(name: str) -> bool:
         return True
     if s.isdigit():            # bare page numbers
         return True
-    if sl in {"confidential", "egap", "page", "with"}:
+    if sl in {"confidential", "egap", "page", "with",
+              # demographic seat-type labels parsed as candidate rows in ROV format
+              "woman", "women", "prison", "man", "sector", "member"}:
         return True
     if "non-transferable" in sl:   # contest-name + "N papers non-transferable"
         return True
@@ -854,26 +856,31 @@ LIBREOFFICE = Path("/Applications/LibreOffice.app/Contents/MacOS/soffice")
 def convert_doc_to_pdf(doc_path: Path, verbose: bool = False) -> Path | None:
     """
     Convert a .doc file to PDF using LibreOffice headless.
-    Returns the output PDF path, or None if conversion fails.
-    Skips conversion if the PDF already exists.
+    Output is named {stem}_from_doc.pdf to avoid colliding with any same-named
+    scrutineer-report PDF that may already exist in the directory.
+    Skips conversion if the output PDF already exists.
     """
-    pdf_path = doc_path.with_suffix(".pdf")
+    import subprocess, shutil, tempfile
+    pdf_path = doc_path.parent / (doc_path.stem + "_from_doc.pdf")
     if pdf_path.exists():
         return pdf_path
     if not LIBREOFFICE.exists():
         if verbose:
             print(f"    [skip] LibreOffice not found, cannot convert {doc_path.name}")
         return None
-    import subprocess
-    result = subprocess.run(
-        [str(LIBREOFFICE), "--headless", "--convert-to", "pdf",
-         "--outdir", str(doc_path.parent), str(doc_path)],
-        capture_output=True, text=True,
-    )
-    if result.returncode != 0 or not pdf_path.exists():
-        if verbose:
-            print(f"    [error] LibreOffice conversion failed for {doc_path.name}: {result.stderr.strip()}")
-        return None
+    # LibreOffice always outputs {stem}.pdf in the outdir; rename afterwards
+    with tempfile.TemporaryDirectory() as tmp:
+        result = subprocess.run(
+            [str(LIBREOFFICE), "--headless", "--convert-to", "pdf",
+             "--outdir", tmp, str(doc_path)],
+            capture_output=True, text=True,
+        )
+        tmp_pdf = Path(tmp) / doc_path.with_suffix(".pdf").name
+        if result.returncode != 0 or not tmp_pdf.exists():
+            if verbose:
+                print(f"    [error] LibreOffice conversion failed for {doc_path.name}: {result.stderr.strip()}")
+            return None
+        shutil.move(str(tmp_pdf), str(pdf_path))
     if verbose:
         print(f"    [convert] {doc_path.name} → {pdf_path.name}")
     return pdf_path
@@ -902,8 +909,25 @@ def process_dir(raw_dir: Path, verbose: bool = False) -> tuple[list[dict], list[
     all_contests: list[dict] = []
     all_ballot_stats: list[dict] = []
 
+    # If a _from_doc.pdf version exists for a stem, skip the original PDF for
+    # contest parsing (the doc is the authoritative count sheet; the original
+    # PDF may be a scrutineer narrative that misparsess via parse_text_page).
+    doc_converted_stems = {
+        p.name.replace("_from_doc.pdf", "")
+        for p in pdf_dir.glob("*_from_doc.pdf")
+    }
+
     for pdf_path in sorted(pdf_dir.glob("*.pdf")):
         anchor = manifest.get(pdf_path.name, {}).get("anchor", "")
+        stem_no_ext = pdf_path.stem  # e.g. "elections2011_heuk_report"
+        if stem_no_ext in doc_converted_stems:
+            if verbose:
+                print(f"  [skip] {pdf_path.name} (superseded by _from_doc.pdf)")
+            # Still extract ballot stats from the original scrutineer PDF
+            stats = extract_ballot_stats(pdf_path)
+            if stats:
+                all_ballot_stats.append(stats)
+            continue
         if verbose:
             print(f"  [pdf] {pdf_path.name} ({anchor})")
 
