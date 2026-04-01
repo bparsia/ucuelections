@@ -273,7 +273,7 @@ def _fmt_sector(nat, fe, he, fmt) -> str:
 display = stats.rename(columns={"year": "Year", "seats": "Seats",
                                 "candidates": "Candidates", "elected": "Elected"}).copy()
 
-_gs_table_years = GS_CONCURRENT | GS_STANDALONE | {y + "_gs" for y in GS_STANDALONE}
+_gs_table_years = GS_CONCURRENT | {y + "_gs" for y in GS_STANDALONE}
 display["GS election"] = display["Year"].isin(_gs_table_years).map({True: "★", False: ""})
 display["Year"] = display["Year"].map(display_year)
 display["Seats"]       = display["Seats"].apply(lambda x: str(int(x)) if pd.notna(x) else "—")
