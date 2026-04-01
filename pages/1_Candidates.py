@@ -66,25 +66,39 @@ with col2:
 st.subheader("Most appearances in UK national elections")
 st.caption("Counts distinct years in which each candidate appeared, with win rate.")
 
+def _fmt_years_bold(group: pd.DataFrame) -> str:
+    """Return years string with winning years in bold markdown."""
+    winning = set(group.loc[group["outcome"].isin({"Elected", "Uncontested"}), "year"])
+    parts = []
+    for y in sorted(group["year"].unique(), key=year_sort_key):
+        dy = display_year(y)
+        parts.append(f"**{dy}**" if y in winning else dy)
+    return ", ".join(parts)
+
 appearances = (
     uk.groupby(name_col)
-    .agg(
-        Elections=("year", "nunique"),
-        Wins=("outcome", lambda x: x.isin({"Elected", "Uncontested"}).sum()),
-        Years=("year", lambda x: ", ".join(
-            sorted(x.unique(), key=year_sort_key)
-        )),
-    )
+    .apply(lambda g: pd.Series({
+        "Elections": g["year"].nunique(),
+        "Wins":      g["outcome"].isin({"Elected", "Uncontested"}).sum(),
+        "Years":     _fmt_years_bold(g),
+    }), include_groups=False)
     .reset_index()
     .rename(columns={name_col: "Candidate"})
     .sort_values(["Elections", "Wins"], ascending=False)
     .head(40)
     .reset_index(drop=True)
 )
-appearances.index += 1
 appearances["Win rate"] = appearances.apply(
-    lambda r: f"{r['Wins'] / r['Elections'] * 100:.0f}%" if r["Elections"] else "—",
+    lambda r: f"{int(r['Wins'] / r['Elections'] * 100)}%" if r["Elections"] else "—",
     axis=1,
 )
 appearances = appearances[["Candidate", "Elections", "Wins", "Win rate", "Years"]]
-st.dataframe(appearances, use_container_width=True)
+
+# Render as markdown table so bold formatting in Years column is visible
+header = "| " + " | ".join(appearances.columns) + " |"
+sep    = "| " + " | ".join("---" for _ in appearances.columns) + " |"
+rows   = "\n".join(
+    "| " + " | ".join(str(v) for v in row) + " |"
+    for row in appearances.itertuples(index=False)
+)
+st.markdown(f"{header}\n{sep}\n{rows}")

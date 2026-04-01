@@ -55,17 +55,6 @@ contest_id,year,election_type,contest_name,position,name,name_raw,name_canonical
 2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Professor Neil Macfarlane,Professor Neil Macfarlane,Neil Macfarlane,,False,False,False,Not Elected,2182.0,pdf
 2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Dr Paul Hudson,Dr Paul Hudson,Paul Hudson,,False,False,False,Not Elected,1069.0,pdf
 2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Mr Paul Russell,Mr Paul Russell,Paul Russell,,False,False,False,Not Elected,1332.0,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Mr Fawzi Ibrahim,Mr Fawzi Ibrahim,Fawzi Ibrahim,,False,False,False,Elected,2615.0,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Dr Dennis Wright,Dr Dennis Wright,Dennis Wright,,False,False,False,Elected,1876.0,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Mr Nigel Gates,Mr Nigel Gates,Nigel Gates,,False,False,False,Not Elected,,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Mr Dave Guppy,Mr Dave Guppy,Dave Guppy,,False,False,False,Not Elected,1657.0,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Mr Kenneth Childerhouse,Mr Kenneth Childerhouse,Kenneth Childerhouse,,False,False,False,Not Elected,1033.0,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Mr Mike Farmer,Mr Mike Farmer,Mike Farmer,,False,False,False,Not Elected,,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Mr Sam Allen,Mr Sam Allen,Sam Allen,,False,False,False,Not Elected,,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Mr John Wilkin,Mr John Wilkin,John Wilkin,,False,False,False,Not Elected,,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Professor Neil Macfarlane,Professor Neil Macfarlane,Neil Macfarlane,,False,False,False,Elected,2718.0,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Dr Paul Hudson,Dr Paul Hudson,Paul Hudson,,False,False,False,Not Elected,1283.0,pdf
-2007|UK national|UCU-Trustees,2007,UK national,UCU-Trustees,UCU-Trustees,Mr Paul Russell,Mr Paul Russell,Paul Russell,,False,False,False,Elected,1620.0,pdf
 2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr Howard Miles,Mr Howard Miles,Howard Miles,,False,False,False,Withdrawn,,pdf
 2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Ms Bernice Waugh,Ms Bernice Waugh,Bernice Waugh,,False,False,False,Not Elected,468.0,pdf
 2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr John Muirhead,Mr John Muirhead,John Muirhead,,False,False,False,Not Elected,441.0,pdf
@@ -84,19 +73,6 @@ contest_id,year,election_type,contest_name,position,name,name_raw,name_canonical
 2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr Umit Yildiz,Mr Umit Yildiz,Umit Yildiz,,False,False,False,Not Elected,144.0,pdf
 2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr Jim Thakoordin,Mr Jim Thakoordin,Jim Thakoordin,,False,False,False,Not Elected,300.0,pdf
 2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr James Eaden,Mr James Eaden,James Eaden,,False,False,False,Withdrawn,,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Ms Bernice Waugh,Ms Bernice Waugh,Bernice Waugh,,False,False,False,Elected,385.91,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr John Muirhead,Mr John Muirhead,John Muirhead,,False,False,False,Elected,385.91,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Ms Helen Bowler,Ms Helen Bowler,Helen Bowler,,False,False,False,Elected,385.91,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr Keith Mallinson,Mr Keith Mallinson,Keith Mallinson,,False,False,False,Elected,314.07,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr Brian Ingham,Mr Brian Ingham,Brian Ingham,,False,False,False,Elected,385.91,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Ms Kathy Taylor,Ms Kathy Taylor,Kathy Taylor,,False,False,False,Elected,385.91,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Ms Penny Charles,Ms Penny Charles,Penny Charles,,False,False,False,Not Elected,173.26,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr Sam Allen,Mr Sam Allen,Sam Allen,,False,False,False,Elected,375.83,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Ms Loraine Monk,Ms Loraine Monk,Loraine Monk,,False,False,False,Not Elected,153.8,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Ms Alliya Stennett,Ms Alliya Stennett,Alliya Stennett,,False,False,False,Elected,391.04,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Ms Lynne Chamberlain,Ms Lynne Chamberlain,Lynne Chamberlain,,False,False,False,Elected,374.54,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr Umit Yildiz,Mr Umit Yildiz,Umit Yildiz,,False,False,False,Not Elected,172.2,pdf
-2007|UK national|UCU - NEC-Further Education,2007,UK national,UCU - NEC-Further Education,UCU - NEC-Further Education,Mr Jim Thakoordin,Mr Jim Thakoordin,Jim Thakoordin,,False,False,False,Elected,351.6,pdf
 2007|UK national|UCU - NEC-Higher Education,2007,UK national,UCU - NEC-Higher Education,UCU - NEC-Higher Education,Dr Anne-marie Greene,Dr Anne-marie Greene,Anne-marie Greene,,False,False,False,Withdrawn,,pdf
 2007|UK national|UCU - NEC-Higher Education,2007,UK national,UCU - NEC-Higher Education,UCU - NEC-Higher Education,Ms Sue Blackwell,Ms Sue Blackwell,Sue Blackwell,,False,False,False,Not Elected,646.0,pdf
 2007|UK national|UCU - NEC-Higher Education,2007,UK national,UCU - NEC-Higher Education,UCU - NEC-Higher Education,Mr Jeff Fowler,Mr Jeff Fowler,Jeff Fowler,,False,False,False,Withdrawn,,pdf
@@ -853,7 +829,6 @@ contest_id,year,election_type,contest_name,position,name,name_raw,name_canonical
 "2023|UK national|UK-elected NEC members, higher education",2023,UK national,"UK-elected NEC members, higher education","UK-elected NEC members, higher education","HERSH, Marion","HERSH, Marion",Marion Hersh,,False,False,False,Elected,1491.0,pdf
 "2023|UK national|UK-elected NEC members, higher education",2023,UK national,"UK-elected NEC members, higher education","UK-elected NEC members, higher education","SLORACH, Roddy","SLORACH, Roddy [academic-related]",Roddy Slorach,academic-related,False,False,False,Not Elected,441.0,pdf
 "2023|UK national|UK-elected NEC members, higher education",2023,UK national,"UK-elected NEC members, higher education","UK-elected NEC members, higher education","JONES, Dyfrig","JONES, Dyfrig",Dyfrig Jones,,False,False,False,Elected,1463.0,pdf
-"2023|UK national|UK-elected NEC members, higher education",2023,UK national,"UK-elected NEC members, higher education","UK-elected NEC members, higher education","Blake, Vicky","Blake, Vicky [academic-related]","Blake, Vicky",academic-related,False,False,False,Elected,,pdf
 "2023|UK national|UK-elected NEC members, higher education",2023,UK national,"UK-elected NEC members, higher education","UK-elected NEC members, higher education","O’DONNELL, Chris","O’DONNELL, Chris [post-92]",Chris O’donnell,post-92,False,True,False,Not Elected,,pdf
 2023|UK national|Honorary Treasurer,2023,UK national,Honorary Treasurer,Honorary Treasurer,"HARVIE, David","HARVIE, David",David Harvie,,False,False,False,Elected,5771.0,pdf
 2023|UK national|Honorary Treasurer,2023,UK national,Honorary Treasurer,Honorary Treasurer,"GOVINDARAJAN DRIVER, Deepa","GOVINDARAJAN DRIVER, Deepa",Deepa Govindarajan Driver,,False,False,False,Not Elected,3945.0,pdf

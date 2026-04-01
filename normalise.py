@@ -115,13 +115,25 @@ def normalise_name(name: str) -> str:
     if not s:
         return name.strip()
 
-    # 7. Detect LASTNAME, Firstname  (all-caps before comma)
+    # 7. Detect LASTNAME, Firstname  (all-caps OR title-case single-word surname before comma)
     if "," in s:
         comma_idx = s.index(",")
         before = s[:comma_idx].strip()
         after  = s[comma_idx + 1:].strip()
         before_alpha = re.sub(r"[^A-Za-z]", "", before)
-        if before_alpha and before_alpha.isupper() and after:
+        # Trigger if before-comma is all-caps (standard count-sheet format)
+        # OR is a single title-cased word that looks like a surname (e.g. "Blake, Vicky")
+        _is_allcaps  = before_alpha and before_alpha.isupper()
+        _is_title_surname = (
+            after
+            and " " not in before.strip()          # single token before comma
+            and before_alpha                        # non-empty alpha
+            and before_alpha[0].isupper()           # starts uppercase
+            and before_alpha[1:].islower()          # rest lowercase (title case)
+            and before_alpha[0].isalpha()
+            and after.strip()[0].isupper()          # firstname also starts upper
+        )
+        if (_is_allcaps or _is_title_surname) and after:
             after = _HONORIFICS.sub("", after).strip()
             lastname  = " ".join(_cap_word(w) for w in before.split())
             firstname = " ".join(_cap_word(w) for w in after.split())
@@ -603,6 +615,33 @@ def main():
     # Add name_canonical column
     for ca in all_candidates:
         ca["name_canonical"] = normalise_name(ca.get("name") or "")
+
+    # Within-contest dedup: same (contest_id, name_canonical) → keep the row
+    # with actual vote data; without it, prefer Elected/Uncontested over others.
+    from collections import defaultdict
+    _cand_groups: dict[tuple, list] = defaultdict(list)
+    for ca in all_candidates:
+        key = (ca["contest_id"], ca["name_canonical"].strip().lower())
+        _cand_groups[key].append(ca)
+
+    deduped_within: list[dict] = []
+    within_dropped = 0
+    for ca in all_candidates:
+        key = (ca["contest_id"], ca["name_canonical"].strip().lower())
+        group = _cand_groups[key]
+        if len(group) == 1:
+            deduped_within.append(ca)
+            continue
+        # Only process each group once
+        if ca is not group[0]:
+            continue
+        within_dropped += len(group) - 1
+        with_votes = [r for r in group if r.get("first_preferences") not in (None, "", "nan")]
+        chosen = with_votes[0] if with_votes else group[0]
+        deduped_within.append(chosen)
+    all_candidates = deduped_within
+    if within_dropped:
+        print(f"Within-contest dedup: dropped {within_dropped} duplicate candidate row(s)")
 
     distinct_before = len({(ca.get("name") or "").strip().lower() for ca in all_candidates if ca.get("name")})
     distinct_after  = len({ca["name_canonical"].strip().lower() for ca in all_candidates if ca.get("name_canonical")})
