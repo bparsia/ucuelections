@@ -85,6 +85,11 @@ appearances = (
     }), include_groups=False)
     .reset_index()
     .rename(columns={name_col: "Candidate"})
+)
+appearances["Candidate"] = appearances["Candidate"].apply(
+    lambda n: f"[{n}](/Candidate?candidate={n})"
+)
+appearances = (appearances
     .sort_values(["Elections", "Wins"], ascending=False)
     .head(40)
     .reset_index(drop=True)
