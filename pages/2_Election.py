@@ -95,7 +95,18 @@ name_col = "name_canonical" if "name_canonical" in year_cands.columns else "name
 
 n_contests = len(year_contests)
 n_seats    = int(year_contests["seats"].sum()) if year_contests["seats"].notna().any() else "?"
-st.subheader(f"{n_contests} contests · {n_seats} seats")
+
+col_hdr, col_btns = st.columns([3, 1])
+col_hdr.subheader(f"{n_contests} contests · {n_seats} seats")
+with col_btns:
+    st.write("")   # vertical spacing
+    bc1, bc2 = st.columns(2)
+    if bc1.button("Expand all", use_container_width=True):
+        st.session_state["expanders_open"] = True
+    if bc2.button("Collapse all", use_container_width=True):
+        st.session_state["expanders_open"] = False
+
+_expanded = st.session_state.get("expanders_open", False)
 
 OUTCOME_ORDER = ["Elected", "Uncontested", "Not Elected", "Withdrawn", "No Nomination"]
 
@@ -110,7 +121,7 @@ for _, contest in year_contests.iterrows():
     votes_str = f" · {votes:,} valid votes" if votes else ""
     label = f"**{contest['contest_name']}** — {seats} seat(s), {n_cands} candidate(s){votes_str}"
 
-    with st.expander(label):
+    with st.expander(label, expanded=_expanded):
         if cands.empty:
             st.write("No candidate data.")
             continue
