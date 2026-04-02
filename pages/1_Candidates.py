@@ -15,7 +15,7 @@ contests, candidates, ballots = load_data(mtime=_csv_mtime())
 
 st.title("Candidates")
 
-uk = candidates[candidates["election_type"] == "UK national"].copy()
+uk = candidates[candidates["election_type"].isin({"UK national", "casual vacancy"})].copy()
 name_col = "name_canonical" if "name_canonical" in uk.columns else "name"
 
 # ---------------------------------------------------------------------------

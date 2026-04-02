@@ -28,7 +28,7 @@ rounds = load_rounds(mtime=_csv_mtime())
 # Candidate list and selection
 # ---------------------------------------------------------------------------
 
-uk = candidates[candidates["election_type"] == "UK national"].copy()
+uk = candidates[candidates["election_type"].isin({"UK national", "casual vacancy"})].copy()
 name_col = "name_canonical" if "name_canonical" in uk.columns else "name"
 
 all_names = sorted(uk[name_col].dropna().unique(), key=str.casefold)
