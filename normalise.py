@@ -24,8 +24,9 @@ from pathlib import Path
 
 RAW_DIR = Path(__file__).parent / "data" / "raw"
 OUT_DIR = Path(__file__).parent / "data" / "processed"
-POSITION_MAP_PATH = Path(__file__).parent / "sources" / "position_map.csv"
+POSITION_MAP_PATH  = Path(__file__).parent / "sources" / "position_map.csv"
 MANUAL_BALLOTS_PATH = Path(__file__).parent / "sources" / "manual_ballots.csv"
+NAME_ALIASES_PATH  = Path(__file__).parent / "sources" / "name_aliases.csv"
 
 
 # ---------------------------------------------------------------------------
@@ -679,9 +680,17 @@ def main():
     if inferred:
         print(f"Inferred seats for {inferred} contest(s) from elected count")
 
-    # Add name_canonical column
+    # Load manual name aliases (raw_canonical → canonical)
+    _aliases: dict[str, str] = {}
+    if NAME_ALIASES_PATH.exists():
+        with open(NAME_ALIASES_PATH, newline="", encoding="utf-8") as _f:
+            for _row in csv.DictReader(_f):
+                _aliases[_row["raw_canonical"].strip()] = _row["canonical"].strip()
+
+    # Add name_canonical column, then apply manual aliases
     for ca in all_candidates:
-        ca["name_canonical"] = normalise_name(ca.get("name") or "")
+        nc = normalise_name(ca.get("name") or "")
+        ca["name_canonical"] = _aliases.get(nc, nc)
 
     # Within-contest dedup: same (contest_id, name_canonical) → keep the row
     # with actual vote data; without it, prefer Elected/Uncontested over others.
