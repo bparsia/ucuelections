@@ -7,6 +7,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import pandas as pd
 import streamlit as st
+from urllib.parse import quote
 
 from utils import _csv_mtime, display_year, load_data, year_sort_key
 
@@ -87,7 +88,7 @@ appearances = (
     .rename(columns={name_col: "Candidate"})
 )
 appearances["Candidate"] = appearances["Candidate"].apply(
-    lambda n: f"[{n}](/Candidate?candidate={n})"
+    lambda n: f"[{n}](/Candidate?candidate={quote(n)})"
 )
 appearances = (appearances
     .sort_values(["Elections", "Wins"], ascending=False)
