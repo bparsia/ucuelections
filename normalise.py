@@ -103,8 +103,14 @@ def normalise_name(name: str) -> str:
     # 3. Strip fused qualifiers e.g. -post-92, -AR
     s = _FUSED_SUFFIXES.sub("", s).strip()
 
-    # 4. Strip remaining parentheticals (institutions, other qualifiers)
-    s = re.sub(r"\([^)]*\)", "", s).strip()
+    # 4. Strip remaining parentheticals (institutions, other qualifiers).
+    # Loop to handle nested parens: "(New City College (Poplar))" needs two passes.
+    _prev = None
+    while _prev != s:
+        _prev = s
+        s = re.sub(r"\([^)]*\)", "", s).strip()
+    # Strip any orphaned closing paren left by nested removal (e.g. trailing ")")
+    s = re.sub(r"\s*\)\s*", " ", s).strip()
 
     # 5. Strip leading honorifics (Dr, Mr, Ms, Prof, etc.)
     s = _HONORIFICS.sub("", s).strip()
