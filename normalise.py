@@ -352,6 +352,7 @@ def process_html_records(
     existing_contest_ids: set[str],
     pos_map: dict,
     dir_name: str = "",
+    existing_contest_rows: list[dict] | None = None,
 ) -> tuple[list[dict], list[dict]]:
     """
     Convert html_records (uncontested / no-nomination) to contest + candidate rows.
@@ -359,6 +360,21 @@ def process_html_records(
     """
     contest_rows: list[dict] = []
     candidate_rows: list[dict] = []
+
+    # Build normalised-name → seat counts mapping from existing PDF contests so
+    # we can detect case-insensitive name collisions (e.g. "Representatives of
+    # Migrant Members" vs "Representatives of migrant members") and distinguish
+    # genuinely different contests that share the same name but have different
+    # seat counts.
+    _pdf_norm_seats: dict[str, set] = {}
+    for _c in (existing_contest_rows or []):
+        _k = _norm(_c["contest_name"])
+        _s = _c.get("seats")
+        try:
+            _s = int(float(str(_s)))
+        except (TypeError, ValueError):
+            _s = None
+        _pdf_norm_seats.setdefault(_k, set()).add(_s)
 
     # Group by (year, position_raw) to avoid duplicate contest rows
     seen_contests: set[str] = set()
@@ -374,9 +390,25 @@ def process_html_records(
         eid        = election_id_for(year, election_type, position_clean)
         contest_id = f"{eid}|{election_type}|{position_clean}"
 
-        # Don't duplicate contests already extracted from PDFs
-        if contest_id in existing_contest_ids:
-            continue
+        # Check for a PDF contest with the same normalised name (catches case variants).
+        norm_pos = _norm(position_clean)
+        pdf_seats = _pdf_norm_seats.get(norm_pos)   # set of seat counts or None
+        seats_m   = re.search(r"\((\d+)\s+seat[s]?\)", position_raw)
+        html_seats = int(seats_m.group(1)) if seats_m else None
+
+        if contest_id in existing_contest_ids or pdf_seats is not None:
+            # Genuinely different contest if seat counts differ (e.g. 1-seat contested
+            # + 2-seat uncontested migrant reps). Disambiguate by appending seat count.
+            non_null_pdf_seats = {s for s in (pdf_seats or set()) if s is not None}
+            # Only disambiguate when we have at least one known PDF seat count to
+            # compare against; if all PDF entries have seats=None we can't tell
+            # they're different, so treat it as a duplicate and skip.
+            if html_seats is not None and non_null_pdf_seats and html_seats not in non_null_pdf_seats:
+                position_clean = f"{position_clean} ({html_seats} seats)"
+                eid        = election_id_for(year, election_type, position_clean)
+                contest_id = f"{eid}|{election_type}|{position_clean}"
+            else:
+                continue
 
         if contest_id not in seen_contests:
             seen_contests.add(contest_id)
@@ -448,7 +480,7 @@ def deduplicate_contests(
     # For each (year, election_type, normalised_name) group, prefer the
     # entry with STV rounds when there's a conflict.
     from collections import defaultdict
-    groups: dict[str, list[dict]] = defaultdict(list)
+    groups: dict[tuple, list[dict]] = defaultdict(list)
     for c in contest_rows:
         key = (c["year"], c["election_type"], _norm(c["contest_name"]))
         groups[key].append(c)
@@ -630,7 +662,9 @@ def main():
 
         # HTML records: don't add contests already in PDF records
         existing_ids = {c["contest_id"] for c in c_rows}
-        hc_rows, hca_rows = process_html_records(html_records, existing_ids, pos_map, d.name)
+        hc_rows, hca_rows = process_html_records(
+            html_records, existing_ids, pos_map, d.name, c_rows
+        )
 
         all_contests.extend(c_rows + hc_rows)
         all_candidates.extend(ca_rows + hca_rows)

@@ -244,6 +244,7 @@ contest_id,year,election_id,election_type,contest_name_raw,contest_name,position
 2025|UK national|Wales (and Vice-President UCU Wales),2025,2025,UK national,Wales (and Vice-President UCU Wales),Wales (and Vice-President UCU Wales),Wales (and Vice-President UCU Wales),,,,,,STV,False,pdf,data/raw/2024-25/pdfs/V0033_1_030325_ROV_UCU_Trustee__Officer_and_NEC_Elections_2025_-_ROV_3_-_FE.pdf
 2025|UK national|Midlands HE,2025,2025,UK national,Midlands HE (3 seats),Midlands HE,Midlands HE,,3,,,,,False,html,
 2025|UK national|Wales FE,2025,2025,UK national,Wales FE (1 seat),Wales FE,Wales FE,,1,,,,,False,html,
+2025|UK national|Representatives of migrant members (2 seats),2025,2025,UK national,Representatives of migrant members (2 seats),Representatives of migrant members (2 seats),Representatives of migrant members,,2,,,,,False,html,
 2025|Scotland|UCU Scotland Vice President,2025,2025,Scotland,UCU Scotland Vice President,UCU Scotland Vice President,UCU Scotland Vice President,,1,,,,,False,html,
 2025|Scotland|Equality Officer,2025,2025,Scotland,Equality Officer,Equality Officer,Equality Officer,,1,,,,,False,html,
 2025|Scotland|Green Officer,2025,2025,Scotland,Green Officer,Green Officer,Green Officer,,1,,,,,False,html,
