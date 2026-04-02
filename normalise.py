@@ -474,7 +474,7 @@ def deduplicate_contests(
 
     Matching heuristic: same year + election_type + normalised contest name.
     """
-    # Find contest_ids that have STV rounds
+    # Find contest_ids that have STV rounds (used for secondary dedup below)
     has_rounds_ids: set[str] = {r["contest_id"] for r in round_rows}
 
     # For each (year, election_type, normalised_name) group, prefer the
@@ -493,9 +493,19 @@ def deduplicate_contests(
         if len(group) == 1:
             chosen = group[0]
         else:
-            # Prefer the one with STV rounds
-            with_rounds = [c for c in group if c["contest_id"] in has_rounds_ids]
-            chosen = with_rounds[0] if with_rounds else group[0]
+            # Prefer the one with STV rounds; if none have rounds, prefer the
+            # one with a known seat count (result sheet) over a ROV summary
+            # (seats=None), so e.g. a VP result sheet with all candidates beats
+            # a summary ROV that only lists the winner.
+            # Use per-contest has_stv_rounds field (not has_rounds_ids) to avoid
+            # cross-contamination when two contests share the same contest_id.
+            with_rounds = [c for c in group if c.get("has_stv_rounds")]
+            if with_rounds:
+                chosen = with_rounds[0]
+            else:
+                with_seats = [c for c in group
+                              if c.get("seats") not in (None, "", "nan")]
+                chosen = with_seats[0] if with_seats else group[0]
         kept_ids.add(chosen["contest_id"])
         winner_pdf[chosen["contest_id"]] = chosen.get("source_pdf", "")
         deduped_contests.append(chosen)
