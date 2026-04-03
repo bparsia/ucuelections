@@ -15,6 +15,18 @@ from utils import (
 
 contests, candidates, ballots = load_data(mtime=_csv_mtime())
 
+# STV final-vote lookup: max-round votes per (contest_id, name)
+@st.cache_data
+def load_final_votes(mtime: float) -> dict:
+    path = Path(__file__).parent.parent / "data" / "processed" / "stv_rounds.csv"
+    rounds = pd.read_csv(path, dtype={"year": str})
+    rounds["round"] = rounds["round"].astype(int)
+    idx = rounds.groupby(["contest_id", "name"])["round"].idxmax()
+    last = rounds.loc[idx].set_index(["contest_id", "name"])["votes"]
+    return last.to_dict()
+
+_final_votes = load_final_votes(mtime=_csv_mtime())
+
 uk_years = sorted(
     contests[contests["election_type"] == "UK national"]["year"].unique(),
     key=year_sort_key,
@@ -134,7 +146,11 @@ for _, contest in year_contests.iterrows():
             ["_outcome_rank", "first_preferences"], ascending=[True, False]
         )
 
-        display_cands = cands[[name_col, "first_preferences", "outcome"]].rename(columns={
+        display_cands = cands[[name_col, "first_preferences", "outcome", "contest_id", "name"]].copy()
+        display_cands["Final votes"] = display_cands.apply(
+            lambda r: _final_votes.get((r["contest_id"], r["name"])), axis=1
+        )
+        display_cands = display_cands.rename(columns={
             name_col:            "Candidate",
             "first_preferences": "1st prefs",
             "outcome":           "Outcome",
@@ -142,7 +158,15 @@ for _, contest in year_contests.iterrows():
         display_cands["1st prefs"] = display_cands["1st prefs"].apply(
             lambda x: f"{int(x):,}" if pd.notna(x) else "—"
         )
-        st.dataframe(display_cands.reset_index(drop=True), hide_index=True,
+        display_cands["Final votes"] = display_cands["Final votes"].apply(
+            lambda x: f"{x:,.2f}".rstrip("0").rstrip(".") if pd.notna(x) else "—"
+        )
+        # Hide Final votes column if all values are "—" (no STV data)
+        cols_to_show = ["Candidate", "1st prefs"]
+        if display_cands["Final votes"].ne("—").any():
+            cols_to_show.append("Final votes")
+        cols_to_show.append("Outcome")
+        st.dataframe(display_cands[cols_to_show].reset_index(drop=True), hide_index=True,
                      use_container_width=True)
 
 # ---------------------------------------------------------------------------
