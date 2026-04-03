@@ -167,7 +167,7 @@
   {
     "contest_name": "representative of disabled members",
     "date": "01/03/2023",
-    "seats": "1",
+    "seats": "2",
     "valid_votes": "10824",
     "invalid_votes": "2006",
     "quota": "5412",
@@ -180,7 +180,7 @@
         "demographic_flags": [
           "FE, woman"
         ],
-        "outcome": "Withdrawn",
+        "outcome": "Uncontested",
         "rounds": {}
       },
       {

@@ -54,13 +54,20 @@
   {
     "contest_name": "Representatives of Disabled Members",
     "date": "04/03/2025",
-    "seats": "1",
+    "seats": "2",
     "valid_votes": "8658",
     "invalid_votes": "895",
     "quota": "4329",
     "estv_version": "2.0.16",
     "election_rules": "ERS97",
     "candidates": [
+      {
+        "name_raw": "ROCHE, Patricia [FE]",
+        "name": "ROCHE, Patricia",
+        "demographic_flags": ["FE"],
+        "outcome": "Uncontested",
+        "rounds": {}
+      },
       {
         "name_raw": "SLORACH, Roddy",
         "name": "SLORACH, Roddy",
