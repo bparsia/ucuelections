@@ -2689,6 +2689,12 @@
         "demographic_flags": [],
         "outcome": "Elected",
         "rounds": {}
+      },
+      {
+        "name": "EVANS, Peter",
+        "outcome": "Uncontested",
+        "demographic_flags": [],
+        "rounds": {}
       }
     ]
   },

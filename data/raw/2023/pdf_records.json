@@ -1447,7 +1447,7 @@
   {
     "contest_name": "representative of LGBT+ members",
     "date": "01/03/2023",
-    "seats": "1",
+    "seats": 2,
     "valid_votes": "11418",
     "invalid_votes": "1412",
     "quota": "5709",
@@ -1479,6 +1479,12 @@
             "eliminated": false
           }
         }
+      },
+      {
+        "name": "EVANS, Peter",
+        "outcome": "Uncontested",
+        "demographic_flags": [],
+        "rounds": {}
       }
     ],
     "source_pdf": "data/raw/2023/pdfs/LGBT__reps.pdf"

@@ -132,7 +132,7 @@
   {
     "contest_name": "Representatives of LGBT+ Members",
     "date": "04/03/2025",
-    "seats": "1",
+    "seats": 2,
     "valid_votes": "8373",
     "invalid_votes": "1,180",
     "quota": "4186.5",
@@ -164,6 +164,12 @@
             "eliminated": false
           }
         }
+      },
+      {
+        "name": "EVANS, Peter",
+        "outcome": "Uncontested",
+        "demographic_flags": [],
+        "rounds": {}
       }
     ],
     "source_pdf": "data/raw/2024-25/pdfs/2025_LGBT__rep_results.pdf"

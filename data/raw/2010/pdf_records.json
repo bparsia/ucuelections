@@ -746,5 +746,48 @@
       }
     ],
     "source_pdf": "data/raw/2010/pdfs/elect10_countwomenHE.pdf"
+  },
+  {
+    "contest_name": "Vice-President",
+    "date": "05/03/2010",
+    "seats": "1",
+    "valid_votes": "10655",
+    "invalid_votes": "793",
+    "quota": "5150.5",
+    "estv_version": "1.49g",
+    "election_rules": "ERS97",
+    "candidates": [
+      {
+        "name_raw": "Kathy Taylor",
+        "name": "Kathy Taylor",
+        "demographic_flags": [],
+        "outcome": "Elected",
+        "rounds": {
+          "1": {"votes": 4438.0, "transfer": null, "eliminated": false},
+          "2": {"votes": 6248.0, "transfer": 1810.0, "eliminated": false}
+        }
+      },
+      {
+        "name_raw": "Patricia Roche",
+        "name": "Patricia Roche",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {"votes": 2970.0, "transfer": null, "eliminated": false},
+          "2": {"votes": 0.0, "transfer": -2970.0, "eliminated": true}
+        }
+      },
+      {
+        "name_raw": "Sean Vernell",
+        "name": "Sean Vernell",
+        "demographic_flags": [],
+        "outcome": "Not Elected",
+        "rounds": {
+          "1": {"votes": 3247.0, "transfer": null, "eliminated": false},
+          "2": {"votes": 4053.0, "transfer": 806.0, "eliminated": false}
+        }
+      }
+    ],
+    "source_pdf": "data/raw/2010/pdfs/elect10_countvicepresident.pdf"
   }
 ]

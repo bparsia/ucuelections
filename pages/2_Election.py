@@ -128,10 +128,12 @@ for _, contest in year_contests.iterrows():
     seats   = int(contest["seats"]) if pd.notna(contest["seats"]) else "?"
     n_cands = len(cands[cands["outcome"] != "No Nomination"])
     votes   = int(contest["valid_votes"]) if pd.notna(contest["valid_votes"]) else None
+    quota   = contest["quota"] if "quota" in contest.index and pd.notna(contest["quota"]) else None
 
     # Build expander label
     votes_str = f" · {votes:,} valid votes" if votes else ""
-    label = f"**{contest['contest_name']}** — {seats} seat(s), {n_cands} candidate(s){votes_str}"
+    quota_str = (" · quota " + f"{quota:,.2f}".rstrip("0").rstrip(".")) if quota else ""
+    label = f"**{contest['contest_name']}** — {seats} seat(s), {n_cands} candidate(s){votes_str}{quota_str}"
 
     with st.expander(label, expanded=_expanded):
         if cands.empty:
