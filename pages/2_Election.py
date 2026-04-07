@@ -128,7 +128,7 @@ for _, contest in year_contests.iterrows():
     seats   = int(contest["seats"]) if pd.notna(contest["seats"]) else "?"
     n_cands = len(cands[cands["outcome"] != "No Nomination"])
     votes   = int(contest["valid_votes"]) if pd.notna(contest["valid_votes"]) else None
-    quota   = contest["quota"] if "quota" in contest.index and pd.notna(contest["quota"]) else None
+    quota   = float(contest["quota"]) if "quota" in contest.index and pd.notna(contest["quota"]) else None
 
     # Build expander label
     votes_str = f" · {votes:,} valid votes" if votes else ""
