@@ -95,6 +95,9 @@ def normalise_name(name: str) -> str:
 
     s = name.strip()
 
+    # 0. Normalise curly apostrophes → straight
+    s = s.replace("\u2018", "'").replace("\u2019", "'")
+
     # 1. Strip [bracket] annotations
     s = _BRACKET_ANNOT.sub("", s).strip()
 
