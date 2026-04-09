@@ -43,7 +43,6 @@ NEC_REGULAR_POSITIONS = {
     "Representatives of LGBT+ Members, FE", "Representatives of LGBT+ Members, HE",
     "Representatives of Casually Employed Members, FE", "Representatives of Casually Employed Members, HE",
     "Representatives of Members in Land-Based Education",
-    "Trustees",
 }
 
 # ---------------------------------------------------------------------------

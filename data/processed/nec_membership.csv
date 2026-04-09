@@ -20,10 +20,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2007,Bevis Miller,"NEC Members, South, HE",HE,regional,2007
 2007,Jim Guild,"NEC Members, South, HE",HE,regional,2007
 2007,Tom Hickey,"NEC Members, South, HE",HE,regional,2007
-2007,Dennis Wright,Trustees,national,trustee,2007
-2007,Fawzi Ibrahim,Trustees,national,trustee,2007
-2007,Neil MacFarlane,Trustees,national,trustee,2007
-2007,Paul Russell,Trustees,national,trustee,2007
 2007,Alliya Stennett,"UK NEC Members, FE",FE,uk_nec,2007
 2007,Bernice Waugh,"UK NEC Members, FE",FE,uk_nec,2007
 2007,Brian Ingham,"UK NEC Members, FE",FE,uk_nec,2007
@@ -152,9 +148,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2012,Angela Roger,UCU Scotland Honorary Secretary,HE,regional,2011
 2012,Gordon Watson,UCU Scotland President,HE,regional,2011
 2012,Christopher Whyley,"Vice-President, UCU Wales",FE,regional,2012
-2012,Alastair Hunter,Trustees,national,trustee,2012
-2012,Neil MacFarlane,Trustees,national,trustee,2012
-2012,Philip Burgess,Trustees,national,trustee,2012
 2012,John Holden,"UK NEC Members, FE",FE,uk_nec,2012
 2012,Richard McEwan,"UK NEC Members, FE",FE,uk_nec,2012
 2012,Angi Lamb,"UK NEC Members, HE",HE,uk_nec,2012
@@ -207,9 +200,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2013,Terry Hoad,"NEC Members, South, HE",HE,regional,2013
 2013,Angi Lamb,UCU Scotland Honorary Secretary,HE,regional,2013
 2013,Christopher Whyley,"Vice-President, UCU Wales",FE,regional,2012
-2013,Alastair Hunter,Trustees,national,trustee,2012
-2013,Neil MacFarlane,Trustees,national,trustee,2012
-2013,Philip Burgess,Trustees,national,trustee,2012
 2013,Carolyn Campbell,"UK NEC Members, FE",FE,uk_nec,2013
 2013,David Armstrong,"UK NEC Members, FE",FE,uk_nec,2013
 2013,John Holden,"UK NEC Members, FE",FE,uk_nec,2012
@@ -317,8 +307,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2015,Jo McNeill,"NEC Members, North West, HE",HE,regional,2015
 2015,Michael McKrell,"NEC Members, North West, HE",HE,regional,2015
 2015,Douglas Chalmers,UCU Scotland President,HE,regional,2015
-2015,Angie McConnell,Trustees,national,trustee,2015
-2015,Kathy Taylor,Trustees,national,trustee,2015
 2015,Alan Barker,"UK NEC Members, FE",FE,uk_nec,2014
 2015,Jenny Prideaux,"UK NEC Members, FE",FE,uk_nec,2014
 2015,Mandy Brown,"UK NEC Members, FE",FE,uk_nec,2015
@@ -359,8 +347,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2016,Michael McKrell,"NEC Members, North West, HE",HE,regional,2015
 2016,Renee Prendergast,"NEC Members, Northern Ireland, HE",HE,regional,2016
 2016,Douglas Chalmers,UCU Scotland President,HE,regional,2015
-2016,Angie McConnell,Trustees,national,trustee,2015
-2016,Kathy Taylor,Trustees,national,trustee,2015
 2016,Jenny Prideaux,"UK NEC Members, FE",FE,uk_nec,2016
 2016,Mandy Brown,"UK NEC Members, FE",FE,uk_nec,2015
 2016,Margot Hill,"UK NEC Members, FE",FE,uk_nec,2016
@@ -397,9 +383,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2017,Denis A Nicole,"NEC Members, South, HE",HE,regional,2017
 2017,Lesley Kane,"NEC Members, South, HE",HE,regional,2017
 2017,Pauline Collins,"NEC Members, South, HE",HE,regional,2017
-2017,Alastair Hunter,Trustees,national,trustee,2017
-2017,Laura Miles,Trustees,national,trustee,2017
-2017,Philip Burgess,Trustees,national,trustee,2017
 2017,Anya Cook,"UK NEC Members, FE",FE,uk_nec,2017
 2017,Jenny Prideaux,"UK NEC Members, FE",FE,uk_nec,2016
 2017,Mandy Brown,"UK NEC Members, FE",FE,uk_nec,2017
@@ -442,9 +425,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2018,Denis A Nicole,"NEC Members, South, HE",HE,regional,2017
 2018,Lesley Kane,"NEC Members, South, HE",HE,regional,2017
 2018,Pauline Collins,"NEC Members, South, HE",HE,regional,2017
-2018,Alastair Hunter,Trustees,national,trustee,2017
-2018,Laura Miles,Trustees,national,trustee,2017
-2018,Philip Burgess,Trustees,national,trustee,2017
 2018,Anya Cook,"UK NEC Members, FE",FE,uk_nec,2017
 2018,Mandy Brown,"UK NEC Members, FE",FE,uk_nec,2017
 2018,Margot Hill,"UK NEC Members, FE",FE,uk_nec,2018
@@ -545,9 +525,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2020,Janice Aitken,UCU Scotland Honorary Secretary,HE,regional,2019
 2020,Ann Swinney,"UCU Scotland NEC Members, HE",HE,regional,2020
 2020,Carlo Morelli,UCU Scotland President,HE,regional,2019
-2020,Angela Roger,Trustees,national,trustee,2020
-2020,Angie McConnell,Trustees,national,trustee,2020
-2020,Martin Ralph,Trustees,national,trustee,2020
 2020,Anya Cook,"UK NEC Members, FE",FE,uk_nec,2019
 2020,Jacqueline D'Arcy,"UK NEC Members, FE",FE,uk_nec,2019
 2020,Lauren Mura,"UK NEC Members, FE",FE,uk_nec,2020
@@ -605,9 +582,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2021,Ann Swinney,UCU Scotland Honorary Secretary,HE,regional,2021
 2021,Ann Swinney,"UCU Scotland NEC Members, HE",HE,regional,2020
 2021,Lena Wånggren,UCU Scotland President,HE,regional,2021
-2021,Angela Roger,Trustees,national,trustee,2020
-2021,Angie McConnell,Trustees,national,trustee,2020
-2021,Martin Ralph,Trustees,national,trustee,2020
 2021,Jacqueline D'Arcy,"UK NEC Members, FE",FE,uk_nec,2021
 2021,Lauren Mura,"UK NEC Members, FE",FE,uk_nec,2020
 2021,Nina Doran,"UK NEC Members, FE",FE,uk_nec,2020
@@ -667,8 +641,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2022,Vida Greaux,"NEC Members, Wales, HE",HE,regional,2022
 2022,Ann Swinney,UCU Scotland Honorary Secretary,HE,regional,2021
 2022,Lena Wånggren,UCU Scotland President,HE,regional,2021
-2022,Anna Marie Roos,Trustees,national,trustee,2022
-2022,Neil MacFarlane,Trustees,national,trustee,2022
 2022,Dharminder Singh Chuhan,"UK NEC Members, FE",FE,uk_nec,2022
 2022,Jacqueline D'Arcy,"UK NEC Members, FE",FE,uk_nec,2021
 2022,Nina Doran,"UK NEC Members, FE",FE,uk_nec,2022
@@ -727,8 +699,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2023,Vida Greaux,"NEC Members, Wales, HE",HE,regional,2022
 2023,Carlo Morelli,UCU Scotland Honorary Secretary,HE,regional,2023
 2023,Jeanette Findlay,UCU Scotland President,HE,regional,2023
-2023,Anna Marie Roos,Trustees,national,trustee,2022
-2023,Neil MacFarlane,Trustees,national,trustee,2022
 2023,Dharminder Singh Chuhan,"UK NEC Members, FE",FE,uk_nec,2022
 2023,Jackie D'Arcy,"UK NEC Members, FE",FE,uk_nec,2023
 2023,Nina Doran,"UK NEC Members, FE",FE,uk_nec,2022
@@ -785,7 +755,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2024,Estelle Hart,"NEC Members, Wales, HE",HE,regional,2024
 2024,Carlo Morelli,UCU Scotland Honorary Secretary,HE,regional,2023
 2024,Jeanette Findlay,UCU Scotland President,HE,regional,2023
-2024,Steve Sangwine,Trustees,national,trustee,2024
 2024,Duncan Moore,"UK NEC Members, FE",FE,uk_nec,2024
 2024,Jackie D'Arcy,"UK NEC Members, FE",FE,uk_nec,2023
 2024,Janet Farrar,"UK NEC Members, FE",FE,uk_nec,2024
@@ -846,10 +815,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2025,Estelle Hart,"NEC Members, Wales, HE",HE,regional,2024
 2025,Ann Gow,UCU Scotland Honorary Secretary,HE,regional,2025
 2025,Chris O'Donnell,UCU Scotland President,HE,regional,2025
-2025,Adam Ozanne,Trustees,national,trustee,2025
-2025,Angela Roger,Trustees,national,trustee,2025
-2025,Joanna de Groot,Trustees,national,trustee,2025
-2025,Steve Sangwine,Trustees,national,trustee,2024
 2025,Duncan Moore,"UK NEC Members, FE",FE,uk_nec,2024
 2025,Janet Farrar,"UK NEC Members, FE",FE,uk_nec,2024
 2025,Linda Littler,"UK NEC Members, FE",FE,uk_nec,2025
@@ -907,9 +872,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2026,Jayne Francis-Headon,"NEC Members, Wales, FE",FE,regional,2025
 2026,Ann Gow,UCU Scotland Honorary Secretary,HE,regional,2025
 2026,Chris O'Donnell,UCU Scotland President,HE,regional,2025
-2026,Adam Ozanne,Trustees,national,trustee,2025
-2026,Angela Roger,Trustees,national,trustee,2025
-2026,Joanna de Groot,Trustees,national,trustee,2025
 2026,Duncan Moore,"UK NEC Members, FE",FE,uk_nec,2026
 2026,Jill Kennedy-McNeil,"UK NEC Members, FE",FE,uk_nec,2026
 2026,Linda Littler,"UK NEC Members, FE",FE,uk_nec,2025

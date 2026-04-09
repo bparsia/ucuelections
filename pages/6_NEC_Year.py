@@ -144,7 +144,7 @@ tab_officers, tab_fe, tab_he = st.tabs([
 
 with tab_officers:
     # VP chain (all sectors) + officer + trustee
-    officer_mask = year_members["role_type"].isin({"vp_chain", "officer", "trustee"})
+    officer_mask = year_members["role_type"].isin({"vp_chain", "officer"})
     officer_df = year_members[officer_mask].copy()
 
     def _officer_sort(row: pd.Series) -> tuple:
@@ -154,7 +154,6 @@ with tab_officers:
         if rt == "officer":
             officer_rank = {"General Secretary": 0, "Honorary Treasurer": 1}
             return (1, officer_rank.get(row["position"], 99), row["sector"], row["name_canonical"])
-        # trustee
         return (2, 0, row["sector"], row["name_canonical"])
 
     if not officer_df.empty:
