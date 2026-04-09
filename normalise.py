@@ -26,7 +26,9 @@ RAW_DIR = Path(__file__).parent / "data" / "raw"
 OUT_DIR = Path(__file__).parent / "data" / "processed"
 POSITION_MAP_PATH  = Path(__file__).parent / "sources" / "position_map.csv"
 MANUAL_BALLOTS_PATH = Path(__file__).parent / "sources" / "manual_ballots.csv"
-NAME_ALIASES_PATH  = Path(__file__).parent / "sources" / "name_aliases.csv"
+NAME_ALIASES_PATH      = Path(__file__).parent / "sources" / "name_aliases.csv"
+CONTEST_NAME_MAP_PATH  = Path(__file__).parent / "review"   / "contest_name_draft.csv"
+SECTOR_RESEARCH_PATH   = Path(__file__).parent / "review"   / "sector_research.csv"
 
 
 # ---------------------------------------------------------------------------
@@ -210,6 +212,31 @@ def election_type_from_dir(dir_name: str) -> str:
     if len(parts) == 2:
         return suffix_map.get(parts[1], "UK national")
     return "UK national"
+
+
+def load_contest_name_map() -> dict[str, str]:
+    """Return {contest_id: canonical_position} from review/contest_name_draft.csv."""
+    if not CONTEST_NAME_MAP_PATH.exists():
+        return {}
+    with CONTEST_NAME_MAP_PATH.open(newline="", encoding="utf-8") as f:
+        return {
+            row["contest_id"].strip(): row["canonical"].strip()
+            for row in csv.DictReader(f)
+            if row.get("canonical")
+        }
+
+
+def load_sector_research() -> dict[tuple, str]:
+    """Return {(year, name_canonical_lower): sector} for equality-seat split rows."""
+    if not SECTOR_RESEARCH_PATH.exists():
+        return {}
+    result: dict[tuple, str] = {}
+    with SECTOR_RESEARCH_PATH.open(newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if row.get("purpose") in ("needed for split", "verify split"):
+                key = (row["year"].strip(), row["name_canonical"].strip().lower())
+                result[key] = row["sector"].strip()
+    return result
 
 
 def load_position_map() -> dict[str, str]:
@@ -573,6 +600,103 @@ def _norm(name: str) -> str:
 # Main
 # ---------------------------------------------------------------------------
 
+_SPLIT_POSITIONS = {
+    "Representatives of Disabled Members",
+    "Representatives of LGBT+ Members",
+    "Representatives of Casually Employed Members",
+}
+
+
+def split_equality_contests(
+    contest_rows: list[dict],
+    candidate_rows: list[dict],
+    round_rows: list[dict],
+    sector_lookup: dict[tuple, str],
+) -> tuple[list[dict], list[dict], list[dict]]:
+    """
+    Split FE/HE equality-seat contests into two sub-contests using sector_lookup.
+
+    Only splits a contest when the sector is known for every candidate in it.
+    Contests/years with missing sector data are left unchanged.
+    """
+    from collections import defaultdict
+
+    cand_by_contest: dict[str, list] = defaultdict(list)
+    for ca in candidate_rows:
+        cand_by_contest[ca["contest_id"]].append(ca)
+    rounds_by_contest: dict[str, list] = defaultdict(list)
+    for r in round_rows:
+        rounds_by_contest[r["contest_id"]].append(r)
+
+    new_contests: list[dict] = []
+    new_candidates: list[dict] = []
+    new_rounds: list[dict] = []
+    split_count = 0
+
+    for c in contest_rows:
+        cid = c["contest_id"]
+        cands = cand_by_contest.get(cid, [])
+        rounds = rounds_by_contest.get(cid, [])
+
+        if c.get("position") not in _SPLIT_POSITIONS or not cands:
+            new_contests.append(c)
+            new_candidates.extend(cands)
+            new_rounds.extend(rounds)
+            continue
+
+        # Look up sector for each candidate by (year, name_canonical_lower)
+        sector_map: dict[str, str] = {}
+        for ca in cands:
+            key = (c["year"], ca["name_canonical"].strip().lower())
+            s = sector_lookup.get(key)
+            if s:
+                sector_map[ca["name_canonical"]] = s
+
+        # Skip split if any candidate's sector is unknown
+        if len(sector_map) < len(cands):
+            new_contests.append(c)
+            new_candidates.extend(cands)
+            new_rounds.extend(rounds)
+            continue
+
+        for sector in ("FE", "HE"):
+            sector_cands = [ca for ca in cands if sector_map.get(ca["name_canonical"]) == sector]
+            if not sector_cands:
+                continue
+            new_position = f"{c['position']}, {sector}"
+            new_cid = f"{c['election_id']}|{c['election_type']}|{new_position}"
+            n_elected = sum(
+                1 for ca in sector_cands if ca.get("outcome") in ("Elected", "Uncontested")
+            )
+            sub_c = dict(c)
+            sub_c.update({
+                "contest_id":   new_cid,
+                "contest_name": new_position,
+                "position":     new_position,
+                "seats":        n_elected or "",
+            })
+            new_contests.append(sub_c)
+            sector_names = {ca["name_canonical"] for ca in sector_cands}
+            for ca in sector_cands:
+                new_ca = dict(ca)
+                new_ca.update({
+                    "contest_id":   new_cid,
+                    "contest_name": new_position,
+                    "position":     new_position,
+                })
+                new_candidates.append(new_ca)
+            for r in rounds:
+                if r.get("name") in sector_names:
+                    new_r = dict(r)
+                    new_r["contest_id"] = new_cid
+                    new_rounds.append(new_r)
+        split_count += 1
+
+    if split_count:
+        print(f"Equality seat split: {split_count} contest(s) → FE/HE sub-contests")
+    return new_contests, new_candidates, new_rounds
+
+
 CONTEST_FIELDS = [
     "contest_id", "year", "election_id", "election_type",
     "contest_name_raw", "contest_name",
@@ -776,6 +900,25 @@ def main():
     all_candidates = deduped_within
     if within_dropped:
         print(f"Within-contest dedup: dropped {within_dropped} duplicate candidate row(s)")
+
+    # Apply canonical position names from review/contest_name_draft.csv
+    name_map = load_contest_name_map()
+    if name_map:
+        print(f"Loaded {len(name_map)} contest name mappings")
+        for c in all_contests:
+            if c["contest_id"] in name_map:
+                c["position"] = name_map[c["contest_id"]]
+        for ca in all_candidates:
+            if ca["contest_id"] in name_map:
+                ca["position"] = name_map[ca["contest_id"]]
+
+    # Split FE/HE equality-seat contests using review/sector_research.csv
+    sector_lookup = load_sector_research()
+    if sector_lookup:
+        print(f"Loaded {len(sector_lookup)} sector research entries")
+        all_contests, all_candidates, all_rounds = split_equality_contests(
+            all_contests, all_candidates, all_rounds, sector_lookup
+        )
 
     distinct_before = len({(ca.get("name") or "").strip().lower() for ca in all_candidates if ca.get("name")})
     distinct_after  = len({ca["name_canonical"].strip().lower() for ca in all_candidates if ca.get("name_canonical")})

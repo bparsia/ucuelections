@@ -875,8 +875,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2010|UK national|Vice-President,2010,Sean Vernell,2,4053.0,806.0,False
 2011|UK national|Black Members Rep,2011,Dave MURITU,1,5526.0,,False
 2011|UK national|Black Members Rep,2011,Jim THAKOORDIN,1,6597.0,,False
-2011|UK national|Disabled Members Rep,2011,Roger WALTERS,1,6668.0,,False
-2011|UK national|Disabled Members Rep,2011,Liza van ZYL,1,6158.0,,False
 2011|UK national|Higher Education South Members,2011,Tom HICKEY,1,475.0,,False
 2011|UK national|Higher Education South Members,2011,Tom HICKEY,2,590.26,115.26,False
 2011|UK national|Higher Education South Members,2011,Lesley KANE,1,840.0,,False
@@ -941,8 +939,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2011|UK national|UK Higher Education NEC Members,2011,Veronica KILLEN (post-92),6,1144.66,,False
 2011|UK national|Vice President,2011,Jim WOLFREYS,1,5409.0,,False
 2011|UK national|Vice President,2011,Simon RENTON,1,8533.0,,False
-2011|UK national|LGBT Members Rep,2011,Mary JENNINGS,1,7477.0,,False
-2011|UK national|LGBT Members Rep,2011,Stephen DESMOND,1,5189.0,,False
 2011|UK national|UCU Scotland Honorary Secretary NEC,2011,Angela ROGER,1,734.0,,False
 2011|UK national|UCU Scotland Honorary Secretary NEC,2011,Carlo MORELLI,1,236.0,,False
 2011|UK national|UCU Scotland President NEC,2011,Andrew SAMUEL,1,353.0,,False
@@ -1296,16 +1292,12 @@ contest_id,year,name,round,votes,transfer,eliminated
 2013|UK national|Vice president from the higher education sector,2013,Dominique LAUTERBERG,1,5641.0,,False
 2013|UK national|Honorary Treasurer,2013,Gavin REID,1,5097.0,,False
 2013|UK national|Honorary Treasurer,2013,Angela ROGER,1,6571.0,,False
-2013|UK national|Representative of LGBT members,2013,Mary JENNINGS,1,6240.0,,False
-2013|UK national|Representative of LGBT members,2013,Pura ARIZA,1,4583.0,,False
 2013|UK national|Representatives of black members,2013,Cecile WRIGHT,1,4585.0,,False
 2013|UK national|Representatives of black members,2013,Cecile WRIGHT,2,3428.0,-1157.0,False
 2013|UK national|Representatives of black members,2013,Gifty BURROWS,1,2794.0,,False
 2013|UK national|Representatives of black members,2013,Gifty BURROWS,2,3291.64,497.64,False
 2013|UK national|Representatives of black members,2013,Dawn LIVINGSTON,1,2905.0,,False
 2013|UK national|Representatives of black members,2013,Dawn LIVINGSTON,2,3527.05,622.05,False
-2013|UK national|Representative of disabled members,2013,Roger WALTERS,1,7569.0,,False
-2013|UK national|Representative of disabled members,2013,Rob MURTHWAITE,1,3465.0,,False
 2013|UK national|Honorary Secretary UCU Scotland,2013,Carlo MORELLI,1,267.0,,False
 2013|UK national|Honorary Secretary UCU Scotland,2013,Angi LAMB,1,497.0,,False
 2014|UK national|Further Education Members – North East,2014,Lee SHORT,1,167.0,,False
@@ -1523,14 +1515,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2014|UK national|Women members’ representatives higher education,2014,Sue ABBOTT,1,2526.0,,False
 2014|UK national|Women members’ representatives higher education,2014,Sue ABBOTT,2,2526.0,,False
 2014|UK national|Women members’ representatives higher education,2014,Sue ABBOTT,3,2526.0,,False
-2015|UK national|Casually Employed Members,2015,"SILVERMAN, Eric",1,2428.0,,False
-2015|UK national|Casually Employed Members,2015,"SILVERMAN, Eric",2,2961.0,533.0,False
-2015|UK national|Casually Employed Members,2015,"JOWETT, Amy",1,2458.0,,False
-2015|UK national|Casually Employed Members,2015,"JOWETT, Amy",2,2737.0,279.0,False
-2015|UK national|Casually Employed Members,2015,"BLAKE, Vicky",1,3150.0,,False
-2015|UK national|Casually Employed Members,2015,"BLAKE, Vicky",2,3737.0,587.0,False
-2015|UK national|Casually Employed Members,2015,"CLUNAS, Robert",1,1550.0,,False
-2015|UK national|Casually Employed Members,2015,"CLUNAS, Robert",2,,,True
 2015|UK national|Midlands FE,2015,"MACTAGGART, Allister",1,100.0,,False
 2015|UK national|Midlands FE,2015,"MACTAGGART, Allister",2,131.0,31.0,False
 2015|UK national|Midlands FE,2015,"BRUCE-JONES, Simon",1,143.0,,False
@@ -1607,8 +1591,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2015|UK national|UK-Elected HE NEC Members,2015,"CHARLTON, Julia",4,1065.69,69.68,False
 2015|UK national|UK-Elected HE NEC Members,2015,"CHARLTON, Julia",5,1171.04,105.35,False
 2015|UK national|UK-Elected HE NEC Members,2015,"CHARLTON, Julia",6,1354.04,183.0,False
-2015|UK national|LGBT Members,2015,"JENNINGS, Mary",1,5263.0,,False
-2015|UK national|LGBT Members,2015,"ARIZA, Pura",1,4440.0,,False
 2015|UK national|Trustees,2015,"TAYLOR, Kathy",1,3077.0,,False
 2015|UK national|Trustees,2015,"TAYLOR, Kathy",2,3375.0,298.0,False
 2015|UK national|Trustees,2015,"TAYLOR, Kathy",3,4113.0,738.0,False
@@ -1799,8 +1781,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2017|UK national|UK NEC Members HE,2017,"MOORE, Phoebe",8,,,True
 2017|UK national|Honorary Treasurer,2017,"SANGWINE, Steve",1,6474.0,,False
 2017|UK national|Honorary Treasurer,2017,"ANDERSON, Paul",1,6083.0,,False
-2017|UK national|Representative of LGBT members,2017,"PROUT, Ryan",1,6339.0,,False
-2017|UK national|Representative of LGBT members,2017,"ARIZA, Pura",1,5462.0,,False
 2017|UK national|FE Midlands,2017,"SULLIVAN, John Paul",1,140.0,,False
 2017|UK national|FE Midlands,2017,"SULLIVAN, John Paul",2,140.0,,False
 2017|UK national|FE Midlands,2017,"LOCKLEY, Rhiannon",1,94.0,,False
@@ -2055,9 +2035,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2019|UK national|NEC Members Higher Education-North West,2019,Michael MCKRELL,1,225.0,,False
 2019|UK national|NEC Members Higher Education-North West,2019,Michael MCKRELL,2,292.5,67.5,False
 2019|UK national|NEC Members Higher Education-North West,2019,Michael MCKRELL,3,325.5,33.0,False
-2019|UK national|Representative of Disabled Members,2019,Ciara DOYLE,1,1623.0,,False
-2019|UK national|Representative of Disabled Members,2019,Paul LUNN,1,3334.0,,False
-2019|UK national|Representative of Disabled Members,2019,Lucy BURKE,1,7753.0,,False
 2019|UK national|Representatives of Black Members,2019,Maxine LOOBY,1,3411.0,,False
 2019|UK national|Representatives of Black Members,2019,Maxine LOOBY,2,4084.0,673.0,False
 2019|UK national|Representatives of Black Members,2019,Victoria SHOWUNMI,1,4212.0,,False
@@ -2851,10 +2828,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 "2021|UK national|NEC Members, Higher Education, North West",2021,"BANGA, Sunil",1,148.0,,False
 "2021|UK national|NEC Members, Higher Education, North West",2021,"BANGA, Sunil",2,,,True
 "2021|UK national|NEC Members, Higher Education, North West",2021,"BANGA, Sunil",3,,,True
-2021|UK national|Representative of Casually Employed Members,2021,"MORECROFT, Sam",1,3903.0,,False
-2021|UK national|Representative of Casually Employed Members,2021,"POPE, Ben",1,5440.0,,False
-2021|UK national|Representative of Disabled Members,2021,"CHARLESWORTH, Jane",1,4846.0,,False
-2021|UK national|Representative of Disabled Members,2021,"MAYER, Marian",1,5560.0,,False
 "2021|UK national|NEC Member Scotland, HE – UCU Scotland Honorary Secretary",2021,"SCANDRETT, Eurig",1,305.0,,False
 "2021|UK national|NEC Member Scotland, HE – UCU Scotland Honorary Secretary",2021,"SCANDRETT, Eurig",2,355.0,50.0,False
 "2021|UK national|NEC Member Scotland, HE – UCU Scotland Honorary Secretary",2021,"SWINNEY, Ann",1,375.0,,False
@@ -2943,8 +2916,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2020/cv|casual vacancy|Vice-President,2020,"MAYER, Marian",2,2514.0,435.0,False
 2020/cv|casual vacancy|Vice-President,2020,"MAYER, Marian",3,2840.0,326.0,False
 2020/cv|casual vacancy|Vice-President,2020,"MAYER, Marian",4,,,True
-2020/cv|casual vacancy|Representative of LGBT+ Members,2020,"APPLEYARD, Jennie",1,7783.0,,False
-2020/cv|casual vacancy|Representative of LGBT+ Members,2020,"EVANS, Peter",1,4736.0,,False
 "2022|UK national|UK-Elected NEC Members, Further Education",2022,"DORAN, Nina",1,564.0,,False
 "2022|UK national|UK-Elected NEC Members, Further Education",2022,"CHUHAN, Dharminder Singh",1,531.0,,False
 "2022|UK national|UK-Elected NEC Members, Further Education",2022,"NOREY, Sharon",1,359.0,,False
@@ -3339,14 +3310,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2023|UK national|representatives of black members,2023,"SHOWUNMI, Victoria",2,,,True
 2023|UK national|representatives of black members,2023,"PEAKE, Jak",1,3241.0,,False
 2023|UK national|representatives of black members,2023,"PEAKE, Jak",2,4397.0,1156.0,False
-2023|UK national|representative of casually-employed members,2023,"FITZMAURICE, Matilda",1,5259.0,,False
-2023|UK national|representative of casually-employed members,2023,"FITZMAURICE, Matilda",2,6322.0,1063.0,False
-2023|UK national|representative of casually-employed members,2023,"MORECROFT, Sam",1,2949.0,,False
-2023|UK national|representative of casually-employed members,2023,"MORECROFT, Sam",2,,,True
-2023|UK national|representative of casually-employed members,2023,"LAHM, Sarah",1,3011.0,,False
-2023|UK national|representative of casually-employed members,2023,"LAHM, Sarah",2,4095.0,1084.0,False
-2023|UK national|representative of disabled members,2023,"PARSIA, Bijan",1,5840.0,,False
-2023|UK national|representative of disabled members,2023,"MAYER, Marian",1,4984.0,,False
 "2023|UK national|NEC members, North West, further education",2023,"KELSALL, Helen",1,135.0,,False
 "2023|UK national|NEC members, North West, further education",2023,"CODY, Carol",1,101.0,,False
 "2023|UK national|NEC members, South, further education",2023,"ELLIOTT, Graeme",1,140.0,,False
@@ -3502,8 +3465,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2023|UK national|Honorary Treasurer,2023,"GOVINDARAJAN DRIVER, Deepa",2,5107.0,1162.0,False
 2023|UK national|Honorary Treasurer,2023,"BRACKLEY, James",1,2591.0,,False
 2023|UK national|Honorary Treasurer,2023,"BRACKLEY, James",2,,,True
-2023|UK national|representative of LGBT+ members,2023,"HUGHES, Bee",1,5203.0,,False
-2023|UK national|representative of LGBT+ members,2023,"PENDLETON, Mark",1,6215.0,,False
 2023|UK national|representatives of migrant members,2023,"SAEED, Khizer",1,2220.0,,False
 2023|UK national|representatives of migrant members,2023,"SAEED, Khizer",2,2835.0,615.0,False
 2023|UK national|representatives of migrant members,2023,"THUPPIL, Vivek",1,3786.0,,False
@@ -3512,6 +3473,8 @@ contest_id,year,name,round,votes,transfer,eliminated
 2023|UK national|representatives of migrant members,2023,"FERABOLI, Omar",2,,,True
 2023|UK national|representatives of migrant members,2023,"LOYOLA-HERNANDEZ, Laura",1,3679.0,,False
 2023|UK national|representatives of migrant members,2023,"LOYOLA-HERNANDEZ, Laura",2,4496.0,817.0,False
+2023|UK national|Vice President,2023,"CHONDROGIANNI, Maria",1,6224.0,,False
+2023|UK national|Vice President,2023,"BATTELL LOWMAN, Emma",1,6084.0,,False
 2023|UK national|UCU Scotland Honorary Secretary,2023,"MORELLI, Carlo",1,583.0,,False
 2023|UK national|UCU Scotland Honorary Secretary,2023,"O'DONNELL, Christopher",1,514.0,,False
 2023|UK national|UCU Scotland President,2023,"JOSS, Sarah",1,350.0,,False
@@ -3520,8 +3483,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 2023|UK national|UCU Scotland President,2023,"O'DONNELL, Christopher",2,,,True
 2023|UK national|UCU Scotland President,2023,"FINDLAY, Jeanette",1,499.0,,False
 2023|UK national|UCU Scotland President,2023,"FINDLAY, Jeanette",2,640.0,141.0,False
-2023|UK national|Vice President,2023,"CHONDROGIANNI, Maria",1,6224.0,,False
-2023|UK national|Vice President,2023,"BATTELL LOWMAN, Emma",1,6084.0,,False
 2024|UK national|General Secretary,2024,"WEINER, Saira",1,2580.0,,False
 2024|UK national|General Secretary,2024,"WEINER, Saira",2,,,True
 2024|UK national|General Secretary,2024,"WEINER, Saira",3,,,True
@@ -3629,6 +3590,8 @@ contest_id,year,name,round,votes,transfer,eliminated
 "2024|UK national|NEC Members, North East, Higher Education",2024,"MOOS, Josh",3,,,True
 2024|UK national|Trustees,2024,"SANGWINE, Steve",1,8287.0,,False
 2024|UK national|Trustees,2024,"BARTON, Mike",1,7173.0,,False
+2024|UK national|Vice-President,2024,"EVANS, Peter",1,6863.0,,False
+2024|UK national|Vice-President,2024,"HUNTER, David",1,8814.0,,False
 "2024|UK national|UK Elected NEC Members, Further Education",2024,"KENT, Naina",1,558.0,,False
 "2024|UK national|UK Elected NEC Members, Further Education",2024,"KENT, Naina",2,558.0,,False
 "2024|UK national|UK Elected NEC Members, Further Education",2024,"KENT, Naina",3,524.75,-33.25,False
@@ -3659,8 +3622,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 "2024|UK national|UK Elected NEC Members, Further Education",2024,"FARRAR, Janet",3,524.75,,False
 "2024|UK national|UK Elected NEC Members, Further Education",2024,"FARRAR, Janet",4,524.75,,False
 "2024|UK national|UK Elected NEC Members, Further Education",2024,"FARRAR, Janet",5,524.75,,False
-2024|UK national|Vice-President,2024,"EVANS, Peter",1,6863.0,,False
-2024|UK national|Vice-President,2024,"HUNTER, David",1,8814.0,,False
 "2024|UK national|NEC Member, Wales, Higher Education",2024,"HART, Estelle",1,397.0,,False
 "2024|UK national|NEC Member, Wales, Higher Education",2024,"ALLSOPP, Phillip",1,224.0,,False
 2024|UK national|Women Members from the Further Education Sector,2024,"TOOLE, Suzi",1,4287.0,,False
@@ -3848,12 +3809,8 @@ contest_id,year,name,round,votes,transfer,eliminated
 2025|UK national|Representatives of Black Members,2025,"SHOWUNMI, Dr Victoria",1,2809.0,,False
 2025|UK national|Representatives of Black Members,2025,"RATTERY, Pauline",1,3265.0,,False
 2025|UK national|Representatives of Black Members,2025,"RAJYAGURU, Nitin",1,2170.0,,False
-2025|UK national|Representatives of Disabled Members,2025,"SLORACH, Roddy",1,3667.0,,False
-2025|UK national|Representatives of Disabled Members,2025,"PARSIA, Bijan",1,4991.0,,False
 2025|UK national|Honorary Treasurer,2025,"GOVINDARAJAN DRIVER, Dr Deepa",1,4310.0,,False
 2025|UK national|Honorary Treasurer,2025,"FEENEY, Andrew",1,4868.0,,False
-2025|UK national|Representatives of LGBT+ Members,2025,"HUGHES, Bee",1,3638.0,,False
-2025|UK national|Representatives of LGBT+ Members,2025,"FITZMAURICE, Dr Matilda",1,4735.0,,False
 "2025|UK national|NEC Member, Midlands, Further Education",2025,"GREAVES, Alison",1,106.0,,False
 "2025|UK national|NEC Member, Midlands, Further Education",2025,"SINGH CHUHAN, Dharminder",1,100.0,,False
 "2025|UK national|NEC Member, North West, Further Education",2025,"DORAN, Nina",1,85.0,,False
@@ -3967,8 +3924,6 @@ contest_id,year,name,round,votes,transfer,eliminated
 "2025|UK national|UK Elected NEC Members, Higher Education",2025,"CARLEY, Michael",5,,,True
 2025|UK national|Vice President (becoming President in 2027-28),2025,"LOCKLEY, Rhiannon",1,3968.0,,False
 2025|UK national|Vice President (becoming President in 2027-28),2025,"JONES, Dyfrig",1,5269.0,,False
-2025|UK national|Representatives of Casually Employed Members,2025,"BLYTHER, Cecily",1,4092.0,,False
-2025|UK national|Representatives of Casually Employed Members,2025,"WARD, Andrew",1,4372.0,,False
 2025|UK national|Representatives of Migrant Members,2025,"FERREIRA, Bruno",1,2545.0,,False
 2025|UK national|Representatives of Migrant Members,2025,"FERREIRA, Bruno",2,,,True
 2025|UK national|Representatives of Migrant Members,2025,"PRIETO BLANCO, Patricia",1,3393.0,,False
