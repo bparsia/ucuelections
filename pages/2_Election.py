@@ -3,6 +3,7 @@
 import re
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -414,6 +415,9 @@ def render_contest(contest, short_label: bool = False):
             lambda r: None if r["outcome"] == "Withdrawn"
             else _final_votes.get((r["contest_id"], r["name"])), axis=1
         )
+        display_cands["Profile"] = display_cands[name_col].apply(
+            lambda n: f"./Candidate?candidate={quote(str(n))}" if pd.notna(n) else None
+        )
         display_cands = display_cands.rename(columns={
             name_col:            "Candidate",
             "first_preferences": "1st prefs",
@@ -428,11 +432,14 @@ def render_contest(contest, short_label: bool = False):
         cols_to_show = ["Candidate", "1st prefs"]
         if display_cands["Final votes"].ne("—").any():
             cols_to_show.append("Final votes")
-        cols_to_show.append("Outcome")
+        cols_to_show.extend(["Outcome", "Profile"])
         st.dataframe(
             display_cands[cols_to_show].reset_index(drop=True),
             hide_index=True,
             use_container_width=True,
+            column_config={
+                "Profile": st.column_config.LinkColumn("Profile", display_text="→"),
+            },
         )
 
         if contest.get("has_stv_rounds"):
