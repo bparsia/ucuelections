@@ -250,6 +250,17 @@ def reconstruct_nec(candidates_path: Path) -> tuple[list[dict], list[dict]]:
             seen.add(key)
             deduped.append(row)
 
+    # VP chain takes precedence: if someone is in the VP chain for year Y,
+    # suppress their regular NEC seat rows for that year (they vacated it).
+    vp_chain_person_years: set[tuple] = {
+        (r["year"], r["name_canonical"]) for r in deduped if r["role_type"] == "vp_chain"
+    }
+    deduped = [
+        r for r in deduped
+        if r["role_type"] == "vp_chain"
+        or (r["year"], r["name_canonical"]) not in vp_chain_person_years
+    ]
+
     # Sort for readability
     deduped.sort(key=lambda r: (r["year"], r["role_type"], r["position"], r["name_canonical"]))
 

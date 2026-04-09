@@ -195,7 +195,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2013,Patricia Hulme,"NEC Members, Midlands, HE",HE,regional,2013
 2013,Cath Hepburn,"NEC Members, North East, FE",FE,regional,2012
 2013,Rob Goodfellow,"NEC Members, North East, FE",FE,regional,2012
-2013,Elizabeth Lawrence,"NEC Members, North East, HE",HE,regional,2012
 2013,Joanna de Groot,"NEC Members, North East, HE",HE,regional,2012
 2013,Martin Levy,"NEC Members, North East, HE",HE,regional,2012
 2013,Andy Sellers,"NEC Members, North West, FE",FE,regional,2013
@@ -536,7 +535,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2020,Bruce Baker,"NEC Members, North East, HE",HE,regional,2020
 2020,Joan Harvey,"NEC Members, North East, HE",HE,regional,2020
 2020,Ruth Holliday,"NEC Members, North East, HE",HE,regional,2020
-2020,Janet Farrar,"NEC Members, North West, FE",FE,regional,2019
 2020,Philippa Browning,"NEC Members, North West, HE",HE,regional,2019
 2020,Saira Weiner,"NEC Members, North West, HE",HE,regional,2019
 2020,Linda Moore,"NEC Members, Northern Ireland, HE",HE,regional,2020
@@ -708,7 +706,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2023,Emma Kennedy,"NEC Members, London and the East, HE",HE,regional,2022
 2023,Esther Murray,"NEC Members, London and the East, HE",HE,regional,2022
 2023,Kyran Joughin,"NEC Members, London and the East, HE",HE,regional,2022
-2023,Maria Chondrogianni,"NEC Members, London and the East, HE",HE,regional,2022
 2023,Sean Wallis,"NEC Members, London and the East, HE",HE,regional,2022
 2023,Agnes Flues,"NEC Members, Midlands, HE",HE,regional,2023
 2023,Caroline Proctor,"NEC Members, Midlands, HE",HE,regional,2023
@@ -868,7 +865,6 @@ year,name_canonical,position,sector,role_type,elected_year
 2025,Sophia Woodman,"UK NEC Members, HE",HE,uk_nec,2025
 2025,Maxine Looby,Immediate Past President,FE,vp_chain,2022
 2025,Maria Chondrogianni,President,HE,vp_chain,2023
-2025,David Hunter,President-elect,FE,vp_chain,2024
 2025,Dyfrig Jones,Vice-President,HE,vp_chain,2025
 2025,Safia Flissi,"Representatives of Women Members, FE",FE,women,2024
 2025,Suzi Toole,"Representatives of Women Members, FE",FE,women,2024
@@ -923,13 +919,11 @@ year,name_canonical,position,sector,role_type,elected_year
 2026,Gillian Jack,"UK NEC Members, HE",HE,uk_nec,2026
 2026,Jo Taplin-Green,"UK NEC Members, HE",HE,uk_nec,2026
 2026,Marion Hersh,"UK NEC Members, HE",HE,uk_nec,2026
-2026,Mark Pendleton,"UK NEC Members, HE",HE,uk_nec,2025
 2026,Matthew J. Barnard,"UK NEC Members, HE",HE,uk_nec,2026
 2026,Richard Wild,"UK NEC Members, HE",HE,uk_nec,2025
 2026,Sophia Woodman,"UK NEC Members, HE",HE,uk_nec,2025
 2026,Maria Chondrogianni,Immediate Past President,HE,vp_chain,2023
-2026,David Hunter,President,FE,vp_chain,2024
-2026,Dyfrig Jones,President-elect,HE,vp_chain,2025
+2026,Dyfrig Jones,President,HE,vp_chain,2025
 2026,Mark Pendleton,Vice-President,HE,vp_chain,2026
 2026,Suzi Toole,Vice-President,FE,vp_chain,2026
 2026,Maxine Looby,"Representatives of Women Members, FE",FE,women,2026
