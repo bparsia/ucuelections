@@ -9,10 +9,10 @@ st.set_page_config(
 )
 
 pg = st.navigation([
-    st.Page("pages/0_Overview.py",   title="Overview"),
-    st.Page("pages/1_Candidates.py", title="Candidates"),
-    st.Page("pages/2_Election.py",   title="Election"),
-    st.Page("pages/3_Candidate.py",  title="Candidate"),
+    st.Page("pages/0_Overview.py",   title="Elections Overview"),
+    st.Page("pages/2_Election.py",   title="Elections"),
+    st.Page("pages/1_Candidates.py", title="Candidate Overview"),
+    st.Page("pages/3_Candidate.py",  title="Candidates"),
     st.Page("pages/4_About.py", title="About"),
 ])
 pg.run()
