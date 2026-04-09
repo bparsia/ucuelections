@@ -699,6 +699,7 @@ def fix_elected_elsewhere_outcomes(
 
         if cond_a or cond_b:
             ca["outcome"] = "Withdrawn"
+            ca["first_preferences"] = ""
             corrections += 1
 
     if corrections:
