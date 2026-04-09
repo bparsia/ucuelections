@@ -93,7 +93,7 @@ year,name_canonical,position,sector,role_type,elected_year
 2010,Ann Blair,"Representatives of Women Members, HE",HE,women,2010
 2010,Marion Hersh,"Representatives of Women Members, HE",HE,women,2010
 2010,Pauline Collins,"Representatives of Women Members, HE",HE,women,2010
-2011,Jim Thakoordin,Representatives of Black Members,national,equality,2011
+2011,Jim Thakoordin,Representatives of Black Members,FE,equality,2011
 2011,Roger Walters,"Representatives of Disabled Members, HE",HE,equality,2011
 2011,Mary Jennings,"Representatives of LGBT+ Members, HE",HE,equality,2011
 2011,Jim Wolfreys,"NEC Members, London and the East, HE",HE,regional,2010
@@ -132,7 +132,7 @@ year,name_canonical,position,sector,role_type,elected_year
 2011,Ann Blair,"Representatives of Women Members, HE",HE,women,2010
 2011,Marion Hersh,"Representatives of Women Members, HE",HE,women,2010
 2011,Pauline Collins,"Representatives of Women Members, HE",HE,women,2010
-2012,Jim Thakoordin,Representatives of Black Members,national,equality,2011
+2012,Jim Thakoordin,Representatives of Black Members,FE,equality,2011
 2012,Roger Walters,"Representatives of Disabled Members, HE",HE,equality,2011
 2012,Mary Jennings,"Representatives of LGBT+ Members, HE",HE,equality,2011
 2012,Annie Holder,"NEC Members, London and the East, FE",FE,regional,2012
@@ -180,8 +180,8 @@ year,name_canonical,position,sector,role_type,elected_year
 2012,Ann Blair,"Representatives of Women Members, HE",HE,women,2012
 2012,Pauline Collins,"Representatives of Women Members, HE",HE,women,2012
 2012,Suzanne Trill,"Representatives of Women Members, HE",HE,women,2012
-2013,Cecile Wright,Representatives of Black Members,national,equality,2013
-2013,Dawn Livingston,Representatives of Black Members,national,equality,2013
+2013,Cecile Wright,Representatives of Black Members,HE,equality,2013
+2013,Dawn Livingston,Representatives of Black Members,FE,equality,2013
 2013,Roger Walters,"Representatives of Disabled Members, HE",HE,equality,2013
 2013,Mary Jennings,"Representatives of LGBT+ Members, HE",HE,equality,2013
 2013,Angela Roger,Honorary Treasurer,national,officer,2013
@@ -241,8 +241,8 @@ year,name_canonical,position,sector,role_type,elected_year
 2013,Ann Blair,"Representatives of Women Members, HE",HE,women,2012
 2013,Pauline Collins,"Representatives of Women Members, HE",HE,women,2012
 2013,Suzanne Trill,"Representatives of Women Members, HE",HE,women,2012
-2014,Cecile Wright,Representatives of Black Members,national,equality,2013
-2014,Dawn Livingston,Representatives of Black Members,national,equality,2013
+2014,Cecile Wright,Representatives of Black Members,HE,equality,2013
+2014,Dawn Livingston,Representatives of Black Members,FE,equality,2013
 2014,Roger Walters,"Representatives of Disabled Members, HE",HE,equality,2013
 2014,Mary Jennings,"Representatives of LGBT+ Members, HE",HE,equality,2013
 2014,Angela Roger,Honorary Treasurer,national,officer,2013
@@ -468,8 +468,8 @@ year,name_canonical,position,sector,role_type,elected_year
 2018,Ariane Bogain,"Representatives of Women Members, HE",HE,women,2018
 2018,Pura Ariza,"Representatives of Women Members, HE",HE,women,2018
 2018,Sue Abbott,"Representatives of Women Members, HE",HE,women,2018
-2019,Maxine Looby,Representatives of Black Members,national,equality,2019
-2019,Victoria Showunmi,Representatives of Black Members,national,equality,2019
+2019,Maxine Looby,Representatives of Black Members,FE,equality,2019
+2019,Victoria Showunmi,Representatives of Black Members,HE,equality,2019
 2019,Lucy Burke,"Representatives of Disabled Members, HE",HE,equality,2019
 2019,Eleni Michalopoulou,Representatives of Members in Land-Based Education,FE,equality,2018
 2019,Steve Sangwine,Honorary Treasurer,national,officer,2019
@@ -518,12 +518,12 @@ year,name_canonical,position,sector,role_type,elected_year
 2019,Ariane Bogain,"Representatives of Women Members, HE",HE,women,2018
 2019,Pura Ariza,"Representatives of Women Members, HE",HE,women,2018
 2019,Sue Abbott,"Representatives of Women Members, HE",HE,women,2018
-2020,Maxine Looby,Representatives of Black Members,national,equality,2019
-2020,Victoria Showunmi,Representatives of Black Members,national,equality,2019
+2020,Maxine Looby,Representatives of Black Members,FE,equality,2019
+2020,Victoria Showunmi,Representatives of Black Members,HE,equality,2019
 2020,Lucy Burke,"Representatives of Disabled Members, HE",HE,equality,2019
 2020,Jennie Appleyard,"Representatives of LGBT+ Members, FE",FE,equality,2020
-2020,Dima Chami,Representatives of Migrant Members,national,equality,2020
-2020,Robyn Orfitelli,Representatives of Migrant Members,national,equality,2020
+2020,Dima Chami,Representatives of Migrant Members,HE,equality,2020
+2020,Robyn Orfitelli,Representatives of Migrant Members,HE,equality,2020
 2020,Steve Sangwine,Honorary Treasurer,national,officer,2019
 2020,Annie Goh,"NEC Members, London and the East, HE",HE,regional,2020
 2020,Claire Marris,"NEC Members, London and the East, HE",HE,regional,2020
@@ -577,8 +577,8 @@ year,name_canonical,position,sector,role_type,elected_year
 2021,Bee Hughes,Representatives of LGBT+ Members,national,equality,2021
 2021,Peter Evans,Representatives of LGBT+ Members,national,equality,2021
 2021,Jennie Appleyard,"Representatives of LGBT+ Members, FE",FE,equality,2020
-2021,Dima Chami,Representatives of Migrant Members,national,equality,2020
-2021,Robyn Orfitelli,Representatives of Migrant Members,national,equality,2020
+2021,Dima Chami,Representatives of Migrant Members,HE,equality,2020
+2021,Robyn Orfitelli,Representatives of Migrant Members,HE,equality,2020
 2021,Steve Sangwine,Honorary Treasurer,national,officer,2021
 2021,Annie Goh,"NEC Members, London and the East, HE",HE,regional,2020
 2021,Claire Marris,"NEC Members, London and the East, HE",HE,regional,2020
@@ -636,7 +636,7 @@ year,name_canonical,position,sector,role_type,elected_year
 2022,Marian Mayer,"Representatives of Disabled Members, HE",HE,equality,2021
 2022,Bee Hughes,Representatives of LGBT+ Members,national,equality,2021
 2022,Peter Evans,Representatives of LGBT+ Members,national,equality,2021
-2022,Khizer Saeed,Representatives of Migrant Members,national,equality,2022
+2022,Khizer Saeed,Representatives of Migrant Members,HE,equality,2022
 2022,Steve Sangwine,Honorary Treasurer,national,officer,2021
 2022,Delmena Doyley,"NEC Members, London and the East, FE",FE,regional,2022
 2022,Regine Pilling,"NEC Members, London and the East, FE",FE,regional,2022
@@ -689,16 +689,16 @@ year,name_canonical,position,sector,role_type,elected_year
 2022,Emma Rees,"Representatives of Women Members, HE",HE,women,2022
 2022,Jo Edge,"Representatives of Women Members, HE",HE,women,2022
 2022,Julie Hearn,"Representatives of Women Members, HE",HE,women,2022
-2023,Jak Peake,Representatives of Black Members,national,equality,2023
-2023,Juliana Ojinnaka,Representatives of Black Members,national,equality,2023
+2023,Jak Peake,Representatives of Black Members,HE,equality,2023
+2023,Juliana Ojinnaka,Representatives of Black Members,FE,equality,2023
 2023,Matilda Fitzmaurice,"Representatives of Casually Employed Members, HE",HE,equality,2023
 2023,Pat Roche,"Representatives of Disabled Members, FE",FE,equality,2023
 2023,Bijan Parsia,"Representatives of Disabled Members, HE",HE,equality,2023
 2023,Peter Evans,"Representatives of LGBT+ Members, FE",FE,equality,2023
 2023,Mark Pendleton,"Representatives of LGBT+ Members, HE",HE,equality,2023
-2023,Khizer Saeed,Representatives of Migrant Members,national,equality,2022
-2023,Laura Loyola-Hernandez,Representatives of Migrant Members,national,equality,2023
-2023,Vivek Thuppil,Representatives of Migrant Members,national,equality,2023
+2023,Khizer Saeed,Representatives of Migrant Members,HE,equality,2022
+2023,Laura Loyola-Hernandez,Representatives of Migrant Members,HE,equality,2023
+2023,Vivek Thuppil,Representatives of Migrant Members,HE,equality,2023
 2023,David Harvie,Honorary Treasurer,national,officer,2023
 2023,Delmena Doyley,"NEC Members, London and the East, FE",FE,regional,2022
 2023,Regine Pilling,"NEC Members, London and the East, FE",FE,regional,2022
@@ -749,15 +749,15 @@ year,name_canonical,position,sector,role_type,elected_year
 2023,Emma Rees,"Representatives of Women Members, HE",HE,women,2022
 2023,Jo Edge,"Representatives of Women Members, HE",HE,women,2022
 2023,Julie Hearn,"Representatives of Women Members, HE",HE,women,2022
-2024,Jak Peake,Representatives of Black Members,national,equality,2023
-2024,Juliana Ojinnaka,Representatives of Black Members,national,equality,2023
+2024,Jak Peake,Representatives of Black Members,HE,equality,2023
+2024,Juliana Ojinnaka,Representatives of Black Members,FE,equality,2023
 2024,Matilda Fitzmaurice,"Representatives of Casually Employed Members, HE",HE,equality,2023
 2024,Pat Roche,"Representatives of Disabled Members, FE",FE,equality,2023
 2024,Bijan Parsia,"Representatives of Disabled Members, HE",HE,equality,2023
 2024,Peter Evans,"Representatives of LGBT+ Members, FE",FE,equality,2023
 2024,Mark Pendleton,"Representatives of LGBT+ Members, HE",HE,equality,2023
-2024,Laura Loyola-Hernandez,Representatives of Migrant Members,national,equality,2023
-2024,Vivek Thuppil,Representatives of Migrant Members,national,equality,2023
+2024,Laura Loyola-Hernandez,Representatives of Migrant Members,HE,equality,2023
+2024,Vivek Thuppil,Representatives of Migrant Members,HE,equality,2023
 2024,Jo Grady,General Secretary,national,officer,2024
 2024,David Harvie,Honorary Treasurer,national,officer,2023
 2024,Regine Pilling,"NEC Members, London and the East, FE",FE,regional,2024
@@ -808,15 +808,15 @@ year,name_canonical,position,sector,role_type,elected_year
 2024,Jo Edge,"Representatives of Women Members, HE",HE,women,2024
 2024,Julie Hearn,"Representatives of Women Members, HE",HE,women,2024
 2024,Lesley Kane,"Representatives of Women Members, HE",HE,women,2024
-2025,Pauline Rattery,Representatives of Black Members,national,equality,2025
-2025,Victoria Showunmi,Representatives of Black Members,national,equality,2025
+2025,Pauline Rattery,Representatives of Black Members,FE,equality,2025
+2025,Victoria Showunmi,Representatives of Black Members,HE,equality,2025
 2025,Andrew Ward,"Representatives of Casually Employed Members, FE",FE,equality,2025
 2025,Pat Roche,"Representatives of Disabled Members, FE",FE,equality,2025
 2025,Bijan Parsia,"Representatives of Disabled Members, HE",HE,equality,2025
 2025,Peter Evans,"Representatives of LGBT+ Members, FE",FE,equality,2025
 2025,Matilda Fitzmaurice,"Representatives of LGBT+ Members, HE",HE,equality,2025
-2025,Ariane Bogain,Representatives of Migrant Members,national,equality,2025
-2025,Vivek Thuppil,Representatives of Migrant Members,national,equality,2025
+2025,Ariane Bogain,Representatives of Migrant Members,HE,equality,2025
+2025,Vivek Thuppil,Representatives of Migrant Members,HE,equality,2025
 2025,Jo Grady,General Secretary,national,officer,2024
 2025,Andrew Feeney,Honorary Treasurer,national,officer,2025
 2025,Regine Pilling,"NEC Members, London and the East, FE",FE,regional,2024
@@ -871,15 +871,15 @@ year,name_canonical,position,sector,role_type,elected_year
 2025,Jo Edge,"Representatives of Women Members, HE",HE,women,2024
 2025,Julie Hearn,"Representatives of Women Members, HE",HE,women,2024
 2025,Lesley Kane,"Representatives of Women Members, HE",HE,women,2024
-2026,Pauline Rattery,Representatives of Black Members,national,equality,2025
-2026,Victoria Showunmi,Representatives of Black Members,national,equality,2025
+2026,Pauline Rattery,Representatives of Black Members,FE,equality,2025
+2026,Victoria Showunmi,Representatives of Black Members,HE,equality,2025
 2026,Andrew Ward,"Representatives of Casually Employed Members, FE",FE,equality,2025
 2026,Pat Roche,"Representatives of Disabled Members, FE",FE,equality,2025
 2026,Bijan Parsia,"Representatives of Disabled Members, HE",HE,equality,2025
 2026,Peter Evans,"Representatives of LGBT+ Members, FE",FE,equality,2025
 2026,Matilda Fitzmaurice,"Representatives of LGBT+ Members, HE",HE,equality,2025
-2026,Ariane Bogain,Representatives of Migrant Members,national,equality,2025
-2026,Vivek Thuppil,Representatives of Migrant Members,national,equality,2025
+2026,Ariane Bogain,Representatives of Migrant Members,HE,equality,2025
+2026,Vivek Thuppil,Representatives of Migrant Members,HE,equality,2025
 2026,Andrew Feeney,Honorary Treasurer,national,officer,2025
 2026,Regine Pilling,"NEC Members, London and the East, FE",FE,regional,2026
 2026,Sean Vernell,"NEC Members, London and the East, FE",FE,regional,2026

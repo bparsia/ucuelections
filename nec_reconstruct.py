@@ -170,6 +170,25 @@ def build_vp_chain(elected_rows: list[dict], corrections: dict) -> list[dict]:
 # Main reconstruction
 # ---------------------------------------------------------------------------
 
+def _load_individual_sectors() -> dict:
+    """
+    Load individual-level sector for Black/Migrant member candidates from
+    sector_research.csv. Returns {(year_str, name_canonical_lower): sector}.
+    """
+    path = Path(__file__).parent / "review" / "sector_research.csv"
+    lookup: dict[tuple, str] = {}
+    if not path.exists():
+        return lookup
+    with path.open(newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            year = row.get("year", "").strip()
+            name = row.get("name_canonical", "").strip().lower()
+            sector = row.get("sector", "").strip()
+            if year and name and sector in ("FE", "HE"):
+                lookup[(year, name)] = sector
+    return lookup
+
+
 def reconstruct_nec(candidates_path: Path) -> tuple[list[dict], list[dict]]:
     """
     Reconstruct NEC membership year-by-year from candidates CSV.
@@ -179,6 +198,8 @@ def reconstruct_nec(candidates_path: Path) -> tuple[list[dict], list[dict]]:
     # --- Load candidates ---
     with candidates_path.open(newline="", encoding="utf-8") as f:
         all_candidates = list(csv.DictReader(f))
+
+    individual_sectors = _load_individual_sectors()
 
     # Filter: outcome in {Elected, Uncontested}, election_type in {UK national, casual vacancy}
     elected = [
@@ -232,11 +253,18 @@ def reconstruct_nec(candidates_path: Path) -> tuple[list[dict], list[dict]]:
         prev_elected = by_year.get(prev_y, [])
 
         for r in current_elected + prev_elected:
+            pos_sector = _sector(r["position"])
+            # For national-sector positions (Black/Migrant members), look up
+            # individual sector from sector_research using their election year
+            if pos_sector == "national" and _role_type(r["position"]) == "equality":
+                ind = individual_sectors.get((r["year"], r["name_canonical"].lower()))
+                if ind:
+                    pos_sector = ind
             membership_rows.append({
                 "year":           y_str,
                 "name_canonical": r["name_canonical"],
                 "position":       r["position"],
-                "sector":         _sector(r["position"]),
+                "sector":         pos_sector,
                 "role_type":      _role_type(r["position"]),
                 "elected_year":   r["year"],
             })

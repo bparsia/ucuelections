@@ -134,8 +134,8 @@ def _render_table(df: pd.DataFrame) -> None:
 # Tabs
 # ---------------------------------------------------------------------------
 
-tab_officers, tab_fe, tab_he, tab_eq = st.tabs([
-    "Officers & VP Chain", "FEC", "HEC", "Equality & National",
+tab_officers, tab_fe, tab_he = st.tabs([
+    "Officers & VP Chain", "FEC", "HEC",
 ])
 
 # ---------------------------------------------------------------------------
@@ -169,7 +169,7 @@ with tab_officers:
 with tab_fe:
     fe_mask = (
         (year_members["sector"] == "FE")
-        & year_members["role_type"].isin({"vp_chain", "uk_nec", "regional", "women"})
+        & year_members["role_type"].isin({"vp_chain", "uk_nec", "regional", "women", "equality"})
         & ~((year_members["role_type"] == "vp_chain") & (year_members["position"] == "President"))
     )
     fe_df = year_members[fe_mask].copy()
@@ -198,7 +198,7 @@ with tab_fe:
 with tab_he:
     he_mask = (
         (year_members["sector"] == "HE")
-        & year_members["role_type"].isin({"vp_chain", "uk_nec", "regional", "women"})
+        & year_members["role_type"].isin({"vp_chain", "uk_nec", "regional", "women", "equality"})
         & ~((year_members["role_type"] == "vp_chain") & (year_members["position"] == "President"))
     )
     he_df = year_members[he_mask].copy()
@@ -220,16 +220,3 @@ with tab_he:
         he_df = he_df.sort_values("_sort")
     _render_table(he_df)
 
-# ---------------------------------------------------------------------------
-# Equality & National tab
-# ---------------------------------------------------------------------------
-
-with tab_eq:
-    eq_mask = (
-        year_members["role_type"].isin({"equality", "trustee"})
-        | (year_members["sector"] == "national")
-    )
-    eq_df = year_members[eq_mask].copy()
-    if not eq_df.empty:
-        eq_df = eq_df.sort_values(["position", "name_canonical"])
-    _render_table(eq_df)
