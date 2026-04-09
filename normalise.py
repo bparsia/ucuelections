@@ -607,6 +607,106 @@ _SPLIT_POSITIONS = {
 }
 
 
+def fix_elected_elsewhere_outcomes(
+    candidate_rows: list[dict],
+    round_rows: list[dict],
+    contest_rows: list[dict],
+) -> list[dict]:
+    """
+    Change "Not Elected" → "Withdrawn" for candidates removed from a contest
+    mid-count because they were elected to another contest in the same year.
+
+    Two detection signals (either is sufficient):
+      A. Large negative transfer in candidate's final active round
+         (their votes were being redistributed when the count stopped for them).
+      B. Candidate's final active round votes exceed the contest quota while
+         still active and not eliminated, AND that round is the contest's last
+         round in the data (removed without a redistribution round recorded).
+    """
+    from collections import defaultdict
+
+    # Quota per contest
+    quota_map: dict[str, float] = {}
+    for c in contest_rows:
+        q = c.get("quota")
+        try:
+            quota_map[c["contest_id"]] = float(q)
+        except (TypeError, ValueError):
+            pass
+
+    # Max round per contest
+    max_round: dict[str, int] = {}
+    for r in round_rows:
+        cid = r["contest_id"]
+        max_round[cid] = max(max_round.get(cid, 0), int(r["round"]))
+
+    # Rounds grouped by (contest_id, raw name), sorted by round
+    round_lookup: dict[tuple, list] = defaultdict(list)
+    for r in round_rows:
+        round_lookup[(r["contest_id"], r["name"])].append(r)
+    for k in round_lookup:
+        round_lookup[k].sort(key=lambda r: int(r["round"]))
+
+    # Candidates elected (or uncontested) in at least one contest per year
+    elected_keys: set[tuple] = {
+        (ca["year"], ca["name_canonical"])
+        for ca in candidate_rows
+        if ca.get("outcome") in ("Elected", "Uncontested")
+    }
+
+    corrections = 0
+    for ca in candidate_rows:
+        if ca.get("outcome") != "Not Elected":
+            continue
+        if (ca["year"], ca["name_canonical"]) not in elected_keys:
+            continue
+
+        cid   = ca["contest_id"]
+        name  = ca.get("name", "")
+        rnds  = round_lookup.get((cid, name), [])
+        if not rnds:
+            continue
+
+        # Active (non-eliminated) rounds with valid vote counts
+        active = [
+            r for r in rnds
+            if not r.get("eliminated")
+            and r.get("votes") is not None
+            and str(r.get("votes")).lower() not in ("nan", "")
+        ]
+        if not active:
+            continue
+
+        last = active[-1]
+
+        # Condition A: large negative transfer (≤ −50) in final active round
+        try:
+            cond_a = float(last["transfer"]) <= -50
+        except (TypeError, ValueError):
+            cond_a = False
+
+        # Condition B: votes > quota in final active round, and that round is
+        # the last round recorded for the contest (no redistribution captured)
+        try:
+            q        = quota_map.get(cid)
+            cond_b   = (
+                q is not None
+                and float(last["votes"]) > q
+                and int(last["round"]) == max_round.get(cid, -1)
+            )
+        except (TypeError, ValueError):
+            cond_b = False
+
+        if cond_a or cond_b:
+            ca["outcome"] = "Withdrawn"
+            corrections += 1
+
+    if corrections:
+        print(f"Elected-elsewhere fix: {corrections} 'Not Elected' → 'Withdrawn'")
+
+    return candidate_rows
+
+
 def split_equality_contests(
     contest_rows: list[dict],
     candidate_rows: list[dict],
@@ -919,6 +1019,8 @@ def main():
         all_contests, all_candidates, all_rounds = split_equality_contests(
             all_contests, all_candidates, all_rounds, sector_lookup
         )
+
+    all_candidates = fix_elected_elsewhere_outcomes(all_candidates, all_rounds, all_contests)
 
     distinct_before = len({(ca.get("name") or "").strip().lower() for ca in all_candidates if ca.get("name")})
     distinct_after  = len({ca["name_canonical"].strip().lower() for ca in all_candidates if ca.get("name_canonical")})

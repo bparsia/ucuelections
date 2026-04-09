@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import pandas as pd
+import plotly.graph_objects as go
 import streamlit as st
 
 from utils import (
@@ -28,6 +29,15 @@ def load_final_votes(mtime: float) -> dict:
 
 
 _final_votes = load_final_votes(mtime=_csv_mtime())
+
+
+@st.cache_data
+def load_rounds(mtime: float) -> pd.DataFrame:
+    path = Path(__file__).parent.parent / "data" / "processed" / "stv_rounds.csv"
+    return pd.read_csv(path, dtype={"year": str})
+
+
+_rounds = load_rounds(mtime=_csv_mtime())
 
 uk_years = sorted(
     contests[contests["election_type"] == "UK national"]["year"].unique(),
@@ -199,6 +209,176 @@ year_contests["_group"] = year_contests["position"].fillna("").apply(_classify)
 # Contest renderer
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Sankey builder
+# ---------------------------------------------------------------------------
+
+_OUTCOME_COLORS = {
+    "Elected":      "rgba(0,150,50,0.85)",
+    "Uncontested":  "rgba(0,150,50,0.85)",
+    "Not Elected":  "rgba(200,60,60,0.85)",
+    "Withdrawn":    "rgba(160,100,40,0.85)",
+}
+_DEFAULT_NODE_COLOR = "rgba(100,100,200,0.85)"
+
+
+def build_stv_sankey(
+    contest_id: str,
+    rounds_df: pd.DataFrame,
+    contest_cands: pd.DataFrame,
+) -> go.Figure | None:
+    """
+    Build a Plotly Sankey of STV vote transfers for one contest.
+
+    Each elimination event creates links from the eliminated candidate(s)
+    to the candidates who received their transfers (proportionally when
+    multiple candidates are eliminated in the same round).
+    Returns None when there is no transfer data to show.
+    """
+    cdata = rounds_df[rounds_df["contest_id"] == contest_id].copy()
+    if cdata.empty:
+        return None
+
+    rnd_vals = sorted(cdata["round"].unique())
+    if len(rnd_vals) < 2:
+        return None
+
+    # (name, round) → row
+    lookup: dict[tuple, pd.Series] = {
+        (row["name"], row["round"]): row
+        for _, row in cdata.iterrows()
+    }
+
+    # Outcome and canonical name per raw name
+    outcome_map:   dict[str, str] = {}
+    canonical_map: dict[str, str] = {}
+    if not contest_cands.empty:
+        outcome_map   = dict(zip(contest_cands["name"], contest_cands["outcome"]))
+        display_col   = "name_canonical" if "name_canonical" in contest_cands.columns else "name"
+        canonical_map = dict(zip(contest_cands["name"], contest_cands[display_col]))
+
+    cand_names = list(cdata["name"].unique())
+
+    # Round each candidate was first marked eliminated
+    elim_round: dict[str, int] = {}
+    for name in cand_names:
+        first_elim = (
+            cdata[(cdata["name"] == name) & (cdata["eliminated"] == True)]
+            ["round"].min()
+        )
+        if pd.notna(first_elim):
+            elim_round[name] = int(first_elim)
+
+    # Group newly eliminated candidates by their elimination round
+    elim_by_round: dict[int, list[str]] = {}
+    for name, r in elim_round.items():
+        elim_by_round.setdefault(r, []).append(name)
+
+    # Node labels (canonical names) and colours
+    node_labels = [canonical_map.get(n, n) for n in cand_names] + ["Non-transferable"]
+    node_idx    = {n: i for i, n in enumerate(cand_names)}
+    nt_idx      = len(cand_names)
+
+    def _node_color(name: str) -> str:
+        return _OUTCOME_COLORS.get(outcome_map.get(name, ""), _DEFAULT_NODE_COLOR)
+
+    node_colors = [_node_color(n) for n in cand_names] + ["rgba(180,180,180,0.85)"]
+
+    sources:     list[int]   = []
+    targets:     list[int]   = []
+    values:      list[float] = []
+    link_colors: list[str]   = []
+
+    for r_idx, r in enumerate(rnd_vals):
+        if r_idx == 0:
+            continue
+
+        r_prev     = rnd_vals[r_idx - 1]
+        newly_elim = elim_by_round.get(r, [])
+
+        # Source votes: newly eliminated candidates (their last active votes)
+        source_votes: dict[str, float] = {}
+        for name in newly_elim:
+            row = lookup.get((name, r_prev))
+            if row is not None and pd.notna(row["votes"]) and row["votes"] > 0:
+                source_votes[name] = float(row["votes"])
+
+        # Gainers by actual delta; also detect surplus sources (active candidates
+        # whose vote count decreased — elected and distributing surplus).
+        # Using deltas avoids artefacts in the transfer column (e.g. an elected
+        # candidate's full tally re-stamped as a transfer in later rounds).
+        gainers: dict[str, float] = {}
+        for name in cand_names:
+            row      = lookup.get((name, r))
+            row_prev = lookup.get((name, r_prev))
+            if (row is None or row_prev is None
+                    or pd.isna(row.get("votes")) or pd.isna(row_prev.get("votes"))
+                    or row.get("eliminated")):
+                continue
+            delta = float(row["votes"]) - float(row_prev["votes"])
+            if delta > 0:
+                gainers[name] = delta
+            elif delta < 0:
+                source_votes[name] = source_votes.get(name, 0) + abs(delta)
+
+        total_available = sum(source_votes.values())
+        if total_available <= 0:
+            continue
+        total_gains       = sum(gainers.values())
+        non_transferable  = max(0.0, total_available - total_gains)
+
+        for src_name, src_v in source_votes.items():
+            frac      = src_v / total_available
+            link_col  = _node_color(src_name).replace("0.85", "0.35")
+
+            for gainer, gain in gainers.items():
+                flow = round(gain * frac, 2)
+                if flow > 0:
+                    sources.append(node_idx[src_name])
+                    targets.append(node_idx[gainer])
+                    values.append(flow)
+                    link_colors.append(link_col)
+
+            nt_flow = round(non_transferable * frac, 2)
+            if nt_flow > 0.01:
+                sources.append(node_idx[src_name])
+                targets.append(nt_idx)
+                values.append(nt_flow)
+                link_colors.append("rgba(180,180,180,0.25)")
+
+    if not sources:
+        return None
+
+    height = max(300, min(650, len(cand_names) * 28 + 80))
+
+    fig = go.Figure(go.Sankey(
+        arrangement="snap",
+        node=dict(
+            label=node_labels,
+            color=node_colors,
+            pad=12,
+            thickness=16,
+            line=dict(color="white", width=0.5),
+        ),
+        link=dict(
+            source=sources,
+            target=targets,
+            value=values,
+            color=link_colors,
+        ),
+    ))
+    fig.update_layout(
+        height=height,
+        margin=dict(l=5, r=5, t=10, b=5),
+        font=dict(size=11),
+    )
+    return fig
+
+
+# ---------------------------------------------------------------------------
+# Contest renderer
+# ---------------------------------------------------------------------------
+
 OUTCOME_ORDER = ["Elected", "Uncontested", "Not Elected", "Withdrawn", "No Nomination"]
 
 
@@ -253,7 +433,11 @@ def render_contest(contest, short_label: bool = False):
             hide_index=True,
             use_container_width=True,
         )
-        # TODO: Sankey diagram of STV flow
+
+        if contest.get("has_stv_rounds"):
+            fig = build_stv_sankey(contest["contest_id"], _rounds, cands)
+            if fig:
+                st.plotly_chart(fig, use_container_width=True)
 
 
 def render_group(df: pd.DataFrame, short_label: bool = False):
