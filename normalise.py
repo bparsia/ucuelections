@@ -22,6 +22,8 @@ import json
 import re
 from pathlib import Path
 
+import nec_reconstruct
+
 RAW_DIR = Path(__file__).parent / "data" / "raw"
 OUT_DIR = Path(__file__).parent / "data" / "processed"
 POSITION_MAP_PATH  = Path(__file__).parent / "sources" / "position_map.csv"
@@ -1063,6 +1065,9 @@ def main():
     print(f"\n  {with_rounds}/{len(all_contests)} contests have STV round data")
     years = sorted({c["year"] for c in all_contests})
     print(f"  Years covered: {years[0]} – {years[-1]} ({len(years)} distinct years)")
+
+    print("\nReconstructing NEC membership…")
+    nec_reconstruct.main()
 
 
 if __name__ == "__main__":
