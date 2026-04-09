@@ -411,7 +411,8 @@ def render_contest(contest, short_label: bool = False):
 
         display_cands = cands[[name_col, "first_preferences", "outcome", "contest_id", "name"]].copy()
         display_cands["Final votes"] = display_cands.apply(
-            lambda r: _final_votes.get((r["contest_id"], r["name"])), axis=1
+            lambda r: None if r["outcome"] == "Withdrawn"
+            else _final_votes.get((r["contest_id"], r["name"])), axis=1
         )
         display_cands = display_cands.rename(columns={
             name_col:            "Candidate",
