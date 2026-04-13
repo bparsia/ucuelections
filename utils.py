@@ -27,6 +27,7 @@ def load_data(mtime: float):  # mtime forces cache-bust when CSVs change
     ballots    = pd.read_csv(DATA_DIR / "ballots.csv",    dtype={"year": str, "election_id": str})
     contests["seats"]          = pd.to_numeric(contests["seats"],          errors="coerce")
     contests["valid_votes"]    = pd.to_numeric(contests["valid_votes"],    errors="coerce")
+    contests["quota"]          = pd.to_numeric(contests["quota"],          errors="coerce")
     ballots["eligible_voters"] = pd.to_numeric(ballots["eligible_voters"], errors="coerce")
     ballots["votes_cast"]      = pd.to_numeric(ballots["votes_cast"],      errors="coerce")
     ballots["turnout_pct"]     = pd.to_numeric(ballots["turnout_pct"],     errors="coerce")
