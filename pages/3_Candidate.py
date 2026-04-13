@@ -95,7 +95,7 @@ for _, row in cand_rows.iterrows():
     fv  = final_votes(row["contest_id"], row["name"])
     rows_out.append({
         "Year":        f"[{display_year(row['election_id'])}](/Election?year={row['year']})",
-        "Contest":     row["contest_name"],
+        "Contest":     row["position"],
         "1st prefs":   f"{int(fp):,}" if pd.notna(fp) and fp else "—",
         "Final votes": f"{int(fv):,}" if fv and fv != fp else "—",
         "Outcome":     f"**{row['outcome']}**" if row["outcome"] in {"Elected", "Uncontested"}

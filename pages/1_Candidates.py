@@ -44,10 +44,10 @@ winners["final_votes"] = winners.apply(
 
 def _fmt_winner_row(df: pd.DataFrame) -> pd.DataFrame:
     out = (
-        df[[name_col, "Year", "contest_name", "first_preferences", "final_votes"]]
+        df[[name_col, "Year", "position", "first_preferences", "final_votes"]]
         .rename(columns={
-            name_col:            "Candidate",
-            "contest_name":      "Contest",
+            name_col:   "Candidate",
+            "position": "Contest",
             "first_preferences": "1st prefs",
             "final_votes":       "Final votes",
         })
