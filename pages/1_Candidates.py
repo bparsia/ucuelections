@@ -42,28 +42,37 @@ winners["final_votes"] = winners.apply(
     lambda r: _final_votes.get((r["contest_id"], r["name"])), axis=1
 )
 
+def _fmt_winner_row(df: pd.DataFrame) -> pd.DataFrame:
+    out = (
+        df[[name_col, "Year", "contest_name", "first_preferences", "final_votes"]]
+        .rename(columns={
+            name_col:            "Candidate",
+            "contest_name":      "Contest",
+            "first_preferences": "1st prefs",
+            "final_votes":       "Final votes",
+        })
+        .reset_index(drop=True)
+    )
+    out["Final votes"] = out.apply(
+        lambda r: f"{r['Final votes']:,.1f}"
+        if pd.notna(r["Final votes"]) and abs(r["Final votes"] - r["1st prefs"]) > 0.05
+        else "—",
+        axis=1,
+    )
+    out["1st prefs"] = out["1st prefs"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "—")
+    return out
+
 st.subheader("Top 20 vote-getters (winners, final votes)")
-top = (
-    winners
-    .nlargest(20, "final_votes")
-    [[name_col, "Year", "contest_name", "first_preferences", "final_votes"]]
-    .rename(columns={
-        name_col:            "Candidate",
-        "contest_name":      "Contest",
-        "first_preferences": "1st prefs",
-        "final_votes":       "Final votes",
-    })
-    .reset_index(drop=True)
-)
+top = _fmt_winner_row(winners.nlargest(20, "final_votes"))
 top.index += 1
-top["Final votes"] = top.apply(
-    lambda r: f"{r['Final votes']:,.1f}"
-    if pd.notna(r["Final votes"]) and abs(r["Final votes"] - r["1st prefs"]) > 0.05
-    else "—",
-    axis=1,
-)
-top["1st prefs"] = top["1st prefs"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "—")
 st.dataframe(top, use_container_width=True)
+
+st.subheader("Bottom 20 vote-getters (winners, final votes)")
+st.caption("Elected candidates with the lowest final vote tally — excludes uncontested seats.")
+contested_winners = winners[winners["outcome"] == "Elected"].dropna(subset=["final_votes"])
+bot = _fmt_winner_row(contested_winners.nsmallest(20, "final_votes"))
+bot.index += 1
+st.dataframe(bot, use_container_width=True)
 
 # ---------------------------------------------------------------------------
 # Career appearances table
