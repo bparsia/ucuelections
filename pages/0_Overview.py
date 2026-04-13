@@ -164,8 +164,6 @@ This is an early version of a UCU election data explorer vibe/spec coded by Bija
 
 The scripts scrape the results from various UCU pages as a mix of HTML and (usually but not always) text PDFs. The format is...not entirely regular, so weirdnesses happen.
 
-At the moment, I just share the overall turn out results, which I think are interesting. There may still be errors. Drill downs into each election coming soon.
-
 One personal takeaway is that turnout is low and not obviously correlated with various supposed turn out lowering events I've seen hypothesized (including by me).
 
 The one exception (as I get all the data in) is the stretch from 2018-2020. USS + the end of the Hunt era may have produced a low then
@@ -248,6 +246,56 @@ fig.update_layout(
     margin=dict(t=20, b=60),
 )
 st.plotly_chart(fig, use_container_width=True)
+
+# --- Quota chart -------------------------------------------------------------
+st.subheader("Contest quotas by year")
+st.caption(
+    "Votes needed to win a seat in UK national STV elections. "
+    "Ribbon = min–max range; line = median. Uncontested and no-nomination contests excluded."
+)
+
+quota_data = (
+    uk_contests[uk_contests["quota"].notna() & (uk_contests["quota"] > 0)]
+    .groupby("year")
+    .agg(min_q=("quota", "min"), med_q=("quota", "median"), max_q=("quota", "max"))
+    .reset_index()
+    .sort_values("year", key=lambda s: s.map(year_sort_key))
+)
+
+q_labels = [display_year(y) for y in quota_data["year"]]
+min_q = quota_data["min_q"].tolist()
+med_q = quota_data["med_q"].tolist()
+max_q = quota_data["max_q"].tolist()
+
+fig_q = go.Figure()
+fig_q.add_trace(go.Scatter(
+    x=q_labels + q_labels[::-1],
+    y=max_q + min_q[::-1],
+    fill="toself", fillcolor="rgba(31,119,180,0.12)",
+    line=dict(color="rgba(0,0,0,0)"),
+    hoverinfo="skip", showlegend=False,
+))
+fig_q.add_trace(go.Scatter(
+    x=q_labels, y=max_q, mode="lines", name="Max",
+    line=dict(color="rgba(31,119,180,0.35)", width=1, dash="dot"),
+))
+fig_q.add_trace(go.Scatter(
+    x=q_labels, y=min_q, mode="lines", name="Min",
+    line=dict(color="rgba(31,119,180,0.35)", width=1, dash="dot"),
+))
+fig_q.add_trace(go.Scatter(
+    x=q_labels, y=med_q, mode="lines+markers", name="Median",
+    line=dict(color="steelblue", width=2), marker=dict(size=6),
+))
+fig_q.update_layout(
+    xaxis=dict(type="category"),
+    xaxis_title=None,
+    yaxis=dict(rangemode="tozero"),
+    yaxis_title="Votes (quota)",
+    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0),
+    height=350, margin=dict(t=20, b=40),
+)
+st.plotly_chart(fig_q, use_container_width=True)
 
 # --- Gross stats table -------------------------------------------------------
 st.subheader("UK national elections — summary by year")
