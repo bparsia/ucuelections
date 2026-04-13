@@ -56,10 +56,13 @@ top = (
     .reset_index(drop=True)
 )
 top.index += 1
-top["1st prefs"]   = top["1st prefs"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "—")
-top["Final votes"] = top["Final votes"].apply(
-    lambda x: f"{x:,.1f}" if pd.notna(x) else "—"
+top["Final votes"] = top.apply(
+    lambda r: f"{r['Final votes']:,.1f}"
+    if pd.notna(r["Final votes"]) and abs(r["Final votes"] - r["1st prefs"]) > 0.05
+    else "—",
+    axis=1,
 )
+top["1st prefs"] = top["1st prefs"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "—")
 st.dataframe(top, use_container_width=True)
 
 # ---------------------------------------------------------------------------
