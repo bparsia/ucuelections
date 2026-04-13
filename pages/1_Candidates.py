@@ -42,9 +42,39 @@ winners["final_votes"] = winners.apply(
     lambda r: _final_votes.get((r["contest_id"], r["name"])), axis=1
 )
 
-def _fmt_winner_row(df: pd.DataFrame) -> pd.DataFrame:
+# Merge in contest quota for ratio calculation
+winners = winners.merge(
+    contests[["contest_id", "quota"]],
+    on="contest_id", how="left",
+)
+
+# UK-wide quota lookup by (year, sector) from national FE/HE seats
+_uk_quota: dict[tuple, float] = {}
+for _, row in contests[
+    contests["position"].isin({"UK NEC Members, FE", "UK NEC Members, HE"})
+].iterrows():
+    if pd.notna(row["quota"]):
+        sector = "FE" if "FE" in row["position"] else "HE"
+        _uk_quota[(str(row["year"]), sector)] = float(row["quota"])
+
+def _detect_sector(pos: str) -> str | None:
+    if not isinstance(pos, str):
+        return None
+    if ", FE" in pos or pos.endswith("FE"):
+        return "FE"
+    if ", HE" in pos or pos.endswith("HE"):
+        return "HE"
+    return None
+
+winners["sector"] = winners["position"].apply(_detect_sector)
+
+
+def _fmt_winner_row(df: pd.DataFrame, show_uk_ratio: bool = False) -> pd.DataFrame:
+    cols = [name_col, "Year", "position", "first_preferences", "final_votes"]
+    if show_uk_ratio:
+        cols += ["sector"]
     out = (
-        df[[name_col, "Year", "position", "first_preferences", "final_votes"]]
+        df[cols]
         .rename(columns={
             name_col:   "Candidate",
             "position": "Contest",
@@ -59,8 +89,20 @@ def _fmt_winner_row(df: pd.DataFrame) -> pd.DataFrame:
         else "—",
         axis=1,
     )
+    if show_uk_ratio:
+        def _ratio(r):
+            fv = df.iloc[r.name]["final_votes"]
+            yr = df.iloc[r.name]["year"]
+            sec = df.iloc[r.name]["sector"]
+            uk_q = _uk_quota.get((yr, sec))
+            if pd.notna(fv) and uk_q:
+                return f"{fv / uk_q:.2f}×"
+            return "—"
+        out["vs UK quota"] = out.apply(_ratio, axis=1)
+        out = out.drop(columns=["sector"])
     out["1st prefs"] = out["1st prefs"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "—")
     return out
+
 
 st.subheader("Top 20 vote-getters (winners, final votes)")
 top = _fmt_winner_row(winners.nlargest(20, "final_votes"))
@@ -68,11 +110,29 @@ top.index += 1
 st.dataframe(top, use_container_width=True)
 
 st.subheader("Bottom 20 vote-getters (winners, final votes)")
-st.caption("Elected candidates with the lowest final vote tally — excludes uncontested seats.")
-contested_winners = winners[winners["outcome"] == "Elected"].dropna(subset=["final_votes"])
-bot = _fmt_winner_row(contested_winners.nsmallest(20, "final_votes"))
-bot.index += 1
-st.dataframe(bot, use_container_width=True)
+st.caption(
+    "Elected candidates with the lowest final vote tally — excludes uncontested seats. "
+    "Split by sector; **vs UK quota** = winner's final votes ÷ that year's UK-wide FE/HE NEC seat quota."
+)
+contested_winners = winners[
+    (winners["outcome"] == "Elected") & winners["sector"].notna()
+].dropna(subset=["final_votes"])
+
+tab_fe, tab_he = st.tabs(["FE", "HE"])
+with tab_fe:
+    fe_bot = _fmt_winner_row(
+        contested_winners[contested_winners["sector"] == "FE"].nsmallest(20, "final_votes"),
+        show_uk_ratio=True,
+    )
+    fe_bot.index += 1
+    st.dataframe(fe_bot, use_container_width=True)
+with tab_he:
+    he_bot = _fmt_winner_row(
+        contested_winners[contested_winners["sector"] == "HE"].nsmallest(20, "final_votes"),
+        show_uk_ratio=True,
+    )
+    he_bot.index += 1
+    st.dataframe(he_bot, use_container_width=True)
 
 # ---------------------------------------------------------------------------
 # Career appearances table
