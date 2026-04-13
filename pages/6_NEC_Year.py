@@ -62,13 +62,19 @@ if selected_year != qp_year:
 
 year_members = membership[membership["year"] == selected_year].copy()
 
-# Previous year members (for "new?" flag)
+# Previous year members (for "new this year" flag)
 prev_year = str(int(selected_year) - 1)
 prev_members_set = set(
     membership.loc[membership["year"] == prev_year, "name_canonical"].unique()
 )
 
-year_members["_is_new"] = ~year_members["name_canonical"].isin(prev_members_set)
+# All members in any prior year (for "new ever" flag)
+ever_before_set = set(
+    membership.loc[membership["year"] < selected_year, "name_canonical"].unique()
+)
+
+year_members["_new_vs_prev"] = ~year_members["name_canonical"].isin(prev_members_set)
+year_members["_new_ever"]    = ~year_members["name_canonical"].isin(ever_before_set)
 
 # Stability row for this year
 stab_row = stability[stability["year"] == selected_year]
@@ -103,19 +109,27 @@ def _make_link(name_canonical: str) -> str:
 
 
 def _render_table(df: pd.DataFrame) -> None:
-    """Render a membership table with Name (linked), Role, Sector, New? columns."""
+    """Render a membership table with Name (linked), Role, Sector, Status columns."""
     if df.empty:
         st.info("No members in this category.")
         return
 
-    display = df[["name_canonical", "position", "sector", "_is_new"]].copy()
+    display = df[["name_canonical", "position", "sector", "_new_vs_prev", "_new_ever"]].copy()
     display["Candidate"] = display["name_canonical"].apply(_make_link)
-    display["New?"] = display["_is_new"].apply(lambda x: "New" if x else "")
+
+    def _status(row: pd.Series) -> str:
+        if row["_new_ever"]:
+            return "New to NEC"
+        if row["_new_vs_prev"]:
+            return "Returning"
+        return ""
+
+    display["Status"] = display.apply(_status, axis=1)
     display = display.rename(columns={
         "position": "Role",
         "sector":   "Sector",
     })
-    display = display[["Candidate", "Role", "Sector", "New?"]].reset_index(drop=True)
+    display = display[["Candidate", "Role", "Sector", "Status"]].reset_index(drop=True)
 
     st.dataframe(
         display,
