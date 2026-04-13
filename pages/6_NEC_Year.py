@@ -216,15 +216,17 @@ def _render_quota_analysis(df: pd.DataFrame, label: str) -> None:
     sorted_q = sorted(q_df["quota"].tolist())
     n = len(sorted_q)
     majority_n = math.floor(n / 2) + 1
-    majority_sum = sum(sorted_q[:majority_n])
-    total_sum = sum(sorted_q)
-    pct = 100 * majority_sum / total_sum if total_sum > 0 else 0.0
+    min_majority = sum(sorted_q[:majority_n])   # cheapest seats control
+    max_majority = sum(sorted_q[-majority_n:])  # most-voted seats control
+    ratio = max_majority / min_majority if min_majority > 0 else float("inf")
     missing_note = f" ({n_missing} member(s) excluded: no quota data.)" if n_missing else ""
+    ratio_str = f"{ratio:.1f}×" if math.isfinite(ratio) else "∞"
     st.caption(
-        f"**Majority mandate** — a controlling majority ({majority_n} of {n} members "
-        f"with data) could be secured by members whose contests required a minimum of "
-        f"**{majority_sum:,.0f}** votes combined — **{pct:.1f}%** of the "
-        f"{total_sum:,.0f} total votes required across all {label} members with data."
+        f"**Majority mandate** ({majority_n} of {n} seats with data) — "
+        f"min-mandate majority: **{min_majority:,.0f}** votes · "
+        f"max-mandate majority: **{max_majority:,.0f}** votes · "
+        f"ratio: **{ratio_str}** "
+        f"(the highest-vote majority held {ratio_str} more combined electoral mandate than the lowest-vote majority)."
         + missing_note
     )
 
