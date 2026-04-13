@@ -25,7 +25,7 @@ name_col = "name_canonical" if "name_canonical" in uk.columns else "name"
 with_votes = uk[uk["first_preferences"].notna() & (uk["first_preferences"] > 0)].copy()
 with_votes["Year"] = with_votes["year"].apply(display_year)
 
-# Final votes from STV rounds
+# Final votes from STV rounds (last round each candidate appears)
 _rounds_path = Path(__file__).parent.parent / "data" / "processed" / "stv_rounds.csv"
 
 @st.cache_data
@@ -38,26 +38,27 @@ def _load_final_votes(mtime: float) -> dict:
 _final_votes = _load_final_votes(mtime=_csv_mtime())
 
 winners = with_votes[with_votes["outcome"].isin({"Elected", "Uncontested"})].copy()
-winners["Final votes"] = winners.apply(
+winners["final_votes"] = winners.apply(
     lambda r: _final_votes.get((r["contest_id"], r["name"])), axis=1
 )
 
-st.subheader("Top 20 vote-getters (winners, first preferences)")
+st.subheader("Top 20 vote-getters (winners, final votes)")
 top = (
     winners
-    .nlargest(20, "first_preferences")
-    [[name_col, "Year", "contest_name", "first_preferences", "Final votes"]]
+    .nlargest(20, "final_votes")
+    [[name_col, "Year", "contest_name", "first_preferences", "final_votes"]]
     .rename(columns={
         name_col:            "Candidate",
         "contest_name":      "Contest",
         "first_preferences": "1st prefs",
+        "final_votes":       "Final votes",
     })
     .reset_index(drop=True)
 )
 top.index += 1
-top["1st prefs"]    = top["1st prefs"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "—")
-top["Final votes"]  = top["Final votes"].apply(
-    lambda x: f"{x:,.2f}".rstrip("0").rstrip(".") if pd.notna(x) else "—"
+top["1st prefs"]   = top["1st prefs"].apply(lambda x: f"{int(x):,}" if pd.notna(x) else "—")
+top["Final votes"] = top["Final votes"].apply(
+    lambda x: f"{x:,.1f}" if pd.notna(x) else "—"
 )
 st.dataframe(top, use_container_width=True)
 
