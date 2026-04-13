@@ -47,8 +47,8 @@ _cands_q = (
     .merge(contests[["contest_id", "quota"]], on="contest_id", how="left")
     .copy()
 )
-_cands_q.loc[_cands_q["outcome"] == "Uncontested", "quota"] = 0.0
 _cands_q["quota"] = pd.to_numeric(_cands_q["quota"], errors="coerce")
+_cands_q.loc[_cands_q["outcome"] == "Uncontested", "quota"] = 0.0
 _quota_lookup: dict[tuple, float] = (
     _cands_q.dropna(subset=["name_canonical"])
     .set_index(["year", "name_canonical"])["quota"]
