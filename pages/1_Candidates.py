@@ -195,7 +195,7 @@ with col_chart:
         ))
     fig_unc.update_layout(
         barmode="stack",
-        xaxis=dict(type="category", title=None),
+        xaxis=dict(type="category", categoryorder="array", categoryarray=years, title=None),
         yaxis=dict(rangemode="tozero", title="Seats"),
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
         height=320,
