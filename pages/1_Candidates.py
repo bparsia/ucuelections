@@ -177,6 +177,12 @@ with col_chart:
     import plotly.graph_objects as go
     categories = sorted(all_unc["Category"].unique())
     years = sorted(all_unc["Year"].unique(), key=year_sort_key)
+    # Pivot so every category has a value for every year (0 if absent)
+    unc_pivot = (
+        unc_summary.pivot(index="Year", columns="Category", values="Uncontested seats")
+        .reindex(years)
+        .fillna(0)
+    )
     CAT_COLOURS = {
         "Equality": "#ff7f0e",
         "Regional": "#2ca02c",
@@ -186,17 +192,21 @@ with col_chart:
     }
     fig_unc = go.Figure()
     for cat in categories:
-        sub = unc_summary[unc_summary["Category"] == cat]
         fig_unc.add_trace(go.Bar(
-            x=sub["Year"],
-            y=sub["Uncontested seats"],
+            x=list(range(len(years))),
+            y=unc_pivot[cat].tolist(),
             name=cat,
             marker_color=CAT_COLOURS.get(cat, "#7f7f7f"),
         ))
     fig_unc.update_layout(
         barmode="stack",
-        xaxis=dict(type="category", categoryorder="array", categoryarray=years, title=None),
-        yaxis=dict(rangemode="tozero", title="Seats"),
+        xaxis=dict(
+            tickmode="array",
+            tickvals=list(range(len(years))),
+            ticktext=years,
+            title=None,
+        ),
+        yaxis=dict(rangemode="tozero", title="Seats", dtick=1),
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
         height=320,
         margin=dict(t=10, b=40, l=40, r=10),
