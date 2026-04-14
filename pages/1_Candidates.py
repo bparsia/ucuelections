@@ -135,6 +135,138 @@ with tab_he:
     st.dataframe(he_bot, use_container_width=True)
 
 # ---------------------------------------------------------------------------
+# Uncontested seats
+# ---------------------------------------------------------------------------
+
+st.subheader("Uncontested seats")
+st.caption(
+    "Seats where only one candidate stood — returned without a vote. "
+    "Excludes no-nomination contests (seat existed but nobody stood)."
+)
+
+all_unc = candidates[candidates["outcome"] == "Uncontested"].copy()
+
+def _seat_category(pos: str) -> str:
+    if not isinstance(pos, str):
+        return "Other"
+    if "Representatives of" in pos:
+        return "Equality"
+    if "NEC Members" in pos:
+        return "Regional"
+    if "UCU Scotland" in pos or "Equality Officer" in pos or "Green Officer" in pos:
+        return "Scotland"
+    if "Vice-President" in pos or "President" in pos:
+        return "VP chain"
+    return "Other"
+
+all_unc["Category"] = all_unc["position"].apply(_seat_category)
+all_unc["Year"] = all_unc["year"]
+
+# Summary by year and category
+unc_summary = (
+    all_unc.groupby(["Year", "Category"])
+    .size()
+    .reset_index(name="Uncontested seats")
+    .sort_values(["Year", "Category"])
+)
+
+col_chart, col_table = st.columns([2, 1])
+
+with col_chart:
+    import plotly.graph_objects as go
+    categories = sorted(all_unc["Category"].unique())
+    years = sorted(all_unc["Year"].unique(), key=year_sort_key)
+    CAT_COLOURS = {
+        "Equality": "#ff7f0e",
+        "Regional": "#2ca02c",
+        "Scotland": "#17becf",
+        "VP chain": "#9467bd",
+        "Other":    "#7f7f7f",
+    }
+    fig_unc = go.Figure()
+    for cat in categories:
+        sub = unc_summary[unc_summary["Category"] == cat]
+        fig_unc.add_trace(go.Bar(
+            x=sub["Year"],
+            y=sub["Uncontested seats"],
+            name=cat,
+            marker_color=CAT_COLOURS.get(cat, "#7f7f7f"),
+        ))
+    fig_unc.update_layout(
+        barmode="stack",
+        xaxis=dict(type="category", title=None),
+        yaxis=dict(rangemode="tozero", title="Seats"),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02),
+        height=320,
+        margin=dict(t=10, b=40, l=40, r=10),
+    )
+    st.plotly_chart(fig_unc, use_container_width=True)
+
+with col_table:
+    unc_by_cat = (
+        all_unc.groupby("Category")
+        .size()
+        .reset_index(name="Total")
+        .sort_values("Total", ascending=False)
+    )
+    st.dataframe(unc_by_cat, hide_index=True, use_container_width=True)
+
+# Full list
+unc_display = (
+    all_unc[["Year", "Category", "position", "name_canonical", "election_type"]]
+    .rename(columns={
+        "position":       "Contest",
+        "name_canonical": "Candidate",
+        "election_type":  "Election",
+    })
+    .sort_values(["Year", "Category", "Contest"])
+    .reset_index(drop=True)
+)
+unc_display["Candidate"] = unc_display["Candidate"].apply(
+    lambda n: f"[{n}](/Candidate?candidate={quote(str(n))})"
+)
+
+with st.expander("Full list of uncontested returns"):
+    header = "| " + " | ".join(unc_display.columns) + " |"
+    sep    = "| " + " | ".join("---" for _ in unc_display.columns) + " |"
+    rows   = "\n".join(
+        "| " + " | ".join(str(v) for v in row) + " |"
+        for row in unc_display.itertuples(index=False)
+    )
+    st.markdown(f"{header}\n{sep}\n{rows}")
+
+# Repeat uncontested winners
+repeat_unc = (
+    all_unc.groupby("name_canonical")
+    .agg(
+        Times=("year", "count"),
+        Years=("year", lambda s: ", ".join(sorted(s, key=year_sort_key))),
+        Contest=("position", "first"),
+    )
+    .reset_index()
+    .rename(columns={"name_canonical": "Candidate"})
+    .query("Times > 1")
+    .sort_values("Times", ascending=False)
+    .reset_index(drop=True)
+)
+if not repeat_unc.empty:
+    st.caption("**Repeat uncontested returns**")
+    st.dataframe(repeat_unc, hide_index=True, use_container_width=True)
+
+# No-nomination contests
+no_nom = candidates[candidates["outcome"] == "No Nomination"].copy()
+if not no_nom.empty:
+    no_nom_display = (
+        no_nom[["year", "position", "election_type"]]
+        .drop_duplicates()
+        .rename(columns={"year": "Year", "position": "Contest", "election_type": "Election"})
+        .sort_values("Year")
+        .reset_index(drop=True)
+    )
+    with st.expander(f"No-nomination contests ({len(no_nom_display)} — seat existed, nobody stood)"):
+        st.dataframe(no_nom_display, hide_index=True, use_container_width=True)
+
+# ---------------------------------------------------------------------------
 # Career appearances table
 # ---------------------------------------------------------------------------
 
