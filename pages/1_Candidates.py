@@ -146,20 +146,21 @@ st.caption(
 
 all_unc = candidates[candidates["outcome"] == "Uncontested"].copy()
 
-def _seat_category(pos: str) -> str:
+def _seat_category(row) -> str:
+    if row["election_type"] == "Scotland":
+        return "Scotland"
+    pos = row["position"]
     if not isinstance(pos, str):
         return "Other"
     if "Representatives of" in pos:
         return "Equality"
     if "NEC Members" in pos:
         return "Regional"
-    if "UCU Scotland" in pos or "Equality Officer" in pos or "Green Officer" in pos:
-        return "Scotland"
     if "Vice-President" in pos or "President" in pos:
         return "VP chain"
     return "Other"
 
-all_unc["Category"] = all_unc["position"].apply(_seat_category)
+all_unc["Category"] = all_unc.apply(_seat_category, axis=1)
 all_unc["Year"] = all_unc["year"]
 
 # Summary by year and category
