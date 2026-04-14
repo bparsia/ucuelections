@@ -55,6 +55,15 @@ _quota_lookup: dict[tuple, float] = (
     .to_dict()
 )
 
+# UK-wide quota lookup: (year, sector) → quota for national FE/HE NEC seats
+_uk_quota: dict[tuple, float] = {}
+for _, _row in contests[
+    contests["position"].isin({"UK NEC Members, FE", "UK NEC Members, HE"})
+].iterrows():
+    if pd.notna(_row["quota"]):
+        _sec = "FE" if "FE" in _row["position"] else "HE"
+        _uk_quota[(str(_row["year"]), _sec)] = float(_row["quota"])
+
 if membership.empty:
     st.warning("No NEC membership data found. Run `normalise.py` to generate it.")
     st.stop()
@@ -135,12 +144,13 @@ def _make_link(name_canonical: str) -> str:
 
 
 def _render_table(df: pd.DataFrame) -> None:
-    """Render a membership table with Name (linked), Role, Sector, Status columns."""
+    """Render a membership table with Name (linked), Role, Sector, Status, Quota, vs UK columns."""
     if df.empty:
         st.info("No members in this category.")
         return
 
-    display = df[["name_canonical", "position", "sector", "_new_vs_prev", "_new_ever"]].copy()
+    display = df[["name_canonical", "position", "sector", "_new_vs_prev", "_new_ever",
+                  "quota", "elected_year"]].copy()
     display["Candidate"] = display["name_canonical"].apply(_make_link)
 
     def _status(row: pd.Series) -> str:
@@ -151,11 +161,27 @@ def _render_table(df: pd.DataFrame) -> None:
         return ""
 
     display["Status"] = display.apply(_status, axis=1)
-    display = display.rename(columns={
-        "position": "Role",
-        "sector":   "Sector",
-    })
-    display = display[["Candidate", "Role", "Sector", "Status"]].reset_index(drop=True)
+
+    def _quota_fmt(row: pd.Series) -> str:
+        q = row["quota"]
+        if pd.isna(q):
+            return "—"
+        return "Uncontested" if q == 0 else f"{q:,.0f}"
+
+    def _vs_uk(row: pd.Series) -> str:
+        q = row["quota"]
+        if pd.isna(q) or q == 0:
+            return "—"
+        uk_q = _uk_quota.get((str(row["elected_year"]), row["sector"]))
+        if not uk_q:
+            return "—"
+        return f"{q / uk_q:.2f}×"
+
+    display["Quota"] = display.apply(_quota_fmt, axis=1)
+    display["vs UK"] = display.apply(_vs_uk, axis=1)
+
+    display = display.rename(columns={"position": "Role", "sector": "Sector"})
+    display = display[["Candidate", "Role", "Sector", "Status", "Quota", "vs UK"]].reset_index(drop=True)
 
     st.dataframe(
         display,
